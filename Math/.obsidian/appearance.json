@@ -1,0 +1,11 @@
+{
+  "theme": "moonstone",
+  "accentColor": "",
+  "textFontFamily": "CMU Sans Serif",
+  "baseFontSize": 17,
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "cssTheme": "Border",
+  "nativeMenus": false,
+  "showViewHeader": false
+}

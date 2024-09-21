@@ -1,0 +1,1 @@
+El Estado se ocupa de la libertad y la seguridad a condición de que no obstaculicen su intención principal, que es la explotación de la clase productora

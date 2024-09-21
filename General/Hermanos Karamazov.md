@@ -1,0 +1,1 @@
+"Y los que no creen en Dios, bueno, éstos se pondrán a hablar del socialismo y del anarquismo, de la reorganización de toda la humanidad según unas nuevas bases, lo cual es tan endiablado como lo otro: vienen a ser las mismas cuestiones, solo que vistas desde el extremo opuesto"

@@ -1,0 +1,148 @@
+{
+  "main": {
+    "id": "45db786062ea7a48",
+    "type": "split",
+    "children": [
+      {
+        "id": "759e1c243b6dd474",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c25f31420cf6f404",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Functional Analysis/Theory/Teórico 1.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b893d49dd79e5e5a",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "bea54bdc6f5d1c94",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "69a266d1745e9403",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "4253039021f22ce2",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "f2050a6141b279b7",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "afff6d97de55b3fc",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f91eb5ca0298d278",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Functional Analysis/Theory/Teórico 1.md",
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "byCreatedTimeReverse",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": true,
+            "unlinkedCollapsed": false
+          }
+        }
+      },
+      {
+        "id": "58318b1be34c108d",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Functional Analysis/Theory/Teórico 1.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "6b26a989d65c5f42",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Functional Analysis/Theory/Teórico 1.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c25f31420cf6f404",
+  "lastOpenFiles": [
+    "Functional Analysis/Practico 3 Funcional.md",
+    "Functional Analysis/Theory/Teórico 1.md",
+    "Functional Analysis/Teorema 2.md",
+    "Functional Analysis/Theory",
+    "Algebraic Structures/Theory/Class 1.md",
+    "Algebraic Structures/Hungerford.md",
+    "Functional Analysis/Teorema 1.md",
+    "Pasted image 20240919234954.png",
+    "Ink",
+    "Ink/Writing/2024.9.19 - 19.01pm.writing",
+    "Ink/Writing"
+  ]
+}

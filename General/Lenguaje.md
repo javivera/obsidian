@@ -1,0 +1,10 @@
+Adalid
+Odalisca
+Futil
+Enjundia
+Ataraxia
+Cetrino  
+Discolo  
+Velar  
+Hastio  
+Cavilaciones
