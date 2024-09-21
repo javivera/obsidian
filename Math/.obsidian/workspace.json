@@ -34,7 +34,7 @@
               "type": "markdown",
               "state": {
                 "file": "Functional Analysis/Theory/Teórico 1.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -99,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -159,12 +158,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,7 +175,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aeb83359a0ad264b",
+  "active": "fcc1f5840a23f224",
   "lastOpenFiles": [
     "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Teórico 1.md",
