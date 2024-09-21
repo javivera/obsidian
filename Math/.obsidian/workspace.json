@@ -6,6 +6,7 @@
       {
         "id": "ce7db0c246f5c181",
         "type": "tabs",
+        "dimension": 47.42647058823529,
         "children": [
           {
             "id": "fcc1f5840a23f224",
@@ -24,6 +25,7 @@
       {
         "id": "dd9abbaac91579a0",
         "type": "tabs",
+        "dimension": 52.57352941176471,
         "children": [
           {
             "id": "540305c51946795a",
@@ -97,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -146,9 +149,17 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "4d17be7a6b8b454b",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -157,20 +168,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fcc1f5840a23f224",
+  "active": "aeb83359a0ad264b",
   "lastOpenFiles": [
     "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Teórico 1.md",
+    "HabitTracker.md",
+    "Habits/Azucar.md",
+    "Habits/GYM.md",
+    "Habits/P.md",
+    "Habits/Running.md",
+    "Habits/P 3.md",
+    "Habits/Icon\r",
+    "Untitled",
+    "Habits",
     "Algebraic Structures/Theory/Class 1.md",
-    "Untitled.md",
     "Algebraic Structures/Theory/Class 5.md",
     "Algebraic Structures/Theory/Class 7.md",
     "Algebraic Structures/Theory/Class 2.md",
@@ -182,7 +202,6 @@
     "Functional Analysis/Theory",
     "Theory/Icon\r",
     "Theory",
-    "Untitled",
     "Functional Analysis/Teorema 2.md",
     "Templates/math.md",
     "ConvertedMD.md",
@@ -192,9 +211,7 @@
     "Templates/Icon\r",
     "Templates",
     "Algebraic Structures/Hungerford/Icon\r",
-    "Algebraic Structures/Hungerford",
     "Algebraic Structures/Nueva carpeta/ConvertedMD.md",
-    "Algebraic Structures/Nueva carpeta/Icon\r",
     "Algebraic Structures/Theory/Sin título.md"
   ]
 }

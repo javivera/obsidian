@@ -1,4 +1,9 @@
 {
   "Appearance-light@@card-layout-open-light": true,
-  "Appearance-dark@@card-layout-open-dark": true
+  "Appearance-dark@@card-layout-open-dark": true,
+  "custom-diegoeis-simple@@eis-sidebar-dark": false,
+  "sanctum@@dark-mode-contrast-mode": "sanctum-default-dark",
+  "minimal-advanced@@styled-scrollbars": true,
+  "minimal-style@@ribbon-style": "ribbon-bottom-left-hover",
+  "minimal-style@@window-title-off": false
 }
