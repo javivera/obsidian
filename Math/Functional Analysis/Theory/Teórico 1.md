@@ -26,7 +26,7 @@ tags:
 
 >[!Remark]
 >Esto nos dice que en un espacio vectorial normado, la norma, la suma y producto por escalar son continuas.
-
+---
 >[!Definition] Equivalence of norms
 >Sea $X$ espacio vectorial y  $\lVert \cdot \rVert_{1},\lVert \cdot \rVert_{2}$ normas en  $X$ decimos que son equivalentes si $$\exists\ m,M>0\quad /\quad m\lVert x \rVert _{1}\leq \lVert x \rVert _{2}\leq M\lVert x \rVert_{1} $$
 
@@ -37,6 +37,8 @@ tags:
 >Let $X$ be a vector space with $\lVert \cdot \rVert, \lVert \cdot \rVert_{1}$ and $d, d_{1}$ associated metrics. Suppose $\exists k>0$ such that $\lVert x \rVert \leq k \lVert x \rVert_{1}\quad \forall x \in X$. Let $\{ x_{n} \}\subseteq X$, then:
 >1. $x_{n} \rightarrow x$ in $(X, d_{1}) \Longrightarrow x_{n} \rightarrow x$ in $(X, d)$  
 >2. $\{ x_{n} \}$ is Cauchy in $(X, d_{1}) \Longrightarrow \{ x_{n} \}$ is Cauchy in $(X, d)$ 
+
+^650441
 
 ^2230e0
 >[!Proof]
@@ -52,7 +54,7 @@ tags:
 ^cd6dc0
 
 >[!Proof]
->Usando [[Teórico 1#^2230e0]]
+>Usando [[#^650441]] y que equivalencia de normas
 ---
 >[!Theorem] Continua en compacto tiene maximo y minimo
 >Sea $(X,d)$ metrico compacto y $f:M\rightarrow \mathbb{F}$ continua entonces $\exists c>0 \ / \ \lvert f(x) \rvert\quad\forall x \in M$ ($f$ acotada)
@@ -91,7 +93,7 @@ ___
 >$$\lVert \cdot \rVert_{\infty} \quad \text{ y }\quad \lVert u \rVert =\lVert u \rVert_{\infty}+\left\lVert  u'  \right\rVert_{\infty}$$
 >Considerando la funcion $u_{n}(x)=sen(nx)$ se puede ver facilmetend
 >
----
+
 
 >[!Lemma]
 > X espacio vectorial de dim finita y $\lVert \cdot \rVert_{1} =\left( \sum \lvert \alpha_{j} \rvert^2 \right)^{\frac{1}{2}}$ y $d_{1}$ la metrica asociada, entonces $(X,d_{1})$ es completo (Banach)
@@ -138,7 +140,7 @@ ___
 >1. Por ser $Y$ espacio vectorial es normado (norma estandar) por ser espacio vectorial normado es metrico [[#^59c764]]
 >2. Por dim finita es completo
 >3. Cerrado por 1. [[#^83c633]]
----
+
 >[!Remark] Contraejemplo
 > [[#^3196e0]] no es cierto si la dimension es infinita
 
@@ -149,6 +151,7 @@ ___
 >4. $x_{n}\rightarrow x=\left( 1, \frac{1}{2},\dots, \frac{1}{n},\dots \right)\in \ell^{\infty}-S$ usando $\lVert x-x_{n} \rVert_{\infty} = \frac{1}{n+1}\rightarrow 0$
 >6. $S$ no es cerrado
 ^0676dc
+
 ---
 >[!Lemma]
 > $X$ espacio vectorial normado, $S$ subespacio de $X$ entonces $\overline{S} \text{ es subespacio vectorial de } X$
@@ -220,3 +223,11 @@ ___
 >2. Se asume visto en Reales 
 >3. Se asumen visto en Reales
 >4. [[#^83c633]]
+
+>[!Theorem]
+>Sea $X$ de Banach $\{ x_{n} \} \subseteq X$ si la serie $\sum\lVert x_{n} \rVert_{}$ converge entonces $\sum x_{k}$ converge
+
+>[!Proof]
+>1. $\bigg\lvert  \sum^m \lVert x_{k} \rVert - \sum^n \lVert x_{k} \rVert \bigg\rvert =\sum^m_{k=n+1} \lVert x_{k} \rVert \leq\epsilon \quad\forall m\geq n\geq n_{0}$ (por ser convergente la serie las sumas parciales son de cauchy)
+>2. Sea $S_{n}=\sum^n x_{k}$ entonces $\lVert S_{m}-S_{n} \rVert\leq \lVert  \sum^m_{k=n+1}x_{k}  \rVert\leq \sum^m_{k=n+1}\lVert x_{k} \rVert\leq\epsilon$
+>3. Como $X$ completo $S_{n}$ converge
