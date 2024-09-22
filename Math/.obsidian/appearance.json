@@ -4,7 +4,7 @@
   "textFontFamily": "CMU Sans Serif",
   "baseFontSize": 17,
   "baseFontSizeAction": true,
-  "translucency": false,
+  "translucency": true,
   "cssTheme": "Minimal",
   "nativeMenus": false,
   "showViewHeader": false
