@@ -34,7 +34,7 @@
               "type": "markdown",
               "state": {
                 "file": "Functional Analysis/Theory/Teórico 1.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -162,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fcc1f5840a23f224",
+  "active": "540305c51946795a",
   "lastOpenFiles": [
     "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Teórico 1.md",

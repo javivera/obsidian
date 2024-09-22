@@ -175,7 +175,9 @@ ___
 >[!Proof]
 >1.
 >Interseccion de cerrados es cerrados y interseccion de subespacios es subespacio
->2. Pendiente preguntar
+>2. $\overline{Sp(E)}$ es subespacio cerrado por [[#^4c773a]] y contiene a $E$ por def
+>- ($\subseteq$) $\overline{Sp}(E)$ es subespacio que contiene a $E$ entonces esta en la interseccion $Sp(E)\subseteq\overline{Sp}(E)$
+>- ($\supseteq$) Como $\overline{Sp}(E)$ es cerrado y contiene a $Sp(E)$ luego $\overline{Sp}(E)\supseteq \overline{Sp(E)}$
 ---
 >[!Lemma] Riesz
 >Sea $X$ normado, $Y$ subespacio cerrado  con $Y\neq X$. Sea $\alpha \in(0,1)$. Entonces $\exists X_{\alpha}\in X$ con $\lVert X_{\alpha} \rVert=1$ tal que $\lVert X_{\alpha}-y \rVert >\alpha \quad \forall y\in Y$ 
