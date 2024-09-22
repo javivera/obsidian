@@ -26,24 +26,6 @@
             ]
           },
           {
-            "id": "74d3474970327317",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "3e2c87bdff8936e6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Functional Analysis/Theory/Teórico 1.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          },
-          {
             "id": "99b1e05a46770fed",
             "type": "tabs",
             "children": [
@@ -87,7 +69,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:Riesz",
+            "query": "son banach",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -175,8 +157,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5f3891203eb961d6",
+  "active": "69a266d1745e9403",
   "lastOpenFiles": [
+    "Functional Analysis/Theory/Teorico 2.md",
     "Functional Analysis/Theory/Teórico 1 2.md",
     "Functional Analysis/Theory/Teórico 1 3.md",
     "Functional Analysis/Theory/Teórico 1.md",
