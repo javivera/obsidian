@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1c27ca32325105e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functional Analysis/Theory/Teórico 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d61c8f178a3597dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functional Analysis/Theory/Teórico 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,7 +132,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d61c8f178a3597dc",
+  "active": "5f3891203eb961d6",
   "lastOpenFiles": [
     "Functional Analysis/Theory/Teorico 2.md",
     "Functional Analysis/Theory/Teórico 1 2.md",
