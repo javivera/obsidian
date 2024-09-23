@@ -73,4 +73,4 @@ def de suc ortonormal
 
 >[!Theorem] Desigualdad de Bessel
 >$X$ e.v.pi $\{ e_{n} \}\subset X$ sucesion ortonormal entonces $\forall x \in X$
->$g(x + h) = g(x) + g'(x)h + g''(x) \frac{h^{2}}{2!} + \dots \lVert x \rVert e_{n}$
+>$g(x + h) = g(x) + g'(x)h + g''(x) \frac{h^{2}}{2!} + \dots \lVert$
