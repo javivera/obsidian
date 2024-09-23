@@ -2,7 +2,7 @@
 dateCreated: 2024-09-22,22:22
 ---
 >[!Lemma]
-> A convexo y Cerrado 
+> A convexo y Cerrado en un H hilbert entonces d(h,A) se minimiza
 
 >[!Proof]-
 >Existencia
@@ -28,3 +28,4 @@ dateCreated: 2024-09-22,22:22
 >Pero si $A$ no es convexo la unicidad en general no es cierta ej. $A$ circunferencia y $p$ el centro
 
 
+>[!Theorem] Sea $Y$ subespacio cerrado en $H$ Hilbertentonces $\forall x \in H\quad\exists(y\in Y,z\in Y)$
