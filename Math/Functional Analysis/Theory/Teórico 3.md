@@ -64,7 +64,8 @@ dateCreated: 2024-09-22,22:22
 
 ## Base ortogonal de dimension infinita
 
-def de suc ortonormal
+>[!Definition] Sucesion Ortonormal
+> Sea $X$ e.v.pi. Una sucesion $\{ e_{n} \}\subseteq X$ se dice ortonormal si $\lVert e_{n} \rVert=1\quad\forall {n}\in\mathbb{N}$ y $(e_{n},e_{m})=0\quad\forall n\neq m$
 
 >[!Theorem] 
 >Todo $X$ e.v.pi de dimension finita contiene una sucesion ortonormal 
@@ -114,7 +115,7 @@ def de suc ortonormal
 >Surge ahora la pregunta cuando sucede que $\sum^{\infty}_{n=1}(x,e_{n})e_{n}$ converge en particular a $x$
 >
 
->[!example]
+>[!example] Contraejemplo 1
 >Sea $\{ e_{n} \}\subseteq\mathcal{H}$ ortonormal y $\{ e_{2n} \}$ subsucesion. Se puede ver que $e_{1}\neq\sum^{\infty}_{n=1}\alpha_{2n}e_{2n}$. Por ende encontramos un $x\in\mathcal{H}$ que no se puede escribir como dicha suma
 
 >[!Theorem] 3.47 Bon de Hilbert
@@ -138,16 +139,32 @@ def de suc ortonormal
 ^f63eb1
 
 >[!Remark]
->Decimos que $\{ e_{n} \}$ es base ortonormal de $\mathcal{H}$ si cumple alguna de las condiciones anteriores. Notar que para una base ortonormal entonces se cumple la igualdad en la desigualdad de Bessel[[Teórico 3#^1a2dbf]]
+>Decimos que $\{ e_{n} \}$ es base ortonormal de $\mathcal{H}$ si cumple alguna de las condiciones anteriores. Notar que para una base ortonormal entonces se cumple la igualdad en la desigualdad de Bessel [[Teórico 3#^1a2dbf]]
 
 >[!Remark]
 >$Sp\{ e_{n} \}$ tiene todas las combinaciones lineales **finitas** de vectores en $\{ e_{n} \}$ (Que es numerable infinito) pero para que valga [[Teórico 3#^f63eb1]] necesito considerar las sumas infinitas. Esto corresponde a considerar $\overline{Sp}\{ e_{n} \}$. En dimension finita el span es cerrado y por lo tanto igual a su clausura asi que no hace falta diferenciar entre estos conceptos.
 >
 
->[!Theorem]
+>[!Theorem] 3.52 Hilbert dim infinita separable sii BON de Hilbert
 >1. Espacios normados de dim finita son separables
 >2. Un Hilbert de dim infinita es separable $\iff$ tiene una BON de Hilbert
-
+>>[!Proof]
+>>1. $X$ finito $\{ e_{1},\ldots,e_{k} \}$ base. El conjunto de los vectores $\sum^{k}_{n=1}\alpha_{n}e_{n}$ donde $\alpha_{n}\in\mathbb{Q}$ es denso y numerable
+>>2. 
+>>- $(\Rightarrow)$ Tenemos $\{ x_{n} \}$ denso y numerable a partir de el armamos $\{ x_{n_{j}} \}$ dejando de lado los $x_{j}$ que son combinacion lineal de algun elemento anterior. 
+>>- Por lo tanto $\{ x_{n_{j}} \}$ sera linealmente idependiente. 
+>>- Aplicamos Grahm-Schmidt y obtenemos $Sp\{ e_{n} \}$ tal que $$Sp\{ e_{n} \}=Sp\{ x_{n_{j}} \}=Sp\{ x_{n} \}$$ 
+>>- Como $\{ x_{n} \}$ era denso en $\mathcal{H}$ entonces $\overline{Sp\{ e_{n} \}}=\mathcal{H}$ basi ortonormal 
+>>([[Teórico 3#^f63eb1]])
+>>- $(\Leftarrow)$
 >[!Corollary]
->$\ell^{2}$ es separable
+>$\ell^{2}$ es separable. $L^{2}[a,b]$ es separable. Veremos mas adelante que tienen BON de Hilber
+
+>[!example]- Contraejemplo 2
+>Hilbert que no es separable. $\tilde{\ell}^{2}(\mathbb{R})=\{ f:\mathbb{R}\rightarrow\mathbb{R} \ / \ f(x)\neq 0\text{ a lo sumo para numerables }x \ / \ \sum^{}_{x\in\mathbb{R}}f(x)^{2}<\infty\}$ 
+>>[!Proof]
+>>1. Es facil ver que es Hilbert con $(f,g)=\sum^{}_{x\in\mathbb{R}}f(x)g(x)$
+>>2. Sea 
+>>$$f_{Y}(x) = \begin{cases} 1 & y=1 \\ 0 & cc \end{cases}$$
+>>Estan en el $\tilde{\ell}^{2}$. Ademas $\lVert f_{Y}-f_{Z} \rVert=2$. Si tuviese un denso para cada $f_{Y}$ me armo una bola de radio mas chico que 2 cada una de estas bolas tiene algun elemento del denso numerable, pero no se intersecan entre si. Absurdo porque tengo no numerables bolas.
 

@@ -24,25 +24,38 @@ lema sobre evpi
 
 ## Ortogonalidad
 
-def de orto
+def de orto p8
 
-lema sobre ortogonalidad
+lema sobre ortogonalidad p8
 
 
-def de hilber
+def de hilber p9
 
->[!proposition]
->Sea $\mathcal{H}$ Hilbert,$Y\subset H$ subespacio entonces $Y$ Hilbert $\iff Y$ es cerrado en $\mathcal{H}$
+>[!proposition] Sub cerrado es Hilbert
+>Sea $\mathcal{H}$ Hilbert, $Y\subset H$ sub espacio entonces $Y$ Hilbert $\iff Y$ es cerrado en $\mathcal{H}$
 
 def de complemento orto
 
-lema de complemento orto
+>[!Lemma]
+>$X$ e.v.pi $A\subseteq X$ subconjunto entonces:
+>1. $0\in A^{\perp}$
+>2. Si $0\in A \in A\Rightarrow A \cap A^{\perp} = \{ 0 \}$ si no $A\cap A^{\perp} = \emptyset$
+>3. $\{ 0 \}^{\perp}=X \quad\land\quad X^{\perp}=\{ 0 \}$
+>4. Si $A$ contiene una bola $B_{a}(r)$ para algun $r>0$ y $a\in A\Rightarrow A^{\perp}=\{ 0 \}$
+>	(Si $A$ abierto no vacio $\Rightarrow A^{\perp}=\{ 0 \}$)
+>5. $B\subseteq A\Rightarrow A^{\perp}\subseteq B^{\perp}$
+>6. $A^{\perp}$ es una sub cerrado de $X$
+>7. $A\subseteq (A^{\perp})^{\perp}=A^{\perp\perp}$
+>>[!Proof]
+>>Pendiente
  
 ---
 
->[!proposition]
+>[!proposition] $X\in Y^{\perp} \iff \lVert x-y \rVert\geq \lVert x \rVert$ 
 >Sea $Y$ subespacio de $X$ e.v.pi entonces $X\in Y^{\perp} \iff \lVert x-y \rVert\geq \lVert x \rVert$
+>>[!Proof]
+>>
 
 ^75b372
 
->[!Proof]
+
