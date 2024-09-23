@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional Analysis/Theory/Teorico 2.md",
+                "file": "Functional Analysis/Theory/Teórico 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional Analysis/Theory/Teorico 2.md"
+                "file": "Functional Analysis/Theory/Teórico 2.md"
               }
             }
           },
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional Analysis/Theory/Teorico 2.md",
+                "file": "Functional Analysis/Theory/Teórico 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional Analysis/Theory/Teorico 2.md",
+                "file": "Functional Analysis/Theory/Teórico 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,14 +153,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "540305c51946795a",
   "lastOpenFiles": [
     "Functional Analysis/Theory/Teórico 1.md",
-    "Functional Analysis/Theory/Teorico 2.md",
+    "Functional Analysis/Theory/Teórico 2.md",
+    "Functional Analysis/Theory/Contraejemplos.md",
     "Teorico 2.md",
     "Functional Analysis/Theory/Teórico 1 3.md",
     "Functional Analysis/Theory/Teórico 1 2.md",
@@ -193,7 +194,6 @@
     "Algebraic Structures/Hungerford.md",
     "Templates/Icon\r",
     "Templates",
-    "Algebraic Structures/Hungerford/Icon\r",
-    "Algebraic Structures/Nueva carpeta/ConvertedMD.md"
+    "Algebraic Structures/Hungerford/Icon\r"
   ]
 }

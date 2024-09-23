@@ -9,7 +9,7 @@
       "inferNumberPrefixRegExp": "^[0-9]+(\\.[0-9]+)*",
       "numberPrefix": "",
       "numberSuffix": "",
-      "numberInit": 1,
+      "numberInit": "1",
       "numberStyle": "arabic",
       "numberDefault": "auto",
       "refFormat": "[type] [number] ([title])",
@@ -27,7 +27,7 @@
       "eqRefSuffix": "",
       "labelPrefix": "",
       "lineByLine": true,
-      "theoremCalloutStyle": "MathWiki",
+      "theoremCalloutStyle": "Vivid",
       "theoremCalloutFontInherit": false,
       "beginProof": "\\begin{proof}",
       "endProof": "\\end{proof}",
@@ -36,7 +36,7 @@
     "Functional Analysis/Theory/Teórico 1.md": {}
   },
   "extraSettings": {
-    "foldDefault": "+",
+    "foldDefault": "",
     "noteTitleInTheoremLink": true,
     "noteTitleInEquationLink": true,
     "profiles": {
@@ -64,7 +64,7 @@
             "remark": "Remark"
           },
           "proof": {
-            "begin": "Proof.",
+            "begin": "Proof",
             "end": "□",
             "linkedBeginPrefix": "Proof of ",
             "linkedBeginSuffix": "."
@@ -153,6 +153,7 @@
     "searchModalDvQuery": ""
   },
   "excludedFiles": [
-    "Functional Analysis/Ej 2 (Base de Gabor).md"
+    "Functional Analysis/Ej 2 (Base de Gabor).md",
+    "Functional Analysis/Theory/Contraejemplos.md"
   ]
 }

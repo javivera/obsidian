@@ -14,14 +14,15 @@ tags:
 
 ^59c764
 
->[!Theorem] 
+> [!theorem]
 >Sea $X$ espacio vectorial con norma $\lVert \cdot \rVert_{}$. Sea $x_{n}\rightarrow x$, $y_{n}\rightarrow y$ con $\{ \alpha_{n} \}\subseteq \mathbb{F}$ y $\alpha_{n}\rightarrow\alpha$ entonces:
 >1. $\big\lvert \lVert x \rVert_{} -\lVert y \rVert_{}\big\rvert\leq \lVert x-y \rVert_{}$
 >2. $\lim_{ n \to \infty }\lVert x_{n} \rVert_{}=\lVert x \rVert_{}$
 >3. $\lim_{ n \to \infty }x_{n}+y_{n}=x+y$
 >4. $\lim_{ n \to \infty }\alpha_{n} x_{n}=\alpha x_{n}$
 
->[!Proof]
+>[!Proof]-
+>
 >Sale todo usando 1. y 1. sale usando $\lVert x \rVert\leq \lVert x-y \rVert+\lVert y \rVert$
 
 >[!Remark]
@@ -41,7 +42,7 @@ tags:
 ^650441
 
 ^2230e0
->[!Proof]
+>[!Proof]-
 >Trivial using the inequality
 
 ---
@@ -53,7 +54,7 @@ tags:
 
 ^cd6dc0
 
->[!Proof]
+>[!Proof]-
 >Usando [[#^650441]] y que equivalencia de normas
 ---
 >[!Theorem] Continua en compacto tiene maximo y minimo
@@ -70,7 +71,7 @@ ___
 >[!Theorem] 
 >Sea $X$ espacio vectorial normado de dim finita con norma $\lVert \cdot \rVert$. Sea $\{ e_{1},\ldots,e_{n} \}$ base para $x=\sum\alpha_{j}e_{j}$ y sea $\lVert x \rVert_{1}=\left( \sum|\alpha_{j}|^{2} \right)^{\frac{1}{2}}$ entonces $\lVert \cdot \rVert_{1}$ y $\lVert \cdot \rVert$ son equivalentes
 
->[!proof]
+>[!proof]-
 >1. $M=(\sum \lVert e_{j} \rVert^2)^{\frac{1}{2}}>0$
 >2. $\lVert x \rVert=\left\lVert  \sum\alpha_{j}e_{j}  \right\rVert\leq \sum \lVert \alpha_{j}e_{j} \rVert=\sum|\alpha_{j}|\lVert e_{j} \rVert \leq ( \sum|\alpha_{j}|^2)^{\frac{1}{2}} (\sum\lVert e_{j} \rVert^2)^{\frac{1}{2}} = \lVert x \rVert_{1}M$
 >3. $f:\mathbb{F}\rightarrow \mathbb{R}\quad f(\alpha_{1},\ldots,\alpha_{n})=\left\lVert  \sum\alpha_{j}e_{j}\right\rVert =\lVert x \rVert$
@@ -85,14 +86,16 @@ ___
 >[!Corollary]
 >En dimension finita todas las normas son equivalentes
 
->[!Proof]
+>[!Proof]-
 > Equivalencia de normas es equivalence entonces es transitiva
 ---
-> [!remark] Contraejemplo
+> [!remark] Contraejemplo II
 >Esto no vale en dimension infinita $X=C^1[0,\pi]$ tenemos dos normas no equivalentes 
 >$$\lVert \cdot \rVert_{\infty} \quad \text{ y }\quad \lVert u \rVert =\lVert u \rVert_{\infty}+\left\lVert  u'  \right\rVert_{\infty}$$
 >Considerando la funcion $u_{n}(x)=sen(nx)$ se puede ver facilmetend
 >
+
+^5fe893
 
 
 >[!Lemma]
@@ -100,7 +103,7 @@ ___
 
 ^910368
 
->[!Proof]
+>[!Proof]-
 > 1. Ya sabemos que es metrico (dim finita $N$)
 > 2. $\{ x^{n} \}\subseteq X$ suc de cauchy
 > 3. $x^{n}\in X,\quad x^{n}=\sum_{j}\alpha_{j}^n e_{j}\quad \alpha_{j}^n\in \mathbb{F}$
@@ -117,7 +120,7 @@ ___
 
 ^26042d
 
->[!Proof]
+>[!Proof]-
 >1. $(X,d)$ completa $\iff(X,d_{1})$ completa por [[#^cd6dc0]] y $d_{1}$ completa [[#^910368]]
 ---
 >[!Theorem]
@@ -129,19 +132,19 @@ ___
 
 ^83c633
 
->[!Proof]
+>[!Proof]-
 ---
 >[!Corollary]
 >Si $Y$ subespacio vectorial de dim finita $\Rightarrow$ $Y$ es cerrado
 
 ^3196e0
 
->[!Proof]
+>[!Proof]-
 >1. Por ser $Y$ espacio vectorial es normado (norma estandar) por ser espacio vectorial normado es metrico [[#^59c764]]
 >2. Por dim finita es completo
 >3. Cerrado por 1. [[#^83c633]]
 
->[!Remark] Contraejemplo
+>[!Remark] Contraejemplo I
 > [[#^3196e0]] no es cierto si la dimension es infinita
 
 >[!Proof]
@@ -158,7 +161,7 @@ ___
 
 ^4c773a
 
->[!Proof]
+>[!Proof]-
 >1. $x,y\in \overline{S},\ \alpha \in \mathbb{F}$
 >2. Por ser clausura existen $x_{n}\rightarrow x, \ y_{n}\rightarrow y$ en $S$
 >3. $S$ subesp $x_{n}+y_{n}\in S$
@@ -175,7 +178,7 @@ ___
 >1. $\overline{Sp}(E)$ es un cerrado de $X$ que contiene a $E$
 >2. $\overline{Sp}(E) = \overline{Sp(E)}$
 
->[!Proof]
+>[!Proof]-
 >1.
 >Interseccion de cerrados es cerrados y interseccion de subespacios es subespacio
 >2. $\overline{Sp(E)}$ es subespacio cerrado por [[#^4c773a]] y contiene a $E$ por def
@@ -187,7 +190,7 @@ ___
 
 ^ae7428
 
->[!Proof]
+>[!Proof]-
 >1. $d=\inf\{ \lVert x-z \rVert:z\in Y \}>0$
 >2. $0<\alpha<1  \Rightarrow d<d\alpha ^{-1}$
 >3.  (Def infimo) $\lVert x-z \rVert<d\alpha ^{-1}$
@@ -199,7 +202,7 @@ ___
 >$$D=\{ x \in X:\lVert x \rVert_{} \leq 1 \}\quad K=\{ x \in X: \lVert x \rVert_{} =1 \}$$
 >no son compactos
 
->[!Proof]
+>[!Proof]-
 >1. $x_{1}\in K$ como dim infinita $Sp(\{ x_{1} \})\neq X$ (Sp cerrado por ser de dim finita)
 >2. [[#^ae7428]] $\exists x_{2}\in K$ tal que $\lVert x_{1}-x_{2} \rVert_{}\geq \frac{1}{2}$
 >3. Generalizando $\exists x_{n}\in K$ tal que $\lVert x_{n}-x_{m} \rVert_{}\geq \frac{1}{2}\quad\forall n\neq m$
@@ -218,7 +221,7 @@ ___
 >(En particular $\ell^p \ (1\leq p\leq \infty$ son banach)
 >4. $X$ Banach, $Y$ subespacio entonces $Y$ Banach $\iff Y$ cerrado
 
->[!Proof]
+>[!Proof]-
 >1. Visto arriba [[#^26042d]]
 >2. Se asume visto en Reales 
 >3. Se asumen visto en Reales
@@ -227,7 +230,7 @@ ___
 >[!Theorem]
 >Sea $X$ de Banach $\{ x_{n} \} \subseteq X$ si la serie $\sum\lVert x_{n} \rVert_{}$ converge entonces $\sum x_{k}$ converge
 
->[!Proof]
+>[!Proof]-
 >1. $\bigg\lvert  \sum^m \lVert x_{k} \rVert - \sum^n \lVert x_{k} \rVert \bigg\rvert =\sum^m_{k=n+1} \lVert x_{k} \rVert \leq\epsilon \quad\forall m\geq n\geq n_{0}$ (por ser convergente la serie las sumas parciales son de cauchy)
 >2. Sea $S_{n}=\sum^n x_{k}$ entonces $\lVert S_{m}-S_{n} \rVert\leq \lVert  \sum^m_{k=n+1}x_{k}  \rVert\leq \sum^m_{k=n+1}\lVert x_{k} \rVert\leq\epsilon$
 >3. Como $X$ completo $S_{n}$ converge
