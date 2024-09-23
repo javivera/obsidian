@@ -28,4 +28,6 @@ dateCreated: 2024-09-22,22:22
 >Pero si $A$ no es convexo la unicidad en general no es cierta ej. $A$ circunferencia y $p$ el centro
 
 
->[!Theorem] Sea $Y$ subespacio cerrado en $H$ Hilbertentonces $\forall x \in H\quad\exists(y\in Y,z\in Y)$
+>[!Theorem] Sea $Y$ subespacio cerrado en $H$ Hilbertentonces $\forall x \in H\quad\exists \ (y\in Y,z\in Y^{\perp})$ tal que $x=y+z$. Ademas $\lVert x \rVert^2=\lVert y \rVert^2+\lVert z \rVert^2$ (Generalizacion de Pitagoras)
+
+>[!Proof]
