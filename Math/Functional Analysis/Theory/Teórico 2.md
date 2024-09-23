@@ -27,11 +27,11 @@ def de orto
 def de hilber
 
 >[!proposition]
->Sea $\mathcal{H}$
+>Sea $\mathcal{H}$ Hilbert,$Y\subset H$ subespacio entonces $Y$ Hilbert $\iff Y$ es cerrado en $\mathcal{H}$
 
->[!Definition] Convexidad
-> Sea $A\subset X$ espacio vectorial. $A$ es convexo si $\forall x,y\in A$
-> $$t x+(1-t)y\in A\quad\forall t\in[0,1]$$
+def de complemento orto
+
+lema de complemento orto
  
 ---
 

@@ -1,6 +1,12 @@
 ---
 dateCreated: 2024-09-22,22:22
 ---
+>[!Definition] Convexidad
+> Sea $A\subset X$ espacio vectorial. $A$ es convexo si $\forall x,y\in A$
+> $$t x+(1-t)y\in A\quad\forall t\in[0,1]$$
+
+---
+
 >[!Lemma]
 > A convexo y Cerrado en un H hilbert entonces d(h,A) se minimiza
 
