@@ -38,4 +38,6 @@ lema de complemento orto
 >[!proposition]
 >Sea $Y$ subespacio de $X$ e.v.pi entonces $X\in Y^{\perp} \iff \lVert x-y \rVert\geq \lVert x \rVert$
 
+^75b372
+
 >[!Proof]
