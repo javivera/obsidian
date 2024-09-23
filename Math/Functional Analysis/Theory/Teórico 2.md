@@ -12,11 +12,22 @@ lema evpi
 
 lema sobre evpi
 
->[!Theorem] Regla Paralelogramo
+>[!Theorem] Regla Paralelogramo e identidades de polarizacion
 > Sea $X$ e.v.pi con norma inducida $\lVert \cdot \rVert$ entonces $\forall x,y\in X$ vale:
-> 1. $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2+\lVert y \rVert^2)$
+> 1. $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2+\lVert y \rVert^2)$ (Regla Paralelogramo)
 > 2. Si $\mathbb{F}=\mathbb{R}\quad \quad 4(x,y)=\lVert x-y \rVert^2-\lVert x-y \rVert^2$
-> 3. Si $$
+> 3. Si $\mathbb{F}=\mathbb{C}\quad\quad 4(x,y)=\lVert x+y \rVert^2-\lVert x-y \rVert^2+i\lVert x+iY \rVert^2-i\lVert x-iy \rVert^2$
+
+>[!proposition] Continuidad del producto interno
+>Sea $X$ e.v.pi. $\{ x_{n} \},\{ y_{n} \}\subseteq X$ con $x_{n}\rightarrow x,\quad y_{n}\rightarrow y$ en $X$ entonces
+>$$(x_{n},y_{n})\rightarrow(x,y)$$
+
+def de orto
+
+def de hilber
+
+>[!proposition]
+>Sea $\mathcal{H}$
 
 >[!Definition] Convexidad
 > Sea $A\subset X$ espacio vectorial. $A$ es convexo si $\forall x,y\in A$
