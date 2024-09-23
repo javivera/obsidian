@@ -117,7 +117,7 @@ def de suc ortonormal
 >[!example]
 >Sea $\{ e_{n} \}\subseteq\mathcal{H}$ ortonormal y $\{ e_{2n} \}$ subsucesion. Se puede ver que $e_{1}\neq\sum^{\infty}_{n=1}\alpha_{2n}e_{2n}$. Por ende encontramos un $x\in\mathcal{H}$ que no se puede escribir como dicha suma
 
->[!Theorem] 3.47 Youngson
+>[!Theorem] 3.47 Bon de Hilbert
 >Sea $\{ e_{n} \}\subseteq\mathcal{H}$ Hilbert sucesions ortonormal son equivalentes
 >1. $\{ e_{n}:n\in\mathbb{N} \}^{\perp}$ = $\{ 0 \}$
 >2. $\overline{Sp}\{ e_{n}:n\in\mathbb{N} \}=\mathcal{H}$
@@ -135,11 +135,14 @@ def de suc ortonormal
 >$Sp\{ e_{n} \}\subseteq\{ y \}^{\perp} \text{ (Por 2) }\Rightarrow\mathcal{H}=\overline{Sp}\{ e_{n} \}\subseteq\overline{\{ y \}^{\perp}}=\{ y \}^{\perp}$
 >Entonces $y=0$
 
+^f63eb1
+
 >[!Remark]
 >Decimos que $\{ e_{n} \}$ es base ortonormal de $\mathcal{H}$ si cumple alguna de las condiciones anteriores. Notar que para una base ortonormal entonces se cumple la igualdad en la desigualdad de Bessel[[Teórico 3#^1a2dbf]]
 
 >[!Remark]
->$Sp\{ e_{n} \}$ tiene todas las combinaciones lineales **finitas** de vectores en $\{ e_{n} \}$ (Que es numer[[Teórico 3^Youn]]o 3^You]]co 3^Yo]]ico 3^Y]]rico 3^]] 
+>$Sp\{ e_{n} \}$ tiene todas las combinaciones lineales **finitas** de vectores en $\{ e_{n} \}$ (Que es numerable infinito) pero para que valga [[Teórico 3#^f63eb1]] necesito considerar las sumas infinitas. Esto corresponde a considerar $\overline{Sp}\{ e_{n} \}$. En dimension finita el span es cerrado y por lo tanto igual a su clausura asi que no hace falta diferenciar entre estos conceptos.
+>
 
 >[!Theorem]
 >1. Espacios normados de dim finita son separables
