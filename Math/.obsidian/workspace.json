@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Functional Analysis/Theory/Teórico 2.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -160,8 +161,9 @@
   "active": "540305c51946795a",
   "lastOpenFiles": [
     "Functional Analysis/Theory/Teórico 1.md",
-    "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Teórico 2.md",
+    "Functional Analysis/Theory/Teórico 3.md",
+    "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Contraejemplos.md",
     "Teorico 2.md",
     "Functional Analysis/Theory/Teórico 1 3.md",
@@ -192,7 +194,6 @@
     "ConvertedMD.md",
     "Pasted image 20240919234954.png",
     "x.md",
-    "Algebraic Structures/Hungerford.md",
     "Templates/Icon\r",
     "Templates",
     "Algebraic Structures/Hungerford/Icon\r"
