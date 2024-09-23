@@ -75,12 +75,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 233.5
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -158,11 +157,11 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "39fb67902ba799ce",
+  "active": "540305c51946795a",
   "lastOpenFiles": [
-    "Functional Analysis/Theory/Teórico 2.md",
-    "Functional Analysis/Theory/Teórico 3.md",
     "Functional Analysis/Theory/Teórico 1.md",
+    "Functional Analysis/Theory/Teórico 3.md",
+    "Functional Analysis/Theory/Teórico 2.md",
     "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Contraejemplos.md",
     "Teorico 2.md",

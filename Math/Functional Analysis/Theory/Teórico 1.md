@@ -202,6 +202,8 @@ ___
 >$$D=\{ x \in X:\lVert x \rVert_{} \leq 1 \}\quad K=\{ x \in X: \lVert x \rVert_{} =1 \}$$
 >no son compactos
 
+^8db74f
+
 >[!Proof]-
 >1. $x_{1}\in K$ como dim infinita $Sp(\{ x_{1} \})\neq X$ (Sp cerrado por ser de dim finita)
 >2. [[#^ae7428]] $\exists x_{2}\in K$ tal que $\lVert x_{1}-x_{2} \rVert_{}\geq \frac{1}{2}$
@@ -209,7 +211,7 @@ ___
 >4. Asi armamos una sucesion que no puede tener sub convergente en porque si fuese convergente seria de cauchy 
 
 >[!Remark]
->$E$ y $K$ son compactos $\Rightarrow$ $X$ dim finita
+>$D$ y $K$ son compactos $\Rightarrow$ $X$ dim finita
 ---
 >[!Definition] Banach Space
 > Un espacio de Banach es un espacio normado que es completo con la metrica asociada a la norma

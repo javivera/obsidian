@@ -1,4 +1,6 @@
 {
   "cssTheme": "Minimal",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "interfaceFontFamily": "",
+  "textFontFamily": "CMU Sans Serif"
 }
