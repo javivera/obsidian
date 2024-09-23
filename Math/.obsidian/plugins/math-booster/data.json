@@ -9,7 +9,7 @@
       "inferNumberPrefixRegExp": "^[0-9]+(\\.[0-9]+)*",
       "numberPrefix": "",
       "numberSuffix": "",
-      "numberInit": "1",
+      "numberInit": 1,
       "numberStyle": "arabic",
       "numberDefault": "auto",
       "refFormat": "[type] [number] ([title])",
