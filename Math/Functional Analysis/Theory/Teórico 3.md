@@ -13,8 +13,8 @@ dateCreated: 2024-09-22,22:22
 ^0636e2
 
 ^cc7fed
->[!Lemma]
-> A convexo y Cerrado en un H hilbert entonces d(h,A) se minimiza
+>[!Proposition]
+> $A$ convexo y cerrado en un $\mathcal{H}$ hilbert entonces $d(h,A)$ se minimiza
 >>[!Proof]-
 >>Existencia
 >>1. $\gamma = \inf\{ \lVert p-c \rVert:c\in A \}$ usar def de infimo $\gamma^2\leq\lVert p-q_{n} \rVert \leq \gamma^2 + \frac{1}{n}$
@@ -68,9 +68,44 @@ def de suc ortonormal
 
 >[!Theorem] 
 >Todo $X$ e.v.pi de dimension finita contiene una sucesion ortonormal 
->>[!Proof]
+>>[!Proof]-
 >> Usando [[Teórico 1#^8db74f]] Tenemos una sucesion de $\{ x_{n} \}\subset X$ de vectores unitarios que linealmente independientes por construccion. Aplicamos Grahm-Schmidt y obtenemos sucesion ortonormal
 
+>[!Remark]
+>Si $X$ es e.v.pi dimension k y $\{ e_{1},\ldots,e_{k} \}$ es base de $X$ entonces $x=\sum^{k}_{n=1}(x,e_{n})e_{n}$. Queremos ver si esto se puede generalizar en dimension infinita a $x=\sum^{\infty}_{n=1}(x,e_{n})e_{n}$
+
 >[!Theorem] Desigualdad de Bessel
->$X$ e.v.pi $\{ e_{n} \}\subset X$ sucesion ortonormal entonces $\forall x \in X$
->$g(x + h) = g(x) + g'(x)h + g''(x) \frac{h^{2}}{2!} + \dots \lVert$
+>$X$ e.v.pi $\{ e_{n} \}\subset X$ sucesion ortonormal entonces $\forall x \in X$ la serie $\sum^{\infty}_{n=1} \lvert (x,en) \rvert^{2}$ converge y $$\sum^{\infty}_{n=1}\lvert (x,e_{n}) \rvert^{2}\leq\lVert x \rVert^{2}$$
+>>[!Proof]-
+>>1. $y_{k} = \sum^{k}_{n=1}(x,e_{n})e_{n}$
+>>2. $\lVert x-y_{k} \rVert^{2}=(x-y_{k},x-y_{k})=\ldots=\lVert x \rVert^{2}-\sum^{k}_{n=1}\lvert (x,e_{n}) \rvert^{2}$ 
+>>3. $\sum^{k}_{n=1}\lvert (x,e_{n}) \rvert^{2} = \lVert x \rVert^{2} - \lVert x-y_{k} \rVert^{2}\leq\lVert x \rVert^{2}$
+>>4. Usando limite se termina
+
+^1a2dbf
+
+>[!Theorem]
+>Sea $\{ e_{n} \}\subseteq\mathcal{H}$ Una sucesion ortonormal y $\{ \alpha_{n} \}\subseteq\mathbb{F}$ entonces
+>$$\sum^{\infty}_{n=1} \alpha_{n}e_{n} \text{ converge } \iff \sum^{\infty}_{n=1} \lvert \alpha_{n} \rvert ^{2} \text{ converge }\bigg(\iff \{ \alpha_{n} \}\in\ell^{2} \bigg) $$
+>Si esto ocurre $$\left\lVert  \sum^{\infty}_{n=1} \alpha_{n}e_{n}   \right\rVert ^{2} =\sum^{\infty}_{n=1} \lvert \alpha_{n} \rvert ^{2} $$
+>>[!Proof]-
+>>1. $(\Rightarrow)$ Sea $x=\sum^{\infty}\alpha_{n}e_{n}\leq\infty$ 
+>>2. $(x,e_{m})=\lim_{ k \to \infty }\left( <\sum^{k}_{n=1}\alpha_{n}e_{n},e_{m} >\right)=\alpha_{m}$ ($k\geq m$ cuando a partir de algun momento)
+>>3. $\sum^{\infty}_{n=1}\lvert \alpha_{n} \rvert^{2}=\sum^{\infty}_{n=1}\lvert (x,e_{n}) \rvert^{2}\leq\lVert x \rVert^{2} = \left\lVert  \sum^{\infty}_{n=1}\alpha_{n}e_{n}  \right\rVert\leq\infty$ 
+>> (Por [[Teórico 3#^1a2dbf]])
+>>5. $(\Leftarrow)$ Sea $x_{k}=\sum^{k}_{n=1}\alpha_{n}e_{n}$
+>>6. $\lVert x_{k}-x_{j} \rVert_{2}=\left\lVert  \sum^{k}_{n=1}\alpha_{n}e_{n}  \right\rVert^{2}=\sum^{k}_{n=j+1}\lvert \alpha_{n} \rvert^{2} \xrightarrow[j,k \to \infty]{} 0$ (Por que la serie converge)
+>>7. Como $\{ x_{k} \}$ es de cauchy en un Hilbert converge
+>>
+>>Por ultimo como las series converge y como en finito ya tenemos la igualdad. 
+>>$$\left\lVert  \sum^{\infty}_{n=1} \alpha_{n}e_{n}   \right\rVert ^{2} =\lim_{ k \to \infty }\left\lVert  \sum^{k}_{n=1}\alpha_{n}e_{n}  \right\rVert=  \lim_{ k \to \infty }\sum^{k}_{n=1}\lvert \alpha_{n} \rvert^{2}=\sum^{\infty}_{n=1} \lvert \alpha_{n} \rvert ^{2}$$
+> Detalle de esta ultima parte 
+> $$\left\lVert  \sum^{k}_{n=1} \alpha_{n}e_{n}  \right\rVert ^{2} =\left( \sum^{k}_{n=1} \alpha_{n}e_{n},\sum^{k}_{n=1} \alpha_{n}e_{n} \right)=\sum^{k}_{n=1} (\alpha_{n}e_{n},\alpha_{n}e_{n})=\sum^{k}_{n=1} \alpha_{n}\overline{\alpha_{n}}(e_{n},e_{n})=\sum^{k}_{n=1} \lvert \alpha_{n} \rvert ^{2} $$
+
+^4e7cf9
+
+>[!Corollary]
+>Sea $\{ e_{n} \}\subseteq \mathcal{H}$ Hilbert una sucesion ortonormal entonces $\forall {x}\in{\mathcal{H}}$ sucede que $\sum^{\infty}_{n=1}(x,e_{n})e_{n}$ converge en $\mathcal{H}$
+>>[!Proof]
+>> 1. Por [[Teórico 3#^1a2dbf]] $\sum^{\infty}_{n=1}\lvert (x,e_{n}) \rvert^{2}$ converge
+>> 2. Por [[Teórico 3#^4e7cf9]] esto implica $\sum^{\infty}_{n=1}(x,e_{n})e_{n}$ converge

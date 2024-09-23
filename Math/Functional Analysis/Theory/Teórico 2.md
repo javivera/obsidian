@@ -1,14 +1,14 @@
 ---
 dateCreated: 2024-09-23,08:32
 ---
-def de pi
+def. de pi
 
 lema evpi
 
 >[!proposition]
 >$X$ e.v.pi $x,y\in X$ entonces:
 >1. $\lvert (x,y) \rvert\leq(x,x)(y,y)$
->2. La fc $\lVert \cdot \rVert X\rightarrow \mathbb{R}$ dada por $\lVert x \rVert(x,x)^{\frac{1}{2}}$ es norma en $X$
+>2. La fc $\lVert \cdot \rVert X\rightarrow \mathbb{R}$ dada por $\lVert x \rVert=(x,x)^{\frac{1}{2}}$ es norma en $X$
 
 lema sobre evpi
 
@@ -22,7 +22,12 @@ lema sobre evpi
 >Sea $X$ e.v.pi. $\{ x_{n} \},\{ y_{n} \}\subseteq X$ con $x_{n}\rightarrow x,\quad y_{n}\rightarrow y$ en $X$ entonces
 >$$(x_{n},y_{n})\rightarrow(x,y)$$
 
+## Ortogonalidad
+
 def de orto
+
+lema sobre ortogonalidad
+
 
 def de hilber
 
