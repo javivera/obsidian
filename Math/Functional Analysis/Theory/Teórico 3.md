@@ -52,4 +52,4 @@ dateCreated: 2024-09-22,22:22
 >[!Corollary] 
 >Si $Y$ subespacio cerrado en $\mathcal{H}$ hilbert entonces $Y=Y^{\perp\perp}$ 
 >>[!Proof]-
->>pendiente
+>>1. $Y\subset Y^{\perp\perp}$. $x \in Y^{\perp\perp}$ entonces $x=y+z$ ()
