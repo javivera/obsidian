@@ -49,7 +49,18 @@ dateCreated: 2024-09-22,22:22
 >>
 >>Unicidad Trivial
 
+^3686bc
+
 >[!Corollary] 
 >Si $Y$ subespacio cerrado en $\mathcal{H}$ hilbert entonces $Y=Y^{\perp\perp}$ 
 >>[!Proof]-
->>1. $Y\subset Y^{\perp\perp}$. $x \in Y^{\perp\perp}$ entonces $x=y+z$ ()
+>>1. $Y\subset Y^{\perp\perp}$. $x \in Y^{\perp\perp}$ entonces $x=y+z$ [[Teórico 3#^3686bc]]
+>
+
+>[!Corollary]
+>Si $Y$ subespacio Hilbert entonces $Y^{\perp\perp}=\overline{Y}$
+>>[!Proof]
+>>trivial
+
+## Base ortogonal de dimension infinita
+

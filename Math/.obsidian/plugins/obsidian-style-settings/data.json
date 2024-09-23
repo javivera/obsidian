@@ -4,8 +4,9 @@
   "custom-diegoeis-simple@@eis-sidebar-dark": false,
   "sanctum@@dark-mode-contrast-mode": "sanctum-default-dark",
   "minimal-advanced@@styled-scrollbars": true,
-  "minimal-style@@ribbon-style": "ribbon-bottom-left-hover",
+  "minimal-style@@ribbon-style": "ribbon-bottom-left-hover-vertical",
   "minimal-style@@window-title-off": false,
   "minimal-style@@workspace-background-translucent@@light": "#611E1E4A",
-  "minimal-style@@workspace-background-translucent@@dark": "#816E4C24"
+  "minimal-style@@workspace-background-translucent@@dark": "#816E4C24",
+  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-default"
 }

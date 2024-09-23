@@ -75,12 +75,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -139,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -158,7 +158,7 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "540305c51946795a",
+  "active": "39fb67902ba799ce",
   "lastOpenFiles": [
     "Functional Analysis/Theory/Teórico 2.md",
     "Functional Analysis/Theory/Teórico 3.md",
