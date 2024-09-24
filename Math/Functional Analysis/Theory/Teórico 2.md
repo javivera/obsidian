@@ -29,7 +29,13 @@ def de orto p8
 lema sobre ortogonalidad p8
 
 
-def de hilber p9
+>[!Definition] Espacio de Hilbert
+>Un espacio con producto interno completo con respecto a la metrica asociada a la norma inducida por el producto interno se dice espacio de Hilbert
+
+>[!Example] Contraejemplo I
+>$A =\{ \{ x_{n} \} \ / \ x_{n}\neq 0 \text{ solo en finitos n}\}$ es facil ver que $(\{ x_{n} \},\{ y_{n} \})=\sum^{\infty}_{n=1}x_{n}\overline{y_{n}}$ es producto interno con norma inducida $\lVert \{ x_{n} \} \rVert=\big(\sum^{\infty}_{n=1}\lvert x_{n} \rvert^{2}\big)^{\frac{1}{2}}$. Restaria ver que no es completo
+
+^9624e4
 
 >[!proposition] Sub cerrado es Hilbert
 >Sea $\mathcal{H}$ Hilbert, $Y\subset H$ sub espacio entonces $$Y \text{ Hilbert}\iff Y \text{ es cerrado en }\mathcal{H}$$

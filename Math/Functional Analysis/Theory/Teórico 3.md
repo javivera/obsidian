@@ -7,14 +7,14 @@ dateCreated: 2024-09-22,22:22
 > Sea $A\subset X$ espacio vectorial. $A$ es convexo si $\forall x,y\in A$
 > $$t x+(1-t)y\in A\quad\forall t\in[0,1]$$
 
-> [!Remark]
+> [!Remark]-
 >  Todo espacio vectorial es convexo
 
 ^0636e2
 
 ^cc7fed
 >[!Proposition]
-> $A$ convexo y cerrado en un $\mathcal{H}$ hilbert entonces $d(h,A)$ se minimiza
+> $A$ convexo y cerrado y $p\in\mathcal{H}$ Hilbert entonces $\exists q\in A \ / \ \lVert p-q \rVert=\inf\{ \lVert p-a \rVert\ :\ a\in A \}$ 
 >>[!Proof]-
 >>Existencia
 >>1. $\gamma = \inf\{ \lVert p-c \rVert:c\in A \}$ usar def de infimo $\gamma^2\leq\lVert p-q_{n} \rVert \leq \gamma^2 + \frac{1}{n}$
@@ -34,18 +34,21 @@ dateCreated: 2024-09-22,22:22
 >>3. (Regla Paralelo) $\lVert (p-w) + (p-q) \rVert^2 + \lVert (p-w)-(p-q) \rVert^2 =4\gamma^2$
 >>4. $4 \lVert q-w \rVert^2=4\gamma^2-4\left\lVert  p- \frac{1}{2}(q+w)  \right\rVert\leq 0$
 
->[!Remark]
+^1741ed
+
+>[!Remark]-
 >En dim finita la existencia de $q$ es cierta inclusive sin que $A$ sea convexo pues $\{ q_{n} \}$ es acotada entonces tiene un sub convergente. Pero si $A$ no es convexo la unicidad en general no es cierta ej. $A$ circunferencia y $p$ el centro
 
 >[!Theorem] 
 >Sea $Y$ subespacio cerrado en $\mathcal{H}$ Hilbert entonces $\forall x \in H\quad\exists \ (y\in Y,z\in Y^{\perp})$ tal que $x=y+z$. Ademas $\lVert x \rVert^2=\lVert y \rVert^2+\lVert z \rVert^2$ (Generalizacion de Pitagoras)
 >>[!Proof]-
 >>Existencia
->>1. $x \in \mathcal{H}\quad Y\neq \emptyset$ convexo y cerrado entonces por [[Teórico 3#^0636e2]]
->>2. $\exists y\in Y$ tal que $\lVert x-y \rVert\leq \lVert x-u \rVert \forall u\in Y$
->>3. $z=x-y$
->>4. $\forall u\in Y\quad\lVert z-u \rVert=\lVert x-(y+u) \rVert\geq \lVert x-y \rVert=\lVert z \rVert$ ($y+u\in Y$ por ser subespacio)
->>5. Por [[Teórico 2#^75b372]] $z\in Y^{\perp}$
+>>1. $x \in \mathcal{H}\quad Y\neq \emptyset$ convexo ([[Teórico 3#^0636e2]])  y cerrado entonces por [[Teórico 3#^1741ed]]
+>>
+>>3. $\exists y\in Y$ tal que $\lVert x-y \rVert\leq \lVert x-u \rVert\quad \forall u\in Y$
+>>4. $z=x-y$
+>>5. $\forall u\in Y\quad\lVert z-u \rVert=\lVert x-(y+u) \rVert\geq \lVert x-y \rVert=\lVert z \rVert$ ($y+u\in Y$ por ser subespacio)
+>>6. Por [[Teórico 2#^75b372]] $z\in Y^{\perp}$
 >>
 >>Unicidad Trivial
 
@@ -72,7 +75,7 @@ dateCreated: 2024-09-22,22:22
 >>[!Proof]-
 >> Usando [[Teórico 1#^8db74f]] Tenemos una sucesion de $\{ x_{n} \}\subset X$ de vectores unitarios que linealmente independientes por construccion. Aplicamos Grahm-Schmidt y obtenemos sucesion ortonormal
 
->[!Remark]
+>[!Remark]-
 >Si $X$ es e.v.pi dimension k y $\{ e_{1},\ldots,e_{k} \}$ es base de $X$ entonces $x=\sum^{k}_{n=1}(x,e_{n})e_{n}$. Queremos ver si esto se puede generalizar en dimension infinita a $x=\sum^{\infty}_{n=1}(x,e_{n})e_{n}$
 
 >[!Theorem] Desigualdad de Bessel
@@ -111,12 +114,14 @@ dateCreated: 2024-09-22,22:22
 >> 1. Por [[Teórico 3#^1a2dbf]] $\sum^{\infty}_{n=1}\lvert (x,e_{n}) \rvert^{2}$ converge
 >> 2. Por [[Teórico 3#^4e7cf9]] esto implica $\sum^{\infty}_{n=1}(x,e_{n})e_{n}$ converge
 
->[!Remark]
+>[!Remark]-
 >Surge ahora la pregunta cuando sucede que $\sum^{\infty}_{n=1}(x,e_{n})e_{n}$ converge en particular a $x$
 >
 
->[!example] Contraejemplo 1
+>[!example]- Contraejemplo 1
 >Sea $\{ e_{n} \}\subseteq\mathcal{H}$ ortonormal y $\{ e_{2n} \}$ subsucesion. Se puede ver que $e_{1}\neq\sum^{\infty}_{n=1}\alpha_{2n}e_{2n}$. Por ende encontramos un $x\in\mathcal{H}$ que no se puede escribir como dicha suma
+
+^9558c7
 
 >[!Theorem] 3.47 Bon de Hilbert
 >Sea $\{ e_{n} \}\subseteq\mathcal{H}$ Hilbert sucesions ortonormal son equivalentes
@@ -138,17 +143,17 @@ dateCreated: 2024-09-22,22:22
 
 ^f63eb1
 
->[!Remark]
+>[!Remark]-
 >Decimos que $\{ e_{n} \}$ es base ortonormal de $\mathcal{H}$ si cumple alguna de las condiciones anteriores. Notar que para una base ortonormal entonces se cumple la igualdad en la desigualdad de Bessel [[Teórico 3#^1a2dbf]]
 
->[!Remark]
+>[!Remark]-
 >$Sp\{ e_{n} \}$ tiene todas las combinaciones lineales **finitas** de vectores en $\{ e_{n} \}$ (Que es numerable infinito) pero para que valga [[Teórico 3#^f63eb1]] necesito considerar las sumas infinitas. Esto corresponde a considerar $\overline{Sp}\{ e_{n} \}$. En dimension finita el span es cerrado y por lo tanto igual a su clausura asi que no hace falta diferenciar entre estos conceptos.
 >
 
 >[!Theorem] 3.52 Hilbert dim infinita separable sii BON de Hilbert
 >1. Espacios normados de dim finita son separables
 >2. Un Hilbert de dim infinita es separable $\iff$ tiene una BON de Hilbert
->>[!Proof]
+>>[!Proof]-
 >>1. $X$ finito $\{ e_{1},\ldots,e_{k} \}$ base. El conjunto de los vectores $\sum^{k}_{n=1}\alpha_{n}e_{n}$ donde $\alpha_{n}\in\mathbb{Q}$ es denso y numerable
 >>2. 
 >>- $(\Rightarrow)$ Tenemos $\{ x_{n} \}$ denso y numerable a partir de el armamos $\{ x_{n_{j}} \}$ dejando de lado los $x_{j}$ que son combinacion lineal de algun elemento anterior. 
@@ -173,4 +178,6 @@ $\ell^{2}$ es separable. $L^{2}[a,b]$ es separable. Veremos mas adelante que tie
 >>2. Sea 
 >>$$f_{Y}(x) = \begin{cases} 1 & y=1 \\ 0 & cc \end{cases}$$
 >>Estan en el $\tilde{\ell}^{2}$. Ademas $\lVert f_{Y}-f_{Z} \rVert=2$. Si tuviese un denso para cada $f_{Y}$ me armo una bola de radio mas chico que 2 cada una de estas bolas tiene algun elemento del denso numerable, pero no se intersecan entre si. Absurdo porque tengo no numerables bolas.
+
+^2e31bc
 
