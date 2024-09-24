@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 3.md",
+                "file": "Functional Analysis/Theory/Teórico 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ortogonal",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 3.md"
+                "file": "Functional Analysis/Theory/Teórico 2.md"
               }
             }
           },
@@ -75,13 +75,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 233.5,
-    "collapsed": true
+    "width": 233.5
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -97,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 3.md",
+                "file": "Functional Analysis/Theory/Teórico 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 3.md",
+                "file": "Functional Analysis/Theory/Teórico 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,10 +159,10 @@
   },
   "active": "540305c51946795a",
   "lastOpenFiles": [
-    "Functional Analysis/Theory/Teórico 4.md",
-    "Functional Analysis/Theory/Teórico 3.md",
-    "Functional Analysis/Theory/Teórico 2.md",
     "Functional Analysis/Theory/Teórico 1.md",
+    "Functional Analysis/Theory/Teórico 2.md",
+    "Functional Analysis/Theory/Teórico 3.md",
+    "Functional Analysis/Theory/Teórico 4.md",
     "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Theory/Contraejemplos.md",
     "Teorico 2.md",
