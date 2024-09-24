@@ -156,9 +156,15 @@ dateCreated: 2024-09-22,22:22
 >>- Aplicamos Grahm-Schmidt y obtenemos $Sp\{ e_{n} \}$ tal que $$Sp\{ e_{n} \}=Sp\{ x_{n_{j}} \}=Sp\{ x_{n} \}$$ 
 >>- Como $\{ x_{n} \}$ era denso en $\mathcal{H}$ entonces $\overline{Sp\{ e_{n} \}}=\mathcal{H}$ basi ortonormal 
 >>([[Teórico 3#^f63eb1]])
->>- $(\Leftarrow)$
+>>- $(\Leftarrow)$ Ahora tenemos BON. Afirmamos que el conjunto $A$ de $x\in\mathcal{H}$ que son expresables como sumas finitas $\sum^{k}_{n=1}\alpha_{n}e_{n}$ con $\alpha_{n}\in\mathbb{Q}$ (o $\mathbb{Q}+i\mathbb{Q})$ es denso y numerable.
+>>- $A$ numerable es trivial.
+>>- Sea $y\in\mathcal{H}$ entonces $y=\sum^{\infty}_{n=1}\beta_{n}e_{n}$ y sabemos que vale $\sum^{\infty}_{n=1}\lvert \beta_{n} \rvert^{2}\leq\infty$ ([[Teórico 3#^4e7cf9]]) entonces $\sum^{\infty}_{n=N+1}\lvert \beta_{n}^{2} \rvert< \frac{\epsilon^{2}}{2}$
+>>- Para $n=1,\ldots,N$ elegimos $\alpha_{n}$ tales que $\lvert \beta_{n}-\alpha_{n} \rvert^{2}\leq \frac{\epsilon^{2}}{2}$ (Densidad en $\mathbb{Q}$)
+>>- $\lVert y-x \rVert^{2}=\sum^{N}_{n=1}\lvert \beta_{n}-\alpha_{n} \rvert^{2}+\sum^{\infty}_{n=N+1}\lvert \beta_{n} \rvert^{2}\leq\epsilon^{2}$
+>>- Entonces $A$ es denso en $\mathcal{H}$
+
 >[!Corollary]
->$\ell^{2}$ es separable. $L^{2}[a,b]$ es separable. Veremos mas adelante que tienen BON de Hilber
+$\ell^{2}$ es separable. $L^{2}[a,b]$ es separable. Veremos mas adelante que tienen BON de Hilber
 
 >[!example]- Contraejemplo 2
 >Hilbert que no es separable. $\tilde{\ell}^{2}(\mathbb{R})=\{ f:\mathbb{R}\rightarrow\mathbb{R} \ / \ f(x)\neq 0\text{ a lo sumo para numerables }x \ / \ \sum^{}_{x\in\mathbb{R}}f(x)^{2}<\infty\}$ 

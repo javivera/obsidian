@@ -32,7 +32,7 @@ lema sobre ortogonalidad p8
 def de hilber p9
 
 >[!proposition] Sub cerrado es Hilbert
->Sea $\mathcal{H}$ Hilbert, $Y\subset H$ sub espacio entonces $Y$ Hilbert $\iff Y$ es cerrado en $\mathcal{H}$
+>Sea $\mathcal{H}$ Hilbert, $Y\subset H$ sub espacio entonces $Y$ $\text{}$Hilbert $\iff Y$ es cerrado en $\mathcal{H}$
 
 def de complemento orto
 
