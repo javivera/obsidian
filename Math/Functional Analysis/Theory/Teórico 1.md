@@ -7,7 +7,7 @@ tags:
   - banachSpace
   - vectorSpace
 ---
->[!Lemma]
+>[!Lemma] Todo normado es metrico
 >Sea $X$ espacio vectorial con norma $\lVert \cdot \rVert_{}$. Sea $d:X\times X\rightarrow \mathbb{R}$ por $d(x,y)=\lVert x-y \rVert_{}$ entonces
 >$$(X,d)\text{ es metrico}$$ 
 > Equivalentemente todo $X$ espacio vectorial normado es metrico con la metrica estandar
@@ -87,8 +87,8 @@ ___
 >En dimension finita todas las normas son equivalentes
 
 >[!Proof]-
-> Equivalencia de normas es equivalence entonces es transitiva
----
+> Equivalencia de normas es relacion de equivalencia entonces es transitiva
+
 > [!remark] Contraejemplo II
 >Esto no vale en dimension infinita $X=C^1[0,\pi]$ tenemos dos normas no equivalentes 
 >$$\lVert \cdot \rVert_{\infty} \quad \text{ y }\quad \lVert u \rVert =\lVert u \rVert_{\infty}+\left\lVert  u'  \right\rVert_{\infty}$$
@@ -106,14 +106,14 @@ ___
 >[!Proof]-
 > 1. Ya sabemos que es metrico (dim finita $N$)
 > 2. $\{ x^{n} \}\subseteq X$ suc de cauchy
-> 3. $x^{n}\in X,\quad x^{n}=\sum_{j}\alpha_{j}^n e_{j}\quad \alpha_{j}^n\in \mathbb{F}$
+> 3. $x^{n}\in X,\quad x^{n}=\sum_{j}^{N}\alpha_{j}^n e_{j}\quad \alpha_{j}^n\in \mathbb{F}$
 > 4. $\exists m_{0}\in \mathbb{N}$ tq $\sum \lvert \alpha_{j}^k-\alpha_{j}^m \rvert^{2}=\lVert x^{k}-x^{m} \rVert_{1}^{2}\leq \epsilon^2$
 > 5. Fijando $j\in \mathbb{N}$ tenemos $\lvert \alpha_{j}^k-\alpha_{j}^m \rvert\leq\epsilon^2\quad \forall k,m\geq m_{0}$
 > 6. $\{ \alpha_{j}^n \}$ es de cauchy en un completo tiene limite $\alpha_{j}$ (vale para cada $j$)
 > 7. $\exists n_{j}\in \mathbb{N}$ tq $\lvert \alpha_{j}^n -\alpha_{j} \rvert < \frac{\epsilon^2}{N} \quad\forall n\geq n_{j}$ 
-> 8. $\tilde{n}=max\{ n_{0},\dots,n_{N} \}$
+> 8. $\tilde{n}=max\{ n_{0},\dots,n_{N} \}$ y $x=\sum^{N}_{j=1}\alpha_{j}e_{j}$ ($x\in X$ por ser combinacion lineal de elementos de la base 
 > 9. para $m\geq \tilde{n}$ sucede $\lVert x^{n}-x \rVert_{1}^2=\sum_{j}^N\lvert \alpha _{j}^n-\alpha_{j} \rvert^2\leq \epsilon^2$
-> 10. $\{ x_{n} \}$ converge por lo tanto $X$ es de completo
+> 10. $\{ x^{n} \}$ converge por lo tanto $X$ es de completo
 
 >[!Corollary]
 >Todo espacio vectorial de dim finita es completo con la metrica asociada a cualquier norma
@@ -141,17 +141,18 @@ ___
 
 >[!Proof]-
 >1. Por ser $Y$ espacio vectorial es normado (norma estandar) por ser espacio vectorial normado es metrico [[#^59c764]]
->2. Por dim finita es completo
+>2. Por dim finita es completo [[#^26042d]]
 >3. Cerrado por 1. [[#^83c633]]
 
->[!Remark] Contraejemplo I
+> [!remark] Contraejemplo I
 > [[#^3196e0]] no es cierto si la dimension es infinita
 
 >[!Proof]
 >1. $S=\bigg\{ \{ x_{n} \} \subseteq\ell^{\infty}:\exists n_{0}\in \mathbb{N} \ / \ x_{n}=0 \ \forall n\leq n_{0} \bigg\}$
 >2. S subespacio de dim infinita de $\ell^{\infty}$
->3. $x_{n} = (1, \frac{1}{2},\dots, \frac{1}{n+1},\dots) \in S$
->4. $x_{n}\rightarrow x=\left( 1, \frac{1}{2},\dots, \frac{1}{n},\dots \right)\in \ell^{\infty}-S$ usando $\lVert x-x_{n} \rVert_{\infty} = \frac{1}{n+1}\rightarrow 0$
+>3. $x_{n} = (1, \frac{1}{2},\dots, \frac{1}{n},0,\dots,0,\ldots) \in S$
+>4. Sea $x=\left( 1, \frac{1}{2},\dots, \frac{1}{n}, \frac{1}{n+1},\dots \right)\in (\ell^{\infty}\setminus S)$ 
+>5. $\lVert x-x_{n} \rVert_{\infty} = \frac{1}{n+1}\rightarrow 0$ o lo mismo $\lim_{ n \to \infty }x_{n}=x$
 >6. $S$ no es cerrado
 ^0676dc
 

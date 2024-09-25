@@ -1,0 +1,93 @@
+## Operadores Lineales
+>[!Definition] Operador Acotado
+>Sean $X$ e $Y$ ev normados, $T : X\rightarrow Y$ lineal. $T$ se dice acotada si existe un numero $k\in \mathbb{R}$ tal que $$\lVert Tx \rVert<k\lVert x \rVert\quad\forall {k}\in X$$
+
+>[!Remark]
+>- Continua y acotada son intercambiables por [[Teórico 4#^cae689]].
+>- Acotada en transformaciones lineales no es el mismo concepto que acotada en funciones reales 
+>- Llamamos $B(X,Y)$ al conjunto de todos los operadors $T : X\rightarrow Y$ acotados
+>- Si $X$ e $Y$ ev son normados $B(X,Y)\subseteq L(X,Y)$
+
+>[!example]
+>Sean $a,b\in \mathbb{R}$, $k : [a,b]\times [a,b]\rightarrow \mathbb{C}$ continua y 
+>$$M=\sup\{ \lvert k(s,t) \rvert:(s,t)\in [a,b]\times [a.b]  \}$$
+>- Si $g\in C[a,b]$ entonces $f:[a,b]\rightarrow\mathbb{C}$ dada por $$f(s)=\int_{a}^{b}  k(s,t)g(t)dt$$ esta en $C[a,b]$
+>- $K : C[a,b]\rightarrow C[a,b]$ lineal definida por $$(K(g))(s)=\int_{a}^{b} k(s,t)g(t)dt$$ entonces $K\in B(C[a,b],C[a,b])$ y $$\lVert K(g) \rVert_{\infty} \leq M(b-a)\lVert g \rVert_{\infty}$$
+
+>[!Theorem] En dim finita transformaciones lineales son continuas
+>Sea $X$ espacio vectorial normado de dimension finita $Y$ espacio vectorial cualquiera y $T : X\rightarrow Y$ lineal. Entonces $T$ es continua
+>>[!Proof]
+>>1. Definimos $\lVert x \rVert_{1}=\lVert x \rVert_{X}+\lVert Tx \rVert_{Y}$
+>>2. Vemos que es norma
+>>3. Como son todas equivalentes en dim finita $\lVert x \rVert_{1}\leq K\lVert x \rVert_{X}$
+>>4. Por def $\lVert Tx \rVert_{Y}\leq\lVert x \rVert_{1}$
+
+>[!Lemma]
+>Si $X$ e $Y$ son normados $T : X\rightarrow Y$ lineal continua entonces $Nu(T)$ es cerrado
+>>[!Proof]
+>>1. $Nu(T)=\{ x\in X:T(x)=0 \}$ y $\{ 0 \}$ es cerrado en $Y$ (por que es completo)
+>>2. $T$ continua y preimagen de cerrado es cerrado
+
+>[!Definition]
+>$X$ e $Y$ normados $T : X\rightarrow Y$ lineal. Llamamos *grafico* de $T$ al subespacio $\mathcal{G}$ de $X\times Y$ definido por $$\mathcal{G}=\{ (x,Tx):x\in X \}$$
+
+>[!Lemma] Grafico es cerrado
+>$X$ e $Y$ normados $T : X\rightarrow Y$ lineal y continua entonces $\mathcal{G}$ es cerrado
+>>[!Proof]
+>>a
+
+>[!Lemma] 
+>$X$ e $Y$ normados. Sean $S,T \in B(X,Y)$ con $\lVert Sx \rVert\leq\lVert k_{1} \rVert \lVert x \rVert$ y $\lVert Tx \rVert\leq k_{2}\lVert x \rVert$ entonces $\forall x\in X$ y $\lambda\in \mathbb{F}$ vale
+>1. $\lVert (S+T)x \rVert \leq(k_{1}+k_{2})\lVert x \rVert$
+>2. $\lVert (\lambda S)x \rVert\leq\lvert \lambda \rvert k_{1}\lVert x \rVert$
+>
+>Asi podemos concluir que $B(X,Y)$ es un subespacio de $L(X,Y)$ por lo tanto un espacio vectorial
+
+## Operadores Lineales Acotados 
+
+>[!Lemma]
+>Sean $X$ e $Y$ normados. Si $\lVert \cdot \rVert:B(X,Y)\rightarrow\mathbb{R}$ esta definida por $$\lVert T \rVert =\sup\{ \lVert Tx \rVert :\lVert x \rVert \leq 1\}$$
+>Entonces $\lVert \cdot \rVert$ es una norma en $B(X,Y)$
+>>[!Proof]-
+>>Desigualdad Triangular:
+>>1. Notar que $\left\lVert  T\left( \frac{x}{\lVert x \rVert} \right)  \right\rVert\leq\lVert T \rVert$ (Porque $\lVert T \rVert$ es supremo). Luego $\lVert Tx \rVert\leq\lVert T \rVert\lVert x \rVert$
+>>3. $\lVert (S+T)(x) \rVert\leq\lVert Sx \rVert+\lVert Tx \rVert \leq\lVert S \rVert\lVert x \rVert+\lVert T \rVert\lVert x \rVert = (\lVert S+T \rVert)\lVert x \rVert$
+>>4. Usando supremo de ambos lados $\lVert S+T \rVert\leq\lVert S \rVert+\lVert T \rVert$
+
+>[!Remark]
+>$\lVert T \rVert=\sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}=\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$
+>>[!Proof]-
+>>1. $(\geq)$ Trivial
+>>2. $(\leq)$ Sea $\beta= \sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}$ y $\alpha =\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$ y supongamos $\alpha < \beta$
+>>3. $\exists x_{j}$ con $\lVert x_{j} \rVert\leq 1$ tal que $\lVert Tx_{j} \rVert \rightarrow\beta$ (Por ser supremo)
+>>4. Entonces $\exists x_{0}$ con $\lVert x_{0} \rVert\leq 1$ tal que $\lVert Tx_{0} \rVert>\alpha$
+>>5. Entonces $\alpha\geq \lVert T(\frac{x_{0}}{\lVert x_{0} \rVert}) \rVert =\frac{\lVert Tx_{0} \rVert}{\lVert x_{0} \rVert}\geq\lVert Tx_{0} \rVert>\alpha$ (Por def de supremo y $\lVert x_{0} \rVert \leq 1$) Absurdo
+
+>[!Remark]
+>Notar que del [[Teórico 4#^cae689]] se desprende 
+>$$\sup\{ \lVert Tx \rVert :\lVert x \rVert \leq 1  \}=\inf\{ k:\lVert Tx \rVert \leq k\lVert x \rVert\quad \forall x\in X  \}$$
+
+>[!example]
+>$T : C_{\mathbb{F}}[0,1]\rightarrow \mathbb{F}$ lineal definido como $$T(f)=0$$
+>entonces $\lVert T \rVert=1$
+>>[!Proof]
+>>1. Ya probamos en [[Teórico 4#^9798e1]] que $\lvert T(f) \rvert\leq 1\lVert f \rVert$ 
+>>2. $\lVert T \rVert=\inf\{ k:\lVert T(f) \rVert \leq k\lVert f \rVert: \forall f\in C_{\mathbb{F}}[0,1]\}\leq 1$
+>>3. Por otro lado sea $g:[0,1]\rightarrow\mathbb{C}$ esta definida como $g(x)=1$ entonces $g\in C_{\mathbb{C}}[0,1]$
+>>4. $\lVert g \rVert=\sup\{ \lvert g(x) \rvert:x\in [0,1] \}$
+>>5. $\lvert T(g) \rvert=\lvert g(0) \rvert=1$ (Todo por definicion de $T$)
+>>6. $1=\lvert T(g) \rvert\leq\lVert T \rVert\lVert g \rVert=\lVert T \rVert$
+>>7. Finalmente $\lVert T \rVert=1$
+
+>[!Theorem]
+>Sea $X$ un normado y sea $W$ un subespacio denso de $X$. Sea $Y$ un Banach y $S\in B(W,Y)$
+>1. Sea $x\in X$ y $\{ x_{n} \},\{ y_{n} \}$ sucesiones en $W$ tales que $x_{n}\rightarrow x$ e $y_{n}\rightarrow x$ entonces $\{ S(x_{n}) \}$ y $\{ S(y_{n}) \}$ ambas convergen y $\lim_{ n \to \infty }S(x_{n})=\lim_{ n \to \infty }S(y_{n})$
+>2. Existe un $T\in B(X,Y)$ tal que 
+>	1. $\lVert T \rVert=\lVert S \rVert$
+>	2. $Tx=Sx\quad\forall x\in W$ 
+
+>[!Definition] Isometria
+>Sean $X$ e $Y$ normados $T\in L(X,Y)$. Decimos que $T$ es una isometria si $$\lVert Tx \rVert=\lVert x \rVert\quad\forall x\in X$$
+
+>[!Remark]
+>$T$ isomorfismo $\iff$ $T$ is
