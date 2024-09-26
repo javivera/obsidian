@@ -1,6 +1,6 @@
 ## Operadores Lineales
 >[!Definition] Operador Acotado
->Sean $X$ e $Y$ ev normados, $T : X\rightarrow Y$ lineal. $T$ se dice acotada si existe un numero $k\in \mathbb{R}$ tal que $$\lVert Tx \rVert<k\lVert x \rVert\quad\forall {k}\in X$$
+>Sean $X$ e $Y$ ev normados, $T : X\rightarrow Y$ lineal. $T$ se dice acotada si existe un numero $k\in \mathbb{R}$ tal que $$\lVert Tx \rVert<k\lVert x \rVert\quad\forall {x}\in X$$
 
 >[!Remark]
 >- Continua y acotada son intercambiables por [[Teórico 4#^cae689]].
@@ -16,7 +16,7 @@
 
 >[!Theorem] En dim finita transformaciones lineales son continuas
 >Sea $X$ espacio vectorial normado de dimension finita $Y$ espacio vectorial cualquiera y $T : X\rightarrow Y$ lineal. Entonces $T$ es continua
->>[!Proof]
+>>[!Proof]-
 >>1. Definimos $\lVert x \rVert_{1}=\lVert x \rVert_{X}+\lVert Tx \rVert_{Y}$
 >>2. Vemos que es norma
 >>3. Como son todas equivalentes en dim finita $\lVert x \rVert_{1}\leq K\lVert x \rVert_{X}$
@@ -24,7 +24,7 @@
 
 >[!Lemma]
 >Si $X$ e $Y$ son normados $T : X\rightarrow Y$ lineal continua entonces $Nu(T)$ es cerrado
->>[!Proof]
+>>[!Proof]-
 >>1. $Nu(T)=\{ x\in X:T(x)=0 \}$ y $\{ 0 \}$ es cerrado en $Y$ (por que es completo)
 >>2. $T$ continua y preimagen de cerrado es cerrado
 
@@ -43,7 +43,7 @@
 >
 >Asi podemos concluir que $B(X,Y)$ es un subespacio de $L(X,Y)$ por lo tanto un espacio vectorial
 
-## Operadores Lineales Acotados 
+## La norma de los operadores Lineales Acotados 
 
 >[!Lemma]
 >Sean $X$ e $Y$ normados. Si $\lVert \cdot \rVert:B(X,Y)\rightarrow\mathbb{R}$ esta definida por $$\lVert T \rVert =\sup\{ \lVert Tx \rVert :\lVert x \rVert \leq 1\}$$
@@ -88,6 +88,56 @@
 
 >[!Definition] Isometria
 >Sean $X$ e $Y$ normados $T\in L(X,Y)$. Decimos que $T$ es una isometria si $$\lVert Tx \rVert=\lVert x \rVert\quad\forall x\in X$$
+>En todo espacio normado existe por lo menos una isometria
 
->[!Remark]
->$T$ isomorfismo $\iff$ $T$ is
+>[!Remark] Isormorfismo isometrico
+>1. $T$ isometria $\Rightarrow$ $T$ continua (acotada) e inyectiva
+>2. Si ademas $T$ sobreyectiva entonces es biyectiva lo nombramos isormofismo isometrico
+>3. En dim finita toda isometria es biyectiva en dim infinita no necesariamente
+
+>[!Example] Isometria no biyectiva
+> $T : \ell^{2}\rightarrow \ell^{2}$ dada por $$T(x_{1},x_{2},\ldots)=(0,x_{1},x_{2},\ldots)$$
+> es una isometria (normalmente se la nombra "unilateral shift"). No es biyectiva
+
+>[!Lemma]
+>$X$ e $Y$ normados $T\in B(X,Y)$. Si $T$ es una isometria entonces $T$ acotada y $\lVert T \rVert=1$
+
+>[!Theorem]
+>Sea $\mathcal{H}$ Hilbert de dimension infinita sobre $\mathbb{F}$ con una base ortonormal de hilbert $\{ e_{n} \}$. Entonces existe un isomorfismo isometrico $T:\mathcal{H}\rightarrow\ell^{2}_{\mathbb{F}}$ tal que $T(e_{n})=\tilde{e_{n}}\quad\forall n\in \mathbb{N}$ (Aca $\{ \tilde{e_{n}} \}$ seria base de Hilbert de $\ell^{2}$)
+>
+
+>[!Corollary] 
+>Todo $\mathcal{H}$ Hilbert sobre $\mathbb{F}$ de dimension infinita y separable es isometricamente isomorfo a $\ell^{2}_{\mathbb{F}}$
+
+## El espacio $B(X,Y)$ y el espacio Dual
+
+>[!Theorem] $Y$ Banach entonces $B(X,Y)$ Banach
+>Si $X$ normado e $Y$ Banach entonces el espacio normado $B(X,Y)$ es Banach
+>>[!Proof]
+>> La demo tiene algo raro al final, preguntar
+
+^7e0978
+
+>[!Definition] 
+>Sea $X$ normado sobre $\mathbb{F}$. El espacio $B(X,\mathbb{F})$ es llamado *espacio dual* de $X$ y se denota $X'$
+
+>[!Corollary]
+>Si $X$ es normado entonces $X'$ es Banach
+>>[!Proof]-
+>>$\mathbb{F}$ es completo entonces usamoss [[Teórico 5#^7e0978]]
+
+>[!Example]
+>Sea $\mathcal{H}$ Hilbert sobre $\mathbb{F}$, sea $y\in \mathcal{H}$. Si $f:\mathcal{H}\rightarrow\mathbb{F}$ es definida como $f(x)=(x,y)$ entonces $f$ es un elemento de $\mathcal{H}'$
+
+>[!Theorem] (Riesz-Frechet)
+>Si $\mathcal{H}$ es Hilbert y $f\in \mathcal{H}'$ entonces existe unico $y\in \mathcal{H}$ tal que $f(x)=(x,y)\quad\forall x\in \mathcal{H}$. 
+>Ademas $\lVert f \rVert=\lVert y \rVert$
+>>[!Proof]
+
+>[!Theorem]
+>1. Si $c=\{ c_{n} \}\in \ell^{\infty}$ y $\{ x_{n} \}\in \ell^{1}$ entonces $\{ c_{n}x_{n} \}\in \ell^{1}$ y si $f_{c}\ell^{1}\rightarrow\mathbb{F}$ esta definida como $f_{c}(x_{n})=\sum^{\infty}_{n=1}c_{n}x_{n}$ entonces $f_{c}\in (\ell^{1})'$ con $\lVert f_{c} \rVert\leq\lVert c \rVert_{\infty}$
+>2. Si $f\in (\ell^{1})'$ entonces existe un $c\in \ell^{\infty}$ tal que $f=f_{c}$ y $\lVert c \rVert_{\infty}\leq\lVert f \rVert$
+>3. El espacio $(\ell^{\infty})'$ es isometricamente isomorfo a $\ell^{\infty}$
+>>[!Proof]
+>>1. Se desprende de [[Teórico 4#^a511bc]]
+>>2. 

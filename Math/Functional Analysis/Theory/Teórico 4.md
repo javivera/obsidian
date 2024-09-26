@@ -64,6 +64,8 @@ tags:
 >Si $\{ c_{n} \}\in \ell_{\infty}$ luego $T : \ell^{1}\rightarrow \mathbb{F}$ definida por $$T(\{ x_{n} \})=\sum^{\infty}_{n=1}  c_{n}x_{n}$$
 >es continua
 
+^a511bc
+
 >[!example] Operador lineal continuo
 >Si $\{ c_{n} \}\in \ell_{\infty}$ luego $T : \ell^{2}\rightarrow \ell^{2}$ definida por $$T(\{ x_{n} \})=\{ c_{n}x_{n} \}$$
 >es continua
