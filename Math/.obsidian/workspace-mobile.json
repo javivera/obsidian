@@ -44,7 +44,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "Subespacio hilbert",
+            "query": "Grafi",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -73,7 +73,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "afff6d97de55b3fc",
@@ -134,16 +134,19 @@
   },
   "active": "5f3891203eb961d6",
   "lastOpenFiles": [
-    "Functional Analysis/Theory/Teórico 4.md",
-    "Functional Analysis/Theory/Teórico 5.md",
     "Functional Analysis/Theory/Teórico 1.md",
-    "Functional Analysis/Theory/Teórico 2.md",
+    "Algebraic Structures/Theory/Teorico 2.md",
+    "Algebraic Structures/Theory/Teorico 3.md",
+    "Algebraic Structures/Theory/Teorico 1.md",
+    "Functional Analysis/Theory/Teórico 5.md",
     "Functional Analysis/Theory/Teórico 3.md",
+    "Functional Analysis/Theory/Teórico 4.md",
+    "Functional Analysis/Practico 3 Funcional.md",
+    "Functional Analysis/Theory/Teórico 2.md",
     "Functional Analysis/Theory/Contraejemplos.md",
     "Functional Analysis/Theory/Teorico 2.md",
     "Functional Analysis/Theory/Teórico 1 2.md",
     "Functional Analysis/Theory/Teórico 1 3.md",
-    "Functional Analysis/Practico 3 Funcional.md",
     "Functional Analysis/Teorema 2.md",
     "Functional Analysis/Theory",
     "Algebraic Structures/Theory/Class 1.md",

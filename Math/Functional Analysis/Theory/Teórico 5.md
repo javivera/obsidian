@@ -37,7 +37,7 @@
 >>a
 
 >[!Lemma] 
->$X$ e $Y$ normados. Sean $S,T \in B(X,Y)$ con $\lVert Sx \rVert\leq\lVert k_{1} \rVert \lVert x \rVert$ y $\lVert Tx \rVert\leq k_{2}\lVert x \rVert$ entonces $\forall x\in X$ y $\lambda\in \mathbb{F}$ vale
+>$X$ e $Y$ normados. Sean $S,T \in B(X,Y)$ con $\lVert Sx \rVert\leq k_{1} \lVert x \rVert$ y $\lVert Tx \rVert\leq k_{2}\lVert x \rVert$ entonces $\forall x\in X$ y $\lambda\in \mathbb{F}$ vale
 >1. $\lVert (S+T)x \rVert \leq(k_{1}+k_{2})\lVert x \rVert$
 >2. $\lVert (\lambda S)x \rVert\leq\lvert \lambda \rvert k_{1}\lVert x \rVert$
 >
@@ -70,7 +70,7 @@
 >[!example]
 >$T : C_{\mathbb{F}}[0,1]\rightarrow \mathbb{F}$ lineal definido como $$T(f)=0$$
 >entonces $\lVert T \rVert=1$
->>[!Proof]
+>>[!Proof]-
 >>1. Ya probamos en [[Teórico 4#^9798e1]] que $\lvert T(f) \rvert\leq 1\lVert f \rVert$ 
 >>2. $\lVert T \rVert=\inf\{ k:\lVert T(f) \rVert \leq k\lVert f \rVert: \forall f\in C_{\mathbb{F}}[0,1]\}\leq 1$
 >>3. Por otro lado sea $g:[0,1]\rightarrow\mathbb{C}$ esta definida como $g(x)=1$ entonces $g\in C_{\mathbb{C}}[0,1]$
@@ -133,9 +133,10 @@
 >Si $\mathcal{H}$ es Hilbert y $f\in \mathcal{H}'$ entonces existe unico $y\in \mathcal{H}$ tal que $f(x)=(x,y)\quad\forall x\in \mathcal{H}$. 
 >Ademas $\lVert f \rVert=\lVert y \rVert$
 >>[!Proof]
+>>pendiente
 
 >[!Theorem]
->1. Si $c=\{ c_{n} \}\in \ell^{\infty}$ y $\{ x_{n} \}\in \ell^{1}$ entonces $\{ c_{n}x_{n} \}\in \ell^{1}$ y si $f_{c}\ell^{1}\rightarrow\mathbb{F}$ esta definida como $f_{c}(x_{n})=\sum^{\infty}_{n=1}c_{n}x_{n}$ entonces $f_{c}\in (\ell^{1})'$ con $\lVert f_{c} \rVert\leq\lVert c \rVert_{\infty}$
+>1. Si $c=\{ c_{n} \}\in \ell^{\infty}$ y $\{ x_{n} \}\in \ell^{1}$ entonces $\{ c_{n}x_{n} \}\in \ell^{1}$ y si $f_{c}:\ell^{1}\rightarrow\mathbb{F}$ esta definida como $f_{c}(x_{n})=\sum^{\infty}_{n=1}c_{n}x_{n}$ entonces $f_{c}\in (\ell^{1})'$ con $\lVert f_{c} \rVert\leq\lVert c \rVert_{\infty}$
 >2. Si $f\in (\ell^{1})'$ entonces existe un $c\in \ell^{\infty}$ tal que $f=f_{c}$ y $\lVert c \rVert_{\infty}\leq\lVert f \rVert$
 >3. El espacio $(\ell^{\infty})'$ es isometricamente isomorfo a $\ell^{\infty}$
 >>[!Proof]

@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b7d6238a7c2b12b9",
+        "id": "f82fae2f160eca04",
         "type": "tabs",
         "children": [
           {
-            "id": "cf7daff4489557f0",
+            "id": "8e0a0c8a1899940a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e31fb8c40de51d88",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c10cffb2b7521f41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functional Analysis/Theory/Teórico 4.md",
+                "file": "Functional Analysis/Theory/Teórico 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "3",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 5.md"
+                "file": "Functional Analysis/Theory/Teórico 6.md"
               }
             }
           },
@@ -93,12 +75,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 233.5,
+    "collapsed": true
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -114,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 5.md",
+                "file": "Functional Analysis/Theory/Teórico 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 5.md",
+                "file": "Functional Analysis/Theory/Teórico 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,10 +158,15 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "cf7daff4489557f0",
+  "active": "8e0a0c8a1899940a",
   "lastOpenFiles": [
-    "Functional Analysis/Theory/Teórico 4.md",
     "Functional Analysis/Theory/Teórico 5.md",
+    "Functional Analysis/Theory/Teórico 6.md",
+    "Functional Analysis/Theory/Teórico 4.md",
+    "Algebraic Structures/Theory/Teorico 3.md",
+    "Algebraic Structures/Theory/Teorico 2.md",
+    "Algebraic Structures/Theory/Teorico 1.md",
+    "Algebraic Structures/Theory/Class 7.md",
     "Functional Analysis/Theory/Teórico 3.md",
     "Functional Analysis/Theory/Teórico 1.md",
     "Functional Analysis/Theory/Teórico 2.md",
@@ -197,11 +184,7 @@
     "Habits/Icon\r",
     "Untitled",
     "Habits",
-    "Algebraic Structures/Theory/Class 1.md",
     "Algebraic Structures/Theory/Class 5.md",
-    "Algebraic Structures/Theory/Class 7.md",
-    "Algebraic Structures/Theory/Class 2.md",
-    "Algebraic Structures/Theory/Class 3.md",
     "Algebraic Structures/Theory/Class 4.md",
     "Algebraic Structures/Theory/Untitled.md",
     "Functional Analysis/Theory/Proba.md",
@@ -210,7 +193,6 @@
     "Theory/Icon\r",
     "Theory",
     "Functional Analysis/Teorema 2.md",
-    "Templates/math.md",
     "Pasted image 20240919234954.png",
     "Templates/Icon\r",
     "Templates",
