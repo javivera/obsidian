@@ -9,7 +9,7 @@
 >- Llamamos $B(X,Y)$ al conjunto de todos los operadors $T : X\rightarrow Y$ acotados
 >- Si $X$ e $Y$ ev son normados $B(X,Y)\subseteq L(X,Y)$
 
->[!example]
+>[!example]-
 >Sean $a,b\in \mathbb{R}$, $k : [a,b]\times [a,b]\rightarrow \mathbb{C}$ continua y 
 >$$M=\sup\{ \lvert k(s,t) \rvert:(s,t)\in [a,b]\times [a.b]  \}$$
 >- Si $g\in C[a,b]$ entonces $f:[a,b]\rightarrow\mathbb{C}$ dada por $$f(s)=\int_{a}^{b}  k(s,t)g(t)dt$$ esta en $C[a,b]$
@@ -38,6 +38,8 @@
 >$X$ e $Y$ normados $T : X\rightarrow Y$ lineal y continua entonces $\mathcal{G}$ es cerrado
 >>[!Proof]
 >>a
+
+^5463d1
 
 >[!Lemma] 
 >$X$ e $Y$ normados. Sean $S,T \in B(X,Y)$ con $\lVert Sx \rVert\leq k_{1} \lVert x \rVert$ y $\lVert Tx \rVert\leq k_{2}\lVert x \rVert$ entonces $\forall x\in X$ y $\lambda\in \mathbb{F}$ vale
@@ -70,7 +72,7 @@
 >Notar que del [[Teórico 4#^cae689]] se desprende 
 >$$\sup\{ \lVert Tx \rVert :\lVert x \rVert \leq 1  \}=\inf\{ k:\lVert Tx \rVert \leq k\lVert x \rVert\quad \forall x\in X  \}$$
 
->[!example]
+>[!example]-
 >$T : C_{\mathbb{F}}[0,1]\rightarrow \mathbb{F}$ lineal definido como $$T(f)=0$$
 >entonces $\lVert T \rVert=1$
 >>[!Proof]-
@@ -98,7 +100,7 @@
 >2. Si ademas $T$ sobreyectiva entonces es biyectiva lo nombramos isormofismo isometrico
 >3. En dim finita toda isometria es biyectiva en dim infinita no necesariamente
 
->[!Example] Isometria no biyectiva
+>[!Example]- Isometria no biyectiva
 > $T : \ell^{2}\rightarrow \ell^{2}$ dada por $$T(x_{1},x_{2},\ldots)=(0,x_{1},x_{2},\ldots)$$
 > es una isometria (normalmente se la nombra "unilateral shift"). No es biyectiva
 
@@ -129,7 +131,7 @@
 >>[!Proof]-
 >>$\mathbb{F}$ es completo entonces usamoss [[Teórico 5#^7e0978]]
 
->[!Example]
+>[!Example]-
 >Sea $\mathcal{H}$ Hilbert sobre $\mathbb{F}$, sea $y\in \mathcal{H}$. Si $f:\mathcal{H}\rightarrow\mathbb{F}$ es definida como $f(x)=(x,y)$ entonces $f$ es un elemento de $\mathcal{H}'$
 
 >[!Theorem] (Riesz-Frechet)

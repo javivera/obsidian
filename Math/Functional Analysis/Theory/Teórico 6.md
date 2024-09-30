@@ -105,6 +105,8 @@ dateCreated: 2024-09-27,19:41
 >>[!Proof]
 >>a
 
+^c7bd75
+
 >[!Remark]
 >Si $X$ e $Y$ no son Banach el teorema en general no es cierto. Tomamos $S\subseteq \ell^{\infty}$ el subespacio de las sucesiones que tienen finitos terminos no nulos y sea $T:S\rightarrow T(S)$ dada por 
 >$$T(x_{1},x_{2},\ldots,0) = (x_{1}, \frac{x_{1}}{2}, \frac{x_{3}}{3},\ldots,0)$$

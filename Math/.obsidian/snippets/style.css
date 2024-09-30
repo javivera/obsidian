@@ -7,7 +7,7 @@
         border-radius: 0px;
         box-shadow: none;
         padding: 0px;
-        font-family: CMU Serif, Times, Noto Serif JP;
+        font-family: CMU Serif 
     }
 
     .theorem-callout .callout-title {
@@ -29,11 +29,33 @@
         font-weight: lighter;
     }
 
-    .theorem-callout .callout-content {
+      .theorem-callout .callout-content p{
         background-color: var(--background-primary);
-        padding: 1px 20px 1px 20px;
+        padding: 10px 20px 10
+	x 20px;
+	margin: 0px;
+    }.theorem-callout .callout-content {
+        background-color: var(--background-primary);
+        padding: 7px 20px 5px 20px;
+	margin: 0px;
     }
 
+    .theorem-callout .callout-content .callout.is-collapsible{
+        background-color: var(--background-primary);
+        padding: 1px 15px 1px 15px;
+	margin: 5px;
+    }
+   .theorem-callout .callout-content .callout.is-collapsible.is-collapsed{
+        background-color: var(--background-primary);
+        padding: 1px 15px 1px 15px;
+	margin: 5px;
+    }
+    .theorem-callout .callout-content .has-list-bullet{
+        background-color: var(--background-primary);
+        padding: 10px 20px 10px 20px;
+	margin: 0px;
+    }
+    
 .callout[data-callout='proof'] {
         --callout-color: 0, 108, 107;
         border-top: none;
@@ -79,3 +101,11 @@
         padding: 0px;
         font-family: CMU Serif, Times, Noto Serif JP;
     }
+
+.popover.hover-popover{
+display: fixed;
+width:900px;
+height: 180px;
+left: 400px;
+padding: 5px;
+}
