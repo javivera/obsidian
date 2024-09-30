@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional Analysis/Theory/Teórico 5.md",
+                "file": "Functional Analysis/Theory/Teórico 1.md",
                 "mode": "preview",
                 "source": false
               }
@@ -44,7 +44,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "Grafi",
+            "query": "riesz",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Functional Analysis/Theory/Teórico 5.md",
+            "file": "Functional Analysis/Theory/Teórico 1.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "byCreatedTimeReverse",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Functional Analysis/Theory/Teórico 5.md",
+            "file": "Functional Analysis/Theory/Teórico 1.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Functional Analysis/Theory/Teórico 5.md"
+            "file": "Functional Analysis/Theory/Teórico 1.md"
           }
         }
       }
@@ -134,11 +134,12 @@
   },
   "active": "5f3891203eb961d6",
   "lastOpenFiles": [
+    "Functional Analysis/Theory/Teórico 5.md",
+    "Functional Analysis/Theory/Teórico 6.md",
     "Functional Analysis/Theory/Teórico 1.md",
     "Algebraic Structures/Theory/Teorico 2.md",
     "Algebraic Structures/Theory/Teorico 3.md",
     "Algebraic Structures/Theory/Teorico 1.md",
-    "Functional Analysis/Theory/Teórico 5.md",
     "Functional Analysis/Theory/Teórico 3.md",
     "Functional Analysis/Theory/Teórico 4.md",
     "Functional Analysis/Practico 3 Funcional.md",

@@ -1,4 +1,5 @@
 ## Operadores Lineales
+
 >[!Definition] Operador Acotado
 >Sean $X$ e $Y$ ev normados, $T : X\rightarrow Y$ lineal. $T$ se dice acotada si existe un numero $k\in \mathbb{R}$ tal que $$\lVert Tx \rVert<k\lVert x \rVert\quad\forall {x}\in X$$
 
@@ -13,6 +14,8 @@
 >$$M=\sup\{ \lvert k(s,t) \rvert:(s,t)\in [a,b]\times [a.b]  \}$$
 >- Si $g\in C[a,b]$ entonces $f:[a,b]\rightarrow\mathbb{C}$ dada por $$f(s)=\int_{a}^{b}  k(s,t)g(t)dt$$ esta en $C[a,b]$
 >- $K : C[a,b]\rightarrow C[a,b]$ lineal definida por $$(K(g))(s)=\int_{a}^{b} k(s,t)g(t)dt$$ entonces $K\in B(C[a,b],C[a,b])$ y $$\lVert K(g) \rVert_{\infty} \leq M(b-a)\lVert g \rVert_{\infty}$$
+
+^33cdb2
 
 >[!Theorem] En dim finita transformaciones lineales son continuas
 >Sea $X$ espacio vectorial normado de dimension finita $Y$ espacio vectorial cualquiera y $T : X\rightarrow Y$ lineal. Entonces $T$ es continua

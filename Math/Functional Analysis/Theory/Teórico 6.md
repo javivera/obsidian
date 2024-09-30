@@ -45,7 +45,7 @@ dateCreated: 2024-09-27,19:41
 >>[!Proof]
 >>pendiente
 
->[!Definition]
+>[!Definition] Isomorfismos
 >$X,Y$ normados. Si $\exists T\in B(X,Y)$ inversibles decimos que $X$ e $Y$ son isomorfos y que $T$ es isomorfismo
 
 >[!Remark] Hecha por Mi
@@ -73,3 +73,46 @@ dateCreated: 2024-09-27,19:41
 >>pendiente
 
 >[!Remark] Aplicacion
+>$A\in \mathbb{C}$ con $k:[a,b]\times[a,b]\rightarrow\mathbb{C}$ dada por $k(x,y)=A\sin(x-y)$. Probar que si $|A|\leq \frac{1}{b-a}$ entonces $\forall f\in C[a,b]\quad\exists !g\in C[a,b]$ tal que 
+>$$g(x)=f(x)+\int_{a}^{b} k(x,y)g(y)dy \tag{1}$$
+>>[!Proof]-
+>> Aca $X=C[a,b]$. Notar que ya probamos que $K:C[a,b]\rightarrow C[a,b]$ dada por 
+>> $$K(g)(s)=\int k(s,y)g(y)dy$$
+>> es acotado y $\lVert K(g) \rVert\leq\lvert A \rvert(b-a)\lVert g \rVert$ ([[Teórico 5#^33cdb2]]).
+>> En particular $\lVert K \rVert\leq\lvert A \rvert(b-a)$ (Supremo cuando $\lVert g \rVert=1$ de ambos lados).
+>> Entonces $\lVert K \rVert\leq 1$ por que $\lvert A \rvert\leq \frac{1}{b-a}$
+>> Notar que la identidad para operadores que salen de continua y llegan a continuas es $I:C[a,b]\rightarrow C[a,b]$ tal que $I(g)=g$
+>> Ahora si aplicamos el teorema de arriba. y usando $(1)$
+>> $$(I-K)(g)(x) = g(x) -\int_{a}^{b} k(x,y)g(y)dy  =f(x)$$
+>> Entonces $$g(x)=(I-K)^{-1} (f)(x)$$
+>> y $g$ es unica por que $(I-K)^{-1}$ lo es (por ser inversa)
+
+>[!Corollary]
+>Sean $X,Y$ Banach entonces el conjunto $A$ de operadores inversibles es abierto en $B(X,Y)$
+>>[!Proof]
+>>pendiente
+
+>[!Theorem] Baire
+>Sea $(M,d)$ metrico completo si $M=\bigcup^{\infty}_{j=1}A_{j}$ con $A_{j}\subseteq M$ cerrado entonces al menos un $A_{j}$ contiene una bola abierta
+
+>[!Theorem] Aplicacion abierta
+>Sean $X,Y$ Banach. $T\in B(X,Y)$ sobreyectiva. Sea
+>$$L=\{ Tx:x\in  X\text{ con } \lVert x \rVert \leq 1 \}$$
+>Obs: $L = T(B(0,1)) \text{ Bola de centro 0, radio 1}$
+>1. $\exists\ r>0$ tal que $\{ y\in Y :\lVert y \rVert\leq r\}\subseteq \overline{L}$
+>2. $\left\{  y\in Y:\lVert y \rVert \leq \frac{r}{2}  \right\}\subseteq L$
+>3. Si ademas $T$ inyectiva entonces $T$ es inversible ergo $T(X,Y)$ biyectiva luego $T^{-1}$ es continua (Teorema de la inversa continua)
+>>[!Proof]
+>>a
+
+>[!Remark]
+>Si $X$ e $Y$ no son Banach el teorema en general no es cierto. Tomamos $S\subseteq \ell^{\infty}$ el subespacio de las sucesiones que tienen finitos terminos no nulos y sea $T:S\rightarrow T(S)$ dada por 
+>$$T(x_{1},x_{2},\ldots,0) = (x_{1}, \frac{x_{1}}{2}, \frac{x_{3}}{3},\ldots,0)$$
+>Entonces $T$ es lineal y acotada por que $\lVert Tx \rVert\leq \lVert x \rVert$ y biyectiva pero $T^{-1}(x)=(x_{1},2x_{2},3x_{3},\ldots)$ no es acotada.
+>Tomamos $Id: (C[0,1],\lVert \cdot \rVert_{\infty})\rightarrow (C[0,1],\lVert \cdot \rVert_{1})$
+>Entondes $Id$ es continua pues es acotada por que
+>$$\begin{split}
+\lVert Id \rVert =\sup\{ \lVert Id(f) \rVert _{1}:\lVert f \rVert _{\infty}\leq 1 \}& =\sup\{ \lVert f \rVert _{1}:\lVert f \rVert _{\infty}\leq 1 \} \\
+ & = \sup\bigg\{ \int_{0}^{1} \lvert f \rvert :\lVert f \rVert _{\infty}\leq 1 \bigg\} \\
+ & \leq\sup\{ \lVert f \rVert _{\infty}:\lVert f \rVert_{\infty} \leq 1 \} = 1
+\end{split}$$
