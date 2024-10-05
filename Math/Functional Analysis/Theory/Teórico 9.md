@@ -51,16 +51,18 @@ tags:
 >>[!Proof]
 >>a
 
->[!Definition]
+>[!Definition] Seminorma
 >$X$ espacio vectorial $p:X\rightarrow\mathbb{R}$ es seminorma si 
 >$$p(x+y)\leq p(x)+p(y)\quad\forall x,y\in X$$
 >$$p(\alpha x)=\lvert \alpha  \rvert p(x)\quad\forall x\in X\quad\alpha \in \mathbb{F}$$
+
+^c27268
 
 >[!Definition]
 >Una familia $P$ de seminormas *separa* si para cada $0\neq x\in X\quad\exists p \in P$ tal que $p(x)\neq 0$
 
 >[!Remark]
->$p(0)=0$ entonces $0=p(x-x)\leq p(x)+p(-x)=2p(x)$. Luego si $p$ seminorma
+>Si $p$ es seminorma y $p(0)=0$ entonces $0=p(x-x)\leq p(x)+p(-x)=2p(x)$. Luego si $p$ seminorma
 >$$p\text{ es norma }\iff \bigg[p(x)=0 \Rightarrow x=0\bigg]$$
 
 >[!Theorem]
@@ -70,4 +72,4 @@ tags:
 >2. $E\subseteq X$ es acotada $\iff$ Todo $p_{i}\in P$ es acotado en $E$
 
 >[!Example]
->Queda copiar este ejeplo nefastasmente largo
+>Queda copiar este ejeplo nefastasmente largos

@@ -61,7 +61,7 @@ tags:
 > >[!Proof]
 
 >[!example] Operador lineal continuo
->Si $\{ c_{n} \}\in \ell_{\infty}$ luego $T : \ell^{1}\rightarrow \mathbb{F}$ definida por $$T(\{ x_{n} \})=\sum^{\infty}_{n=1}  c_{n}x_{n}$$
+>Si $\{ c_{n} \}\in \ell^{\infty}$ luego $T : \ell^{1}\rightarrow \mathbb{F}$ definida por $$T(\{ x_{n} \})=\sum^{\infty}_{n=1}  c_{n}x_{n}$$
 >es continua
 
 ^a511bc

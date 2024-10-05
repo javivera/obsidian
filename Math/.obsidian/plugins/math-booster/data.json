@@ -12,7 +12,7 @@
       "numberInit": 1,
       "numberStyle": "arabic",
       "numberDefault": "auto",
-      "refFormat": "[type] [number] ([title])",
+      "refFormat": "[title] if title exists, [type] [number] otherwise",
       "noteMathLinkFormat": "[title] if title exists, [type] [number] otherwise",
       "ignoreMainTheoremCalloutWithoutTitle": false,
       "numberOnlyReferencedEquations": true,
@@ -37,7 +37,7 @@
   },
   "extraSettings": {
     "foldDefault": "",
-    "noteTitleInTheoremLink": true,
+    "noteTitleInTheoremLink": false,
     "noteTitleInEquationLink": true,
     "profiles": {
       "English": {

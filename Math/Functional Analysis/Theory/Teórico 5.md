@@ -9,7 +9,7 @@
 >- Llamamos $B(X,Y)$ al conjunto de todos los operadors $T : X\rightarrow Y$ acotados
 >- Si $X$ e $Y$ ev son normados $B(X,Y)\subseteq L(X,Y)$
 
->[!example]-
+>[!example]
 >Sean $a,b\in \mathbb{R}$, $k : [a,b]\times [a,b]\rightarrow \mathbb{C}$ continua y 
 >$$M=\sup\{ \lvert k(s,t) \rvert:(s,t)\in [a,b]\times [a.b]  \}$$
 >- Si $g\in C[a,b]$ entonces $f:[a,b]\rightarrow\mathbb{C}$ dada por $$f(s)=\int_{a}^{b}  k(s,t)g(t)dt$$ esta en $C[a,b]$
@@ -22,8 +22,8 @@
 >>[!Proof]-
 >>1. Definimos $\lVert x \rVert_{1}=\lVert x \rVert_{X}+\lVert Tx \rVert_{Y}$
 >>2. Vemos que es norma
->>3. Como son todas equivalentes en dim finita $\lVert x \rVert_{1}\leq K\lVert x \rVert_{X}$
->>4. Por def $\lVert Tx \rVert_{Y}\leq\lVert x \rVert_{1}$
+>>3. Como son todas equivalentes en dim finita $\lVert x \rVert_{X}+\lVert Tx \rVert_{Y}=\lVert x \rVert_{1}\leq K\lVert x \rVert_{X}$
+>>4. Por def $\lVert Tx \rVert_{Y}\leq(K-1)\lVert x \rVert_{X}$
 
 >[!Lemma]
 >Si $X$ e $Y$ son normados $T : X\rightarrow Y$ lineal continua entonces $Nu(T)$ es cerrado
@@ -54,16 +54,21 @@
 >Sean $X$ e $Y$ normados. Si $\lVert \cdot \rVert:B(X,Y)\rightarrow\mathbb{R}$ esta definida por $$\lVert T \rVert =\sup\{ \lVert Tx \rVert :\lVert x \rVert \leq 1\}$$
 >Entonces $\lVert \cdot \rVert$ es una norma en $B(X,Y)$
 >>[!Proof]-
->>Desigualdad Triangular:
->>1. Notar que $\left\lVert  T\left( \frac{x}{\lVert x \rVert} \right)  \right\rVert\leq\lVert T \rVert$ (Porque $\lVert T \rVert$ es supremo). Luego $\lVert Tx \rVert\leq\lVert T \rVert\lVert x \rVert$
->>3. $\lVert (S+T)(x) \rVert\leq\lVert Sx \rVert+\lVert Tx \rVert \leq\lVert S \rVert\lVert x \rVert+\lVert T \rVert\lVert x \rVert = (\lVert S+T \rVert)\lVert x \rVert$
->>4. Usando supremo de ambos lados $\lVert S+T \rVert\leq\lVert S \rVert+\lVert T \rVert$
+>>1. Norma de 0
+>>	1. $\lVert T \rVert=0 \iff \lVert Tx \rVert=0 \quad \forall x\in X\iff Tx=0\quad\forall x\in X\iff T \text{ es la transformacion lineal 0}$
+>>2. Saca escalar
+>>	1. $\lVert \lambda T \rVert=\sup \{ \lVert \lambda Tx \rVert:\lVert x \rVert\leq 1 \}=\lvert \lambda \rvert\sup \{ \lVert Tx \rVert \}=\lvert \lambda \rvert\lVert T \rVert$ 
+>>3. Desigualdad Triangular:
+>>	1. Notar que $\left\lVert  T\left( \frac{x}{\lVert x \rVert} \right)  \right\rVert\leq\lVert T \rVert$ (Porque $\lVert T \rVert$ es supremo). Luego $\lVert Tx \rVert\leq\lVert T \rVert\lVert x \rVert$
+>>	2. $\lVert (S+T)(x) \rVert\leq\lVert Sx \rVert+\lVert Tx \rVert \leq\lVert S \rVert\lVert x \rVert+\lVert T \rVert\lVert x \rVert = (\lVert S+T \rVert)\lVert x \rVert$
+>>	3. Usando supremo de ambos lados $\lVert S+T \rVert\leq\lVert S \rVert+\lVert T \rVert$
 
 >[!Remark]
 >$\lVert T \rVert=\sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}=\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$
 >>[!Proof]-
->>1. $(\geq)$ Trivial
->>2. $(\leq)$ Sea $\beta= \sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}$ y $\alpha =\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$ y supongamos $\alpha < \beta$
+>>Sea $\beta= \sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}$ y $\alpha =\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$ 
+>>1. $(\beta \geq\alpha )$ Trivial
+>>2. $(\leq)$ Supongamos $\alpha < \beta$
 >>3. $\exists x_{j}$ con $\lVert x_{j} \rVert\leq 1$ tal que $\lVert Tx_{j} \rVert \rightarrow\beta$ (Por ser supremo)
 >>4. Entonces $\exists x_{0}$ con $\lVert x_{0} \rVert\leq 1$ tal que $\lVert Tx_{0} \rVert>\alpha$
 >>5. Entonces $\alpha\geq \lVert T(\frac{x_{0}}{\lVert x_{0} \rVert}) \rVert =\frac{\lVert Tx_{0} \rVert}{\lVert x_{0} \rVert}\geq\lVert Tx_{0} \rVert>\alpha$ (Por def de supremo y $\lVert x_{0} \rVert \leq 1$) Absurdo
@@ -72,7 +77,7 @@
 >Notar que del [[Teórico 4#^cae689]] se desprende 
 >$$\sup\{ \lVert Tx \rVert :\lVert x \rVert \leq 1  \}=\inf\{ k:\lVert Tx \rVert \leq k\lVert x \rVert\quad \forall x\in X  \}$$
 
->[!example]-
+>[!example]
 >$T : C_{\mathbb{F}}[0,1]\rightarrow \mathbb{F}$ lineal definido como $$T(f)=0$$
 >entonces $\lVert T \rVert=1$
 >>[!Proof]-
@@ -119,7 +124,17 @@
 >[!Theorem] $Y$ Banach entonces $B(X,Y)$ Banach
 >Si $X$ normado e $Y$ Banach entonces el espacio normado $B(X,Y)$ es Banach
 >>[!Proof]
->> La demo tiene algo raro al final, preguntar
+>> 1. Sea $\{ T_{n} \}$ sucesion de Cauchy en $B(X,Y)$. Entonces vale $\lVert T_{n} \rVert\leq M \quad\forall n\in \mathbb{N}\quad (1)$ Veamoslo
+>> 	1. Esta acotada por que $T_{m}\in B(X,Y)$ entonces $\lVert T_{m} \rVert\leq K_{m}$
+>> 	2. $\lVert T_{n} \rVert\leq \lVert T_{n}-T_{m} \rVert+\lVert T_{m} \rVert\leq \epsilon+K_{m}\quad\forall n\geq n_{0}$
+>> 2. $\lVert T_{n}(x)-T_{m}(x) \rVert=\lVert (T_{n}-T_{m})(x)\rVert\leq \lVert T_{n}-T_{m} \rVert\lVert x \rVert$. 
+>> 3. Entonces como $\{ T_{n} \}$ es Cauchy $\{ T_{n}(x) \}$ es Cauchy en $Y$
+>> 4. Como $Y$ Banach entonces converge entonces definimos $$T(x)=\lim_{ n \to \infty } T_{n}(x)$$
+>> 5. Veamos que es lineal $$T(x+y)=\lim_{ n \to \infty } T_{n}(x+y)=\lim_{ n \to \infty } T_{n}x+T_{n}y=\lim_{ n \to \infty } T_{n}x+\lim_{ n \to \infty } T_{n}y=Tx+Ty$$
+>> Analogo para escalar
+>> 6. Veamos que es acotada. $\lVert Tx \rVert=\lim_{ n \to \infty }\lVert T_{n}x \rVert$. Entonces 
+>> $$\lVert Tx \rVert \leq \sup \{ \lVert T_{n}x \rVert :n\in \mathbb{N}  \}\leq \sup \{ \lVert T_{n} \rVert \lVert x \rVert :n\in \mathbb{N}  \}\leq M\lVert x \rVert $$ Usando $(1)$.
+>> Y ahora viene parte que esta rara (Preguntar)
 
 ^7e0978
 
@@ -131,7 +146,7 @@
 >>[!Proof]-
 >>$\mathbb{F}$ es completo entonces usamoss [[Teórico 5#^7e0978]]
 
->[!Example]-
+>[!Example]
 >Sea $\mathcal{H}$ Hilbert sobre $\mathbb{F}$, sea $y\in \mathcal{H}$. Si $f:\mathcal{H}\rightarrow\mathbb{F}$ es definida como $f(x)=(x,y)$ entonces $f$ es un elemento de $\mathcal{H}'$
 
 >[!Theorem] (Riesz-Frechet)

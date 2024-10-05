@@ -1,5 +1,8 @@
 ---
 dateCreated: 2024-09-30,16:01
+tags:
+  - topologicalVectorSpaces
+  - FunctionalAnalysis
 ---
 
 >[!Corollary]
@@ -21,6 +24,7 @@ dateCreated: 2024-09-30,16:01
 >>a
 
 ## Espacios Vectoriales Topologicos
+
 >[!Definition]
 > $X$ espacio vectorial $(X,\tau)$ es topologia tal que 
 > 1. $\forall x\in X$ sucede $\{ x \}$ es cerrado ($\tau$ es $T_{1}$)

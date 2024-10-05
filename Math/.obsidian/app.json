@@ -5,5 +5,7 @@
   "showRibbon": false,
   "showInlineTitle": true,
   "vimMode": true,
-  "spellcheck": false
+  "spellcheck": false,
+  "strictLineBreaks": false,
+  "useMarkdownLinks": false
 }

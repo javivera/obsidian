@@ -103,9 +103,4 @@
     }
 
 .popover.hover-popover{
-display: fixed;
-width:900px;
-height: 180px;
-left: 400px;
-padding: 5px;
 }

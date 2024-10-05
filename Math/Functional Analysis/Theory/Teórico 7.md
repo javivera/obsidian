@@ -26,7 +26,7 @@ dateCreated: 2024-09-29,23:50
 
 >[!Theorem]
 >$X$ Banach, $Y$ normado $T\in B(X,Y)$ si $\exists \alpha>0$ tal que $\lVert Tx \rVert\geq\alpha\lVert x \rVert\quad\forall x\in X$ entonces $Im(T)$ es cerrado
->>[!Proof]
+>>[!Proof]-
 >>1. Sea $\{ y_{n} \}\subseteq Im(T)$ tal que $y_{n}\rightarrow y$ en $Y$ entonces $\exists x_{n}\in X$ tal que $Tx_{n}=y_{n}$ 
 >>2. $\{ y_{n} \}$ coverge entonces es de Cauchy $\lVert y_{n}-y_{m} \rVert=\lVert T(x_{n}-x_{m}) \rVert\geq\alpha\lVert x_{n}-x_{m} \rVert$
 >>3. Entonces $\{ x_{n} \}$ es de Cauchy luego converge $x_{n}\rightarrow x\in X$ ($X$ Banach) entonces $Tx\in Im(T)$
@@ -56,7 +56,7 @@ dateCreated: 2024-09-29,23:50
 >>1. $u_{n}=n^{\frac{1}{p}}\chi_{\left[ 0,\frac{1}{n} \right]}\in L^{p}[0,1]$
 >>2. $\lVert u_{n} \rVert_{p}^{p}=\int_{0}^{1}\left( n^{\frac{1}{p}} \chi_{[ 0, \frac{1}{n} ]}\right)^{p}=1\quad\forall n\in \mathbb{N}$
 >>3. Ademas $$\lVert T_{f}(u_{n}) \rVert_{p}^{p}=\int \left(f.n^{ \frac{1}{p}}\chi_{\left[ 0, \frac{1}{n} \right]}\right)^{p}dt = n\int_{0}^{ \frac{1}{n}}f^{p}=\frac{n}{(p+1)n^{p+1}}\longrightarrow 0\quad(n\rightarrow \infty)$$
->>4. No se bien por que $\overline{Im(T)}\neq Y$ entonces por [[Teórico 7#^e2cb3f]] $T$ es no inversible
+>>4. No se bien por que $\overline{Im(T)}\neq Y$ entonces por [[Teórico 7#^e2cb3f]]  $T$ es no inversible
 
 >[!Lemma]
 >$S\neq \emptyset$, $X$ normado sobre $\mathbb{F}$ defino
