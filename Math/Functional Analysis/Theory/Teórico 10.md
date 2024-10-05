@@ -77,8 +77,8 @@
 
 ^b346de
 
->[!Theorem] Hahn-Banach sobre $\mathbb{C}$ DUDA
->Sea $X$ espacio vectorial $p : X\rightarrow \mathbb{R}$ seminorma $W\subseteq X$ subespacio y $f_{W}:W\rightarrow\mathbb{F}$ funcional lineal tal que $\lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$ entonces 
+>[!Theorem] Hahn-Banach General DUDA
+>Sea $X$ espacio vectorial $p : X\rightarrow \mathbb{R}$ [[Teórico 9#^c27268]] $W\subseteq X$ subespacio y $f_{W}:W\rightarrow\mathbb{F}$ funcional lineal tal que $\lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$ entonces 
 >$$\exists \ f_{X} :X\rightarrow \mathbb{F}\quad\text{ extension de } f_{W}$$ tal que $$\lvert f_{X}(x) \rvert \leq p(x)\quad\forall x\in X$$
 >>[!Proof]
 >>1. Si $\mathbb{F}=\mathbb{R}$ es seria [[Teórico 10#^2b57ba]] (Seminorma implica sublineal)
@@ -89,6 +89,8 @@
 >>6. $f_{W,\mathbb{R}}(w) \leq \lvert f_{W,\mathbb{R}} (w)\rvert \leq \lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$ 
 >>7. Luego por [[Teórico 10#^2b57ba]] existe extension $f_{X,\mathbb{R}}:X_{\mathbb{R}}\rightarrow\mathbb{R}$ con $\lvert f_{X,\mathbb{R}}(x) \rvert\leq p(x)\quad\forall x\in X_{\mathbb{R}}$ (Para esto no tengo que usar lo mismo que en 2. DUDA)
 >>8. Entonces por [[Teórico 10#^b346de]] $f_{W}$ tiene extension que cumple la desigualdad
+
+^055669
 
 ## Hahan Banach en normado
 
@@ -111,6 +113,12 @@
 
 >[!Theorem] Hahn Banach en normado
 >$X$ normado $W\subseteq X$ subespacio entonces $\forall f_{W}\in W'\quad\exists f_{X}\in X'$ extension de $f_{W}$ tal que $\lVert f_{W} \rVert=\lVert f_{X} \rVert$
+>>[!Proof]
+>> 1. Definimos $p(x)=\lVert f_{W} \rVert\lVert x \rVert$ es [[Teórico 9#^c27268]] en $X$. Trivial (Notar que esta bien definida para $x\in X$ )
+>> 2. Ademas $\forall w \in W,w\neq 0$ sucede $\frac{1}{\lVert w \rVert}p(w)=p\left( \frac{w}{\lVert w\rVert} \right)=\lVert f_{W} \rVert\geq\left\lvert  f_{W}\left( \frac{w}{\lVert w \rVert} \right)  \right\rvert=\lvert f_{W}(w) \rvert \frac{1}{\lVert w \rVert}$ (Usando la def de $p$ de 1.) Entonces $\lvert f_{W}(w) \rvert\leq p(w)=\lVert f_{W} \rVert\lVert x \rVert$
+>> 3. Entonces valen las hipotesis de [[Teórico 10#^055669]] por lo tanto $\exists f_{X}$ extension de $f_{W}$ tal que $\lvert f_{X}(x) \rvert\leq p(x)\quad\forall x\in X$
+>> 4. Usando supremo de ambos lados $\lVert f_{X} \rVert\leq \lVert f_{W} \rVert$
+>> 5. Ademas $\lVert f_{W} \rVert=\sup \{ \lVert f_{W}(w)\rVert:w\in W,\lVert w\rVert=1 \rVert \}\leq \{\lVert f_{X}(x)\rVert:x\in X,\lVert x \rVert=1\} =\lVert f_{X}\rVert$
 
 ^8c080d
 
