@@ -87,14 +87,14 @@
 >>4. Entonces $\lvert f_{X}(x) \rvert\leq p(x)$
 >>5. Si $\mathbb{F}=\mathbb{C}$. Existe $f_{W,\mathbb{R}} : W_{\mathbb{R}}\rightarrow \mathbb{R}$ dado por [[Teórico 10#^5efc35]] con $f_{W}(w)=f_{W,\mathbb{R}}(w)-if_{W,\mathbb{R}}(iw)\quad\forall w\in W$
 >>6. $f_{W,\mathbb{R}}(w) \leq \lvert f_{W,\mathbb{R}} (w)\rvert \leq \lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$ 
->>7. Luego por [[Teórico 10#^2b57ba]] existe extension $f_{X,\mathbb{R}}:X_{\mathbb{R}}\rightarrow\mathbb{R}$ con $\lvert f_{X,\mathbb{R}}(x) \rvert\leq p(x)\quad\forall x\in X_{\mathbb{R}}$ (Para esto no tengo que usar lo mismo que en 2. DUDA)
+>>7. Luego por [[Teórico 10#^2b57ba]] existe extension $f_{X,\mathbb{R}}:X_{\mathbb{R}}\rightarrow\mathbb{R}$ con $\lvert f_{X,\mathbb{R}}(x) \rvert\leq p(x)\quad\forall x\in X_{\mathbb{R}}$ (H-B da la desigualdad sin módulo DUDA)
 >>8. Entonces por [[Teórico 10#^b346de]] $f_{W}$ tiene extension que cumple la desigualdad
 
 ^055669
 
 ## Hahan Banach en normado
 
->[!Lemma] DUDA
+>[!Lemma] Extensiones en general
 >$X$ un $\mathbb{R}$ espacio vectorial $W\subseteq X$, $p:X\rightarrow\mathbb{R}$ sublineal y $f_{W}:W\rightarrow\mathbb{R}$ lineal tal que $$\lvert f_{W}(x) \rvert\leq p(x)\quad\forall w\in W$$
 >Sean $z_{1}\not\in W$ con $W_{1}=Sp\{ z_{1} \}\oplus W=\{ \alpha z_{1}+W : \alpha\in \mathbb{F},w\in W \}$. Entonces $$\exists \delta_{1}\in \mathbb{R}\quad\text{y}\quad f_{W_{1}} : W_{1}\rightarrow \mathbb{R}$$
 >Tal que $$f_{W_{1}}(\alpha z_{1}+w)=\alpha\delta_{1}+f_{W}(w)\leq p(\alpha z_{1}+w)\quad \forall \alpha\in \mathbb{R}\quad\forall w\in W\quad (a)$$
@@ -111,9 +111,11 @@
 >>9. Si $\alpha =0$ trivial
 >>10. Entonces $f_{W_{1}}$ cumple la desigualdad 
 
+^3226b6
+
 >[!Theorem] Hahn Banach en normado
 >$X$ normado $W\subseteq X$ subespacio entonces $\forall f_{W}\in W'\quad\exists f_{X}\in X'$ extension de $f_{W}$ tal que $\lVert f_{W} \rVert=\lVert f_{X} \rVert$
->>[!Proof]
+>>[!Proof]-
 >> 1. Definimos $p(x)=\lVert f_{W} \rVert\lVert x \rVert$ es [[Teórico 9#^c27268]] en $X$. Trivial (Notar que esta bien definida para $x\in X$ )
 >> 2. Ademas $\forall w \in W,w\neq 0$ sucede $\frac{1}{\lVert w \rVert}p(w)=p\left( \frac{w}{\lVert w\rVert} \right)=\lVert f_{W} \rVert\geq\left\lvert  f_{W}\left( \frac{w}{\lVert w \rVert} \right)  \right\rvert=\lvert f_{W}(w) \rvert \frac{1}{\lVert w \rVert}$ (Usando la def de $p$ de 1.) Entonces $\lvert f_{W}(w) \rvert\leq p(w)=\lVert f_{W} \rVert\lVert x \rVert$
 >> 3. Entonces valen las hipotesis de [[Teórico 10#^055669]] por lo tanto $\exists f_{X}$ extension de $f_{W}$ tal que $\lvert f_{X}(x) \rvert\leq p(x)\quad\forall x\in X$
@@ -124,11 +126,34 @@
 
 >[!Theorem]
 >$X$ normado $W\subseteq X$ subespacio. Supongamos $\exists x\in X$ tal que $\delta =\inf \{ \lVert x+w \rVert:w\in W \}>0$ entonces $$\exists f\in X' \quad\text{ tal que } \quad\lVert f \rVert=1\quad f(x)=\delta \quad f|_{W}\equiv 0$$
->
+>>[!Proof]-
+>>1. Sea $Y=Sp\{ x \}\bigoplus W$ definimos $f_{Y}:Y\rightarrow \mathbb{F}$ dada por $f_{Y}(\alpha x+w)=\alpha \delta$ 
+>>	- (Notar que $\delta>0$ entonces $\exists x\not\in W$ si no $\lVert x+(-w) \rVert=\lVert x-w \rVert=0$ entonces $\delta=0$. Por lo tanto $f_{Y}$ esta bien def) (el $x$ queda fijo)
+>>2. $\lvert f_{Y}(\alpha x +w) \rvert=\lvert \alpha  \rvert\delta \leq \lvert \alpha  \rvert\lVert x+\alpha^{-1}w \rVert=\lVert \alpha x+w \rVert$ (Notar que $\alpha^{-1}w \in W$ entonces la desigualdad vale por ser $\delta$ un infimo)
+>>3. $\lVert f_{Y} \rVert=\sup \{ \lvert f_{Y}(y) \rvert :y\in Y,\lVert y \rVert=1\}=\sup \{ \lvert  f_{Y}(\alpha x+w)\rvert: \alpha x+w\in Y,\lVert \alpha x+w \rVert=1 \}$
+>>4. Entonces usando 2. y 3. $\lVert f_{Y} \rVert\leq 1$
+>>5. La otra desigualdad $\epsilon>0$ como $\delta$ es infimo $\exists \tilde{w}_{\epsilon}$ tal que $\delta\leq \lVert x+\tilde{w}_{\epsilon} \rVert\leq (1+\epsilon)\delta$
+>>6. Sea $w=\alpha \tilde{w}_{\epsilon}$ con $\alpha \neq 0$
+>>7. $$ \frac{\lvert f_{Y}(\alpha x+w) \rvert }{\lVert \alpha x+w \rVert }= \frac{\lvert \alpha  \rvert \delta}{\lvert \alpha  \rvert \lVert x+\alpha ^{-1} w \rVert }= \frac{\delta}{\lVert x+\alpha ^{-1} w \rVert }= \frac{\delta}{\lVert x+\tilde{w}_{\epsilon} \rVert } \geq \frac{1}{1+\epsilon}$$
+>>8. Entonces $$\left\lvert  \frac{f_{Y}(\alpha x+w)}{\lVert \alpha x+w \rVert }  \right\rvert\geq \frac{1}{1+\epsilon}\quad\forall \epsilon\geq 0 \quad \text{ Entonces}\quad \left\lvert  \frac{f_{Y}(\alpha x+w)}{\lVert \alpha x+w \rVert }  \right\rvert\geq 1 \quad$$
+>>9. Luego $f_{Y}(\alpha x+w)\geq\lVert \alpha x +w\rVert$ luego tomando supremo de ambos lados $\lVert f_{Y} \rVert\geq 1$
+>>10. Por [[#^8c080d]] extiendo $f_{Y}$ a $f:X\rightarrow \mathbb{F}$ con $\lVert f \rVert=\lVert f_{Y} \rVert=1$ 
+>>11. Y es claro que si $w \in W$ entonces $f(w)=f_{Y}(0.x +w)=0.\delta=0$ y si $x\in X$ entonces $f(x)=f_{Y}(1.x+0)=1.\delta=\delta$
+
+^3a0090
 
 >[!Corollary]
 >Sea $X\neq \{ 0 \}$ normado, $x\in X$ fijo $x\neq 0$ entonces $\exists f\in X'$ tal que:
 >1. $\lVert f \rVert =1 \quad f(x)=\lVert x \rVert$
 >2. $\lVert x \rVert=\sup \{ \lvert f(x) \rvert : f\in X',\lVert f \rVert=1\} =\sup A$
->3. Si $g\in X$ con $x\neq y$, $\exists f\in X'$ tal que $f(x)\neq f(y)$
+>3. Si $y\in X$ con $x\neq y$, $\exists f\in X'$ tal que $f(x)\neq f(y)$
 >(En particular, $X$ normado, $x\neq 0$ entonces $X'\neq \{ 0 \}$)
+>>[!Proof]-
+>>1. Por [[Teórico 10#^3a0090]] usando $W=\{ 0 \}$
+>>2. Veamos
+>>	- Por 1. $\sup A \geq \lVert x \rVert$
+>>	- $\lvert f(x) \rvert\leq \lVert f \rVert\lVert x \rVert$ (Vale siempre truco de $\frac{x}{\lVert x \rVert}$) entonces $\sup \{\lvert f(x) \rvert:\lVert f \rVert=1\}\leq \lVert x \rVert$ 
+>>3.  (Ejercicio) $W=Sp\{ y \}$ y usando [[#^3a0090]] $\delta >0$ por que $\lVert -x+y \rVert\neq 0$ por que son distintos (suponiendo que $x \not\in Sp\{ y \}$)
+>>	- Si no supusiera eso es trivial $f(x)\neq \alpha f(x) = f(\alpha x)$
+>>	- Entonces $f(-x)=\delta$ osea $f(x)=\delta\neq 0$ pero $f|_{W}\equiv 0$ entonces como $y\in W$ sucede $f(y)=0$
+>

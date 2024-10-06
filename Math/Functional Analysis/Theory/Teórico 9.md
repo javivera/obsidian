@@ -51,6 +51,8 @@ tags:
 >>[!Proof]
 >>a
 
+## Seminormas
+
 >[!Definition] Seminorma
 >$X$ espacio vectorial $p:X\rightarrow\mathbb{R}$ es seminorma si 
 >$$p(x+y)\leq p(x)+p(y)\quad\forall x,y\in X$$

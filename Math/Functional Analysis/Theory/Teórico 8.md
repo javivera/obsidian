@@ -5,6 +5,7 @@ tags:
   - FunctionalAnalysis
 ---
 
+
 >[!Corollary]
 >$U,X$ Banach $T_{n}\in B(U,X)$ si $\lim_{ n \to \infty }T_{n}u$ existe para cada $u\in U$ y $\lim_{ n \to \infty }T_{n}u = Tu$ con $T\in B(U,X)$
 >>[!Proof]

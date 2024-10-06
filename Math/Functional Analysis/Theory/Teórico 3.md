@@ -168,6 +168,8 @@ dateCreated: 2024-09-22,22:22
 >>- $\lVert y-x \rVert^{2}=\sum^{N}_{n=1}\lvert \beta_{n}-\alpha_{n} \rvert^{2}+\sum^{\infty}_{n=N+1}\lvert \beta_{n} \rvert^{2}\leq\epsilon^{2}$
 >>- Entonces $A$ es denso en $\mathcal{H}$
 
+^a44e0c
+
 >[!Corollary]
 $\ell^{2}$ es separable. $L^{2}[a,b]$ es separable. Veremos mas adelante que tienen BON de Hilber
 
