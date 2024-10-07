@@ -41,7 +41,7 @@ tags:
 >Decimos que $T$ continua en $x_0\in X$ si $\forall \epsilon>0,\quad\exists\delta$ tal que $\lVert x-x_{0} \rVert\Rightarrow\lVert Tx-Tx_{0} \rVert<\epsilon$
 
 >[!Lemma] Equivalencia de continuidad para operadores lineales
->Sean $X$ e $Y$ ev normados y $T X:\rightarrow Y$ una transformacion lineal. Son equivalentes:
+>Sean $X$ e $Y$ ev normados y $T:X\rightarrow Y$ una transformacion lineal. Son equivalentes:
 >1. $T$ es uniforme continua
 >2. $T$ es continua
 >3. $T$ es continua en 0
@@ -51,7 +51,7 @@ tags:
 ^cae689
 
 >[!example]
->$T C_{\mathbb{F}}[0,1]:\rightarrow \mathbb{F}$ definida por $$T(f)=f(0)$$ es continua
+>$T:C_{\mathbb{F}}[0,1]:\rightarrow \mathbb{F}$ definida por $$T(f)=f(0)$$ es continua
 >>[!Proof]
 
 ^9798e1

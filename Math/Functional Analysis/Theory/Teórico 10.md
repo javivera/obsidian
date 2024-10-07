@@ -157,3 +157,6 @@
 >>	- Si no supusiera eso es trivial $f(x)\neq \alpha f(x) = f(\alpha x)$
 >>	- Entonces $f(-x)=\delta$ osea $f(x)=\delta\neq 0$ pero $f|_{W}\equiv 0$ entonces como $y\in W$ sucede $f(y)=0$
 >
+
+^d1e653
+

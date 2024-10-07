@@ -123,7 +123,7 @@
 
 >[!Theorem] $Y$ Banach entonces $B(X,Y)$ Banach
 >Si $X$ normado e $Y$ Banach entonces el espacio normado $B(X,Y)$ es Banach
->>[!Proof]
+>>[!Proof] DUDA
 >> 1. Sea $\{ T_{n} \}$ sucesion de Cauchy en $B(X,Y)$. Entonces vale $\lVert T_{n} \rVert\leq M \quad\forall n\in \mathbb{N}\quad (1)$ Veamoslo
 >> 	1. Esta acotada por que $T_{m}\in B(X,Y)$ entonces $\lVert T_{m} \rVert\leq K_{m}$
 >> 	2. $\lVert T_{n} \rVert\leq \lVert T_{n}-T_{m} \rVert+\lVert T_{m} \rVert\leq \epsilon+K_{m}\quad\forall n\geq n_{0}$

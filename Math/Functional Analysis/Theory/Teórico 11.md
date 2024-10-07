@@ -131,3 +131,6 @@ dateCreated: 2024-10-02,22:03
 >>7. Sea $\delta= \frac{\epsilon}{2\lVert w_{0} \rVert}$ entonces $a+\delta w_{0}\in A_{\epsilon}$. Pues $\delta w_{0}\in B_{ \frac{\epsilon}{2}}(0)$
 >>8. Entonces $f_{X}(a)=f(_{X}a+\delta w_{0})-\delta f_{W}(w_{0})\leq \gamma-\delta$ (Recordar $f_{W}(w_{0})=1$)
 >>9. Analogamente  $\gamma+\delta\leq f(b)\quad\forall b\in B$ entonces vale $(b)$
+
+^18a436
+
