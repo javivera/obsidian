@@ -1,20 +1,20 @@
 {
   "main": {
-    "id": "a6e6fcfc588cbf00",
+    "id": "ae172ceeb3de6f08",
     "type": "split",
     "children": [
       {
-        "id": "d9aa4959be484681",
+        "id": "92b9e24b14bab63b",
         "type": "tabs",
         "children": [
           {
-            "id": "5a7af64668081b5c",
+            "id": "d842e96871c4026a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Estructuras Algebraicas/Theory/Teorico 12.md",
-                "mode": "preview",
+                "file": "Theory/Teorico 3.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -25,16 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "bf1a1a8f0d6d3eeb",
+    "id": "7a7f466b9715a5e3",
     "type": "split",
     "children": [
       {
-        "id": "afadfd6294841719",
+        "id": "276a0a0893c45cca",
         "type": "tabs",
-        "dimension": 71.19205298013244,
         "children": [
           {
-            "id": "aeb83359a0ad264b",
+            "id": "616046080704f8d6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +43,7 @@
             }
           },
           {
-            "id": "a69323c5854db82e",
+            "id": "beaff4d9a73a66a2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -57,19 +56,12 @@
                 "sortOrder": "alphabetical"
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "bdc2bf2b330221d3",
-        "type": "tabs",
-        "dimension": 28.807947019867548,
-        "children": [
+          },
           {
-            "id": "8001b2abf56594b2",
+            "id": "648de51e50d693c9",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -77,24 +69,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5,
+    "width": 300,
     "collapsed": true
   },
   "right": {
-    "id": "ce4bb695f0ccdb6c",
+    "id": "b7160343cd1e9a78",
     "type": "split",
     "children": [
       {
-        "id": "221afc12fcce3a67",
+        "id": "3b06c170a4fdcbd9",
         "type": "tabs",
         "children": [
           {
-            "id": "6439d6817c53c292",
+            "id": "808a7794fc5bfb08",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Estructuras Algebraicas/Theory/Teorico 12.md",
+                "file": "Theory/Teorico 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,19 +98,19 @@
             }
           },
           {
-            "id": "a96c1721d1bdd36e",
+            "id": "2723f35869323217",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Estructuras Algebraicas/Theory/Teorico 12.md",
+                "file": "Theory/Teorico 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "4db2c4194faefa2e",
+            "id": "a8ca9916b31a771f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,11 +121,13 @@
             }
           },
           {
-            "id": "4d17be7a6b8b454b",
+            "id": "878e19a0de32636a",
             "type": "leaf",
             "state": {
-              "type": "git-history-view",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "Theory/Teorico 3.md"
+              }
             }
           }
         ]
@@ -150,48 +144,9 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "5a7af64668081b5c",
-  "lastOpenFiles": [
-    "Estructuras Algebraicas/Hungerford.md",
-    "Analisis Funcional/Theory/Teórico 10.md",
-    "Analisis Funcional/Theory/Teórico 11.md",
-    "Analisis Funcional/Theory/Teórico 12.md",
-    "Analisis Funcional/Theory/Teórico 13.md",
-    "Estructuras Algebraicas/Theory/Teorico 12.md",
-    "Analisis Funcional/Theory/Teórico 5.md",
-    "Analisis Funcional/Theory/Teórico 8.md",
-    "Analisis Funcional/Theory/Teórico 6.md",
-    "Analisis Funcional/Theory/Teórico 1.md",
-    "Estructuras Algebraicas/Theory/Teorico 3.md",
-    "Estructuras Algebraicas/Theory/Teorico 2.md",
-    "Analisis Funcional/Theory/Teórico 9.md",
-    "Theory/Teórico 13.md",
-    "Theory/Teórico 12.md",
-    "Theory/Teórico 7.md",
-    "Untitled.md",
-    "Functional Analysis/Theory/Teórico 12.md",
-    "Functional Analysis/Theory/Teórico 11.md",
-    "Functional Analysis/Theory/Teórico 10.md",
-    "Functional Analysis/Theory/Teórico 2.md",
-    "Functional Analysis/Theory/Teórico 13.md",
-    "Functional Analysis/Theory/Teórico 9.md",
-    "Functional Analysis/Theory/Teórico 8.md",
-    "Functional Analysis/Theory/Teórico 7.md",
-    "Functional Analysis/Theory/Teórico 6.md",
-    "Habits/Icon\r",
-    "Untitled",
-    "Habits",
-    "Functional Analysis/Theory/Icon\r",
-    "Functional Analysis/Theory",
-    "Theory/Icon\r",
-    "Theory",
-    "Pasted image 20240919234954.png",
-    "Templates/Icon\r",
-    "Templates",
-    "Algebraic Structures/Hungerford/Icon\r"
-  ]
+  "active": "d842e96871c4026a",
+  "lastOpenFiles": []
 }

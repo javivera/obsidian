@@ -1,0 +1,12 @@
+{
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "style"
+  ],
+  "textFontFamily": "CMU Sans Serif",
+  "interfaceFontFamily": "",
+  "monospaceFontFamily": "CMU Sans Serif",
+  "baseFontSize": 16,
+  "baseFontSizeAction": true,
+  "translucency": false
+}

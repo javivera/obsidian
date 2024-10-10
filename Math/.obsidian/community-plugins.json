@@ -1,10 +1,11 @@
 [
-  "obsidian-latex-suite",
-  "obsidian-linter",
-  "mathlinks",
   "obsidian-git",
-  "webpage-html-export",
+  "mathlinks",
+  "obsidian-linter",
+  "obsidian-latex-suite",
+  "math-booster",
+  "inline-math",
   "obsidian-export-to-tex",
-  "obsidian-style-settings",
-  "math-booster"
+  "obsidian-pandoc",
+  "obsidian-style-settings"
 ]
