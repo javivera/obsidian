@@ -148,11 +148,15 @@ tags:
 >>	4. Luego $f(q)=\psi(f)=0\quad\forall f\in Z$ osea que $q\in\ ^{\circ}Z$
 >>	5. Pero $g(q)=\psi(g)\neq 0$ por $(I),(II)$ entonces $q\not\in (^{\circ}Z)^{\circ}$. Absurdo
 
+^774fbc
+
 >[!Lemma]
 >Sea $V=\left\{  a=\{ a_{n} \}\in \ell^{1} : \sum^{\infty}_{n=1}(-1)^{n}a_{n}=0 \right\}$ y $c_{0}$ subsucesiones de $\ell^{\infty}$ que convergen a $0$. Sea $$T_{c_{0}}:\ell^{1}\rightarrow c_{0}'$$ dada por $T_{c_{0}}(a)=f_{a}$. Donde para $x=\{ x_{n} \}\in c_{0}$ sucede $f_{a}(x)=\sum^{\infty}_{n=1}a_{n}x_{n}$.
 >Sea $Z=T_{c_{0}}(V)$ entonces $V$ y $Z$ son subespacios propios y cerrados de $\ell^{1}$ y $c_{0}'$ respectivamente y ademas $(^{\circ}Z)^{\circ}=c_{0}'(\supsetneq Z)$ y $T_{c_{0}}$ es isomorfismo
 >>[!Proof]
 >>queda pendiente $\mathbb{F}$ 
+
+^0a50d4
 
 
 

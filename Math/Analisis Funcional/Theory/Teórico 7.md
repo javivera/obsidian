@@ -75,6 +75,8 @@ dateCreated: 2024-09-29,23:50
 >>[!Proof]
 >>
 
+^a49476
+
 >[!Theorem]
 >$\mathcal{H}$ Hilbert sea $T_{H}:\mathcal{H}\rightarrow\mathcal{H'}$ dado por $T_{H}(y)=f_{y}$ donde $f_{y}(x):=(x,y)\quad\forall x\in \mathcal{H}$. Entonces $T_{H}$ es biyectivo. Ademas $\forall y\in \mathcal{H}\quad\alpha,\beta\in \mathbb{F}$
 >1. $T_{H}(\alpha y + \beta z)=\overline{\alpha}T_{H}(y)+\overline{\beta}T_{H}(z)$

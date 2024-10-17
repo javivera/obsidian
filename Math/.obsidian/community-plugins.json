@@ -2,10 +2,8 @@
   "obsidian-git",
   "mathlinks",
   "obsidian-linter",
-  "obsidian-latex-suite",
   "math-booster",
-  "inline-math",
-  "obsidian-export-to-tex",
-  "obsidian-pandoc",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-latex-suite",
+  "math-in-callout"
 ]

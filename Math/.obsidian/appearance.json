@@ -3,8 +3,8 @@
   "enabledCssSnippets": [
     "style"
   ],
-  "textFontFamily": "CMU Sans Serif",
-  "interfaceFontFamily": "",
+  "textFontFamily": "Fira Code",
+  "interfaceFontFamily": "CMU Sans Serif",
   "monospaceFontFamily": "CMU Sans Serif",
   "baseFontSize": 16,
   "baseFontSizeAction": true,

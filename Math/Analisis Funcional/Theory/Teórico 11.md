@@ -78,7 +78,7 @@ dateCreated: 2024-10-02,22:03
 >>3. Entonces como $p_{C}$ es funcional lineal, multiplico $\alpha ^{-1}$ y llego a que $\alpha ^{-1}x\in C$. Analogo $\beta^{-1}y\in C$.
 >>4. Luego como $C$ convexo $\frac{1}{r}(x+y)=\frac{\alpha }{r}\alpha ^{-1}x+ \frac{\beta}{r}\beta^{-1}y\in C$ 
 >> (Notar que $\frac{\alpha }{r}+ \frac{\beta}{r}=1$ con $\frac{\alpha }{r}, \frac{\beta}{r}<1$ por 2. por eso esta en $C$ recordar por convexidad $(1-t)x + ty \in C$)
->>6. entonces $p_{C}\left(  \frac{1}{r} (x+y)\right) < 1$ por lo tanto $p_{C}(x+y)<r=\alpha +\beta$ 
+>>6. entonces $p_{C}\left(  \frac{1}{r} (x+y)\right) < 1$ por lo tanto $p_{C}(x+y)<r=\alpha +\beta$  por def de Minkowski infimo
 >>7. Como $\alpha ,\beta$ son arbitrarios se sigue que $p_{C}(x+y)\leq p_{C}(x)+p_{C}(y)$ (DUDA) (Osea $p_{C}$ cumple desigualdad triangular)
 >>8. Y es claro que $p_{C}(\alpha x)=\alpha p_{C}(x)\quad\forall \alpha \geq 0$. Mostrando que $p_{C}$ es [[Teórico 10#^dafca5]].
 >>

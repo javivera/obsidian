@@ -10,6 +10,8 @@ dateCreated: 2024-10-08,20:33
  > - (A2) $e.x=x\quad\forall x\in X$
 > En este caso se dice que $G$ actua (opera) en $X$ mediante $G\times X\longrightarrow X$
 
+^64fcc2
+
 >[!Example]
 >1. $G,X\neq\emptyset$ cualesquiera la accion trivial de $G$ en $X$ es aquella tal que $g.x=x\quad\forall x\in X\quad\forall g\in G$ 
 >2. $\mathbb{S}(x)$ actua en $X$ en la forma $\mathbb{S}\times X\longrightarrow X$ $\sigma.x=\sigma(x)\quad\forall \sigma\in \mathbb{S}(x)\quad\forall x\in X$. En particular $\mathbb{S}$ actua en $I_{n}=\{ 1,\ldots n \}$
@@ -19,3 +21,20 @@ dateCreated: 2024-10-08,20:33
 >6. $H\leq G$ entonces $G$ actua en las coclases $G\diagup H$  
 > Ejercicio probar que satisfacen (A1) y (A2)
 
+>[!Proposition]
+>Sea $G$ grupo $X\neq\emptyset$ conjunto. Son equivalentes:
+>1. Una accion $G\times X \longrightarrow X$
+>2. Un homomorfismo $\alpha : G\rightarrow \mathcal{S} (x)$
+>>[!Proof]
+>>pendiente
+
+>[!Example]
+>1. La accion trivial $G\times X\rightarrow X$ corresponde a 
+>$$\begin{align} &G\longrightarrow \mathcal{S} (x)\\
+>&g\longmapsto Id_{x}
+>\end{align}$$
+>2. La accion regular $G\times G\longrightarrow G$ corresponde al homomorfismo de Cayley $G$
+
+>[!Definition]
+>Sea $G\times X\longrightarrow X$ una accion de un grupo $G$ en 
+>
