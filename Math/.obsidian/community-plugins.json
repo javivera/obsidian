@@ -1,9 +1,11 @@
 [
   "obsidian-git",
-  "mathlinks",
   "obsidian-linter",
-  "math-booster",
   "obsidian-style-settings",
+  "tabout",
+  "mathlinks",
+  "obsidian-hover-editor",
   "obsidian-latex-suite",
-  "math-in-callout"
+  "quick-preview",
+  "math-booster"
 ]

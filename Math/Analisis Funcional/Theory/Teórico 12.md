@@ -106,7 +106,7 @@ tags:
 
 >[!Theorem]
 >$X$ reflexiva, $Y\subseteq X$ subespacio vectorial cerrado entonces $Y$ reflexivo
->>[!Proof]
+>>[!Proof]-
 >> 1. $Y$ reflexiva $\iff \forall \psi\in Y''$ existe $y_{\psi}\in Y$ tal que $J_{Y}(y_{\psi})=\psi$ osea $$\psi(g)=J_{Y}(y_{\psi})(g)= g(y_{\psi})\quad\forall g\in Y' \quad (a)$$
 >> 2. Como [[Teórico 10#^8c080d]] dice que $g=f|_{Y}$ para algun $f\in X'$. (osea para toda $g\in Y'$ existe extension $f\in X'$ por ser extension $f|_{Y}=g$)
 >> 3. Entonces $(a)$ es equivalente a ver que dado un $\psi \in Y''$ existe $y_{\psi}\in Y$ tal que $$(I)\quad f|_{Y}(y_{\psi})=\psi(f|_{Y})\quad\forall f\in X'$$
@@ -116,10 +116,14 @@ tags:
 >> 7. Veamos que $x_{\phi}\in Y$. Supongamos que no. Como $Y$ cerrado por [[Teórico 10#^3a0090]] existe $h\in X'$ tal que $h\equiv 0$ en $Y$ y $h(x_{\phi})\neq 0$ pero $0\neq h(x_{\phi})=\phi(h)=\phi(h|_{Y})=0$ (la igualdad del medio vale por $(II),(III)$ y la ultima por ser $\phi$ lineal y $h|_{Y}\equiv 0$)
 >> 8. Pero entonces dicho $x_{\phi}\in Y$  que estabamos buscando. Por que usando $(II),(III)$ $$f|_{Y}(x_{\phi})=f(x_{\phi})=\phi(f)=\psi(f|_{Y})\quad\forall f\in X'$$ 
 
+^c591f7
+
 >[!Definition] Anuladores
 >$X$ normado $\emptyset \neq W\subseteq X$ y $\emptyset\neq Z\subseteq X'$ defino los anuladores de $W$ y $Z$ como
 >$$W^{\circ}=\{ f\in X':f(x) =0\quad\forall x\in W \} $$
 >$$^{\circ}Z=\{ x \in X:f(x) =0\quad\forall f\in Z \} $$
+
+^e90f80
 
 >[!Lemma]
 >$X$ normado $\emptyset\neq W_{1}\subseteq W_{2}\subseteq X$ y $\emptyset\neq Z_{1}\subseteq Z_{2}\subseteq X'$ entonces

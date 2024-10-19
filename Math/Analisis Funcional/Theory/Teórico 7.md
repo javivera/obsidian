@@ -18,6 +18,8 @@ dateCreated: 2024-09-29,23:50
 >>6. Ahora $\forall x\in X$ $$\lVert Tx \rVert \leq \lVert X \rVert +\lVert Tx \rVert =\lVert (x,Tx) \rVert =\lVert R^{-1} x \rVert \leq \lVert R^{-1}  \rVert \lVert x \rVert $$
 >>7. Entonces $T$ continua
 
+^c58dff
+
 >[!Lemma]
 >$X$ e $Y$ normados $T\in B(X,Y)$ inversible entonces
 >$$\lVert Tx \rVert \geq \lVert T^{-1}  \rVert^{-1} \lVert x \rVert \quad\forall x\in X$$
@@ -68,6 +70,8 @@ dateCreated: 2024-09-29,23:50
 
 >[!Theorem] Acotado uniforme de Banach-Steinhaus
 >Sean $U,X$ Banach. Sea $S\neq \emptyset$ y para cada $s\in S$ sea $T_{s}\in B(U,X)$ entonces si para cada $u\in U$ el conjunto $\{ T_{s}(u):s\in S \}$ es acotado ($\lVert T_{s}(u) \rVert_{X}\leq M \quad \forall s\in S$) entonces $\{ \lVert T_{s} \rVert:s\in S \}$ es acotado
+
+^cd74fc
 
 ## Espacio Dual
 >[!Theorem] Representacion de Riesz

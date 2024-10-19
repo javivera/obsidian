@@ -42,7 +42,7 @@ dateCreated: 2024-10-11,20:30
 >- (a) Si existen los limites debil y debil-* entonces son unicos
 >- (b) $x_{n}$ converge debil a $x$ o ${} f_{n}$ converge debil-* a $f$ entonces $x_{n},f_{n}$ acotados 
 >- (c) $x_{n}\rightarrow x$ entonces $x_{n}\rightharpoonup x$ y $f_{n}\rightarrow f$ entonces $f_{n} \rightharpoonup f$. Si $\dim(X)$ es finita entonces valen las reciprocas.
->- (d) Si $M \subseteq X$ es cerrado y convexo y $\{x_{n}\}_{n\in \mathbb{N}}\subseteq M$ con $x_{n}\rightarrow x$ entonces $x\in M$
+>- (d) Si $M \subseteq X$ es cerrado y convexo y $\{x_{n}\}_{n\in \mathbb{N}}\subseteq M$ con $x_n\rightharpoonup x$ entonces $x\in M$
 >>[!Proof]
 >>(a)   
 >>1. Como $y_{n}\rightharpoonup y$ y $x_{n}\rightharpoonup x$. Por [[Teórico 10#^8c080d]], $\exists  f\in 'X$ con $f(x-y)=\lVert x-y \rVert$
@@ -51,5 +51,132 @@ dateCreated: 2024-10-11,20:30
 >>(b) 
 >>1. Supongo $x_n\rightharpoonup x$. Entonces $f(x_{n})\xrightarrow{n\rightarrow \infty} f(x)$
 >>2. Luego $\{ \lvert f(x_{n}) \rvert : n\in \mathbb{N} \}$ es acotado $\forall f\in X'$
->>3. Ademas se tiene que $\lVert J_{X}(x_{n}) \rVert=\lVert x_{n} \rVert$ y por def ${} \{ 0 \} {}$
+>>3. Entonces $\{ \lvert f(x_{n}) \rvert : n\in \mathbb{N} \} = \{\lvert J_{X}(x_{n})(f)\rvert:n\in \mathbb{N}\}$ es acotado para cada $f\in X'$
+>>4. Como $X$ y $X'$ son Banach por [[Teórico 7#^cd74fc]] $\{\lVert J_{X}(x_{n}) \rVert:n\in \mathbb{N}\}$ es acotado. 
+>>5. Por lo tanto $\{\lVert J_{X}(x_{n})\rVert:n\in \mathbb{N}\}=\{\lVert x_{n} \rVert:n\in \mathbb{N} \}$ es acotado
+>>
+>>(c)
+>>1. Tenemos $x_{n}\rightarrow x$. Sea $f\in X'$ entonces $\lvert f(x_{n})-f(x) \rvert\leq \lVert f \rVert\lVert x_{n}-x \rVert\xrightarrow{n\rightarrow \mathbb{N}}0$ 
+>>2. Entonces $f(x_{n})\rightarrow f(x)$ y vale para cualquier $f\in X'$ mostrando que $x_n\rightharpoonup x$  
+>>
+>>(Reciproca) 
+>>1. Supongamos dim finita y $x_n\rightharpoonup x$ pero $x_{n}\not \rightarrow x$
+>>2. Luego $\exists \epsilon>0$ y $\{x_{n_{j}} \}_{j\in \mathbb{N}}$ con $\lVert x_{n_{j}} -x\rVert>\epsilon$. 
+>>3. $\{ x_{n_{k}} \}$ converge debil $x$ por ser sub entonces por (b) es acotada.
+>>4. Entonces $\exists \{ x_{n_{k_{l}}} \}$ subsucesion con $x_{n_{k_{l}}}\xrightarrow{n\rightarrow\mathbb{N}}y\neq x$ (diferentre de $x$ por 2.)   
+>>5. Entonces $x_{n_{k_{l}}}\rightharpoonup y$ con $x\neq y$ absurdo. (DUDA , acá está el problema dim infinita?) 
+>>6. Entoncse $x_{n}\rightarrow x$  
+>>
+>>(d)
+>>1. Si $x\not\in M$ tomando $A=\{ x \}$ y $B=M$ en el [[Teórico 11#^18a436]] se contradice $x_n\rightharpoonup x$ absurdo entonces $x\in M$ 
+>>
+>>(Ejercicio hacer parte de debil-*) 
+
+^195d3b
+
+>[!Theorem] Banach-Alaogtu
+>Si $X$ es Banach separable y $\{ f_{n} \}\subseteq X'$ es acotada, entonces $\{ f_{n} \}$ tiene una subsucesion que converge debil-* a algun $f\in X'$
+>>[!Proof]
+>>1. Sea $\{ s_{k} \}\subseteq X$ denso 
+>>2. Como $\{ f_{n} \}$ es acoatada entonces $\{ f_{n}(s_{1}) \}\subseteq \mathbb{F}$ es acotada.
+>>3. Entonces $\exists \{ f_{n_{1}(m)}(s_{1}) \}_{m\in \mathbb{N}}$ ($m$ indexa la sub) 
+>>4. A su vez la sucesion $\{ f_{n_{1}(m)}(s_{2}) \}$ tiene sub convergente
+>>5. Asi inductivamente entonces la sub diagonal $\{ f_{n_{m}(m)} \}_{m\in \mathbb{N}}$ es acotada en $X'$ y $\{ f_{n_{m}(m)}(s_{k}) \}$ converge $\forall k\in \mathbb{N}$      
+>>6. Luego $f_{n_{m}(m)}$ converge debil-* a algun $f\in X'$ [[Teórico 13#^99815e]]
+
+^105785
+
+>[!Corollary] Compacidad debil-* de la bola cerrada
+>Sea $X$ Banach separable entonces toda sucesion en $B=\{ f\in X':\lVert f \rVert\leq 1 \}$ tiene subsucesion que converge debil-* a algun elemento de $B$. Es decir $B$ es compacta respecto a la topologia inducida por $d_{W}$ (existe, pues $X$ es separable)
+>>[!Proof]
+>>1. Sea $\{ f_{n} \}\subseteq B$ entonces por [[Teórico 14#^105785]] existe $\{ f_{n_{k}} \}$ sub sucesion con $f_{n_{k}}\xrightarrow{k\rightarrow\infty}f$ para algun $f\in X'$
+>>2. Pero $\lvert f(x) \rvert=\lim_{ k \to \infty }\lvert f_{n_{k}}(x) \rvert\leq \lim_{ k \to \infty }\lVert f_{n_{k}} \rVert\lVert x \rVert\leq \lVert x \rVert\quad\forall x\in X$.($\lVert f_{n_{k}} \rVert=1$). Entonces $\lVert f \rVert\leq 1$ con lo cual $f\in B$
+>>3. $\{ f_{n} \}$ es acotado entonces $d_{W}(f_{n},f)\xrightarrow{n\rightarrow \mathbb{N}}0$  
+
+>[!Theorem]
+>Si $X$ es reflexivo y $\{ x_{n} \}\subseteq X$ es acotada, entonces $\{ x_{n} \}$ tiene subsucesion que converge debil a algun $x\in X$  
+>>[!Proof]
+>>1. Sea $Y=\overline{Sp}\{ x_{n}:n\in \mathbb{N} \}$ entonces $Y$ es separable (igual la prueba de $H$ Hilbert $\iff$ Tiene BON) 
+>>2. $Y$ reflexivo pues es subespacio cerrado de $X$ reflexivo
+>>3. Entonces $Y''\simeq Y$ es separable ($Y$ reflexivo) entonces $Y'$ es separable.
+>>4. Ahora $\lVert J_{Y}(x) \rVert=\lVert x \rVert\quad\forall x\in Y$
+>>5. Luego $\{ J_{Y}(x_{n}):n\in \mathbb{N} \}\subseteq Y''$ es acotado luego por [[Teórico 14#^105785]] (con $X=Y'$) $\exists \{ J_{Y}(x_{n_{k}}) \}$ subsucesion que converge debil-* a algun $z\in Y''$    
+>>6. $Y$ reflexivo entonces $Z=J_{Y}(y)$ para algun $y\in Y$
+>>7. Ahora dado $f\in X'$ sea $f_{Y}=f|_{Y}\in Y'$ entonces $$\lim_{ k \to \infty }f(x_{n_{k}})=\lim_{ k \to \infty }f_{Y(x_{n_{k}})}=\lim_{ k \to \infty }J_{Y}(x_{n_{k}})(f_{Y})=Z(f_{Y})=J_{Y}(y)(f_{Y})=f_{Y}(y)=f(y)$$
+>>8. Mostrando que $x_{n_{k}}\rightharpoonup y$  
+
+>[!Corollary]
+>$X$ reflexivo $M\subseteq X$ cerrado, acotado y convexo. Entonces toda sucesion en $M$ tiene subsucesion que converge debilmente a algun $x\in M$.
+>>[!Proof]-
+>>1. Por teorema anterior, existe subsucesion que converge debil a algun $x$ 
+>>2. Como $M$ cerrado y convexo $x\in M$ por [[Teórico 14#^195d3b]] (d)
+
+## Operadores lineal en espacios de Hilbert
+
+>[!Theorem]
+>Sean $\mathcal{H},K$ Hilbert $T\in B(\mathcal{H},K)$ entonces $\exists !T^{*}\in B(K,\mathcal{H})$ tal que $$(T(x),y)=(x,T^{*}(y))\quad\forall x\in \mathcal{H},\quad\forall y\in K$$
+>>[!Proof]
+>>1. Sea $y\in K$ con $f_{y} : \mathcal{H}\rightarrow \mathbb{C}$ dada por $f_{y}(x)=(T(x),y)$
+>>2. $f_{y}$ es lineal y continua pues $\lvert f_{y}(x) \rvert\leq \lVert T \rVert\lVert y \rVert\lVert x \rVert$ entonces $f_{y}\in \mathcal{H}'$
+>>3. Por [[Teórico 7#^a49476]] $\exists !Z_{y}\in \mathcal{H}$ con $f_{y}(x)=(x,Z_{y})\quad\forall x\in \mathcal{H}$
+>>4. Definimos $T^{*}:K\rightarrow\mathcal{H}$ como $T^{*}(y)=Z_{y}$  
+>>5. Luego $(T(x),y)=(x,Z_{y})=(x,T^{*}(y))\quad\forall x\in \mathcal{H}\quad\forall y\in K$
+>>- $T^{*}$ es unico y lineal (ejercicio usar $(x,y)=(x,z)\quad\forall x\in X$ entones $y=z$  )
+>>- $T^{*}$ es continua pues $\lVert T^{*}(y) \rVert^{2}=(T^{*}(y),T^{*}(y))=(T(T^{*}(y)),y)\leq \lVert T \rVert\lVert T^{*}(y) \rVert\lVert y  \rVert$ (desigualdad ejercicio)
+>>Entonces $\lVert T^{*}(y) \rVert\leq \lVert T \rVert\lVert y \rVert$ por lo tanto $\lVert T^{*} \rVert\leq \lVert T \rVert$ mostrando $T^{*}$ continua
+
+^1814fb
+
+>[!Example] (ejercicio)
+>1. $T : \mathbb{C}^{n}\rightarrow \mathbb{C}^{n}$ dada por $T(x)=Ax$ entonces $T^{*}(x)=A^{*}(x)$ con $A^{*}=\overline{A^{T}}$
+>2. Sean $f\in C([0,1])$ y $T_{f}\in B(L^{2}[0,1])$ dada por $T_{f}(g)=f.g$ entonces $T_{f}^{*}=T_{f}$
+>3. $S : \ell^{2}\rightarrow \ell^{2}$ dada por $S(y_{1},y_{2},\ldots)=(0,y_{1},\ldots)$ entonces $S^{*}(y_{1}y_{2},\ldots)=(y_{2},y_{3},\ldots)$
+
+>[!Lemma] 
+>Sean $\mathcal{H},K,L$ Hilbert $R,S\in B(\mathcal{H},K)$ $T\in B(K,L)$ y $\lambda,\mu\in \mathbb{C}$ entonces
+>- (a) $(\mu R+\lambda S)^{*}=\overline{u}R^{*}+\overline{\lambda}S^{*}$
+>- (b) $(TR)^{*}=R^{*}T^{*}$
+>>[!Proof]
+>>(a) ejercicio
+>>(b) $(x.(TR)^{*}(z))=(TR(x),z)=(R(X),T^{*}(z))=(x,R^{*}T^{*}(z))$ listo por unicidad  
+
+>[!Theorem]
+>Sean $\mathcal{H},K$ Hilbert $T\in B(\mathcal{H},K)$. Entonces
+>- (a) $(T^{*})^{*}=T$
+>- (b) $\lVert T^{*} \rVert=\lVert T \rVert$
+>- (c) $f : B(\mathcal{H},K)\rightarrow B(K,\mathcal{H})$ dada por $T\mapsto T^{*}$ es continua (no es lineal)
+>- (d) $\lVert T^{*}T \rVert=\lVert T \rVert^{2}$
+>>[!Proof]
+>>(a)
+>>1. $(y,(T^{*})^{*}(x))=(T^{*}(y),x)=\overline{(x,T^{*}(y))}=\overline{(T(x),y)}=(y,T(x))\quad\forall x\in \mathcal{H}\quad\forall y\in K$ entonces $(T^{*})^{*}=T$      
+>>
+>>(b)
+>>1. Ya vimos $\lVert T^{*} \rVert\leq \lVert T \rVert$. La otra sale por (a) ($\lVert T \rVert\leq \lVert (T^{*})^{*} \rVert=\lVert T^{*} \rVert$) (Mirar final de demo [[Teórico 14#^1814fb]] para ver porque vale desigualdad) 
+>>
+>>(c) y (d) ejercicio
+>>
+
+>[!Proposition]
+>Sean $\mathcal{H},K$ Hilbert, $T\in B(H,K)$. Entonces 
+>- (a) $\ker(T)=Im(T^{*})^{\perp}$
+>- (b) $\ker(T^{*})=(Im(T))^{\perp}$
+>- (c) $\ker(T^{*})=0\iff Im(T)$ es densa en $K$ 
+>>[!Proof]
+>>(a)
+>>1. Sean $x\in \ker(T)$ y $z\in Im(T^{*})$ entonces $\exists y\in K$ con $T^{*}(y)=z$ entonces $(x,z)=(x,T^{*}(y))=(T(x)),y)=(0,y)=0$ entonces $x\in Im(T^{*})^{\perp}$ por lo tanto $\ker T\subseteq Im(T^{*})^{\perp}$
+>>2. Reciprocamente. Sea $v\in (Im(T^{*}))^{\perp}$ entonces $T^{*}(T(V)))\in Im(T^{*})$ entonces $(T(v),T(v))=(v,T^{*}(T(v)))=0$ (por que $v\in Im(T^{*})^{\perp}$) 
+>>3. Por lo tanto $T(V)=0$ entonces $v\in \ker(T)$ mostrando que $Im(T^{*})\subseteq \ker T$
+>>
+>>(b) Usar (a) con $T^{*}$
+>>
+>>(c) 
+>>1. Supongo $\ker T^{*}=0$ entonces $Im(T)^{\perp\perp}=\ker (T^{*} )^{\perp}=0^{\perp}=K$ 
+>>2. Entonces $Im(T)$ es denso en $K$. 
+>>3. Reciprocamente si $Im(T)$ es denso en $K$ entonces $\ker(T^{*})=Im(T)^{\perp}\stackrel{(1)}{=}(Im(T)^{\perp\perp})^{\perp}\stackrel{(2)}{=}K^{\perp}=0$  
+>>((1) vale por $Im(T)^{\perp}$ es cerrado y (2) vale por que $Im(T)^{\perp\perp}=\overline{Im(T)}=K$   )   
+
+>[!Corollary]
+>$\mathcal{H}$ Hilbert y $T\in B(\mathcal{H})$ entonces $T$ invertible $\iff\ker (T^{*})=0$ y $\exists \alpha >0$ con $\lVert T(x) \rVert\leq \alpha \lVert x \rVert\quad\forall x\in \mathcal{H}$
+>>[!Proof]
+>>Concecuencia de la propiedad anterior y un teorema de la clase 7
 >>

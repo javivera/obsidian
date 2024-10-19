@@ -59,6 +59,8 @@ dateCreated: 2024-09-27,19:41
 >2. $X$ separable $\iff Y$ separable
 >3. $X$ Banach $\iff Y$ Banach
 
+^2cb23e
+
 >[!Example] Operador inversible
 >Sea $f\in C[0,1]$ entonces $T_{f} : L^{p}(0,1)\rightarrow L^{p}[0,1]$ dado por $T(f)(u)=T_{f}(u)=f.u$
 >Es claro que es lineal y que esta bien definida (digamos $f.u\in L^{p}(0,1)$). Mas aun es continua pues 

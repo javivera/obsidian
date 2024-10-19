@@ -32,13 +32,11 @@
       "beginProof": "\\begin{proof}",
       "endProof": "\\end{proof}",
       "insertSpace": true
-    },
-    "Functional Analysis/Theory/Teórico 1.md": {},
-    "Analisis Funcional/Theory/Teórico 10.md": {}
+    }
   },
   "extraSettings": {
     "foldDefault": "",
-    "noteTitleInTheoremLink": false,
+    "noteTitleInTheoremLink": true,
     "noteTitleInEquationLink": true,
     "profiles": {
       "English": {
@@ -65,7 +63,7 @@
             "remark": "Remark"
           },
           "proof": {
-            "begin": "Proof",
+            "begin": "Proof.",
             "end": "□",
             "linkedBeginPrefix": "Proof of ",
             "linkedBeginSuffix": "."
@@ -106,7 +104,7 @@
     },
     "showTheoremTitleinBuiltin": true,
     "showTheoremContentinBuiltin": false,
-    "renderEquationinBuiltin": true,
+    "renderEquationinBuiltin": false,
     "triggerSuggest": "\\ref",
     "triggerTheoremSuggest": "\\tref",
     "triggerEquationSuggest": "\\eqref",
@@ -142,8 +140,8 @@
     "suggestLeafOption": "Current tab",
     "importerNumThreads": 2,
     "importerUtilization": 0.75,
-    "showTheoremCalloutEditButton": true,
-    "setOnlyTheoremAsMain": true,
+    "showTheoremCalloutEditButton": false,
+    "setOnlyTheoremAsMain": false,
     "setLabelInModal": false,
     "excludeExampleCallout": false,
     "enableProof": true,
@@ -153,10 +151,5 @@
     "searchModalRange": "recent",
     "searchModalDvQuery": ""
   },
-  "excludedFiles": [
-    "Functional Analysis/Ej 2 (Base de Gabor).md",
-    "Functional Analysis/Theory/Contraejemplos.md",
-    "Functional Analysis/Theory/Teórico 3.md",
-    "Analisis Funcional/Theory/Teórico 14.md"
-  ]
+  "excludedFiles": []
 }
