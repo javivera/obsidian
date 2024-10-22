@@ -146,28 +146,26 @@ ___
 
 > [!remark] Contraejemplo I
 > [[#^3196e0]] no es cierto si la dimension es infinita
-
->[!Proof]
->1. $S=\bigg\{ \{ x_{n} \} \subseteq\ell^{\infty}:\exists n_{0}\in \mathbb{N} \ / \ x_{n}=0 \ \forall n\leq n_{0} \bigg\}$
->2. S subespacio de dim infinita de $\ell^{\infty}$
->3. $x_{n} = (1, \frac{1}{2},\dots, \frac{1}{n},0,\dots,0,\ldots) \in S$
->4. Sea $x=\left( 1, \frac{1}{2},\dots, \frac{1}{n}, \frac{1}{n+1},\dots \right)\in (\ell^{\infty}\setminus S)$ 
->5. $\lVert x-x_{n} \rVert_{\infty} = \frac{1}{n+1}\rightarrow 0$ o lo mismo $\lim_{ n \to \infty }x_{n}=x$
->6. $S$ no es cerrado
+>>[!Proof]-
+>>1. $S=\bigg\{ \{ x_{n} \} \subseteq\ell^{\infty}:\exists n_{0}\in \mathbb{N} \ / \ x_{n}=0 \ \forall n\leq n_{0} \bigg\}$
+>>2. S subespacio de dim infinita de $\ell^{\infty}$
+>>3. $x_{n} = (1, \frac{1}{2},\dots, \frac{1}{n},0,\dots,0,\ldots) \in S$
+>>4. Sea $x=\left( 1, \frac{1}{2},\dots, \frac{1}{n}, \frac{1}{n+1},\dots \right)\in (\ell^{\infty}\setminus S)$ 
+>>5. $\lVert x-x_{n} \rVert_{\infty} = \frac{1}{n+1}\rightarrow 0$ o lo mismo $\lim_{ n \to \infty }x_{n}=x$
+>>6. $S$ no es cerrado
 ^0676dc
 
 ---
 >[!Lemma]
 > $X$ espacio vectorial normado, $S$ subespacio de $X$ entonces $\overline{S} \text{ es subespacio vectorial de } X$
+>>[!Proof]-
+>>1. $x,y\in \overline{S},\ \alpha \in \mathbb{F}$
+>>2. Por ser clausura existen $x_{n}\rightarrow x, \ y_{n}\rightarrow y$ en $S$
+>>3. $S$ subesp $x_{n}+y_{n}\in S$
+>>4. $x_{n}+y_{n}\rightarrow x+y$ entonces $x+y\in\overline{S}$
+>>5. Analogo $\alpha x_{n}$
 
 ^4c773a
-
->[!Proof]-
->1. $x,y\in \overline{S},\ \alpha \in \mathbb{F}$
->2. Por ser clausura existen $x_{n}\rightarrow x, \ y_{n}\rightarrow y$ en $S$
->3. $S$ subesp $x_{n}+y_{n}\in S$
->4. $x_{n}+y_{n}\rightarrow x+y$ entonces $x+y\in\overline{S}$
->5. Analogo $\alpha x_{n}$
 ---
 >[!Definition] Span
 > $E\subseteq X$ normado:
@@ -192,34 +190,34 @@ ___
 
 >[!Lemma] Riesz
 >Sea $X$ normado, $Y$ subespacio cerrado  con $Y\neq X$. Sea $\alpha \in(0,1)$. Entonces $\exists X_{\alpha}\in X$ con $\lVert X_{\alpha} \rVert=1$ tal que $\lVert X_{\alpha}-y \rVert >\alpha \quad \forall y\in Y$ 
+>>[!Proof]-
+>>1. $d=\inf\{ \lVert x-z \rVert:z\in Y \}>0$
+>>2. $0<\alpha<1  \Rightarrow d<d\alpha ^{-1}$
+>>3.  (Def infimo) $\lVert x-z \rVert<d\alpha ^{-1}$
+>>4. $x_{\alpha}=\frac{x-z}{\lVert x-z \rVert}\quad \lVert x_{\alpha} \rVert=1$
+>>5. $\lVert x_{\alpha}-y \rVert =\left\lVert  \frac{x-z}{\lVert x-z \rVert }-y  \right\rVert = \frac{1}{\lVert x-z \rVert }\lVert x-(z+\lVert x-z \rVert y) \rVert > \frac{d}{d\alpha ^{-1}}$
 
 ^ae7428
-
->[!Proof]-
->1. $d=\inf\{ \lVert x-z \rVert:z\in Y \}>0$
->2. $0<\alpha<1  \Rightarrow d<d\alpha ^{-1}$
->3.  (Def infimo) $\lVert x-z \rVert<d\alpha ^{-1}$
->4. $x_{\alpha}=\frac{x-z}{\lVert x-z \rVert}\quad \lVert x_{\alpha} \rVert=1$
->5. $\lVert x_{\alpha}-y \rVert =\left\lVert  \frac{x-z}{\lVert x-z \rVert }-y  \right\rVert = \frac{1}{\lVert x-z \rVert }\lVert x-(z+\lVert x-z \rVert y) \rVert > \frac{d}{d\alpha ^{-1}}$
 ---
 >[!Theorem]
 >Sea $X$ espacio vectorial dimension infinita 
 >$$D=\{ x \in X:\lVert x \rVert_{} \leq 1 \}\quad K=\{ x \in X: \lVert x \rVert_{} =1 \}$$
 >no son compactos
+>>[!Proof]-
+>.1. $x_{1}\in K$ como dim infinita $Sp(\{ x_{1} \})\neq X$ (Sp cerrado por ser de dim finita)
+>>2. [[#^ae7428]] $\exists x_{2}\in K$ tal que $\lVert x_{1}-x_{2} \rVert_{}\geq \frac{1}{2}$
+>>3. Generalizando $\exists x_{n}\in K$ tal que $\lVert x_{n}-x_{m} \rVert_{}\geq \frac{1}{2}\quad\forall n\neq m$
+>>4. Asi armamos una sucesion que no puede tener sub convergente en porque si fuese convergente seria de cauchy 
 
 ^8db74f
 
->[!Proof]-
->1. $x_{1}\in K$ como dim infinita $Sp(\{ x_{1} \})\neq X$ (Sp cerrado por ser de dim finita)
->2. [[#^ae7428]] $\exists x_{2}\in K$ tal que $\lVert x_{1}-x_{2} \rVert_{}\geq \frac{1}{2}$
->3. Generalizando $\exists x_{n}\in K$ tal que $\lVert x_{n}-x_{m} \rVert_{}\geq \frac{1}{2}\quad\forall n\neq m$
->4. Asi armamos una sucesion que no puede tener sub convergente en porque si fuese convergente seria de cauchy 
-
 >[!Remark]
 >$D$ y $K$ son compactos $\Rightarrow$ $X$ dim finita
+
 ---
 >[!Definition] Banach Space
 > Un espacio de Banach es un espacio normado que es completo con la metrica asociada a la norma
+
 ---
 >[!Theorem]
 >1. Todo normado de dim finita es Banach
@@ -227,17 +225,15 @@ ___
 >3. Si $(X,\sum,\mu)$ subespacio medible $\Rightarrow L^p \ (1\leq p\leq \infty)$ son banach
 >(En particular $\ell^p \ (1\leq p\leq \infty$ son banach)
 >4. $X$ Banach, $Y$ subespacio entonces $Y$ Banach $\iff Y$ cerrado
-
->[!Proof]-
->1. Visto arriba [[#^26042d]]
->2. Se asume visto en Reales 
->3. Se asumen visto en Reales
->4. [[#^83c633]]
+>>[!Proof]-
+>>1. Visto arriba [[#^26042d]]
+>>2. Se asume visto en Reales 
+>>3. Se asumen visto en Reales
+>>4. [[#^83c633]]
 
 >[!Theorem]
 >Sea $X$ de Banach $\{ x_{n} \} \subseteq X$ si la serie $\sum\lVert x_{n} \rVert_{}$ converge entonces $\sum x_{k}$ converge
-
->[!Proof]-
->1. $\bigg\lvert  \sum^m \lVert x_{k} \rVert - \sum^n \lVert x_{k} \rVert \bigg\rvert =\sum^m_{k=n+1} \lVert x_{k} \rVert \leq\epsilon \quad\forall m\geq n\geq n_{0}$ (por ser convergente la serie las sumas parciales son de cauchy)
->2. Sea $S_{n}=\sum^n x_{k}$ entonces $\lVert S_{m}-S_{n} \rVert\leq \lVert  \sum^m_{k=n+1}x_{k}  \rVert\leq \sum^m_{k=n+1}\lVert x_{k} \rVert\leq\epsilon$
->3. Como $X$ completo $S_{n}$ converge
+>>[!Proof]-
+>>1. $\bigg\lvert  \sum^m \lVert x_{k} \rVert - \sum^n \lVert x_{k} \rVert \bigg\rvert =\sum^m_{k=n+1} \lVert x_{k} \rVert \leq\epsilon \quad\forall m\geq n\geq n_{0}$ (por ser convergente la serie las sumas parciales son de cauchy)
+>>2. Sea $S_{n}=\sum^n x_{k}$ entonces $\lVert S_{m}-S_{n} \rVert\leq \lVert  \sum^m_{k=n+1}x_{k}  \rVert\leq \sum^m_{k=n+1}\lVert x_{k} \rVert\leq\epsilon$
+>>3. Como $X$ completo $S_{n}$ converge

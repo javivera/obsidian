@@ -65,6 +65,8 @@ dateCreated: 2024-09-22,22:22
 >>[!Proof]
 >>trivial
 
+^3660c8
+
 ## Base ortogonal de dimension infinita
 
 >[!Definition] Sucesion Ortonormal

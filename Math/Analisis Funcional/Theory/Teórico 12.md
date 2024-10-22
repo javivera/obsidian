@@ -48,6 +48,8 @@ tags:
 >>2. Ademas $\lvert F_{x}(x) \rvert=\lvert f(x) \rvert\leq \lVert x \rVert\lVert f \rVert=k\lVert x \rVert$ entonces $F_{x}$ es continua por lo tanto $F_{x}\in B(X',\mathbb{F})=X''$
 >>3. $\lVert x \rVert=\sup \{ \lvert f(x) \rvert:\lVert f \rVert=1 \}=\sup \{ \lvert F_{x}(f) \rvert:\lVert f \rVert=1 \}=\lVert F_{x} \rVert$ (El ultimo igual de definicion de norma en $B(X',\mathbb{F})$) (El primer igual es por ($2.$) [[Teórico 10#^d1e653]])
 
+^60cc7e
+
 >[!Definition]
 >Para $X$ normado definimos $J_{X}:X\rightarrow X''$ por $J_{X}x=J_{X}(x)=F_{X}$ osea $F_{X}(f)=J_{X}(x)(f)=f(x)\quad\forall x\in X\quad\forall f\in X'$. (Es claro que $J_{X}$ es lineal)
 

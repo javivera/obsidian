@@ -45,7 +45,7 @@ dateCreated: 2024-10-11,20:30
 >- (d) Si $M \subseteq X$ es cerrado y convexo y $\{x_{n}\}_{n\in \mathbb{N}}\subseteq M$ con $x_n\rightharpoonup x$ entonces $x\in M$
 >>[!Proof]
 >>(a)   
->>1. Como $y_{n}\rightharpoonup y$ y $x_{n}\rightharpoonup x$. Por [[Teórico 10#^8c080d]], $\exists  f\in 'X$ con $f(x-y)=\lVert x-y \rVert$
+>>1. Como $y_{n}\rightharpoonup y$ y $x_{n}\rightharpoonup x$. Por [[Teórico 10#^d1e653]], $\exists  f\in 'X$ con $f(x-y)=\lVert x-y \rVert$
 >>2. Entonces $\lVert x-y \rVert = f(x-y)=f(x) - f(y)=\lim_{ n \to \infty } f(x_{n})-\lim_{ n \to \infty } f(x_{n})=0$
 >>
 >>(b) 
@@ -140,6 +140,8 @@ dateCreated: 2024-10-11,20:30
 >>(a) ejercicio
 >>(b) $(x.(TR)^{*}(z))=(TR(x),z)=(R(X),T^{*}(z))=(x,R^{*}T^{*}(z))$ listo por unicidad  
 
+^0f7d67
+
 >[!Theorem]
 >Sean $\mathcal{H},K$ Hilbert $T\in B(\mathcal{H},K)$. Entonces
 >- (a) $(T^{*})^{*}=T$
@@ -155,6 +157,8 @@ dateCreated: 2024-10-11,20:30
 >>
 >>(c) y (d) ejercicio
 >>
+
+^0589c9
 
 >[!Proposition]
 >Sean $\mathcal{H},K$ Hilbert, $T\in B(H,K)$. Entonces 
@@ -173,10 +177,10 @@ dateCreated: 2024-10-11,20:30
 >>1. Supongo $\ker T^{*}=0$ entonces $Im(T)^{\perp\perp}=\ker (T^{*} )^{\perp}=0^{\perp}=K$ 
 >>2. Entonces $Im(T)$ es denso en $K$. 
 >>3. Reciprocamente si $Im(T)$ es denso en $K$ entonces $\ker(T^{*})=Im(T)^{\perp}\stackrel{(1)}{=}(Im(T)^{\perp\perp})^{\perp}\stackrel{(2)}{=}K^{\perp}=0$  
->>((1) vale por $Im(T)^{\perp}$ es cerrado y (2) vale por que $Im(T)^{\perp\perp}=\overline{Im(T)}=K$   )   
+>>(Usando  [[Teórico 3#^3660c8]] (1) vale por $Im(T)^{\perp}$ es cerrado y (2) vale por que $Im(T)^{\perp\perp}=\overline{Im(T)}=K$ )   
 
 >[!Corollary]
->$\mathcal{H}$ Hilbert y $T\in B(\mathcal{H})$ entonces $T$ invertible $\iff\ker (T^{*})=0$ y $\exists \alpha >0$ con $\lVert T(x) \rVert\leq \alpha \lVert x \rVert\quad\forall x\in \mathcal{H}$
+>$\mathcal{H}$ Hilbert y $T\in B(\mathcal{H})$ entonces $T$ invertible $\iff\ker (T^{*})=0$ y $\exists \alpha >0$ con $\lVert T(x) \rVert\geq \alpha \lVert x \rVert\quad\forall x\in \mathcal{H}$
 >>[!Proof]
->>Concecuencia de la propiedad anterior y un teorema de la clase 7
+>>Concecuencia de la propiedad anterior y un teorema de la clase 7 [[Teórico 7#^6e0039]]
 >>

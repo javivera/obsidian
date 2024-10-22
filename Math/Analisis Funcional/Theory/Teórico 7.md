@@ -35,6 +35,8 @@ dateCreated: 2024-09-29,23:50
 >>4. $y_{n}=Tx_{n}\rightarrow Tx$ ($T$ continua)
 >>5. $y=Tx\in Im(T)$ (Unicidad limite)
 
+^6e0039
+
 >[!Theorem]
 >$X,Y$ Banach $T\in B(X,Y)$ entonces son equivalentes:
 >1. $T$ es inversible

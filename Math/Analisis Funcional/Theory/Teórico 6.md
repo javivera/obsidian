@@ -74,6 +74,8 @@ dateCreated: 2024-09-27,19:41
 >>[!Proof]
 >>pendiente
 
+^aa4e9d
+
 >[!Remark] Aplicacion
 >$A\in \mathbb{C}$ con $k:[a,b]\times[a,b]\rightarrow\mathbb{C}$ dada por $k(x,y)=A\sin(x-y)$. Probar que si $|A|\leq \frac{1}{b-a}$ entonces $\forall f\in C[a,b]\quad\exists !g\in C[a,b]$ tal que 
 >$$g(x)=f(x)+\int_{a}^{b} k(x,y)g(y)dy \tag{1}$$
@@ -93,6 +95,8 @@ dateCreated: 2024-09-27,19:41
 >Sean $X,Y$ Banach entonces el conjunto $A$ de operadores inversibles es abierto en $B(X,Y)$
 >>[!Proof]
 >>pendiente
+
+^efd74a
 
 >[!Theorem] Baire
 >Sea $(M,d)$ metrico completo si $M=\bigcup^{\infty}_{j=1}A_{j}$ con $A_{j}\subseteq M$ cerrado entonces al menos un $A_{j}$ contiene una bola abierta

@@ -27,8 +27,9 @@ tags:
 >2. $(-a)b=-ab=a(-b)$
 >3. $(na)b=n(ab)=a(nb)\quad\forall n\in \mathbb{Z}$
 
->[!Definition] Caracteristicar
->Sea $R$ anillo. Si existe $n\in \mathbb{N}$ tal que $n.a=0\quad\forall a\in R$. El minimo de estos $n\in \mathbb{N}$ se nombra caracteristica de $R$
+>[!Definition] Caracteristica
+>Sea $R$ anillo. Si existe $n\in \mathbb{N}$ tal que $n.a=0\quad\forall a\in R$. El minimo de estos $n\in \mathbb{N}$ se nombra caracteristica de $R$ 
+>(Notar que aqui $\mathbb{N}$ no tiene al $0$  ) 
 
 >[!Remark]
 >Si $n.a=0\quad\forall a\in R$ entonces $n=0$ se dice que la caracteristica es 0

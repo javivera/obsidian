@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Analisis Funcional/Theory/Teórico 14.md",
-                "mode": "preview",
+                "file": "Analisis Funcional/Theory/Teórico 15.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teórico 14"
+              "title": "Teórico 15"
             }
           }
         ]
@@ -48,7 +48,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "Reflexivo",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -95,7 +95,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Estructuras Algebraicas/Theory/Teorico 13.md",
+            "file": "Analisis Funcional/Theory/Teórico 15.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "byCreatedTimeReverse",
@@ -149,17 +149,23 @@
   },
   "active": "175117e02f8dfca7",
   "lastOpenFiles": [
-    "Estructuras Algebraicas/Theory/Teorico 13.md",
-    "Estructuras Algebraicas/Theory/Teorico 12.md",
-    "Estructuras Algebraicas/Theory/Teorico 15.md",
-    "Estructuras Algebraicas/Theory/Teorico 14.md",
-    "Analisis Funcional/Theory/Teórico 12.md",
-    "Analisis Funcional/Theory/Teórico 11.md",
-    "Analisis Funcional/Theory/Teórico 13.md",
-    "Analisis Funcional/Theory/Teórico 6.md",
-    "Analisis Funcional/Theory/Teórico 14.md",
     "Analisis Funcional/Theory/Teórico 10.md",
+    "Analisis Funcional/Theory/Teórico 15.md",
+    "Analisis Funcional/Theory/Teórico 14.md",
+    "Analisis Funcional/Theory/Teórico 7.md",
+    "Estructuras Algebraicas/Theory/Teorico 17.md",
+    "Estructuras Algebraicas/Theory/Teorico 15.md",
+    "Estructuras Algebraicas/Theory/Teorico 16.md",
     "Analisis Funcional/Theory/Teórico 9.md",
+    "Analisis Funcional/Theory/Teórico 11.md",
+    "Estructuras Algebraicas/Theory/Teorico 13.md",
+    "Analisis Funcional/Theory/Teórico 8.md",
+    "Analisis Funcional/Theory/Teórico 12.md",
+    "Analisis Funcional/Theory/Teórico 13.md",
+    "Analisis Funcional/Theory/Teórico 5.md",
+    "Estructuras Algebraicas/Theory/Teorico 12.md",
+    "Estructuras Algebraicas/Theory/Teorico 14.md",
+    "Analisis Funcional/Theory/Teórico 6.md",
     "Estructuras Algebraicas/Theory/Teorico 2.md",
     "Functional Analysis/Theory/Teórico 7.md",
     "Estructuras Algebraicas/Theory/Teorico 3.md",
@@ -168,18 +174,12 @@
     "Estructuras Algebraicas/Theory",
     "Estructuras Algebraicas",
     "Analisis Funcional/Theory/Contraejemplos.md",
-    "Analisis Funcional/Theory/Teórico 8.md",
     "Analisis Funcional/Theory/Teórico 2.md",
     "Analisis Funcional/Theory/Teórico 3.md",
-    "Analisis Funcional/Theory/Teórico 7.md",
     "Analisis Funcional/Theory/Teórico 4.md",
-    "Analisis Funcional/Theory/Teórico 5.md",
-    "Analisis Funcional/Theory/Teórico 1.md",
-    "Analisis Funcional/Practicos/Practico 3 Funcional.md",
     "Analisis Funcional/Theory",
     "Analisis Funcional/Practicos",
     "Analisis Funcional",
-    "Functional Analysis/Theory/Teórico 12.md",
     "Functional Analysis/Theory",
     "Pasted image 20240919234954.png",
     "Ink",
