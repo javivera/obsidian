@@ -138,7 +138,7 @@ dateCreated: 2024-09-22,22:22
 >>Entonces $\lVert x \rVert^{2}= \lim_{ k \to \infty }\lVert x_{k} \rVert^{2}=\lim_{ k \to \infty }\sum^{k}_{n=1}\lvert (x,e_{n}) \rvert^{2}$ (Por [[Teórico 3#^4e7cf9]])
 >$(3\Rightarrow 1)$
 >$(4\Rightarrow 2)$ $x=\lim_{ k \to \infty }(x,e_{n})e_{n}$ entonces $x \in Sp\{e_{n}\}\subseteq\overline{Sp\{ e_{n}\}}=\overline{Sp}\{ e_{n}\}$ 
->([[Teórico 1#^f320eb]]])
+>([[Teórico 1#^f320eb]])
 >$(2\Rightarrow 1)$ Sea $y\in\{ e_{n} \}^{\perp}$ entonces $(y,e_{n})=0\quad\forall {n}\in\mathbb{N}$ por lo tanto $e_{n}\in\{ y \}^{\perp}$
 >$Sp\{ e_{n} \}\subseteq\{ y \}^{\perp} \text{ (Por 2) }\Rightarrow\mathcal{H}=\overline{Sp}\{ e_{n} \}\subseteq\overline{\{ y \}^{\perp}}=\{ y \}^{\perp}$
 >Entonces $y=0$

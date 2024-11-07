@@ -11,7 +11,7 @@ dateCreated: 2024-09-29,23:50
 >$$\text{Grafico cerrado }\Rightarrow T \text{ continua}$$
 >>[!Proof]-
 >>1.$X$ e $Y$ Banach entonces grafico es cerrado es [[Teórico 5#^5463d1]] (no entiendo esto)
->>2. $R(x,Tx)=x$ entonces $R$ es biyectiva y lineal
+>>2. Sea $R:Gr(f)\rightarrow X$ dada por $R(x,Tx)=x$ entonces $R$ es biyectiva y lineal
 >>3. $\lVert R(x,Tx) \rVert=\lVert x \rVert\leq \lVert x \rVert+\lVert Tx \rVert=\lVert (x,Tx) \rVert$ (Esto ultimo por definicion de norma)
 >>4. Luego $R$ es continua
 >>5. $R^{-1} : X\rightarrow Gr(f)$ es continua ([[Teórico 6#^c7bd75]])

@@ -18,12 +18,14 @@ dateCreated: 2024-10-18,18:58
 >[!Theorem] Wedderburn
 >Si $R$ es anillo de division tal que $R$ es finito entonces $R$ es conmutativo y por lo tanto es un cuerpo
 
+>[!Definition]
+>$R$ anillo con $1\neq0$ entonces $R^{X}=\{ a\in R:a \text{ unidad} \}$ (inversible) es grupo con el producto de $R$.
+
 >[!Example]
->$R$ anillo con $1\neq0$ $R^{X}=\{ a\in R:a \text{ unidad} \}$ (inversible) es grupo con el producto de $R$.
->Sea $\mathbb{F}$ cuerpo con $F^{*}$ grupo abeliano grupo abeliano.
+>Sea $\mathbb{F}$ cuerpo con $F^{*}$ grupo abeliano.
 >- Supongamos $\mathbb{F}$ finito 
->	$n=\lvert F \rvert-1=\lvert F^{*} \rvert$ entonces $\forall a\in \mathbb{F}^{*}$ tenemos $a^{n}=a^{\lvert F \rvert-1}=1$ por teorema de lagrange
->	Ademas para todo divisor $d$ de $n$ un elemento de orden $d$ en $\mathbb{F}^{*}$ es exactamente lo mismo que una raiz disinta de 1 del polinomio $x^{d}-1\in F^{*}$.
+>	$n=\lvert F \rvert-1=\lvert F^{*} \rvert$ entonces $\forall a\in \mathbb{F}^{*}$ tenemos $a^{n}=a^{\lvert F \rvert-1}=1$ por teorema de lagrange (DUDA) 
+>	Ademas para todo divisor $d$ de $n$, un elemento de orden $d$ en $\mathbb{F}^{*}$ es exactamente lo mismo que una raiz disinta de 1 del polinomio $x^{d}-1\in F^{*}$.
 >	Como este polinomio tiene a lo sumo $d$ raices en $\mathbb{F}$ entonces $\mathbb{F}^{*}$ tiene a lo sumo un subgrupo de orden $d$
 >	Esto implica $\mathbb{F}^{*}$ es ciclico
 >	En particular $(\mathbb{F}_{p})^{*}=\mathcal{U}(\mathbb{Z}_{p})=\{(a,p)=1 \}$ es ciclco de orden $p-1$

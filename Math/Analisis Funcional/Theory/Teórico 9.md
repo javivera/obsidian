@@ -18,7 +18,7 @@ tags:
 >[!Remark]
 >En un espacio metrico $(X,d)$ decimos que $E$ es acotado si $d(x,y)\leq M$. Esta def en general no coincide con la anterior. Reemplazo $d$ por la metrica
 >$$d_{1}= \frac{d}{d+1}$$
->Esta induce la misma topologia pero no coinciden (de hecho todos los conjuntos con $d_{1}$ son acotados)
+>Esta induce la misma topologia pero no coinciden las definiciones de acotado (de hecho todos los conjuntos con $d_{1}$ son acotados)
 
 >[!Remark]
 >Si $X$ es normado y $d$ la distancia inducida por la norma entonces si coinciden. 
@@ -69,7 +69,7 @@ tags:
 
 >[!Theorem]
 >Supongamos $P=\{ p_{i} \}_{i \in I}$ es una familia de seminormas que separan en un $X$ espacio vectorial para $n\in N$. Sean $$V(p_{i},n)=\left\{  x\in X:p_{i}(x)< \frac{1}{n}  \right\}$$
->$B$ familia de todas als intersecciones finitas de los conjuntos $V(p_{i},n)$. Entonces $B$ es una base local convexa para una topologia $\tau$ en $X$ que hace de $X$ un espacio vectorial topologico localmente convexto tal que 
+>$B$ familia de todas als intersecciones finitas de los conjuntos $V(p_{i},n)$. Entonces $B$ es una base local (del 0) convexa para una topologia $\tau$ en $X$ que hace de $X$ un espacio vectorial topologico localmente convexto tal que 
 >1. $\forall p_{i}\in P$ sucede $p_{i}$ es continua
 >2. $E\subseteq X$ es acotada $\iff$ Todo $p_{i}\in P$ es acotado en $E$
 

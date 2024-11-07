@@ -6,7 +6,7 @@ dateCreated: 2024-10-19,11:18
 >>[!Proof]
 >>1. Tomamos adjunta en $TT^{-1}=T^{-1}T=Id$
 >>2. $(TT^{-1})^{*}=(T^{-1}T)^{*}=Id^{*}$ entonces $(T^{-1})^{*}T^{*}=T^{*}(T^{-1})^{*}=Id$ por [[Teórico 14#^0f7d67]]
->>3. Entonces $T^{*}$ invertible y $(T^{*})^{-1}=(T^{-1})^{*}$
+>>3. Entonces $T^{*}$ invertible y $(T^{*})^{-1}=(T^{-1})^{*}$  
 
 ^1adfa9
 
@@ -20,6 +20,8 @@ dateCreated: 2024-10-19,11:18
 >1. Si $f\in C[0,1]$ con $T_{f}\in B(\ell^{2}[0,1])$ dada por $T_{f}(g)=f.g$ Ver que $T_{f}$ es normal 
 >2. El operador $S\in B(\ell^{2})$ dado por $S(y_{1},y_{2},\ldots)=(0,y_{1},y_{2},\ldots)$ no es normal
 >3. Si $T$ normal entonces $T-\lambda Id$ es normal
+
+^81235c
 
 >[!Lemma]
 >$T\in B(\mathcal{H})$ normal $\alpha >0$ entonces
@@ -38,7 +40,7 @@ dateCreated: 2024-10-19,11:18
 
 ^acb07f
 
->[!Definition]
+>[!Definition] Operador Autoadjunto
 >$\mathcal{H}$ Hilbert, $T\in B(\mathcal{H})$ es autoadjunta si $T=T^{*}$
 >
 
@@ -242,7 +244,7 @@ dateCreated: 2024-10-19,11:18
 >$\mathcal{H}$ Hilbert $T\in B(H)$ definimos
 >$$r_{\sigma}=\sup\{ \lvert \lambda \rvert :\lambda\in \sigma(T) \} \quad \text{ Radio Espectral de }T$$
 >
->$$V(T)=\{ (Tx,x):\lVert x \rVert =1 \}\quad\text{ Rango Numérico}$$
+>$$V(T)=\{ (Tx,x):\lVert x \rVert =1 \}\quad\text{ Rango Numérico de }$$
 >El rango numerico de $T$
 
 >[!Lemma]

@@ -3,34 +3,37 @@ dateCreated: 2024-10-11,20:30
 ---
 >[!Corollary]
 >Los espacios $c_{0}$ y $\ell^{\infty}$ no son reflexivos
->>[!Proof]
+>>[!Proof]-
 >>1. Vimos en [[Teórico 12#^0a50d4]] que $( ^{\circ}Z ) ^{\circ} =c_{0}'\neq Z$ 
 >>2. Luego $c_{0}$ no puede ser reflexivo por [[Teórico 12#^774fbc]] $2.$ 
 >>3. Ademas como $c_{0}$ cerrado en $\ell^{\infty}$ y no es reflexivo tampoco puede serlo $\ell^{\infty}$ por [[Teórico 12#^c591f7]]
 
+^8dcf06
+
 >[!Theorem]
 >$X,Y$ normados , $T \in B( X,Y )$ entonces $\exists !T'\in B( Y',X' )$ tal que 
 >$$ T'( f ) ( x ) =f( Tx ) \quad\forall f\in Y'\quad\forall x\in X$$ 
->>[!Proof]
->>1. Para $f\in Y'$ definimos $T'f=f\circ T$. 
->>2. Como $T,f$ son lineales y continuas $T'f$ lo es entonces  $T'( f)\in X'$ 
->>3. Ademas $T':Y'\longrightarrow X$ cumple que $$T'( f)( x)=f( Tx)\quad\forall x\in X ,\forall f\in Y'$$
->>4. Si hubiera otra $S_{i} B( Y',X' )$ tal que $S( f)( x)=f( Tx) \quad\forall x\in X \forall y\in Y'$ entonces $S( f)=T'( f)\quad\forall f\in Y'$ osea $S=T'$ 
->>5. Veamos que es lineal y continua. Sean $f,g_{i} Y',\alpha, \beta\in\mathbb{F}$ entonces $$  ( \alpha f+\beta g)\circ T=\alpha ( f\circ T)+\gamma( g\circ T)$$
+>>[!Proof]-
+>>1. Para $f\in Y'$ definimos $T'(f)=f\circ T$. 
+>>2. Como $T,f$ son lineales y continuas $T'(f)$ lo es entonces  $T'( f)\in X'$ 
+>>3. Ademas $T':Y'\longrightarrow X$ cumple que $$T'( f)( x)=f( Tx)\quad\forall x\in X \quad\forall f\in Y'$$
+>>4. Si hubiera otra $S\in B( Y',X' )$ tal que $S( f)( x)=f( Tx) \quad\forall x\in X \quad\forall y\in Y'$ entonces $S( f)=T'( f)\quad\forall f\in Y'$ osea $S=T'$ 
+>>5. Veamos que es lineal y continua. Sean $f,g_{i} Y',\alpha, \beta\in\mathbb{F}$ entonces $$T'(\alpha f+\beta g)=  ( \alpha f+\beta g)\circ T=\alpha ( f\circ T)+\gamma( g\circ T)$$
 >>Osea $T'( \alpha f+\beta g)=\alpha T'( f)+\beta( T')g$ 
->>6. Ademas $\lVert T( f) \rVert =\lVert f\circ T \rVert =\lVert f \rVert \lVert T \rVert$. Por lo tanto $T$ es continua (mas aun $\lVert T' \rVert \leq \lVert T \rVert$)
+>>6. Ademas $\lVert T'( f) \rVert =\lVert f\circ T \rVert =\lVert f \rVert \lVert T \rVert$. Por lo tanto $T'$ es continua (mas aun $\lVert T' \rVert \leq \lVert T \rVert$)
 
 ^e98c72
 
 >[!Proposition]
 >$X,Y$ normados $T\in B( X,Y )$ entonces
->1. $\lvert T' \rvert =\lVert T \rVert$ 
+>1. $\lVert T' \rVert =\lVert T \rVert$ 
 >2. $Ker( T')=( Im T)^{\circ}$
 >3. $Ker( T)=^{\circ}( Im T)$
->>[!Proof]
+>>[!Proof]-
 >>(1)
 >>1. Por [[Teórico 10#^d1e653]] $\exists f\in Y'$ tal que $f( Tx)=\lVert Tx \rVert$ y $\lVert f \rVert =1$ 
->>2. Entonces $\lVert Tx \rVert =f( Tx)=T( f)( x)\leq \lVert T' \rVert \lVert f \rVert \lVert x \rVert$ y sabemos $\lVert f \rVert =1$. Por lo tanto $\lVert T \rVert \leq \lVert T' \rVert$ ([[Teórico 13#^e98c72]] paso 6. )    
+>>2. Entonces $\lVert Tx \rVert =f( Tx)=T'( f)( x)\leq \lVert T' \rVert \lVert f \rVert \lVert x \rVert$ y sabemos $\lVert f \rVert =1$. Por lo tanto $\lVert T \rVert \leq \lVert T' \rVert$ 
+>>3. Y por [[Teórico 13#^e98c72]] paso 6. $\lVert T' \rVert\leq \lVert T \rVert$      
 >>
 >>(2)
 >>1. $( \subseteq )$  Sea $f\in Ker T'$ y $z\in Im T$ entonces $\exists x\in X$ tal que $z=Tx$
@@ -46,34 +49,36 @@ dateCreated: 2024-10-11,20:30
 >1. Si $T$ es isomorfismo entonces $T'$ es isomorfismo con $( T')^{-1} =( T^{-1} )'$.
 >(En particular si son isomorfos $X$ e $Y$ tambien lo son $X'$ e $Y'$) 
 >2. Si $T$ isomorfismo isometrico entonces $T'$ isomorfismo isometrico
->>[!Proof]
->>Sea $S=T^{-1}$ entonces $S\in B( Y,X )$ y ademas esta bien definida $S'\in B( X',Y')$ por [[Teórico 13#^e98c72]]
+>>[!Proof]-
+>>(1) 
+>>1. Sea $S=T^{-1}$ entonces $S\in B( Y,X )$ y ademas esta bien definida $S'\in B( X',Y')$ por [[Teórico 13#^e98c72]]
 >>1. Ahora $\forall x\in X ,f\in X'$ tenemos $$T'( S'(f))(x)=S'( f)( Tx)=f( S( Tx))=f( x)$$
 >>Osea $T( S'( f))=f$ por lo tanto $T'\circ S'=Id_{X'}$  
->>2. Analogamente vemos $S'\circ T'=Id$ 
+>>2. Analogamente vemos $S'\circ T'=Id$
+>>3. Entonces $(T^{-1})'=S=(T')^{-1}$ , como $T'$ tiene inversa , es isomorfismo  
 >>
 >>(2) 
 >>1. Por $(1.)$ basta ver que $T'$ es isometria. 
->>2. Por una parte $\lVert T'(f)(x) \rVert =\lVert f(Tx) \rVert \leq \lVert f \rVert \lVert T \rVert \lVert x \rVert$ ( Con $\lVert T \rVert =1$ por ser isometria )
+>>2. Por una parte $\lVert T'(f)(x) \rVert =\lVert f(Tx) \rVert \leq \lVert f \rVert \lVert T \rVert \lVert x \rVert$ (Con $\lVert T \rVert =1$ por ser isometria)
 >>3. Entonces $\lVert T'(f) \rVert \leq \lVert f \rVert$ 
 >>4. Por otro lado $\forall \epsilon>0\ \exists y\in Y$ con $\lVert y \rVert =1$ tal que $\lvert f(y) \rvert \geq \lVert f \rVert -\epsilon$ (Por def de supremo)
 >>5. Sea $x=T^{-1} y$ entonces $\lVert x \rVert =1$ (Pues $1= \lVert y \rVert =\lVert T(T^{-1} y) \rVert =\lVert T x \rVert =\lVert x \rVert$ ) 
->>6. Por lo tanto $\lVert T'(f) \rVert \geq \lvert T'(f)(x) \rvert =\lvert f(Tx) \rvert= \lvert f(y) \rvert \geq \lVert f \rVert -\epsilon$ 
+>>6. Por lo tanto $\lVert T'(f) \rVert \geq \lvert T'(f)(x) \rvert =\lvert f(Tx) \rvert= \lvert f(y) \rvert \geq \lVert f \rVert -\epsilon$ (Por def de norma $\lVert T'(f) \rVert$ dado que $\lVert x \rVert=1$) 
 >>7. Mostrando que $\lVert T'(f) \rVert =\lVert f \rVert$ 
 
 ^fbf5b7
 
 >[!Remark]
-Recordar que si $1\leq p<\infty, \ x\in \ell^p, \ a\in \ell^{q} $ con $\frac{1}{p}+\frac{1}{q}=1$. 
-Tomando $f_{a}(x)=\sum_{n=1}^{\infty} a_{n} x_{n}$ entonces $T_{p}:\ell^{q} \longrightarrow (\ell^{p} )'$ dada por $T_{p}(a)=f_{a}$  es isomorfismo isometrico
+Recordar que si $1\leq p<\infty, \ x\in \ell^p, \ a\in \ell^{q}$ con $\frac{1}{p}+\frac{1}{q}=1$. 
+Tomando $f_{a}(x)=\sum_{n=1}^{\infty} a_{n} x_{n}$ entonces $T_{p}:\ell^{q} \longrightarrow (\ell^{p} )'$ dada por $T_{p}(a)=f_{a}$  es isomorfismo isometrico       
 
 >[!Corollary]
->$\ell^{p}$ ,$\ 1<p<\infty$ con $\frac{1}{q}+\frac{1}{p}=1$ es reflexivo 
+>$\ell^{p}$ con $\ 1<p<\infty$ , $1<q\leq \infty$ y $\frac{1}{q}+\frac{1}{p}=1$ es reflexivo 
 >>[!Proof]
->>1. Sean $x\in\ell^{p} \quad y\in \ell^{q}$. Entonces $$T_{p}'(J_{\ell^{p}}(x))=(J_{\ell^{p} }(x))T_{p}(y)=T_{p}(y)(x)=\sum_{n=1}^{\infty} x_{n} y_{n} =T_{q}(x)(y)$$ 
+>>1. Sean $x\in\ell^{p} \quad y\in \ell^{q}$. Entonces $$T_{p}'(J_{\ell^{p}}(x))(y)=(J_{\ell^{p} }(x))T_{p}(y)=T_{p}(y)(x)=\sum_{n=1}^{\infty} x_{n} y_{n} =T_{q}(x)(y)$$ 
 >>2. Osea $T_{p}'(J_{\ell^{p} }(x))=T_{q}(x)$
->>3. Y $T_{p}'$ es iso por [[Teórico 13#^fbf5b7]] (por que $T$ lo es)  
->>4. Luego $J_{\ell^{p} }=( T_{p}' )^{-1} \circ T_{q}$ y como $T_{q}$ y $T_{p}'$ son iso entonces la compisicion es iso. 
+>>3. Y $T_{p}'$ es iso por [[Teórico 13#^fbf5b7]] (por que $T_{p}$ lo es)  
+>>4. Luego $J_{\ell^{p} }=( T_{p}' )^{-1} \circ T_{q}$ (despejando en la ec de arriba)  y como $T_{q}$ y $T_{p}'$ son iso entonces la compisicion es iso. 
 >>5. Como $J_{\ell^{p} }$ es isomorfismo entonces $\ell^{p}$ es reflexivo 
 
 ^63408e
@@ -92,13 +97,16 @@ $$J_{Y}\circ T=T'' \circ J_{X}$$
 >[!Corollary]
 >Si $X,Y$ son isomorfos entonces $X$ reflexivo sii $Y$ reflexivo 
 >>[!Proof]
->>1. Como $X,Y$ son isomorfos existe $T:X\longrightarrow Y$ isomorfismo. Entonces por [[Teórico 13#^fbf5b7]]  $T'$ y $T''$ son isomorfos. 
->>2. Luego usando la igualdad en [[Teórico 13#^7f9edb]] queda probado
+>>1. Como $X,Y$ son isomorfos existe $T:X\longrightarrow Y$ isomorfismo. Entonces por [[Teórico 13#^fbf5b7]]  aplicado dos veces $T''$ es isomorfos. 
+>>2. Luego usando la igualdad en [[Teórico 13#^7f9edb]] y considerando que composición de isomorfismos es isomorfismo queda probado
+
+^9a9641
 
 >[!Corollary]
 >$\ell^{1}$ no es reflexivo
->>[!Proof]
->>Sabemos que $c_{0}$ no es reflexivo y $\ell^{1}$ es isomorfo a $c_{0}'$ 
+>>[!Proof] DUDA ES BANACH C0
+>>1. Sabemos que $c_{0}$ no es reflexivo [[#^8dcf06]] entonces por [[Teórico 12#^ba33bb]] (considerando $c_{0}$ es Banach ) $c_{0}'$  no es reflexivo
+>>2. $\ell^{1}$ es isomorfo a $c_{0}'$ entonces por [[#^9a9641]] 
 
 ## Proyeciones y subespacios complementarios
 

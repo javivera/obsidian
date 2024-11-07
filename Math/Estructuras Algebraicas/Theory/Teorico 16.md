@@ -1,20 +1,20 @@
 >[!Definition] 
->Sea $R$ anillo. Un elemento $0\neq a\in R$ se \textbf{divisor de cero a izquierda (derehca)} si $\exists 0\neq b\in R$ tal que $ab=0$ (respectivamente $ba=0$ )
+>Sea $R$ anillo. Un elemento $0\neq a\in R$ se dice *divisor de cero* a izquierda (derecha) si $\exists 0\neq b\in R$ tal que $ab=0$ (respectivamente $ba=0$ )
 >Si $a$ es divisor de cero a izquierda y a derecha entonces se dice que $a$ es divisor de cero
 
 >[!Example]
 >1. En $\mathbb{Z}_{n}$ si $n$ no es primo tomamos $d|n$ entonces $\overline{d}$ es un divisor en $\mathbb{Z}_{n}$
 >2. En $M_{n}(R)\quad n>1$ tomamos COPIAR MATRICES   
 
->[!Definition]
+>[!Definition] Dominio de integridad
 >Un anillo conmutativo con identidad $1\neq 0$ se dice de dominio integro (o de integridad) si no posee divisores de 0
 
 >[!Example]
 >1. $\mathbb{Z},\mathbb{R},\mathbb{Q},\mathbb{C}$ son dominios de integridad
 >2. $\mathbb{Z}_{n}$ es dominio de integridad sii $n$ es primo observamos que ${} \mathbb{Z}/{n\mathbb{Z}}=n\mathbb{Z} {}$ 
->3. $\mathbb{Z}[x],\mathbb{Z} [x_{1},\ldots,x_{k}]$ etc , son dominios de integridad (Los polonomios con eoficientes en $\mathbb{Z} $ y variables $x_{i}$ ) 
+>3. $\mathbb{Z}[x],\mathbb{Z} [x_{1},\ldots,x_{k}]$ etc , son dominios de integridad (Los polonomios con coficientes en $\mathbb{Z}$ y variables $x_{i}$ ) 
 
->[!Definition] Anillo Inversivle
+>[!Definition] Anillo de Division
 >Sea $R$ un anillo con identidad y sea $0\neq a\in R$ se dice que $a$ es:
 >1. Inversible a izquierda $\iff\exists b\in R$ tal que $ba=1$
 >2. Inversible a derecha $\iff\exists b\in R$ tal que $ab=1$
@@ -65,12 +65,12 @@ Un anillo $D$ con $1\neq 0$ donde todo elemento es inversible se llama *anillo d
 >Si un ideal contiene a la identidad entonces ese ideal es todo el anillo
 
 >[!Definition]
->Sea $R$ anillo. Un ideal $P$ de $R$ tal que $P\neq R$ se dice primo si para cualquier para de ideales $I,J$ de $R$ vale que:
+>Sea $R$ anillo. Un ideal $P$ de $R$ tal que $P\neq R$ se dice primo si para cualquier par de ideales $I,J$ de $R$ vale que:
 >$$IJ\subseteq P\Rightarrow I\subseteq P\quad\lor\quad J\subseteq P$$
 >Donde $IJ=\left\{  \sum^{r}_{i=1}a_{i}b_{i} \ |\ r\in \mathbb{N},a_{i}\in I,b_{i}\in J \right\}$    
 
->[!Theorem]
->Sea $P\subset X$ ideal tal que para todo $a,b\in R$ se cumple que $ab\in P$ entonces $a\in P$ o $b\in P$. Entonces $P$ es primo. Si $R$ es conmutativo, vale la reciproca.
+>[!Theorem] DUDA
+>Sea $P\subset X$ ideal tal que para todo $a,b\in R$ se cumple que $ab\in P$ entonces $a\in P$ o $b\in P$. Entonces $P$ es primo. Si $R$ es conmutativo, vale la reciproca. ( Que seria la reciproca?) 
 
 >[!Example]
 >1. $R\neq 0$ anillo sin divisores de cero entonces $\{ 0 \}$ es un ideal primo. $ab\in \{ 0 \}$ entonces $a=0$ o $b=0$

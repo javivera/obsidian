@@ -1,9 +1,9 @@
 ---
 dateCreated: 2024-10-11,20:30
 ---
->[!Proposition]
+>[!Proposition] DUDA
 >Supongo $X$ es Banach separable $\{s_{k}\}_{k\in \mathbb{N} }\subseteq X$ denso. $s_{k}\neq 0\quad \forall k\in \mathbb{N}$. Sea $d_{W}:X'\times X'\longrightarrow \mathbb{R}$ dada por $$d_{W}(f,g)=\sum_{k=1}^{\infty} \frac{1}{2^k}\frac{f(s_{k})-g(s_{k})}{\lVert s_{k} \rVert }$$ entonces $d_{W}$ es metrica en $X'$ y si $\{f_{n}\}_{n\in \mathbb{N} }\subseteq X'$  y $f\in X'$ entonce son equivalentes:
->- (a) $\exists c>0$ tal que $\lVert f_{n}\leq c \rVert \quad \forall n\in W$ y $d_{W}(f,f_{n})\xrightarrow{n\rightarrow \infty } 0$  
+>- (a) $\exists c>0$ tal que $\lVert f_{n}\rVert \leq c \quad \forall n\in \mathbb{N}$     y    $d_{W}(f,f_{n})\xrightarrow{n\rightarrow \infty } 0$  
 >- (b) $f_{n}(x)\xrightarrow{n\rightarrow \infty }f(x)\quad \forall x\in X$ 
 >>[!Proof]-
 >>Tenemos que $d_{W}(f,g)\leq \lVert f-g \rVert$ entonces $d_{W}$ esta bien def y $d_{W}$ es metrica (ej)
@@ -13,8 +13,8 @@ dateCreated: 2024-10-11,20:30
 >>3. Razonando como en el lema anterio (usando densidad, etc) se tiene que $f_{n}(x)\longrightarrow f(x)\quad \forall x\in X$V
 >>
 >>Veamos $(b)\Rightarrow (a)$
->>1. $\sup \{\lvert f_{n}(x) \rvert n \in N:  \}$ es finito $\forall x\in X$ 
->>2. Entonces  $\sup \{\lVert f_{n}\rVert n \in N:  \}$ es finito.  (Por Banach- Steinhaus)
+>>1. $\sup \{\lvert f_{n}(x) \rvert :n \in \mathbb{N}\}$ es finito $\forall x\in X$  (Por convergencia)
+>>2. Entonces  $\sup \{\lVert f_{n}\rVert :n \in \mathbb{N}  \}$ es finito.  (Por Banach- Steinhaus)
 >>3. Entonces existe $c>0$ con $\lVert f_{n} \rVert \leq c\quad \forall n\in \mathbb{N}$
 >>4. Puedo suponer $f=0$ si no tomaria $g_{n}=f_{n}-f$. Es decir asumimos $\lim_{n=1}^{\infty}f_{n}(x)=0 \quad \forall x\in X$ 
 >>5. Como $\lvert f_{n}(s_{k})\rvert \leq \lVert f_{n} \rVert \lVert s_{k} \rVert$ entonces $$d_{W}(f,f_{n})=\sum_{k=1}^{\infty} \frac{1}{2^k}\frac{\lvert f_{n}(s_{k}) \rvert}{\lVert s_{k} \rVert }\leq \lVert f_{k} \rVert \sum_{k=1}^{\infty} \frac{1}{2^k}=\lVert f_{k} \rVert $$ 
@@ -113,11 +113,11 @@ dateCreated: 2024-10-11,20:30
 
 ## Operadores lineal en espacios de Hilbert
 
->[!Theorem]
->Sean $\mathcal{H},K$ Hilbert $T\in B(\mathcal{H},K)$ entonces $\exists !T^{*}\in B(K,\mathcal{H})$ tal que $$(T(x),y)=(x,T^{*}(y))\quad\forall x\in \mathcal{H},\quad\forall y\in K$$
+>[!Theorem] DUDA
+>Sean $\mathcal{H},K$ Hilbert $T\in B(\mathcal{H},K)$ entonces $\exists !T^{*}\in B(K,\mathcal{H})$ tal que $$(T(x),y)=(x,T^{*}(y))\quad\forall x\in \mathcal{H},\quad\forall y\in K$$  
 >>[!Proof]
 >>1. Sea $y\in K$ con $f_{y} : \mathcal{H}\rightarrow \mathbb{C}$ dada por $f_{y}(x)=(T(x),y)$
->>2. $f_{y}$ es lineal y continua pues $\lvert f_{y}(x) \rvert\leq \lVert T \rVert\lVert y \rVert\lVert x \rVert$ entonces $f_{y}\in \mathcal{H}'$
+>>2. $f_{y}$ es lineal y continua pues $\lvert f_{y}(x) \rvert\leq \lVert T \rVert\lVert y \rVert\lVert x \rVert$ (DUDA) entonces $f_{y}\in \mathcal{H}'$
 >>3. Por [[Teórico 7#^a49476]] $\exists !Z_{y}\in \mathcal{H}$ con $f_{y}(x)=(x,Z_{y})\quad\forall x\in \mathcal{H}$
 >>4. Definimos $T^{*}:K\rightarrow\mathcal{H}$ como $T^{*}(y)=Z_{y}$  
 >>5. Luego $(T(x),y)=(x,Z_{y})=(x,T^{*}(y))\quad\forall x\in \mathcal{H}\quad\forall y\in K$

@@ -66,4 +66,4 @@ tags:
 >$\mathcal{B}$ conjunto de bolas de $X$ espacio vectorial topologico entonces todo miembro de $\mathcal{B}$ contiene la clausura de algun otro miembro de $\mathcal{B}$ digamos $$\forall U\in \mathcal{B} \quad \exists W\in \mathcal{B} \quad\text{ tal que }\quad \overline{W}\subseteq U$$
 
 >[!Definition] Entorno Balanceado
->$B\subseteq X$ espacio vectorial topologico se dice balanceado $\iff$ son
+>$S\subseteq X$ espacio vectorial topologico se dice balanceado $\iff$ $\alpha s\in S\quad\forall x\in S\quad\forall \lvert \alpha  \rvert\leq 1$  

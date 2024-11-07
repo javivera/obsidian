@@ -35,13 +35,13 @@ tags:
 >Si $n.a=0\quad\forall a\in R$ entonces $n=0$ se dice que la caracteristica es 0
 
 >[!Definition]
->Si $R,S$ anillos, un homomrfismo de anillos es una funcion $f : R\rightarrow S$ tal que 
+>Si $R,S$ anillos, un homomorfismo de anillos es una funcion $f : R\rightarrow S$ tal que 
 >1. ${} f(a+b)=f(a)+f(b) {}$
 >2. $f(a.b)=f(a).f(b)$
 
 >[!Proposition]
 >Sea $R$ anillo con identidad $1$ tal que la caracteristica de $R$ es $n>0$ entonces 
->1. La funcion $\phi:\mathbb{Z}\rightarrow R$ dada por $\phi(k)=k.1$ es un homormofismo de anillos con nucleo $nZ$ 
+>1. La funcion $\phi:\mathbb{Z}\rightarrow R$ dada por $\phi(k)=k.1$ es un homormofismo de anillos con nucleo $n\mathbb{Z}$ 
 >2. $n=\min\{ k\in \mathbb{N}:k.1=0 \}$ 
 >>[!Proof]
 >>ds
@@ -62,7 +62,7 @@ tags:
 >Que estas operaciones estan bien definidas pues suma y producto de funciones continuas con soporte compacto vuelven a ser continuas con coporte compacto
 
 >[!Definition]
->Sea $R$ un anillo, un subconjunto $T$ de $R$ se dice sub anillo si $T$ subgrupo de el grupo abeliano $R$ y ademas $T$ cerrado para el producto
+>Sea $R$ un anillo, un subconjunto $T$ de $R$ se dice subanillo si $T$ subgrupo de el grupo abeliano $R$ y ademas $T$ cerrado para el producto
 >1. $T\leq (R,+)$
 >2. $a.b\in T\quad\forall a,b\in T$
 

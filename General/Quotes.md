@@ -23,3 +23,5 @@ Willingly accept what’s outside your control"
 "When youth departs may wisdom prove enough" churchill
 
 El Que perdona esta allá arriba. Acá abajo está  que castiga 
+
+It’s much easier to raise strong boys than to fix broken men
