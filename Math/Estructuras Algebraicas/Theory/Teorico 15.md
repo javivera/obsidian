@@ -124,3 +124,6 @@ Con $xg_{i}$ que no es el producto ni ninguna operacion, es una expresion.
 >>[!Proof]
 >>asd
 >
+
+^083674
+

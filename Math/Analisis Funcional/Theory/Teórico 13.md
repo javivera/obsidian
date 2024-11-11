@@ -6,7 +6,7 @@ dateCreated: 2024-10-11,20:30
 >>[!Proof]-
 >>1. Vimos en [[Teórico 12#^0a50d4]] que $( ^{\circ}Z ) ^{\circ} =c_{0}'\neq Z$ 
 >>2. Luego $c_{0}$ no puede ser reflexivo por [[Teórico 12#^774fbc]] $2.$ 
->>3. Ademas como $c_{0}$ cerrado en $\ell^{\infty}$ y no es reflexivo tampoco puede serlo $\ell^{\infty}$ por [[Teórico 12#^c591f7]]
+>>3. Ademas como $c_{0}$ cerrado en $\ell^{\infty}$ que no es reflexivo, tampoco puede serlo $\ell^{\infty}$ por [[Teórico 12#^c591f7]]
 
 ^8dcf06
 
@@ -28,7 +28,7 @@ dateCreated: 2024-10-11,20:30
 >$X,Y$ normados $T\in B( X,Y )$ entonces
 >1. $\lVert T' \rVert =\lVert T \rVert$ 
 >2. $Ker( T')=( Im T)^{\circ}$
->3. $Ker( T)=^{\circ}( Im T)$
+>3. $Ker( T)=^{\circ}( Im T')$
 >>[!Proof]-
 >>(1)
 >>1. Por [[Teórico 10#^d1e653]] $\exists f\in Y'$ tal que $f( Tx)=\lVert Tx \rVert$ y $\lVert f \rVert =1$ 
@@ -73,13 +73,14 @@ Recordar que si $1\leq p<\infty, \ x\in \ell^p, \ a\in \ell^{q}$ con $\frac{1}{p
 Tomando $f_{a}(x)=\sum_{n=1}^{\infty} a_{n} x_{n}$ entonces $T_{p}:\ell^{q} \longrightarrow (\ell^{p} )'$ dada por $T_{p}(a)=f_{a}$  es isomorfismo isometrico       
 
 >[!Corollary]
->$\ell^{p}$ con $\ 1<p<\infty$ , $1<q\leq \infty$ y $\frac{1}{q}+\frac{1}{p}=1$ es reflexivo 
+>$\ell^{p}$ con $\ 1<p<\infty$ es reflexivo 
 >>[!Proof]
->>1. Sean $x\in\ell^{p} \quad y\in \ell^{q}$. Entonces $$T_{p}'(J_{\ell^{p}}(x))(y)=(J_{\ell^{p} }(x))T_{p}(y)=T_{p}(y)(x)=\sum_{n=1}^{\infty} x_{n} y_{n} =T_{q}(x)(y)$$ 
->>2. Osea $T_{p}'(J_{\ell^{p} }(x))=T_{q}(x)$
->>3. Y $T_{p}'$ es iso por [[Teórico 13#^fbf5b7]] (por que $T_{p}$ lo es)  
->>4. Luego $J_{\ell^{p} }=( T_{p}' )^{-1} \circ T_{q}$ (despejando en la ec de arriba)  y como $T_{q}$ y $T_{p}'$ son iso entonces la compisicion es iso. 
->>5. Como $J_{\ell^{p} }$ es isomorfismo entonces $\ell^{p}$ es reflexivo 
+>>1. Sean $x\in\ell^{p} \quad y\in \ell^{q}$  $1<q< \infty$ y $\frac{1}{q}+\frac{1}{p}=1$ 
+>>2. Entonces $$T_{p}'(J_{\ell^{p}}(x))(y)=(J_{\ell^{p} }(x))T_{p}(y)=T_{p}(y)(x)=\sum_{n=1}^{\infty} x_{n} y_{n} =T_{q}(x)(y)$$ 
+>>3. Osea $T_{p}'(J_{\ell^{p} }(x))=T_{q}(x)$
+>>4. Y $T_{p}'$ es iso por [[Teórico 13#^fbf5b7]] (por que $T_{p}$ lo es)  
+>>5. Luego $J_{\ell^{p} }=( T_{p}' )^{-1} \circ T_{q}$ (despejando en la ec de arriba)  y como $T_{q}$ y $T_{p}'$ son iso entonces la compisicion es iso. 
+>>6. Como $J_{\ell^{p} }$ es isomorfismo entonces $\ell^{p}$ es reflexivo 
 
 ^63408e
 
@@ -104,7 +105,7 @@ $$J_{Y}\circ T=T'' \circ J_{X}$$
 
 >[!Corollary]
 >$\ell^{1}$ no es reflexivo
->>[!Proof] DUDA ES BANACH C0
+>>[!Proof]
 >>1. Sabemos que $c_{0}$ no es reflexivo [[#^8dcf06]] entonces por [[Teórico 12#^ba33bb]] (considerando $c_{0}$ es Banach ) $c_{0}'$  no es reflexivo
 >>2. $\ell^{1}$ es isomorfo a $c_{0}'$ entonces por [[#^9a9641]] 
 
@@ -153,14 +154,15 @@ $$J_{Y}\circ T=T'' \circ J_{X}$$
 >Por resultados anteriores esto es equivalente a que exista proyeccion continua $P$ tal que $U=Im P$. Pues en tal caso tomamos $V=Im(I-P)$ (ejercicio)
 >Si $\dim V<\infty$ es cierto (ej). En general esto no es cierto pero si vale en espacios de Hilbert (Lo vemos mas adelante)
 
->[!Lemma]
+>[!Lemma] DUDA
 >Sea $S= \{s_{\alpha }: \alpha \in A\}$  tal que $\overline{Sp}S=X$. Si $\{f_{n} \}$ es una sucesion acotada en $X'$ y $\{f_{n} (s_{\alpha })\}$ converge $\forall \alpha \in A$ entonces $\exists f\in X'$ tal que $f_{n} (x)\longrightarrow f(x)\quad \forall x\in X$  
->>[!Proof] DUDA
+>>[!Proof]
 >>1. Sea $x\in X$ como $\{f_{n} \}$ es acotada $\exists c>0$ tal que $\lVert f_{n}  \rVert \leq c \quad \forall n\in \mathbb{N}$.
 >>2. Ahora dado $\epsilon >0$ existe $s\in Sp(S)$ con $\lVert x-s \rVert \leq \frac{\epsilon }{3c}$. Entonces $\forall n$ $\lvert f_{n} (x)-f_{n} (s) \rvert \leq \lVert f_{n}  \rVert \lVert x-s \rVert \leq \frac{\epsilon }{3}$
 >>3. Luego $$\lvert f_{n} (x)-f_{m}(x) \rvert \leq \lvert f_{n} (x)-f_{n} (s) \rvert +\lvert f_{n} (s)-f_{m}(s) \rvert +\lvert f_{m}(s)-f_{m}(x) \rvert \leq \frac{2}{3}\epsilon +\lvert f_{n} (s)-f_{m}(s) \rvert $$
 >>4. Pero $\lvert f_{n}(s)-f_{m}(s) \rvert \leq \frac{\epsilon }{3}$ si $n,m\geq n_{0}$ por que $\{f_{n}(s_{\alpha })\}$ converge (entonces es de Cauchy) $\forall \alpha \in A$ y $s$ es combinacion lineal finita de elementos de $S$
 >>5. Entonces $\{f_{n}(x)\}$ es de Cauchy entonces converge. Luego podemos definir $f(x)=\lim_{n}f_{n}(x)$
->>6. Luego $f_{n}(x)\longrightarrow f(x)\quad \forall x\in X$ y entonces $f\in X'$ por [[Teórico 7#^cd74fc]] (DUDA) 
+>>6. Luego $f_{n}(x)\longrightarrow f(x)\quad \forall x\in X$ y entonces dado $x\in X$ tenemos $$\lvert f(x) \rvert\leq \lvert f(x)-f_{n}(x) \rvert +\lvert f_{n}(x) \rvert \leq \epsilon  $$      
+>>7. Como esto vale para cualquier $x\in X$ por [[Teórico 7#^cd74fc]] $\lVert f \rVert\leq k$ es acotada osea $f\in X'$ (ESTA BIEN ESTO QUE AGREAGUE?) 
 
 ^99815e

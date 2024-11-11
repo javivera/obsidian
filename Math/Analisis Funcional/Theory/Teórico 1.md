@@ -33,7 +33,7 @@ tags:
 
 >[!Remark]
 >La equivalencia de normas es una relacion de equivalencia
----
+
 >[!Lemma]
 >Let $X$ be a vector space with $\lVert \cdot \rVert, \lVert \cdot \rVert_{1}$ and $d, d_{1}$ associated metrics. Suppose $\exists k>0$ such that $\lVert x \rVert \leq k \lVert x \rVert_{1}\quad \forall x \in X$. Let $\{ x_{n} \}\subseteq X$, then:
 >1. $x_{n} \rightarrow x$ in $(X, d_{1}) \Longrightarrow x_{n} \rightarrow x$ in $(X, d)$  

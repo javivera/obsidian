@@ -31,6 +31,8 @@ dateCreated: 2024-09-27,19:41
 >1. $(\lambda p+\mu q)(T)=\lambda p(T)+\mu q(T)$
 >2. $pq(T)=p(T)q(T)$
 
+^c381db
+
 ## Inversa de operadores
 
 >[!Definition]

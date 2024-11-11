@@ -26,10 +26,12 @@ dateCreated: 2024-10-02,22:03
 >> 12. Con lo cual aproxime $x$ con una suma finita de coeficientes racionales. Mostrando que la sumas finitas de coeficientes racionales son densas en $\overline{Sp}\{ w_{j} \}$ y como obviamente son numerables
 >> 13. Luego $X=\overline{Sp}\{ w_{j} \}$ es separable
 
+^5cf5d9
+
 >[!Remark] $X$ separable no implica $X'$ separable
 >1. $(\ell^{1})'$ no es separable por que vimos que si $p \in [1,\infty),q \in (1,\infty]$ hay un isomorfismo de $\ell^{q}$ en $(\ell^{p})'$ con $\frac{1}{p}+\frac{1}{q}$ entonces si $(\ell^{1})'$ fuese separable entonces $\ell^{\infty}$ seria separable  
 >2. Entonces $\ell^{1}$ separable pero $(\ell^{1})'$ no es separable
->3. $(\ell^{\infty})'$ no es separable por que si lo fuera $\ell^{\infty}$ seria separable por [[#^60205b]]
+>3. $(\ell^{\infty})'$ no es separable por que si lo fuera $\ell^{\infty}$ seria separable por [[#^5cf5d9]]
 >4. Por lo tanto no puede haber isomorfismo entre $\ell^{1}$ y $(\ell^{\infty})'$ pues $\ell^{1}$ es separable y $(\ell^{\infty})'$ no es separable. 
 >
 

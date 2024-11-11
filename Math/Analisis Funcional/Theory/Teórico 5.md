@@ -91,10 +91,10 @@
 
 >[!Theorem]
 >Sea $X$ un normado y sea $W$ un subespacio denso de $X$. Sea $Y$ un Banach y $S\in B(W,Y)$
->1. Sea $x\in X$ y $\{ x_{n} \},\{ y_{n} \}$ sucesiones en $W$ tales que $x_{n}\rightarrow x$ e $y_{n}\rightarrow x$ entonces $\{ S(x_{n}) \}$ y $\{ S(y_{n}) \}$ ambas convergen y $\lim_{ n \to \infty }S(x_{n})=\lim_{ n \to \infty }S(y_{n})$
->2. Existe un $T\in B(X,Y)$ tal que 
->	1. $\lVert T \rVert=\lVert S \rVert$
->	2. $Tx=Sx\quad\forall x\in W$ 
+>- (a) Sea $x\in X$ y $\{ x_{n} \},\{ y_{n} \}$ sucesiones en $W$ tales que $x_{n}\rightarrow x$ e $y_{n}\rightarrow x$ entonces $\{ S(x_{n}) \}$ y $\{ S(y_{n}) \}$ ambas convergen y $\lim_{ n \to \infty }S(x_{n})=\lim_{ n \to \infty }S(y_{n})$
+>- (b)  Existe un $T\in B(X,Y)$ tal que $\lVert T \rVert=\lVert S \rVert$ y $Tx=Sx\quad\forall x\in W$
+
+^33d528
 
 >[!Definition] Isometria
 >Sean $X$ e $Y$ normados $T\in L(X,Y)$. Decimos que $T$ es una isometria si $$\lVert Tx \rVert=\lVert x \rVert\quad\forall x\in X$$

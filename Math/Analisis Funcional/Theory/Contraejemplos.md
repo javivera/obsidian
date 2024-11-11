@@ -1,6 +1,5 @@
 ## Teorico 1
 ![[Teórico 1#^5fe893]]
-![[Teórico 1#^5fe893]]
 
 ## Teorico 2
 ![[Teórico 2#^9624e4]]
