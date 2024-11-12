@@ -32,7 +32,7 @@
 >[!Remark]
 >Notacion: Si $V$ es $\mathbb{C}$ espacio vectorial escribimos $V_{\mathbb{R}}$ al espacio vectorial real restringiendo los escalares. Si ademas $V$ normado entonces $V_{\mathbb{R}}$ normado con la misma norma (ejercicio)
 
->[!Lemma] Duda
+>[!Lemma]
 >Sea $g : V\rightarrow \mathbb{C}$ funcional lineal entonces $\exists ! \ g_{\mathbb{R}}:V_{\mathbb{R}}\rightarrow \mathbb{R}$ funcional lineal tal que $$g(v)=g_{\mathbb{R}}(v)-ig_{\mathbb{R}}(iv)\quad\forall v\in V \tag{1}$$
 >Reciprocamente si $g_{\mathbb{R}}:V_{\mathbb{R}}\rightarrow\mathbb{R}$ es lineal entonces $g:V\rightarrow\mathbb{C}$ dada por (1) es funcional lineal.
 >Ademas si $V$ normado $$g\in V'\iff g_{\mathbb{R}} \in (V_{\mathbb{R}})'$$En tal caso $\lVert g \rVert=\lVert g_{\mathbb{R}} \rVert$. 
@@ -53,7 +53,7 @@
 >>2. Luego si $g\in V'$ usando lo de arriba $\lvert g_{\mathbb{R}}(v) \rvert\leq \lvert g(v) \rvert\leq \lVert g \rVert\lVert v \rVert$
 >>3. Usando supremo de $\lVert v \rVert=1$ llegamos a  $\lVert g_{\mathbb{R}} \rVert\leq \lVert g \rVert$ entonces $g_{\mathbb{R}}$ es continua ergo está en el dual
 >>
->>($\Leftarrow$) (DUDA)
+>>($\Leftarrow$)
 >> 1. Supongamos $g_{\mathbb{R}}\in (V_{\mathbb{R}})'$ y sea $\alpha(v)\in \mathbb{C}$ tal que $\lvert \alpha  \rvert=1$ y $\lvert g(v) \rvert=\alpha g(v)$
 >> 2. Entonces $\lvert g(v) \rvert=g(\alpha v)=g_{\mathbb{R}}(\alpha v)\leq \lVert g_{\mathbb{R}} \rVert\lVert \alpha  v\rVert$ 
 >> 3. Usando supremo $\lVert g \rVert\leq \lVert g_{\mathbb{R}} \rVert$
@@ -65,14 +65,14 @@
 >[!Lemma] DUDA
 >Sean $X$ un $\mathbb{C}$ espacio vectorial con $p:X\rightarrow\mathbb{R}$ [[Teórico 9#^c27268]]. Supongo existe $W\subseteq X$ subespacio $f_{W}:W\rightarrow\mathbb{C}$ lineal con $\lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$.
 >Supongo $f_{W,\mathbb{R}}:W_{\mathbb{R}}\rightarrow\mathbb{R}$ definida en [[Teórico 10#^5efc35]] tiene una extension $f_{X,\mathbb{R}} : X_{\mathbb{R}}\rightarrow \mathbb{R}$ tal que $\lvert f_{X,\mathbb{R}}(x) \rvert \leq p(x)\quad\forall x\in X_{\mathbb{R}}$ 
->(DUDA No sucede que siempre tiene una extension , justamente usando hahn Banach ?)
 >Entonces $f_{W}$ tiene una extension $f_{X}:X\rightarrow\mathbb{C}$ tal que $$\lvert f_{X}(x) \rvert \leq p(x)\quad\forall x\in X$$
 >>[!Proof]
->> 1. $\exists f_{X} : X\rightarrow \mathbb{C}$ que es extension de $f_{W}$ (DUDA)
+>>1. Podemos escribir $f_{W}=f_{W,\mathbb{R}}-if_{W,\mathbb{R}}$ 
+>>2. Como $f_{W,\mathbb{R}}$ es extensible tenemos $f_{X}=f_{X,\mathbb{R}}-if_{X,\mathbb{R}}$ extension de $f_{W}$    
 >> 
 >> (Desigualdad)
->> 1. $x\in X$ con $f_{X}(x)\neq 0$ y $\alpha \in \mathbb{C}$ con $\lvert \alpha  \rvert=1$ tal que $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)$ (Por que existe)
->> 2. $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)=f_{X,\mathbb{R}}(\alpha x)\leq p(\alpha x)=\lvert \alpha  \rvert p(x)=p(x)$ (No falta modulo? y ademas es para todo x $\in X_{\mathbb{R}}$)
+>>1. $x\in X$ con $f_{X}(x)\neq 0$ y $\alpha \in \mathbb{C}$ con $\lvert \alpha  \rvert=1$ tal que $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)$ (Por que existe)
+>>2. $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)=f_{X,\mathbb{R}}(\alpha x)\leq p(\alpha x)=\lvert \alpha  \rvert p(x)=p(x)$ (No falta modulo? y ademas es para todo x $\in X_{\mathbb{R}}$)
 >> 
 
 ^b346de
@@ -153,7 +153,7 @@
 >>2. Veamos
 >>	- Por 1. $\sup A \geq \lVert x \rVert$
 >>	- $\lvert f(x) \rvert\leq \lVert f \rVert\lVert x \rVert$ (Vale siempre truco de $\frac{x}{\lVert x \rVert}$) entonces $\sup \{\lvert f(x) \rvert:\lVert f \rVert=1\}\leq \lVert x \rVert$ 
->>3.  (Ejercicio) $W=Sp\{ y \}$ y usando [[#^3a0090]] $\delta >0$ por que $\lVert -x+y \rVert\neq 0$ por que son distintos (suponiendo que $x \not\in Sp\{ y \}$)
+>>3. $W=Sp\{ y \}$ y usando [[#^3a0090]] $\delta >0$ por que $\lVert -x+y \rVert\neq 0$ por que son distintos (suponiendo que $x \not\in Sp\{ y \}$)
 >>	- Si no supusiera eso es trivial $f(x)\neq \alpha f(x) = f(\alpha x)$
 >>	- Entonces $f(-x)=\delta$ osea $f(x)=\delta\neq 0$ pero $f|_{W}\equiv 0$ entonces como $y\in W$ sucede $f(y)=0$
 >

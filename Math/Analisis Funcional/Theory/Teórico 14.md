@@ -118,7 +118,7 @@ dateCreated: 2024-10-11,20:30
 
 ## Operadores lineal en espacios de Hilbert
 
->[!Theorem] DUDA
+>[!Theorem] Operador Adjunto DUDA  
 >Sean $\mathcal{H},K$ Hilbert $T\in B(\mathcal{H},K)$ entonces $\exists !T^{*}\in B(K,\mathcal{H})$ tal que $$(T(x),y)=(x,T^{*}(y))\quad\forall x\in \mathcal{H},\quad\forall y\in K$$  
 >>[!Proof]-
 >>1. Sea $y\in K$ con $f_{y} : \mathcal{H}\rightarrow \mathbb{C}$ dada por $f_{y}(x)=(T(x),y)$
@@ -162,8 +162,9 @@ dateCreated: 2024-10-11,20:30
 >>(d) $\lVert T^{*}T \rVert\leq \lVert T^{*} \rVert\lVert T \rVert=\lVert T \rVert^{2}$ 
 >>$\lVert Tx \rVert^{2}=(Tx,Tx)=(T^{*}Tx,x)\leq \lVert T^{*}Tx \rVert\lVert x \rVert\leq \lVert T^{*} T \rVert\lVert x \rVert^{2}$ entonces $\lVert T \rVert^{2}\leq \lVert T^{*}T \rVert$  
 
-^0589c9
+^468932
 
+^0589c9
 >[!Proposition]
 >Sean $\mathcal{H},K$ Hilbert, $T\in B(\mathcal{H},K)$ y $T^{*}\in B(K,\mathcal{H})$ entonces 
 >- (a) $\ker(T)=Im(T^{*})^{\perp}$

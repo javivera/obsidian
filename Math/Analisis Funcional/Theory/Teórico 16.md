@@ -124,7 +124,7 @@ dateCreated: 2024-10-27,13:06
 
 >[!Corollary]
 >Si $H$ es un espacio de Hilbert complejo, $\mathcal{M}$ es un subespacio lineal cerrado de $H$, $\{e_n\}_{n=1}^J$ es una base ortonormal para $\mathcal{M}$, donde $J$ es un número entero positivo o $\infty$, y $P$ es la proyección ortogonal de $H$ sobre $\mathcal{M}$, entonces 
->$$P x = \sum_{n=1}^J (x, e_n) e_n$$
+>$$P_{\mathcal{M}}x = \sum_{n=1}^J (x, e_n) e_n$$
 
 ^f02ad5
 

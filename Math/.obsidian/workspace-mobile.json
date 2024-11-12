@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Analisis Funcional/Theory/Teórico 16.md",
+                "file": "Analisis Funcional/Theory/Teórico 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teórico 16"
+              "title": "Teórico 10"
             }
           }
         ]
@@ -95,7 +95,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Analisis Funcional/Theory/Teórico 16.md",
+            "file": "Analisis Funcional/Theory/Teórico 10.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "byCreatedTimeReverse",
@@ -150,8 +150,9 @@
   },
   "active": "175117e02f8dfca7",
   "lastOpenFiles": [
-    "Analisis Funcional/Theory/Teórico 15.md",
+    "Analisis Funcional/Theory/Teórico 17.md",
     "Analisis Funcional/Theory/Teórico 16.md",
+    "Analisis Funcional/Theory/Teórico 15.md",
     "Analisis Funcional/Theory/Teórico 14.md",
     "Analisis Funcional/Theory/Teórico 13.md",
     "Analisis Funcional/Theory/Teórico 12.md",
@@ -175,7 +176,6 @@
     "Estructuras Algebraicas/Theory/Teorico 14.md",
     "Estructuras Algebraicas/Theory/Teorico 2.md",
     "Functional Analysis/Theory/Teórico 7.md",
-    "Estructuras Algebraicas/Theory/Teorico 3.md",
     "Estructuras Algebraicas/Theory",
     "Estructuras Algebraicas",
     "Analisis Funcional/Theory",

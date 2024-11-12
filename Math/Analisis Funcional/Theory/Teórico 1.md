@@ -20,43 +20,39 @@ tags:
 >2. $\lim_{ n \to \infty }\lVert x_{n} \rVert_{}=\lVert x \rVert_{}$
 >3. $\lim_{ n \to \infty }x_{n}+y_{n}=x+y$
 >4. $\lim_{ n \to \infty }\alpha_{n} x_{n}=\alpha x_{n}$
+>>[!Proof]-
+>> Sale todo usando 1. y 1. sale usando $\lVert x \rVert\leq \lVert x-y \rVert+\lVert y \rVert$
 
->[!Proof]-
->
->Sale todo usando 1. y 1. sale usando $\lVert x \rVert\leq \lVert x-y \rVert+\lVert y \rVert$
-
->[!Remark]
+>[!Remark]-
 >Esto nos dice que en un espacio vectorial normado, la norma, la suma y producto por escalar son continuas.
----
->[!Definition] Equivalence of norms
+
+>[!Definition]- Equivalence of norms
 >Sea $X$ espacio vectorial y  $\lVert \cdot \rVert_{1},\lVert \cdot \rVert_{2}$ normas en  $X$ decimos que son equivalentes si $$\exists\ m,M>0\quad /\quad m\lVert x \rVert _{1}\leq \lVert x \rVert _{2}\leq M\lVert x \rVert_{1} $$
 
->[!Remark]
+>[!Remark]-
 >La equivalencia de normas es una relacion de equivalencia
 
 >[!Lemma]
 >Let $X$ be a vector space with $\lVert \cdot \rVert, \lVert \cdot \rVert_{1}$ and $d, d_{1}$ associated metrics. Suppose $\exists k>0$ such that $\lVert x \rVert \leq k \lVert x \rVert_{1}\quad \forall x \in X$. Let $\{ x_{n} \}\subseteq X$, then:
 >1. $x_{n} \rightarrow x$ in $(X, d_{1}) \Longrightarrow x_{n} \rightarrow x$ in $(X, d)$  
 >2. $\{ x_{n} \}$ is Cauchy in $(X, d_{1}) \Longrightarrow \{ x_{n} \}$ is Cauchy in $(X, d)$ 
+>>[!Proof]-
+>>Trivial using the inequality
 
 ^650441
 
 ^2230e0
->[!Proof]-
->Trivial using the inequality
 
----
 >[!Corollary]
 >Sea $X$ espacio vectorial $\lVert \cdot \rVert_{}$ y $\lVert \cdot \rVert_{1}$ normas equivalentes en $X$ con $d,d_1$ metricas asociadas. Sea $\{ x_{n} \}\subseteq X$ entonces:
 >1.$\quad x_{n}\rightarrow x$ en $(X,d)\iff x_{n}\rightarrow x$ en $(X,d_{1})$
 >2.$\quad \{ x_{n} \}$ es de cauchy en $(X,d)\iff \{ x_{n} \}$ es de cauchy en $(X,d_{1})$ 
 >3.$\quad (X,d)$  es completo $\iff (X,d_{1})$ es completo   
+>>[!Proof]-
+>>Usando [[#^650441]] y que equivalencia de normas
 
 ^cd6dc0
 
->[!Proof]-
->Usando [[#^650441]] y que equivalencia de normas
----
 >[!Theorem] Continua en compacto tiene maximo y minimo
 >Sea $(X,d)$ metrico compacto y $f:M\rightarrow \mathbb{F}$ continua entonces $\exists c>0 \ / \ \lvert f(x) \rvert\quad\forall x \in M$ ($f$ acotada)
 >En particular si $\mathbb{F}=\mathbb{R}$ los numeros
@@ -67,29 +63,26 @@ tags:
 
 ^8b9dd8
 
-___
 >[!Theorem] 
 >Sea $X$ espacio vectorial normado de dim finita con norma $\lVert \cdot \rVert$. Sea $\{ e_{1},\ldots,e_{n} \}$ base para $x=\sum\alpha_{j}e_{j}$ y sea $\lVert x \rVert_{1}=\left( \sum|\alpha_{j}|^{2} \right)^{\frac{1}{2}}$ entonces $\lVert \cdot \rVert_{1}$ y $\lVert \cdot \rVert$ son equivalentes
+>>[!proof]-
+>>1. $M=(\sum \lVert e_{j} \rVert^2)^{\frac{1}{2}}>0$
+>>2. $\lVert x \rVert=\left\lVert  \sum\alpha_{j}e_{j}  \right\rVert\leq \sum \lVert \alpha_{j}e_{j} \rVert=\sum|\alpha_{j}|\lVert e_{j} \rVert \leq ( \sum|\alpha_{j}|^2)^{\frac{1}{2}} (\sum\lVert e_{j} \rVert^2)^{\frac{1}{2}} = \lVert x \rVert_{1}M$
+>>3. $f:\mathbb{F}\rightarrow \mathbb{R}\quad f(\alpha_{1},\ldots,\alpha_{n})=\left\lVert  \sum\alpha_{j}e_{j}\right\rVert =\lVert x \rVert$
+>>4. Ver que es continua $\bigl\lvert \left\lVert  \sum\alpha_{j}-e_{j}  \right\rVert-\left\lVert  \sum\beta_{j}-e_{j}  \right\rVert \bigl\rvert$
+>>5. $S=\left\{  (\alpha_{1},\dots,\alpha_{n}):\sum|\alpha_{j}|^2 = 1  \right\}$ es compacto
+>>6. Existe $m = f(u_{1},\dots,u_{n})$ minimo porque $\mathrm{Im}f =\mathbb{R}$ [[#^8b9dd8]]
+>>7. $m >0$ porque $\{ e_{j} \}$ es base
+>>8. Si $\lVert x \rVert_{1}=1 \iff \sum|\alpha_{j}|^2=1 \Rightarrow(\alpha_{1},\dots,\alpha_{n})\in S$ 
+>>9. $\quad m\lVert x \rVert_{1} = m\leq f(\alpha_{1},\dots,\alpha_{n})=\lVert x \rVert$ por ser m minimo
+>>10. Si no $\left\lVert  \frac{x}{\lVert x \rVert}_{1}  \right\rVert=1$ luego $m \leq \left\lVert  \frac{x}{\lVert x \rVert}_{1}  \right\rVert$ por el caso de arriba
 
->[!proof]-
->1. $M=(\sum \lVert e_{j} \rVert^2)^{\frac{1}{2}}>0$
->2. $\lVert x \rVert=\left\lVert  \sum\alpha_{j}e_{j}  \right\rVert\leq \sum \lVert \alpha_{j}e_{j} \rVert=\sum|\alpha_{j}|\lVert e_{j} \rVert \leq ( \sum|\alpha_{j}|^2)^{\frac{1}{2}} (\sum\lVert e_{j} \rVert^2)^{\frac{1}{2}} = \lVert x \rVert_{1}M$
->3. $f:\mathbb{F}\rightarrow \mathbb{R}\quad f(\alpha_{1},\ldots,\alpha_{n})=\left\lVert  \sum\alpha_{j}e_{j}\right\rVert =\lVert x \rVert$
->4. Ver que es continua $\bigl\lvert \left\lVert  \sum\alpha_{j}-e_{j}  \right\rVert-\left\lVert  \sum\beta_{j}-e_{j}  \right\rVert \bigl\rvert$
->5. $S=\left\{  (\alpha_{1},\dots,\alpha_{n}):\sum|\alpha_{j}|^2 = 1  \right\}$ es compacto
->6. Existe $m = f(u_{1},\dots,u_{n})$ minimo porque $\mathrm{Im}f =\mathbb{R}$ [[#^8b9dd8]]
->7. $m >0$ porque $\{ e_{j} \}$ es base
->8. Si $\lVert x \rVert_{1}=1 \iff \sum|\alpha_{j}|^2=1 \Rightarrow(\alpha_{1},\dots,\alpha_{n})\in S$ 
->9. $\quad m\lVert x \rVert_{1} = m\leq f(\alpha_{1},\dots,\alpha_{n})=\lVert x \rVert$ por ser m minimo
->10. Si no $\left\lVert  \frac{x}{\lVert x \rVert}_{1}  \right\rVert=1$ luego $m \leq \left\lVert  \frac{x}{\lVert x \rVert}_{1}  \right\rVert$ por el caso de arriba
----
 >[!Corollary]
 >En dimension finita todas las normas son equivalentes
+>>[!Proof]-
+>> Equivalencia de normas es relacion de equivalencia entonces es transitiva
 
->[!Proof]-
-> Equivalencia de normas es relacion de equivalencia entonces es transitiva
-
-> [!remark] Contraejemplo II
+> [!remark]- Contraejemplo II
 >Esto no vale en dimension infinita $X=C^1[0,\pi]$ tenemos dos normas no equivalentes 
 >$$\lVert \cdot \rVert_{\infty} \quad \text{ y }\quad \lVert u \rVert =\lVert u \rVert_{\infty}+\left\lVert  u'  \right\rVert_{\infty}$$
 >Considerando la funcion $u_{n}(x)=sen(nx)$ se puede ver facilmetend
@@ -97,52 +90,46 @@ ___
 
 ^5fe893
 
-
 >[!Lemma]
 > X espacio vectorial de dim finita y $\lVert \cdot \rVert_{1} =\left( \sum \lvert \alpha_{j} \rvert^2 \right)^{\frac{1}{2}}$ y $d_{1}$ la metrica asociada, entonces $(X,d_{1})$ es completo (Banach)
+>>[!Proof]-
+>> 1. Ya sabemos que es metrico (dim finita $N$)
+>> 2. $\{ x^{n} \}\subseteq X$ suc de cauchy
+>> 3. $x^{n}\in X,\quad x^{n}=\sum_{j}^{N}\alpha_{j}^n e_{j}\quad \alpha_{j}^n\in \mathbb{F}$
+>> 4. $\exists m_{0}\in \mathbb{N}$ tq $\sum \lvert \alpha_{j}^k-\alpha_{j}^m \rvert^{2}=\lVert x^{k}-x^{m} \rVert_{1}^{2}\leq \epsilon^2$
+>> 5. Fijando $j\in \mathbb{N}$ tenemos $\lvert \alpha_{j}^k-\alpha_{j}^m \rvert\leq\epsilon^2\quad \forall k,m\geq m_{0}$
+>> 6. $\{ \alpha_{j}^n \}$ es de cauchy en un completo tiene limite $\alpha_{j}$ (vale para cada $j$)
+>> 7. $\exists n_{j}\in \mathbb{N}$ tq $\lvert \alpha_{j}^n -\alpha_{j} \rvert < \frac{\epsilon^2}{N} \quad\forall n\geq n_{j}$ 
+>> 8. $\tilde{n}=max\{ n_{0},\dots,n_{N} \}$ y $x=\sum^{N}_{j=1}\alpha_{j}e_{j}$ ($x\in X$ por ser combinacion lineal de elementos de la base 
+>> 9. para $m\geq \tilde{n}$ sucede $\lVert x^{n}-x \rVert_{1}^2=\sum_{j}^N\lvert \alpha _{j}^n-\alpha_{j} \rvert^2\leq \epsilon^2$
+>> 10. $\{ x^{n} \}$ converge por lo tanto $X$ es de completo
 
 ^910368
 
->[!Proof]-
-> 1. Ya sabemos que es metrico (dim finita $N$)
-> 2. $\{ x^{n} \}\subseteq X$ suc de cauchy
-> 3. $x^{n}\in X,\quad x^{n}=\sum_{j}^{N}\alpha_{j}^n e_{j}\quad \alpha_{j}^n\in \mathbb{F}$
-> 4. $\exists m_{0}\in \mathbb{N}$ tq $\sum \lvert \alpha_{j}^k-\alpha_{j}^m \rvert^{2}=\lVert x^{k}-x^{m} \rVert_{1}^{2}\leq \epsilon^2$
-> 5. Fijando $j\in \mathbb{N}$ tenemos $\lvert \alpha_{j}^k-\alpha_{j}^m \rvert\leq\epsilon^2\quad \forall k,m\geq m_{0}$
-> 6. $\{ \alpha_{j}^n \}$ es de cauchy en un completo tiene limite $\alpha_{j}$ (vale para cada $j$)
-> 7. $\exists n_{j}\in \mathbb{N}$ tq $\lvert \alpha_{j}^n -\alpha_{j} \rvert < \frac{\epsilon^2}{N} \quad\forall n\geq n_{j}$ 
-> 8. $\tilde{n}=max\{ n_{0},\dots,n_{N} \}$ y $x=\sum^{N}_{j=1}\alpha_{j}e_{j}$ ($x\in X$ por ser combinacion lineal de elementos de la base 
-> 9. para $m\geq \tilde{n}$ sucede $\lVert x^{n}-x \rVert_{1}^2=\sum_{j}^N\lvert \alpha _{j}^n-\alpha_{j} \rvert^2\leq \epsilon^2$
-> 10. $\{ x^{n} \}$ converge por lo tanto $X$ es de completo
-
 >[!Corollary]
 >Todo espacio vectorial de dim finita es completo con la metrica asociada a cualquier norma
+>>[!Proof]-
+>>1. $(X,d)$ completa $\iff(X,d_{1})$ completa por [[#^cd6dc0]] y $d_{1}$ completa [[#^910368]]
 
 ^26042d
 
->[!Proof]-
->1. $(X,d)$ completa $\iff(X,d_{1})$ completa por [[#^cd6dc0]] y $d_{1}$ completa [[#^910368]]
----
 >[!Theorem]
 > Sea $(M,d)$ metrico y $A\subseteq M$ entonces:
 > 1. $A$ completo $\Rightarrow A$ cerrado
 > 2.  $M$ completo $\Rightarrow$ ($A$ completo $\iff A$ cerrado)
 > 3. Si $A$ es compacto $\Rightarrow$ $A$ es cerrado y acotado
 > 4. Cerrado y acotado en $\mathbb{F}^n \Rightarrow$ compacto
+>>[!Proof]-
 
 ^83c633
 
->[!Proof]-
----
 >[!Corollary]
 >Si $Y$ subespacio vectorial de dim finita $\Rightarrow$ $Y$ es cerrado
-
+>>[!Proof]-
+>>1. Por ser $Y$ espacio vectorial es normado (norma estandar) por ser espacio vectorial normado es metrico [[#^59c764]]
+>>2. Por dim finita es completo [[#^26042d]]
+>>3. Cerrado por 1. [[#^83c633]]
 ^3196e0
-
->[!Proof]-
->1. Por ser $Y$ espacio vectorial es normado (norma estandar) por ser espacio vectorial normado es metrico [[#^59c764]]
->2. Por dim finita es completo [[#^26042d]]
->3. Cerrado por 1. [[#^83c633]]
 
 > [!remark] Contraejemplo I
 > [[#^3196e0]] no es cierto si la dimension es infinita
@@ -166,7 +153,7 @@ ___
 >>5. Analogo $\alpha x_{n}$
 
 ^4c773a
----
+
 >[!Definition] Span
 > $E\subseteq X$ normado:
 > $$Sp(E) = \{ \text{Todas las combinaciones lineales finitas de elmentos de } E\}$$
@@ -174,7 +161,6 @@ ___
 
 ^f2fb50
 
----
 >[!Lemma]
 >$X$ espacio vectorial normado $\emptyset\neq E \subseteq X$ entonces: 
 >1. $\overline{Sp}(E)$ es un cerrado de $X$ que contiene a $E$
@@ -198,7 +184,7 @@ ___
 >>5. $\lVert x_{\alpha}-y \rVert =\left\lVert  \frac{x-z}{\lVert x-z \rVert }-y  \right\rVert = \frac{1}{\lVert x-z \rVert }\lVert x-(z+\lVert x-z \rVert y) \rVert > \frac{d}{d\alpha ^{-1}}$
 
 ^ae7428
----
+
 >[!Theorem]
 >Sea $X$ espacio vectorial dimension infinita 
 >$$D=\{ x \in X:\lVert x \rVert_{} \leq 1 \}\quad K=\{ x \in X: \lVert x \rVert_{} =1 \}$$
@@ -211,14 +197,12 @@ ___
 
 ^8db74f
 
->[!Remark]
+>[!Remark]-
 >$D$ y $K$ son compactos $\Rightarrow$ $X$ dim finita
 
----
->[!Definition] Banach Space
+>[!Definition]- Banach Space
 > Un espacio de Banach es un espacio normado que es completo con la metrica asociada a la norma
 
----
 >[!Theorem]
 >1. Todo normado de dim finita es Banach
 >2. Si $X$ es metrico completo $C_{\mathbb{F}}$ es banach

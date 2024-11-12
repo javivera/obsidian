@@ -40,6 +40,8 @@ lema sobre ortogonalidad p8
 >[!proposition] Sub cerrado es Hilbert
 >Sea $\mathcal{H}$ Hilbert, $Y\subset H$ sub espacio entonces $$Y \text{ Hilbert}\iff Y \text{ es cerrado en }\mathcal{H}$$
 
+^b5ecab
+
 def de complemento orto
 
 >[!Lemma]
