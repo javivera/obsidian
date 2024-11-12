@@ -55,44 +55,43 @@
 >>3. Usando supremo de $\lVert v \rVert=1$ llegamos a  $\lVert g_{\mathbb{R}} \rVert\leq \lVert g \rVert$ entonces $g_{\mathbb{R}}$ es continua ergo está en el dual
 >>
 >>($\Leftarrow$)
->> 1. Supongamos $g_{\mathbb{R}}\in (V_{\mathbb{R}})'$ y sea $\alpha(v)\in \mathbb{C}$ tal que $\lvert \alpha  \rvert=1$ y $\lvert g(v) \rvert=\alpha g(v)$ 
->> 2. Entonces $\alpha g(v)\in \mathbb{R}$  
+>> 1. Supongamos $g_{\mathbb{R}}\in (V_{\mathbb{R}})'$ y sea $\alpha(v)\in \mathbb{C}$ tal que $\lvert \alpha  \rvert=1$ y $\lvert g(v) \rvert=\alpha g(v)=g(\alpha v)$ 
+>> 2. Entonces $g(\alpha v)\in \mathbb{R}$  
 >> 3. Luego $\lvert g(v) \rvert=g(\alpha v)=g_{\mathbb{R}}(\alpha v)\leq \lVert g_{\mathbb{R}} \rVert\lVert \alpha  v\rVert$  
 >> 4. Usando supremo $\lVert g \rVert\leq \lVert g_{\mathbb{R}} \rVert$
 >> 
 
 ^5efc35
 
->[!Lemma] DUDA
->Sean $X$ un $\mathbb{C}$ espacio vectorial con $p:X\rightarrow\mathbb{R}$ [[Teórico 9#^c27268]]. Supongo existe $W\subseteq X$ subespacio $f_{W}:W\rightarrow\mathbb{C}$ lineal con $\lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$.
->Supongo $f_{W,\mathbb{R}}:W_{\mathbb{R}}\rightarrow\mathbb{R}$ definida en [[Teórico 10#^5efc35]] tiene una extension $f_{X,\mathbb{R}} : X_{\mathbb{R}}\rightarrow \mathbb{R}$ tal que $\lvert f_{X,\mathbb{R}}(x) \rvert \leq p(x)\quad\forall x\in X_{\mathbb{R}}$ 
+>[!Lemma]
+>Sean $X$ un $\mathbb{C}$ espacio vectorial con $p:X\rightarrow\mathbb{R}$ [[Teórico 9#^c27268]]. Supongo existe $W\subseteq X$ subespacio $f_{W}:W\rightarrow\mathbb{C}$ lineal con $$\lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$$
+>Supongo $f_{W,\mathbb{R}}:W_{\mathbb{R}}\rightarrow\mathbb{R}$ definida en [[Teórico 10#^5efc35]] tiene una extension $f_{X,\mathbb{R}} : X_{\mathbb{R}}\rightarrow \mathbb{R}$ tal que $$\lvert f_{X,\mathbb{R}}(x) \rvert \leq p(x)\quad\forall x\in X_{\mathbb{R}}$$ 
 >Entonces $f_{W}$ tiene una extension $f_{X}:X\rightarrow\mathbb{C}$ tal que $$\lvert f_{X}(x) \rvert \leq p(x)\quad\forall x\in X$$
->>[!Proof]
->>1. Podemos escribir $f_{W}=f_{W,\mathbb{R}}-if_{W,\mathbb{R}}$ 
->>2. Como $f_{W,\mathbb{R}}$ es extensible tenemos $f_{X}=f_{X,\mathbb{R}}-if_{X,\mathbb{R}}$ extension de $f_{W}$    
+>>[!Proof]-
+>>1. Podemos escribir $f_{W}=f_{W,\mathbb{R}}-if_{W,\mathbb{R}}$
+>>2. Como $f_{W,\mathbb{R}}$ es extensible (por hipotesis) tenemos $f_{X}=f_{X,\mathbb{R}}-if_{X,\mathbb{R}}$ extension de $f_{W}$    
 >> 
 >> (Desigualdad)
->>1. $x\in X$ con $f_{X}(x)\neq 0$ y $\alpha \in \mathbb{C}$ con $\lvert \alpha  \rvert=1$ tal que $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)$ (Por que existe)
->>2. $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)=f_{X,\mathbb{R}}(\alpha x)\leq p(\alpha x)=\lvert \alpha  \rvert p(x)=p(x)$ (No falta modulo? y ademas es para todo x $\in X_{\mathbb{R}}$)
->> 
+>>1. $x\in X$ con $f_{X}(x)\neq 0$ y $\alpha \in \mathbb{C}$ con $\lvert \alpha  \rvert=1$ tal que $\lvert f_{X}(x) \rvert=\alpha f_{X}(x)=f_{X}(\alpha x)\in \mathbb{R}$
+>>2. $\lvert f_{X}(x) \rvert= f_{X}(\alpha x)=f_{X,\mathbb{R}}(\alpha x)\leq p(\alpha x)=\lvert \alpha  \rvert p(x)=p(x)$ 
 
 ^b346de
 
->[!Theorem] Hahn-Banach General DUDA
+>[!Theorem] Hahn-Banach General
 >Sea $X$ espacio vectorial $p : X\rightarrow \mathbb{R}$ [[Teórico 9#^c27268]] $W\subseteq X$ subespacio y $f_{W}:W\rightarrow\mathbb{F}$ funcional lineal tal que $\lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$ entonces 
 >$$\exists \ f_{X} :X\rightarrow \mathbb{F}\quad\text{ extension de } f_{W}$$ tal que $$\lvert f_{X}(x) \rvert \leq p(x)\quad\forall x\in X$$
->>[!Proof]
->>1. Si $\mathbb{F}=\mathbb{R}$ es seria [[Teórico 10#^2b57ba]] (Seminorma implica sublineal)
->>2. Como $p$ es seminorma es par entonces $f_{X}(x)\leq p(x)\quad\forall x\in X$ (No es por hanhn Banach? DUDA)
->>3. $-f_{X}(x)=f_{X}(-x)\leq p(-x)=p(x)$ entonces $-p(x)\leq f_{X}(x)$ 
+>>[!Proof]-
+>>1. Si $\mathbb{F}=\mathbb{R}$ aplicamos [[Teórico 10#^2b57ba]] (Seminorma implica sublineal) y obtenemos $f_{X}(x)$ que cumple $f_{X}(x)\leq p(x)$    
+>>2. Como $p$ es seminorma es par entonces $-f_{X}(x)=f_{X}(-x)\leq p(-x)=p(x)$ luego $-p(x)\leq f_{X}(x)$ 
 >>4. Entonces $\lvert f_{X}(x) \rvert\leq p(x)$
 >>5. Si $\mathbb{F}=\mathbb{C}$. Existe $f_{W,\mathbb{R}} : W_{\mathbb{R}}\rightarrow \mathbb{R}$ dado por [[Teórico 10#^5efc35]] con $f_{W}(w)=f_{W,\mathbb{R}}(w)-if_{W,\mathbb{R}}(iw)\quad\forall w\in W$
 >>6. $f_{W,\mathbb{R}}(w) \leq \lvert f_{W,\mathbb{R}} (w)\rvert \leq \lvert f_{W}(w) \rvert\leq p(w)\quad\forall w\in W$ 
->>7. Luego por [[Teórico 10#^2b57ba]] existe extension $f_{X,\mathbb{R}}:X_{\mathbb{R}}\rightarrow\mathbb{R}$ con $\lvert f_{X,\mathbb{R}}(x) \rvert\leq p(x)\quad\forall x\in X_{\mathbb{R}}$ (H-B da la desigualdad sin módulo DUDA)
->>8. Entonces por [[Teórico 10#^b346de]] $f_{W}$ tiene extension que cumple la desigualdad
+>>7. Luego por [[Teórico 10#^2b57ba]] existe extension $f_{X,\mathbb{R}}:X_{\mathbb{R}}\rightarrow\mathbb{R}$ con $f_{X,\mathbb{R}}(x)\leq p(x)\quad\forall x\in X_{\mathbb{R}}$
+>>8. Usando nuevamente que $p$ es par por ser serminorma obtenemos $-p(x)\leq f_{X,\mathbb{R}}$
+>>9. Por lo tanto $\lvert f_{X,\mathbb{R}} \rvert \leq p(x)$  
+>>10. Entonces por [[Teórico 10#^b346de]] $f_{W}$ tiene extension que cumple $\lvert f_{X} \rvert\leq p(x)$  
 
 ^055669
-
 ## Hahan Banach en normado
 
 >[!Lemma] Extensiones en general
