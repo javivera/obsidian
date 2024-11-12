@@ -39,10 +39,11 @@
 >(Notar que $g_{\mathbb{R}}(v)=g(v)\quad\forall v\in V$ con $g(v)\in \mathbb{R}$)
 >>[!Proof]-
 >>(Existencia)
->>1. Dado $v\in V$ escribimos $g(v)=g_{\mathbb{R}}(v)+ig_{I}(v)$ con $g_{\mathbb{R}},g_{I}$ funcionales lineales (son como la parte real y la parte imaginaria) (ejercicio)
->>2. $g(iv)=g_{\mathbb{R}}(iv)+ig_{I}(iv)=ig_{\mathbb{R}}(v)-g_{I}(v)$ (Por linealidad de $g$) 
->>3. $-g_{\mathbb{R}}(iv)=g_{I}(v)$ (igualando partes reales)
->>4. Reemplazando $g(v)=g_{\mathbb{R}}(v)-ig_{\mathbb{R}}(iv)$
+>>1. Dado $v\in V$ escribimos $g(v)=g_{\mathbb{R}}(v)+ig_{I}(v)$ 
+>>2. Con $g_{\mathbb{R}}(v)=Re(g(v))$ y$g_{I}(v)=Im(g(v))$ que son funcionales lineales  
+>>5. $g_{\mathbb{R}}(iv)+ig_{I}(iv)=g(iv)=ig(v)=ig_{\mathbb{R}}(v)-g_{I}(v)$
+>>6. $-g_{\mathbb{R}}(iv)=g_{I}(v)$ (igualando partes reales)
+>>7. Reemplazando $g(v)=g_{\mathbb{R}}(v)-ig_{\mathbb{R}}(iv)$
 >>
 >>(Unicidad) Ejercicio 
 >>(Reciproca) Ejercicio
@@ -54,11 +55,11 @@
 >>3. Usando supremo de $\lVert v \rVert=1$ llegamos a  $\lVert g_{\mathbb{R}} \rVert\leq \lVert g \rVert$ entonces $g_{\mathbb{R}}$ es continua ergo está en el dual
 >>
 >>($\Leftarrow$)
->> 1. Supongamos $g_{\mathbb{R}}\in (V_{\mathbb{R}})'$ y sea $\alpha(v)\in \mathbb{C}$ tal que $\lvert \alpha  \rvert=1$ y $\lvert g(v) \rvert=\alpha g(v)$
->> 2. Entonces $\lvert g(v) \rvert=g(\alpha v)=g_{\mathbb{R}}(\alpha v)\leq \lVert g_{\mathbb{R}} \rVert\lVert \alpha  v\rVert$ 
->> 3. Usando supremo $\lVert g \rVert\leq \lVert g_{\mathbb{R}} \rVert$
+>> 1. Supongamos $g_{\mathbb{R}}\in (V_{\mathbb{R}})'$ y sea $\alpha(v)\in \mathbb{C}$ tal que $\lvert \alpha  \rvert=1$ y $\lvert g(v) \rvert=\alpha g(v)$ 
+>> 2. Entonces $\alpha g(v)\in \mathbb{R}$  
+>> 3. Luego $\lvert g(v) \rvert=g(\alpha v)=g_{\mathbb{R}}(\alpha v)\leq \lVert g_{\mathbb{R}} \rVert\lVert \alpha  v\rVert$  
+>> 4. Usando supremo $\lVert g \rVert\leq \lVert g_{\mathbb{R}} \rVert$
 >> 
->> (Duda: entender bien lo de $V_{\mathbb{R}}$)
 
 ^5efc35
 
@@ -99,11 +100,11 @@
 >Sean $z_{1}\not\in W$ con $W_{1}=Sp\{ z_{1} \}\oplus W=\{ \alpha z_{1}+W : \alpha\in \mathbb{F},w\in W \}$. Entonces $$\exists \delta_{1}\in \mathbb{R}\quad\text{y}\quad f_{W_{1}} : W_{1}\rightarrow \mathbb{R}$$
 >Tal que $$f_{W_{1}}(\alpha z_{1}+w)=\alpha\delta_{1}+f_{W}(w)\leq p(\alpha z_{1}+w)\quad \forall \alpha\in \mathbb{R}\quad\forall w\in W\quad (a)$$
 >En particular $f_{W_{1}}$ es lineal y extension de $f_{W}$
->>[!Proof]
+>>[!Proof]-
 >>1. $\forall u,v\in W$ es $f_{W}(u)+f_{W}(v)=f_{W}(u+v)\leq \lvert f_{W}(u+v) \rvert\leq p(u+v)\leq p(u-z_{1})+p(v+z_{1})$ (Por sublineal) 
 >>2. entonces $f_{W}(u)-p(u-z_{1})\leq -f_{W}(v)+p(v+z_{1})$
 >>3. Sea $\delta_{1}=\inf \{ -f_{W}(v)+p(v+z_{1}):v\in W \}>-\infty$ (2. Nos dice que esta acotado)
->>4. Entonces ahora definimos $f_{W_{1}}(\alpha z_{1}+w)=\alpha \delta_{1}+f_{W}(w)$ ???? (DUDA). 
+>>4. Entonces ahora definimos $f_{W_{1}}(\alpha z_{1}+w)=\alpha \delta_{1}+f_{W}(w)$
 >>5. $-\delta_{1} +f_{W}(u)\leq p(u-z_{1})$ (Usando infimo en 2.)
 >>6. $\delta_{1} +f_{W}(v)\leq p(v+z_{1})$ (Def de infimo)
 >>7. Si $\alpha <0$ multiplicamos 4. por $-\alpha$ y escribiendo $w=-\alpha u$ obtenemos $(a)$
