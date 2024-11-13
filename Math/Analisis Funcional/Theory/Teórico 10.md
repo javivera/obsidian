@@ -91,6 +91,8 @@
 >>9. Por lo tanto $\lvert f_{X,\mathbb{R}} \rvert \leq p(x)$  
 >>10. Entonces por [[Teórico 10#^b346de]] $f_{W}$ tiene extension que cumple $\lvert f_{X} \rvert\leq p(x)$  
 
+^065972
+
 ^055669
 ## Hahan Banach en normado
 
@@ -118,7 +120,7 @@
 >>[!Proof]-
 >> 1. Definimos $p(x)=\lVert f_{W} \rVert\lVert x \rVert$ es [[Teórico 9#^c27268]] en $X$. Trivial (Notar que esta bien definida para $x\in X$ )
 >> 2. Ademas $\forall w \in W,w\neq 0$ sucede $\frac{1}{\lVert w \rVert}p(w)=p\left( \frac{w}{\lVert w\rVert} \right)=\lVert f_{W} \rVert\geq\left\lvert  f_{W}\left( \frac{w}{\lVert w \rVert} \right)  \right\rvert=\lvert f_{W}(w) \rvert \frac{1}{\lVert w \rVert}$ (Usando la def de $p$ de 1.) Entonces $\lvert f_{W}(w) \rvert\leq p(w)=\lVert f_{W} \rVert\lVert x \rVert$
->> 3. Entonces valen las hipotesis de [[Teórico 10#^055669]] por lo tanto $\exists f_{X}$ extension de $f_{W}$ tal que $\lvert f_{X}(x) \rvert\leq p(x)\quad\forall x\in X$
+>> 3. Entonces valen las hipotesis de [[Teórico 10#^065972]] por lo tanto $\exists f_{X}$ extension de $f_{W}$ tal que $\lvert f_{X}(x) \rvert\leq p(x)\quad\forall x\in X$
 >> 4. Usando supremo de ambos lados $\lVert f_{X} \rVert\leq \lVert f_{W} \rVert$
 >> 5. Ademas $\lVert f_{W} \rVert=\sup \{ \lVert f_{W}(w)\rVert:w\in W,\lVert w\rVert=1 \rVert \}\leq \{\lVert f_{X}(x)\rVert:x\in X,\lVert x \rVert=1\} =\lVert f_{X}\rVert$
 
@@ -136,27 +138,31 @@
 >>6. Sea $w=\alpha \tilde{w}_{\epsilon}$ con $\alpha \neq 0$
 >>7. $$ \frac{\lvert f_{Y}(\alpha x+w) \rvert }{\lVert \alpha x+w \rVert }= \frac{\lvert \alpha  \rvert \delta}{\lvert \alpha  \rvert \lVert x+\alpha ^{-1} w \rVert }= \frac{\delta}{\lVert x+\alpha ^{-1} w \rVert }= \frac{\delta}{\lVert x+\tilde{w}_{\epsilon} \rVert } \geq \frac{1}{1+\epsilon}$$
 >>8. Entonces $$\left\lvert  \frac{f_{Y}(\alpha x+w)}{\lVert \alpha x+w \rVert }  \right\rvert\geq \frac{1}{1+\epsilon}\quad\forall \epsilon\geq 0 \quad \text{ Entonces}\quad \left\lvert  \frac{f_{Y}(\alpha x+w)}{\lVert \alpha x+w \rVert }  \right\rvert\geq 1 \quad$$
->>9. Luego $f_{Y}(\alpha x+w)\geq\lVert \alpha x +w\rVert$ luego tomando supremo de ambos lados $\lVert f_{Y} \rVert\geq 1$
+>>9. Pero entonces $1\leq \left\lvert  f_{Y}\left( \frac{\alpha x+w}{\lVert \alpha x+w \rVert}\right) \right\rvert\in \{  \lvert f_{Y} (x)\rvert:\lVert x \rVert=1\}$ . Luego $f_{Y}(\alpha x+w)\geq\lVert \alpha x +w\rVert$ luego tomando supremo de ambos lados $\lVert f_{Y} \rVert\geq 1$
 >>10. Por [[#^8c080d]] extiendo $f_{Y}$ a $f:X\rightarrow \mathbb{F}$ con $\lVert f \rVert=\lVert f_{Y} \rVert=1$ 
->>11. Y es claro que si $w \in W$ entonces $f(w)=f_{Y}(0.x +w)=0.\delta=0$ y si $x\in X$ entonces $f(x)=f_{Y}(1.x+0)=1.\delta=\delta$
+>>11. Y es claro que si $w \in W$ entonces $f(w)=f_{Y}(0.x +w)=0.\delta=0$ y entonces $f(x)=f_{Y}(1.x+0)=1.\delta=\delta$
 
 ^3a0090
 
 >[!Corollary]
 >Sea $X\neq \{ 0 \}$ normado, $x\in X$ fijo $x\neq 0$ entonces 
->1. $\exists f\in X'$ tal que $\lVert f \rVert =1 \quad f(x)=\lVert x \rVert$
->2. $\lVert x \rVert=\sup \{ \lvert f(x) \rvert : f\in X',\lVert f \rVert=1\} =\sup A$
->3. Si $y\in X$ con $x\neq y$, $\exists f\in X'$ tal que $f(x)\neq f(y)$
+>- (a)  $\exists f\in X'$ tal que $\lVert f \rVert =1 \quad f(x)=\lVert x \rVert$
+>- (b) $\lVert x \rVert=\sup \{ \lvert f(x) \rvert : f\in X',\lVert f \rVert=1\} =\sup A$
+>- (c) Si $y\in X$ con $x\neq y$, $\exists f\in X'$ tal que $f(x)\neq f(y)$
 >(En particular, $X$ normado, $x\neq 0$ entonces $X'\neq \{ 0 \}$)
 >>[!Proof]-
+>>(a) 
+>>
 >>1. Por [[Teórico 10#^3a0090]] usando $W=\{ 0 \}$
->>2. Veamos
->>	- Por 1. $\sup A \geq \lVert x \rVert$
->>	- $\lvert f(x) \rvert\leq \lVert f \rVert\lVert x \rVert$ (Vale siempre truco de $\frac{x}{\lVert x \rVert}$) entonces $\sup \{\lvert f(x) \rvert:\lVert f \rVert=1\}\leq \lVert x \rVert$ 
->>3. $W=Sp\{ y \}$ y usando [[#^3a0090]] $\delta >0$ por que $\lVert -x+y \rVert\neq 0$ por que son distintos (suponiendo que $x \not\in Sp\{ y \}$)
->>	- Si no supusiera eso es trivial $f(x)\neq \alpha f(x) = f(\alpha x)$
->>	- Entonces $f(-x)=\delta$ osea $f(x)=\delta\neq 0$ pero $f|_{W}\equiv 0$ entonces como $y\in W$ sucede $f(y)=0$
->
+>>(b) 
+>>
+>>1.  Por (a)  $\sup A \geq \lVert x \rVert$
+>>2. $\lvert f(x) \rvert\leq \lVert f \rVert\lVert x \rVert$ (Vale siempre truco de $\frac{x}{\lVert x \rVert}$) entonces $\sup \{\lvert f(x) \rvert:\lVert f \rVert=1\}\leq \lVert x \rVert$ 
+>>
+>>(c) 
+>>1. $W=Sp\{ y \}$ y usando [[#^3a0090]] $\delta >0$ por que $\lVert -x+y \rVert\neq 0$ por que son distintos (suponiendo que $x \not\in Sp\{ y \}$)
+>>2. Si no supusiera eso es trivial. Porque $y=\alpha x$ con $\alpha \neq1$  
+>>3. Casi cualquier funcional sirve porque $f(x)\neq \alpha f(x) = f(\alpha x)=f(y)$
 
 ^d1e653
 
