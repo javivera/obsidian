@@ -154,6 +154,8 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >-\begin{bmatrix}0\\\vdots \\0 \\x_{k+1} \\\vdots \\x_n \end{bmatrix}
 >= \begin{bmatrix}x_1 \\\vdots \\x_k \\0 \\\vdots \\0\end{bmatrix}$$
 >Además, para cualquier $y \in \mathbb{R}^n$ con $y_k = 0$ se tendrá $M_k y = y - y_k \nu^k = y$.
+
+>[!Remark]
 >Los métodos que se verán se basan en aplicar una sucesión de transformaciones de Gauss $M_1, \dots, M_{n-1}$ tales que
 >$$M_{n-1} \dots M_2 M_1 A = U$$
 >con $U$ triangular superior. Para definir estas matrices, piense en una sucesión de matrices tal que $A_0 = A, A_k = M_k A_{k-1}$ y $U = A_n$, con la propiedad que
@@ -195,7 +197,7 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >>$$\det(A_{II}) =det(A_{II})det(\Gamma_{II})= \det(\Gamma_{II} A_{II}) = \det(\Gamma_{II}) \det(A_{II}) = \det 
 >>\begin{pmatrix}a_{11}^{(l-1)}  & \cdots & a_{1l}^{(l-1)}  \\0 & \ddots & \vdots \\0 & 0 & a_{ll}^{(l-1)} \end{pmatrix} = a_{11}^{(l-1)}\cdots a_{ll}^{(l-1)}$$
 >>(Notar $det(\Gamma_{II})=1$) 
->>8Como $\det(A_{II}) \neq 0$, pues vale (2.2) para $k = l$, entonces $a_{ll}^{(l-1)} \neq 0$. Por lo tanto, se puede definir $M_l$.
+>>8. Como $\det(A_{II}) \neq 0$, pues vale (2.2) para $k = l$, entonces $a_{ll}^{(l-1)} \neq 0$. Por lo tanto, se puede definir $M_l$.
 
 >[!Corollary]
 >Si $A \in \mathbb{R}^{n \times n}$ satisface (2.2) para $k = 1, \dots, n$, entonces la descomposición LU existe y es única. Además, $\det(A) = \det(U) = u_{11} \dots u_{nn}$.
