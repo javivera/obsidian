@@ -12,7 +12,8 @@ dateCreated: 2024-11-12,21:32
 >- (b)  Las submatrices principales  
 >$$  
 >A_k = \begin{bmatrix} 
->a_{11} & \dots & a_{1k} \\
+>a_{11} & \dots & a_{1k} \\ 
+ \vdots\\
 >a_{k1} & \dots & a_{kk} 
 >\end{bmatrix}  
 >$$  
@@ -51,7 +52,7 @@ Una caracterización importante de este tipo de matrices viene de comparar la fo
 >>1. Si $A$ es definida positiva entonces $A_S$ es definida positiva.
 >>2. Como $A_S$ es simétrica, entonces existen $V, \Lambda \in \mathbb{R}^{n \times n}$ tales que $\Lambda$ es diagonal con entradas $\lambda_1, \dots, \lambda_n$, $V^T V = I$ y $V^T A_S V = \Lambda$. 
 >>3. Defino $\alpha = \min_{1 \leq i \leq n} \lambda_i$. 
->>4. Entonces existe $z \in \mathbb{R}^n$ con $\|z\|_2 = 1$ (autovector de $A$) tal que $A S z = \alpha z$
+>>4. Entonces existe $z \in \mathbb{R}^n$ con $\|z\|_2 = 1$ (autovector de $A$) tal que $A_{S}z = \alpha z$
 >>5. Por lo tanto $0 < z^T A_S z = z^T (\alpha z) = \alpha \|z\|_2^2 = \alpha$. 
 >>6. Además, dado $x \in \mathbb{R}^n$ existe $y \in \mathbb{R}^n$ tal que $x = V y$. 
 >>7. Entonces
@@ -65,7 +66,7 @@ Una caracterización importante de este tipo de matrices viene de comparar la fo
 >[!Remark]-
 >Note que si $A$ es definida positiva y $A y = 0$, entonces $y = 0$. Por lo tanto, usando el Teorema 1.2 se obtiene que si $A$ es definida positiva entonces el sistema $A x = b$ tiene solución.
 
-## 2.2.1. Descomposición de Cholesky
+## Descomposición de Cholesky
 
 >[!remark]
 >Supongamos que dados $b \in \mathbb{R}^n$ y $A \in \mathbb{R}^{n \times n}$ simétrica y definida positiva, se desea hallar $x \in \mathbb{R}^n$ tal que $A x = b$.
@@ -92,34 +93,40 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >> existe. 
 >>5. Como $X$ es no singular, usando (2.1), se obtiene que
 >> $$X^T A X = \begin{bmatrix}1 & 0 \\0 & \hat{A}\end{bmatrix}$$
->>que es definida positiva por [[#^9e9e9c]] (c) por que $X$ es inversible y por lo tanto sus columnas son linealmente independientes por lo tanto, $\hat{A}$ es definida positiva.
->>6. Como $\hat{A}$ es simétrica por construcción, usando la hipótesis inductiva se obtiene la existencia de $\hat{G} \in \mathbb{R}^{(n-1) \times (n-1)}$ tal que $\hat{A} = \hat{G}^T \hat{G}$.
+>>que es definida positiva por [[#^9e9e9c]] (c) por que $X$ es inversible y por lo tanto sus columnas son linealmente independientes 
+>>6. Además $\hat{A}$  es simétrica por construcción entonces $X^{T}AX$ también es simétrica (y ya teníamos que era def positiva) luego por ej5 pr1 toda submatriz es def pos
+>>7. Por lo tanto, $\hat{A}$ es definida positiva.
+>>8. Finalmente usando hipótesis inductiva en $\hat{A}$  se obtiene la existencia de $\hat{G} \in \mathbb{R}^{(n-1) \times (n-1)}$ tal que $\hat{A} = \hat{G}^T \hat{G}$.
 >>Reemplazando en (2.1), se tiene que
 >>$$  \begin{align}A &= \begin{bmatrix} g_{11} & 0 \\s & I\end{bmatrix} 
 >>\begin{bmatrix}1 & 0 \\0 & \tilde{G}^T\end{bmatrix}
 >>\begin{bmatrix}1 & 0 \\0 & \tilde{G}\end{bmatrix}
 >>\begin{bmatrix}g_{11} & s^T \\0 & I\end{bmatrix}\\
 >>&= \begin{bmatrix}g_{11} & 0 \\s & \tilde{G}^T\end{bmatrix}
->>\begin{bmatrix}g_{11} & s^T \\0 & \tilde{G}\end{bmatrix}= G^T G\end{align}$$
+>>\begin{bmatrix}g_{11} & s^T \\0 & \tilde{G}\end{bmatrix} \\
+&= G^T G\end{align}$$
 >>con $G \in \mathbb{R}^{n \times n}$ triangular superior con elementos diagonales positivos.
 >>
 >>(Unicidad)
 >>1. Supongamos que existen $G_1, G_2 \in \mathbb{R}^{n \times n}$ triangulares superiores con elementos diagonales positivos tales que $A = G_1^T G_1 = G_2^T G_2$. 
->>2. Entonces $G_2^{-T} G_1 \neq G_2^{-1} G_1^{-1}$ siendo el término izquierdo triangular inferior y el derecho triangular superior. 
->>3. Por lo tanto, existe una matriz diagonal $D$ con $d_{ii} > 0$, $i = 1, \dots, n$, tal que $G_2^{-T} G_1 = G_2 G_1^{-1} = D$
->>4. Como $$D^2 = DD^T = (G_2 G_1^{-1})(G_2^{-T} G_1^T) = G_2 G_1^{-1} G_1^{-T} G_2^T = I$$
->>5. usando que $d_{ii} > 0$, se obtiene que $d_{ii} = 1$. Por lo tanto, $D = I$ y en consecuencia $G_2 = G_1$. 
+>>2. Entonces $G_2^{-T} G_1^{T} = G_2 G_1^{-1}$ siendo el término izquierdo triangular inferior y el derecho triangular superior 
+>>(inversa de triangular superior es triangular superior) 
+>>4. Por lo tanto, existe una matriz diagonal $D$ con $d_{ii} > 0$, $i = 1, \dots, n$, tal que $G_2^{-T} G_1^{T}= G_2 G_1^{-1} = D$
+>>5. Como $$D^2 = DD^T = (G_2 G_1^{-1})(G_1G_2^{-1} ) = G_2 G_1^{-1} G_1 G_2^{-1} = I$$
+>>6. usando que $d_{ii} > 0$, se obtiene que $d_{ii} = 1$. Por lo tanto, $D = I$ y en consecuencia $G_2 = G_1$. 
 
-
+^a4401f
 
 >[!Corollary] 
 >$A \in \mathbb{R}^{n \times n}$ es simétrica y definida positiva si y solo si existe $G \in \mathbb{R}^{n \times n}$ triangular superior con elementos diagonales positivos tal que $A = G^T G$.
 >>[!Proof]-
->>1. Si $A = G^T G$ entonces $x^T A x = x^T G^T G x = \| G x \|_2^2$.   
->>2. Notar que $Gx=0$ si solamente si $x\in \ker G$ o $G=0$ pero $G$ es inversible por que es triangular con diagonal distinta de 0 
->>3. Y si fuese $G=0$ (matriz nula) por que es diagonal positiva
-
-
+>>1. Ida es [[#^a4401f]]
+>>1. Vuelta. Si $A = G^T G$ entonces $x^T A x = x^T G^T G x = \| G x \|_2^2$.   
+>>2. Notar que $Gx=0$ si solamente si $x\in \ker G$ o $G=0$ 
+>>3. Pero $G$ es inversible por que es triangular con diagonal distinta de 0 entonces tiene ker nulo 
+>>4. Y no puede ser $G=0$ (matriz nula) por que es diagonal positiva por def Cholesky.
+>>5. Por lo tanto $A$  es definida positiva
+>>6. Y obviamente es simétrica $(G^{T}G)^{T}=G^{T}G$   
 
 # Sistema indefinido
 
@@ -128,6 +135,7 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >$$\text{Hallar } \quad x \in \mathbb{R}^n \quad\text{tal que}\quad A x = b$$
 >Para resolver este tipo de sistema lineal, se usará el método de eliminación Gaussiana y la descomposición LU. Estos métodos pueden deducirse con las mismas herramientas teóricas aunque se diferencian en su implementación.
 
+## Transformaciones de Gauss
 
 >[!Remark] Transformaciones de Gauss
 > Si uno desea transformar el vector
@@ -139,7 +147,7 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >donde $\tau = x_2 / x_1$. En general, si deseo transformar $x \in \mathbb{R}^n$, con $x_k \neq 0$, en un vector con $x_i = 0$ para $i = k + 1, \dots, n$ sin alterar $x_i$ para $i = 1, \dots, k$, defino la transformación de Gauss
 >$$M_k = I - v^k (e^k)^T = I - 
 >\begin{bmatrix} 0\\ \vdots \\0 \\\frac{x_{k+1}}{x_k} \\\vdots \\\frac{x_n}{x_k}\end{bmatrix}(e^{k} )^{T} 
->= \begin{bmatrix} 1 &  & & & &  \\& \ddots \\& & 1  \\ & &-\frac{x_{k+1}}{x_k} &1\\&&\vdots & &\ddots \\&-\frac{x_n}{x_k}  &&&1 \end{bmatrix}$$
+>= \begin{bmatrix} 1 &  & & & &  \\& \ddots \\& & 1  \\ & &-\frac{x_{k+1}}{x_k} &1\\&&\vdots & &\ddots \\&&-\frac{x_n}{x_k}  &&&1 \end{bmatrix}$$
 >donde $\nu_i^k = 0$ para $i = 1, \dots, k$, $\nu_i^k = x_i / x_k$ para $i = k + 1, \dots, n$ y $\nu^k$ es el $k$-ésimo vector canónico. Claramente,
 >$$M_k x = x - v^{k}  (e^k)^T x = x - x_k v^k = 
 >\begin{bmatrix}x_1 \\\vdots \\x_k \\x_{k+1} \\\vdots \\x_n \end{bmatrix}
@@ -152,31 +160,50 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >$$A_k = \begin{bmatrix}U_k & V_k \\0 & W_k\end{bmatrix}, \quad U_k \in \mathbb{R}^{k \times k} \text{ triangular superior}$$
 >con $W_k \in \mathbb{R}^{(n-k) \times (n-k)}$ y $V_k \in \mathbb{R}^{k \times (n-k)}$. Que es lo mismo que decir que los elementos $a_{ij}^{(k)}$ de $A_k$ cumplen $a_{ij}^{(k)} = 0$ si $j = 1, \dots, k, \; i = j + 1, \dots, n$
 
->[!Example] Transformaciones de Gauss
+>[!Example]- Transformaciones de Gauss
 >Sea $$A_0 = A = \begin{bmatrix}1 & 4 & 7 \\2 & 5 & 8 \\3 & 6 & 10\end{bmatrix}$$
 >Para generar $A_1$ se debe definir $M_1$ que anule los elementos $a_{i1}^{(0)}$ con $i \geq 2$. Tomando $\nu^1 = [0, 2, 3]^T$, entonces
 >$$M_1 = I - \nu^1 (e_1)^T = \begin{bmatrix}1 & 0 & 0 \\-2 & 1 & 0 \\-3 & 0 & 1\end{bmatrix} 
 >\quad \text{y} \quad A_1 = M_1 A_0 = \begin{bmatrix}1 & 4 & 7 \\0 & -3 & -6 \\0 & -6 & -11\end{bmatrix}$$
->Como $a_{12}^{(1)} = 0$, $M_2$ dejará invariante la primera columna de $A_1$ por lo tanto se debe trabajar con su segunda columna. Tomando $\nu^2 = [0, 0, 2]^T$, se obtiene
+>Como $a_{12}^{(1)} = 0$, $M_2$ dejará invariante la primera columna de $A_1$ por lo tanto se debe trabajar con su segunda columna. 
+>Tomando $\nu^2 = [0, 0, 2]^T$, se obtiene
 >$$M_2 = I - \nu^2 (e_2)^T = \begin{bmatrix}1 & 0 & 0 \\0 & 1 & 0 \\0 & -2 & 1\end{bmatrix}\quad \text{y} \quad A_2 = M_2 A_1 
 >= \begin{bmatrix}1 & 4 & 7 \\0 & -3 & -6 \\0 & 0 & 1\end{bmatrix}$$
 
 >[!Remark]
->En general, para $k = 1, \dots, n-1$ se puede generar $A_k = M_k A_{k-1}$ con la propiedad deseada si se define $M_k$ con $\nu^k$ tal que
->$$\nu_i^k = \begin{cases}a_{i,k-1} / a_{k-1,k-1}, & 1 \leq i \leq k, \\0, & k+1 \leq i \leq n\end{cases}$$
->Note que este procedimiento está bien definido solo si $a_{k-1,k-1} \neq 0$ para $k = 1, \dots, n-1$. Las entradas $a_{k-1,k-1}$ reciben el nombre de pivotes.
+>En general, para $k = 1, \dots, n-1$ se puede generar $A_k = M_k A_{k-1}$ con la propiedad deseada si se define $M_k$ con $v^k$ tal que
+>$$v_i^k = \begin{cases}0  & 1 \leq i \leq k, \\a_{ik}^{(k-1)}  / a_{kk}^{(k-1)} & k+1 \leq i \leq n\\  \\
+\end{cases}$$
+>(Donde $(k-1)$ hace referencia a que es un elemento de la matriz $(k-1)$-esima) 
+>Note que este procedimiento está bien definido solo si $a_{k}^{(k-1)} \neq 0$ para $k = 1, \dots, n-1$. 
+>Las entradas $a_{k-1}^{(k-1)}$ reciben el nombre de pivotes.
 >Se verá a continuación en qué caso se puede afirmar que el procedimiento anterior está bien definido.
 
->[!Theorem]
+>[!Theorem] DUDA
 >Si $A \in \mathbb{R}^{n \times n}$ satisface
 >$$\det \begin{pmatrix}\begin{bmatrix}a_{11} & \cdots & a_{1k} \\\vdots & \ddots & \vdots \\a_{k1} & \cdots & a_{kk}\end{bmatrix} \end{pmatrix}\neq 0, \tag{2.2}$$
 >para $k = 1, \dots, n-1$, entonces las transformaciones de Gauss $M_k$ están bien definidas para $k = 1, \dots, n - 1$.
->>[!Proof]
->>1. Note que usando la definición de $\nu^k$ solo basta probar que $a_{(k-1)kk} \neq 0$ para $k = 1, \dots, n-1$.
->>2. Usando inducción en $k$, si (2.2) vale para $k = 1$ entonces $a_{11} = a_{11} \neq 0$ y por lo tanto se puede definir $M_1$. Suponga que se tienen definidas $M_k$ para $k = 1, \dots, l-1$ y que vale (2.2) para $k = l$, entonces $\Gamma = M_{l-1} \dots M_1$ es una matriz triangular inferior con unos en la diagonal. Usando los índices $I = \{1, \dots, l\}$ y $J = \{l + 1, \dots, n\}$, se tiene
+>>[!Proof]-
+>>1. Note que usando la definición de $v^k$ solo basta probar que $a_{kk}^{(k-1)}\neq 0$ para $k = 1, \dots, n-1$.
+>>2. Usando inducción en $k$, si (2.2) vale para $k = 1$ entonces $a_{11}^{(0)}= a_{11} \neq 0$ y por lo tanto se puede definir $M_1$. 
+>>3. Suponga que se tienen definidas $M_k$ para $k = 1, \dots, l-1$ y que vale (2.2) para $k = l$ (vale siempre que $k\leq n-1$ en particular vale para $k=l$)  
+>>4. Entonces $\Gamma = M_{l-1} \dots M_1$ es una matriz triangular inferior con unos en la diagonal. (por def $M_{l}$ ) 
+>>5. Usando los índices $I = \{1, \dots, l\}$ y $J = \{l + 1, \dots, n\}$, se tiene
 >>$$A_{l-1} = \Gamma A = \begin{bmatrix} \Gamma_{II} & 0 \\ \Gamma_{JI} & \Gamma_{JJ} \end{bmatrix} \begin{bmatrix} A_{II} & A_{IJ} \\ A_{AI} & A_{JJ} \end{bmatrix}$$
->>Obteniendo que el bloque de $A_{l-1}$ con filas y columnas indexadas por $I$ es igual a $\Gamma_{II} A_{II}$ triangular inferior con unos en la diagonal. Entonces,
->>$$\det(A_{II}) = \det(\Gamma_{II} A_{II}) = \det(\Gamma_{II}) \det(A_{II}) = \det 
->>\begin{pmatrix}a_{(l-1)11} & \cdots & a_{(l-1)1l} \\0 & \ddots & \vdots \\0 & 0 & a_{(l-1)ll}\end{pmatrix} = a_{(l-1)11} \cdots a_{(l-1)ll}.$$
->>Como $\det(A_{II}) \neq 0$, pues vale (2.2) para $k = l$, entonces $a_{(l-1)ll} \neq 0$. Por lo tanto, se puede definir $M_l$.
+>>6. Obteniendo que el bloque de $A_{l-1}$ con filas y columnas indexadas por $I$ es igual a $\Gamma_{II} A_{II}$ con $\Gamma_{}$ triangular inferior con unos en la diagonal. 
+>>7. Entonces,
+>>$$\det(A_{II}) =det(A_{II})det(\Gamma_{II})= \det(\Gamma_{II} A_{II}) = \det(\Gamma_{II}) \det(A_{II}) = \det 
+>>\begin{pmatrix}a_{11}^{(l-1)}  & \cdots & a_{1l}^{(l-1)}  \\0 & \ddots & \vdots \\0 & 0 & a_{ll}^{(l-1)} \end{pmatrix} = a_{11}^{(l-1)}\cdots a_{ll}^{(l-1)}$$
+>>(Notar $det(\Gamma_{II})=1$) 
+>>8Como $\det(A_{II}) \neq 0$, pues vale (2.2) para $k = l$, entonces $a_{ll}^{(l-1)} \neq 0$. Por lo tanto, se puede definir $M_l$.
 
+>[!Corollary]
+>Si $A \in \mathbb{R}^{n \times n}$ satisface (2.2) para $k = 1, \dots, n$, entonces la descomposición LU existe y es única. Además, $\det(A) = \det(U) = u_{11} \dots u_{nn}$.
+>>[!Proof]
+>>1. (2.2) vale para $k = 1, \dots, n - 1$ entonces $A$ tiene descomposición LU. 
+>>2. Como (2.2) vale para $k = n$ entonces $A$ es no singular.
+>>3. Supongamos que $A$ tiene dos factorizaciones LU, i.e., $A = L_1 U_1 = L_2 U_2$. 
+>>4. Como $U_1$ es no singular pues $\det(U_1) = \det(L_1 U_1) = \det(A)$ entonces $L_2^{-1} L_1 = U_2 U_1^{-1}$. 
+>>5. Entonces $L_2^{-1} L_1$ es triangular superior (Porque $U_{1}^{-1}$ y $U_{2}$ lo son) triangular inferior y con unos en la diagonal. 
+>>6. Por lo tanto $L_2^{-1} L_1 = I$. Concluyendo que $L_1 = L_2$ y $U_1 = U_2$. Además,
+>>7. $$\det(A) = \det(LU) = \det(U) = u_{11} \dots u_{nn}$$
