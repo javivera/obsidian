@@ -181,7 +181,7 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >Las entradas $a_{k-1}^{(k-1)}$ reciben el nombre de pivotes.
 >Se verá a continuación en qué caso se puede afirmar que el procedimiento anterior está bien definido.
 
->[!Theorem] DUDA
+>[!Theorem]
 >Si $A \in \mathbb{R}^{n \times n}$ satisface
 >$$\det \begin{pmatrix}\begin{bmatrix}a_{11} & \cdots & a_{1k} \\\vdots & \ddots & \vdots \\a_{k1} & \cdots & a_{kk}\end{bmatrix} \end{pmatrix}\neq 0, \tag{2.2}$$
 >para $k = 1, \dots, n-1$, entonces las transformaciones de Gauss $M_k$ están bien definidas para $k = 1, \dots, n - 1$.
@@ -194,18 +194,53 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >>$$A_{l-1} = \Gamma A = \begin{bmatrix} \Gamma_{II} & 0 \\ \Gamma_{JI} & \Gamma_{JJ} \end{bmatrix} \begin{bmatrix} A_{II} & A_{IJ} \\ A_{AI} & A_{JJ} \end{bmatrix}$$
 >>6. Obteniendo que el bloque de $A_{l-1}$ con filas y columnas indexadas por $I$ es igual a $\Gamma_{II} A_{II}$ con $\Gamma_{}$ triangular inferior con unos en la diagonal. 
 >>7. Entonces,
->>$$\det(A_{II}) =det(A_{II})det(\Gamma_{II})= \det(\Gamma_{II} A_{II}) = \det(\Gamma_{II}) \det(A_{II}) = \det 
+>>$$\det(A_{II}) =det(A_{II})det(\Gamma_{II})= \det(\Gamma_{II} A_{II})  = det(A_{(l-1)_{II}})=\det 
 >>\begin{pmatrix}a_{11}^{(l-1)}  & \cdots & a_{1l}^{(l-1)}  \\0 & \ddots & \vdots \\0 & 0 & a_{ll}^{(l-1)} \end{pmatrix} = a_{11}^{(l-1)}\cdots a_{ll}^{(l-1)}$$
 >>(Notar $det(\Gamma_{II})=1$) 
->>8. Como $\det(A_{II}) \neq 0$, pues vale (2.2) para $k = l$, entonces $a_{ll}^{(l-1)} \neq 0$. Por lo tanto, se puede definir $M_l$.
+>>8. Como $\det(A_{II}) \neq 0$, pues vale (2.2) para $k = l$
+>>9. Entonces $a_{ll}^{(l-1)} \neq 0$. Por lo tanto, se puede definir $M_l$.
+
+^e9919e
+
+## Eliminacion Gaussiana
+
+>[!Remark]
+>Para resolver el sistema $Ax = b$ aplicamos transformaciones de Gauss a un sistema equivalente $Ux = y$, donde
+>$$y = M_{n-1} \dots M_2 M_1 b, \quad U = M_{n-1} \dots M_2 M_1 A$$
+>Asi obtenemos el sistema $Ux = b$ con $U$ triangular superior. El cual podemos resolver  
+
+## Descomposicion LU
+
+>[!Remark]
+>1. Se sabe que $U = M_{n-1} \dots M_2 M_1 A$ (Triangular superior) con $M_k = I - \nu^k (e^k)^T$ (triangular inferior) con unos en la diagonal. 
+>2. Usando la estructura de $M_k$ se puede probar que su inversa es triangular inferior con unos en la diagonal, más aún, se puede ver que $M_k^{-1} = I + \nu^k (e^k)^T$ (en pr1). 
+>3. Por lo tanto, si se define $$L = M_1^{-1} M_2^{-1} \dots M_{n-1}^{-1}$$
+>4. Se obtiene que $L$ es triangular inferior con unos en la diagonal y $A = LU$. 
+>5. De esta forma, si $x$ es solución de $Ax = b$, entonces $$b = Ax = LUx = Ly \quad \text{con} \quad y = Ux$$
+>6. O sea, para resolver $Ax = b$, resuelvo los sistemas triangulares $Ly = b$ y $Ux = y$. 
+>Usando [[#^e9919e]] garantizamos la existencia de una descomposición LU, veamos ahora que dicha descomposición es única.
 
 >[!Corollary]
 >Si $A \in \mathbb{R}^{n \times n}$ satisface (2.2) para $k = 1, \dots, n$, entonces la descomposición LU existe y es única. Además, $\det(A) = \det(U) = u_{11} \dots u_{nn}$.
->>[!Proof]
+>>[!Proof]-
 >>1. (2.2) vale para $k = 1, \dots, n - 1$ entonces $A$ tiene descomposición LU. 
 >>2. Como (2.2) vale para $k = n$ entonces $A$ es no singular.
 >>3. Supongamos que $A$ tiene dos factorizaciones LU, i.e., $A = L_1 U_1 = L_2 U_2$. 
 >>4. Como $U_1$ es no singular pues $\det(U_1) = \det(L_1 U_1) = \det(A)$ entonces $L_2^{-1} L_1 = U_2 U_1^{-1}$. 
 >>5. Entonces $L_2^{-1} L_1$ es triangular superior (Porque $U_{1}^{-1}$ y $U_{2}$ lo son) triangular inferior y con unos en la diagonal. 
->>6. Por lo tanto $L_2^{-1} L_1 = I$. Concluyendo que $L_1 = L_2$ y $U_1 = U_2$. Además,
->>7. $$\det(A) = \det(LU) = \det(U) = u_{11} \dots u_{nn}$$
+>>6. Por lo tanto $L_2^{-1} L_1 = I$. 
+>>7. Concluyendo que $L_1 = L_2$ y $U_1 = U_2$. Además,
+>>$$\det(A) = \det(LU) = \det(U) = u_{11} \dots u_{nn}$$
+
+## Eliminacion gaussiana con permutacion filas
+
+>[!Remark]
+>1. En el paso $k$ se define $E_k$ matriz de permutación de fila $k$ con fila $l$ para un $l$ tal que
+>$$|a_{lk}^{(k-1)}| = \max_{k \leq j \leq n} \left\{ |a_{jk}^{(k-1)}| \right\}$$
+>2. Si el máximo entre esos elementos es cero, entonces $a_{jk}^{(k-1)} = 0$ para $j = k, \dots, n$. En este caso los elementos de la columna $k$ por debajo de la diagonal ya son nulos, siendo innecesaria la aplicación de $M_k$ y $E_k$. Matricialmente, es equivalente a suponer $M_k = E_k = I$.
+>3. Por lo tanto, el algoritmo de eliminación Gaussiana con pivoteo puede describirse como una sucesión de $n - 1$ pasos, comenzando con $A_0 = A$ y $b^0 = b$, tal que en el paso $k$ se define
+>$$A_k = M_k E_k A_{k-1}, \quad b^k = M_k E_k b^{k-1}$$
+>Obteniendo $y = b^{n-1}$ y $U = A_{n-1}$. Por construcción, este método está bien definido para cualquier matriz $A$.
+>4. Terminamos resolviendo $Ux=y$ que es equivalente a $Ax=b$
+
+## Metodo LU con permutacion filas

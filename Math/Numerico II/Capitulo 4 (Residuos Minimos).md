@@ -61,7 +61,7 @@ dateCreated: 2024-11-17,19:58
 
 ^e0aac1
 
-## Obtener QR con Householder
+## QR sin permutacion
 
 >[!Remark] QR Householder DUDA
 >1. Ahora, dada $A \in \mathbb{R}^{m \times n}$ se puede realizar una descomposición QR aplicando reflexiones de Householder por columnas. 
@@ -71,8 +71,9 @@ dateCreated: 2024-11-17,19:58
 >(DUDA No podemos usar $$\tilde{Q}_{j}= \begin{bmatrix} I & 0 \\0 & Q_{j} \end{bmatrix}$$  ) 
 >5. Se van obteniendo $\tilde{Q}_j$ ortogonales con la propiedad que $$R = \tilde{Q}_p \dots \tilde{Q}_1 A, \quad p = \min\{m, n\}$$
 >es triangular superior con elementos diagonales no negativos (pueden ser 0) 
->5. Por lo tanto $$Q  = \tilde{Q}_1 \dots \tilde{Q}_p$$
->6. Y finalmente $QR=A$ por [[#^34e2e0]] (d) 
+>(Notar que alguans $\tilde{Q}$ podrian ser la identidad por que la matriz podria tener rango chico, menor que $\min\{ m,n \}$)  
+>1. Por lo tanto $$Q  = \tilde{Q}_1 \dots \tilde{Q}_p$$
+>2. Y finalmente $QR=A$ por [[#^34e2e0]] (d) 
 
 >[!Theorem] DUDA
 >Si $A = QR$ es una descomposición QR de $A \in \mathbb{R}^{m \times n}$ de rango $n$ (esto implica que $m\geq n$) y $A = [a^1 \dots a^n], \, a^j \in \mathbb{R}^m, Q = [q^1 \dots q^m], q^j \in \mathbb{R}^m$, entonces
@@ -84,7 +85,7 @@ dateCreated: 2024-11-17,19:58
 >>$$a^k = Q \begin{bmatrix} r_{1k} \\ \vdots \\ r_{kk} \\ 0 \\ \vdots \\ 0 \end{bmatrix}= \sum_{j=1}^k r_{jk} q^j \in \text{span}\{q^1, \dots, q^k\}$$
 >>2. Obteniendo que $\text{span}\{a^1, \dots, a^k\} \subset \text{span}\{q^1, \dots, q^k\}$
 >>3. Como $A$ tiene rango $n$ (por hipotesis) los vectores $a^1, \dots, a^k$ son linealmente independientes y por lo tanto generan el mismo espacio que $q^1, \dots, q^k$.
->>4. Por otro lado $$A = QR = \begin{bmatrix} Q_1 & Q_2 \end{bmatrix} \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = Q_1 R_1$$
+>>4. Por otro lado $$A = QR = \begin{bmatrix} Q_1 \ \ Q_2 \end{bmatrix} \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = Q_1 R_1$$
 >>5. Entonces $\text{Im}(A) = \text{Im}(Q_1)$ pues $R_1$ es de rango $n$ (osea rango completo)
 >>6. Además $A^T Q_2 = R_1^T Q_1 ^{T}Q_2 = 0$ implica que $\text{Im}(Q_2) \subseteq \text{Ker}(A^T)$. 
 >>7. La otra inclusion sea $x\in Ker(A^{T})\iff A^{T}x=0\iff R_{1}Q_{1}^{T}x=0\iff Q_{1}^{T}x=0$    (DUDA)
@@ -95,14 +96,14 @@ dateCreated: 2024-11-17,19:58
 >Sea $A \in \mathbb{R}^{m \times n}$ de rango $n$ (DONDE USO rango $n$ en todo esto. en Givens no , en HouseHolder?), entonces la factorización QR reducida $A = Q_1 R_1$ es única si $Q_1 \in \mathbb{R}^{m \times n}$ tiene columnas ortonormales y $R_1$ es triangular superior con elementos diagonales positivos (la parte de ortonormal y triang sup no es por el algoritmos de QR per se DUDA) . Más aún, $R_1$ es el factor de Cholesky de $A^T A$.
 >>[!Proof]-
 >>1. $A^T A = R_1^T Q_1^T Q_1 R_1 = R_1^T R_1$ con $R_1$ triangular superior con elementos diagonales positivos. 
->>2. Entonces, por la unicidad de la descomposición de Cholesky, se obtiene que $R_1$ es el factor de Cholesky de $A^T A$. 
+>>2. Entonces, por la unicidad de la descomposición de Cholesky, se obtiene que $R_1$ es el factor de Cholesky de $A^T A$ y es unico
 >>3. Además $Q_1 = A R_1^{-1}$ también es única.
 
-## Cuadrados minimos usando QR
+## Cuadrados minimos usando QR (Sin permutacion) 
 
 >[!Remark] DUDA
 >Por lo tanto, para resolver el problema de cuadrados mínimos hacemos
->1.Descomposición QR de $A \in \mathbb{R}^{m \times n}$. Si $A$ tiene rango $n$ entonces se obtendrá
+>1. Descomposición QR de $A \in \mathbb{R}^{m \times n}$. Si $A$ tiene rango $n$ entonces se obtendrá
 >$$Q^T A = \left[ \begin{array}{c} R_1 \\ 0 \end{array} \right], \quad Q^T b = \left[ \begin{array}{c} Q_1^T b \\ Q_2^T b \end{array} \right] = \left[ \begin{array}{c} c \\ d \end{array} \right]$$
 >donde $R_1 \in \mathbb{R}^{n \times n}$ es triangular superior con elementos diagonales positivos (posiblemente 0) , $c \in \mathbb{R}^n$ y $d \in \mathbb{R}^{m-n}$. 
 >2. Entonces $$\|Ax - b\|_2^2 = \|Q^T A x - Q^T b\|_2^2 = \left\| \left[ \begin{array}{c} R_1 x - c \\ -d \end{array} \right] \right\|_2^2 = \|R_1 x - c\|_2^2 + \|d\|_2^2$$
@@ -119,24 +120,44 @@ dateCreated: 2024-11-17,19:58
 >$$a^j = \sum_{i=1}^{j} r_{ij} q^i = Q\left[ \begin{array}{c} r_{1j} \\ \vdots \\ r_{jj} \\ 0 \\ \vdots \\ 0 \end{array} \right].$$
 >Luego $A = QR$ con $R \in \mathbb{R}^{n \times n}$ triangular superior con elementos diagonales no negativos. 
 
-## Grahm Schmidt modificado
+## QR Grahm Schmidt modificado
 queda entender
-
 ## QR Con permutacion
->[!Remark]
->Si $A \in \mathbb{R}^{m \times n}$ tiene rango $p < n$, la descomposición QR podría generar $R$ con $r_{jj} = 0$ para algún $j$ con $1 \leq j \leq p$. Esto sucede cuando las primeras $p$ columnas de $A$ son linealmente dependientes.
 
-^fdae5f
+>[!Remark] DUDA
+>Si $A \in \mathbb{R}^{m \times n}$ tiene rango $p < n$ (DUDA no seria p menor que minimo entre n,m) , la descomposición QR podría generar $R$ con $r_{jj} = 0$ para algún $j$ con $1 \leq j \leq p$. Esto sucede cuando las primeras $p$ columnas de $A$ son linealmente dependientes
+> Para evitar esto, se permutarán las columnas a fin de obtener $r_{jj} > 0$ para $1 \leq j \leq p$. Ya sea usando rotaciones de Givens o reflexiones de Householder, se pueden modificar los métodos para obtener $P \in \mathbb{R}^{n \times n}$ matriz de permutación tal que
+>$$Q^T A P = \left[ \begin{array}{cc} R_{11} & R_{12} \\ 0 & 0 \end{array} \right]$$
+>con $R_{11} \in \mathbb{R}^{p \times p}$ y $R_{12} \in \mathbb{R}^{p \times (n-p)}$.
+>Para realizar esta modificación, suponga que luego del paso $j - 1$ se obtiene la matriz
+>$$\left[ \begin{array}{cc} T & V \\ 0 & W \end{array} \right]$$
+>con $T \in \mathbb{R}^{(j-1) \times (j-1)}$ y $W \in \mathbb{R}^{(m-j+1) \times (n-j+1)}$. Considere la partición por columnas $W = [w^j \dots w^n]$ y tome el índice $l$ tal que
+>$$\|w^l\|_2^2 = \max_{j \leq k \leq n} \|w^k\|_2^2$$
+>Si $\|w^l\|_2 = 0$, entonces se finaliza el procedimiento, pues $W = 0$ y en este caso se obtendrá que $A$ tiene rango $j - 1$. 
+>Si $\|w^l\|_2 > 0$, se define $P_j \in \mathbb{R}^{n \times n}$ matriz de permutación de columnas $j$ y $l$.
+>Luego, se procede de manera normal con el paso $j$ del método de descomposición QR elegido aplicado a la matriz
+>$$\left[ \begin{array}{cc} T & V \\ 0 & W \end{array} \right] P_j$$
+>De esta forma se obtendrá la descomposición deseada con $P = P_1 \dots P_r$. 
+>Claramente $AP=QR$
 
+^137bca
 
-QR con permutacion entender
+>[!Example]- QR Con permutacion
+>Tenemos $$A = \begin{bmatrix}2 & 2 & 3 \\2 & 2 & 3 \\1 & 1 & 0\end{bmatrix}$$
+>Como la primera columna tiene norma máxima, definimos $P_1 = I$.
+>Luego $Q_1 = I - \rho_1 u_1 u_1^T$ con $u_1 = (1, -2, -1)^T$, $\rho_1 = 1/3$ y
+>$$Q_1^T A P_1 = \begin{bmatrix} 3 & 3 & 2 \\ 0 & 0 & 2 \\ 0 & 0 & 1 \end{bmatrix}$$
+>Mirando la norma de las columnas de la submatriz con filas y columnas indexadas por $\{2, 3\}$, obtenemos que hay que permutar las columnas 2 y 3. Luego de la permutación obtenemos que $Q_2 = I - \rho_2 u_2 u_2^T$ con $u_2 = (0, 1, 1/(2 - \sqrt{5}))^T$, $\rho_2 = (2 - \sqrt{5})^2/(5 - 2\sqrt{5})$ 
+>$$Q_2^T Q_1^T A P_1 P_2 = \begin{bmatrix}3 & 2 & 3 \\0 & \sqrt{5} & 0 \\0 & 0 & 0\end{bmatrix}$$
+>Obteniendo así una descomposición QR de $A$ con $r_{11}$ y $r_{22}$ positivos.
+
 Reducir error en QR entender
 
-## Cuadrados minimos usando QR con permutacion
+## Cuadrados minimos usando QR (con permutacion)
 
 >[!Remark]
 >Por lo tanto, para resolver el problema de cuadrados mínimos con $A \in \mathbb{R}^{m \times n}$ de rango $p < n$ (no es menor que minimo entre n y m ?) 
->1. Se usa [[#^fdae5f]] para obtener descomposicion QR 
+>1. Se usa [[#^137bca]] para obtener descomposicion QR 
 >2. Entonces esta descomposicion cumple
 >$$Q^T A P = \begin{bmatrix} R_{11} & R_{12} \\0 & 0\end{bmatrix},\quad Q^T b = \begin{bmatrix} c \\ d \end{bmatrix}$$
 >3. Con $R_{11} \in \mathbb{R}^{p \times p}$ triangular superior con elementos diagonales positivos, $R_{12} \in \mathbb{R}^{p \times (n - p)}$, $c \in \mathbb{R}^p$, $d \in \mathbb{R}^{m - n}$ y los bloques de ceros son de dimensión $(m - p) \times p$ y $(m - p) \times (n - p)$, pudiendo no existir alguno de ellos si $p = m$ o $p = n$. Considerando la partición
