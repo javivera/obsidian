@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Numerico II/Capitulo 2 (Metodos Directos).md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -150,9 +150,11 @@
   },
   "active": "175117e02f8dfca7",
   "lastOpenFiles": [
-    "Numerico II/Capitulo 4 (Residuos Minimos).md",
     "Numerico II/Capitulo 3 (Sensibilidad).md",
+    "Numerico II/Capitulo 4 (Residuos Minimos).md",
     "Numerico II/Capitulo 2 (Metodos Directos).md",
+    "Numerico II/Capitulo 2 Practico (PARTE 1).md",
+    "Numerico II/Capitulo 2 Practico (PARTE 2).md",
     "Analisis Funcional/Theory/Teórico 15.md",
     "Analisis Funcional/Theory/Teórico 14.md",
     "Analisis Funcional/Theory/Teórico 17.md",
@@ -177,8 +179,6 @@
     "Analisis Funcional/Theory/Teórico 3.md",
     "Analisis Funcional/Theory/Teórico 2.md",
     "Analisis Funcional/Theory/Teórico 1.md",
-    "Analisis Funcional/Theory/Teórico 7.md",
-    "Teórico 10^{}.md",
     "Estructuras Algebraicas/Theory",
     "Estructuras Algebraicas",
     "Analisis Funcional/Theory",

@@ -42,7 +42,8 @@ dateCreated: 2024-11-16,17:28
 >[!Definition] Norma Frobenius
 >Entre las normas matriciales más usadas está la norma de Frobenius: dada $A \in \mathbb{R}^{m \times n}$
 >$$\|A\|_F = \sqrt{\text{tr}(A^T A)} = \sqrt{\sum_{i=1}^{m} \sum_{j=1}^{n} |a_{ij}|^2}$$
->Se puede ver que $\|A\|_F = \| \text{vec}(A) \|_2$.
+>Se puede ver que $\|A\|_F = \| \text{vec}(A) \|_2$. 
+>($\text{vec}(A)$ es apilar todas las columnas de $A$ en un solo vector parado) 
 
 >[!Proposition]
 >La norma de Frobenius, $\| \cdot \|_F$, es una norma matricial submultiplicativa.
@@ -66,7 +67,9 @@ dateCreated: 2024-11-16,17:28
 >[!Proposition]
 >Si $A \in \mathbb{R}^{m \times n}$, entonces
 >$$\|A\|_1 = \max_{1 \leq j \leq n} \sum_{i=1}^m |a_{ij}|$$
+>(Maximo de las sumas de las columnas) 
 >$$\|A\|_\infty = \max_{1 \leq i \leq m} \sum_{j=1}^n |a_{ij}|$$
+>(Maximo de las sumas de las filas) 
 >$$\|A\|_2 = \sqrt{\rho(A^T A)}$$
 
 ## Errores
@@ -92,13 +95,14 @@ dateCreated: 2024-11-16,17:28
 >donde $\lambda_{\max}(A^T A)$ y $\lambda_{\min}(A^T A)$ denotan los autovalores máximo y mínimo de $A^T A$
 
 >[!Theorem]
->Sea $A \in \mathbb{R}^{n \times n}$ no singular y $b \in \mathbb{R}^n$ no nulo. Si $Ax = b$ y $Ax̂ = b + \upsilon$, entonces
->$$\frac{\|x̂ - \bar{x}\|}{\| \bar{x} \|} \leq \kappa(A) \frac{\|\upsilon\|}{\|b\|}$$
+>Sea $A \in \mathbb{R}^{n \times n}$ no singular y $b \in \mathbb{R}^n$ no nulo. Si $A\overline{x} = b$ y $A \hat{x}= b + \upsilon$, entonces
+>$$\frac{\|\hat{x}- \bar{x}\|}{\| \bar{x} \|} \leq \kappa(A) \frac{\|\upsilon\|}{\|b\|}$$
 >>[!Proof]-
->>1. Sea $\zeta = x̂ - \bar{x}$, luego $b + \upsilon = A(\bar{x} + \zeta) = A \bar{x} + A \zeta$. Entonces $A \zeta = \upsilon$, o equivalentemente, $\zeta = A^{-1} \upsilon$. Obteniendo que $\|\zeta\| \leq \|A^{-1}\| \|\upsilon\|$.
->>2. Por otro lado, $b = A \bar{x}$ implica que $\|b\| \leq \|A\| \|\bar{x}\|$ y por lo tanto $\frac{1}{\|\bar{x}\|} \leq \|A\| \frac{1}{\|b\|}$. 
->>3. Combinando esto con la desigualdad anterior, concluimos que
->>$$\frac{\|\zeta\|}{\|\bar{x}\|} \leq \|A^{-1}\| \frac{\|\upsilon\|}{\|b\|}$$
+>>1. Sea $\zeta = \hat{x} - \bar{x}$, luego $b + \upsilon = A(\bar{x} + \zeta) = A \bar{x} + A \zeta$. 
+>>2. Entonces $A \zeta = \upsilon$, o equivalentemente, $\zeta = A^{-1} \upsilon$. Obteniendo que $\|\zeta\| \leq \|A^{-1}\| \|\upsilon\|$.
+>>3. Por otro lado, $b = A \bar{x}$ implica que $\|b\| \leq \|A\| \|\bar{x}\|$ y por lo tanto $\frac{1}{\|\bar{x}\|} \leq \|A\| \frac{1}{\|b\|}$. 
+>>4. Combinando esto con la desigualdad anterior, concluimos que
+>>$$\frac{\|\zeta\|}{\|\bar{x}\|} \leq \lVert A \rVert \|A^{-1}\| \frac{\|\upsilon\|}{\|b\|}$$
 
 >[!Definition]
 >El residuo de una aproximación $\hat{x}$ de la solución de $Ax = b$ es el número $\|b - A\hat{x}\|$ y llamaremos vector residuo a $b - A\hat{x}$.
@@ -112,25 +116,26 @@ dateCreated: 2024-11-16,17:28
 >Si se tiene perturbación en la matriz, es importante garantizar que el sistema perturbado pueda resolverse. El siguiente resultado garantiza que para pequeñas perturbaciones la no singularidad se preserva.
 
 >[!Theorem]
->Si $A \in \mathbb{R}^{n \times n}$ es no singular y $\|\cdot\|$ es submultiplicativa, entonces
+>Si $A \in \mathbb{R}^{n \times n}$ es no singular
 >$$\frac{\|\Theta\|}{\|A\|} < \frac{1}{\kappa(A)}$$
 >entonces $A + \Theta$ es no singular.
 >>[!Proof]-
 >>1. Suponga que $A + \Theta$ es singular, o sea, existe $y \neq 0$ tal que $(A + \Theta)y = 0$. 
 >>2. Como $A$ es no singular, se obtiene que $y = -A^{-1} \Theta y$. 
->>3. Entonces $\|y\| \leq \|A^{-1}\| \|\Theta\| \|y\|$
+>>3. Entonces $\|y\| \leq \|A^{-1}\| \|\Theta\| \|y\|$ ósea $1\leq \lVert A^{-1} \rVert\lVert \Theta\rVert$ (las normas matriciales inducidas son submultiplicativas) 
 >>4. por lo tanto $$\frac{1}{\kappa(A)} \leq \frac{\|A^{-1}\| \|\Theta\|}{\kappa(A)} = \frac{\|A^{-1}\| \|\Theta\|}{\|A\| \|A^{-1}\|} = \frac{\|\Theta\|}{\|A\|}$$
->>5. Entonces si $A+\Theta$ es no singular $$\frac{\lVert \theta \rVert }{\lVert A \rVert }< \frac{1}{\kappa(A)}$$
+>>5. Que es absurdo. Entonces $A+\Theta$ es no singular
 
 >[!Theorem]
->Sea $A \in \mathbb{R}^{n \times n}$ no singular, $\frac{\|\Theta\|}{\|A\|} < \frac{1}{\kappa(A)}$ y $b \in \mathbb{R}^n$ no nulo. Si $Ax = b$ y $(A + \Theta) \hat{x} = b + \upsilon$, entonces
+>Sea $A \in \mathbb{R}^{n \times n}$ no singular, $\frac{\|\Theta\|}{\|A\|} < \frac{1}{\kappa(A)}$ y $b \in \mathbb{R}^n$ no nulo. Si $A\overline{x}= b$ y $(A + \Theta) \hat{x} = b + \upsilon$, entonces
 >$$\frac{\|\hat{x} - \bar{x}\|}{\|\bar{x}\|} \leq \kappa(A) \left( \frac{\|\Theta\|}{\|A\|} + \frac{\|\upsilon\|}{\|b\|} \right) \left( \frac{1}{1 - \kappa(A) \frac{\|\Theta\|}{\|A\|}} \right)$$
 >>[!Proof]-
 >>1. Sea $\zeta = \hat{x} - \bar{x}$, luego $b + \upsilon = (A + \Theta)(\bar{x} + \zeta) = A\bar{x} + A\zeta + \Theta\bar{x} + \Theta \zeta$. 
->>2. Entonces $\zeta=A^{-1}(v-\Theta\overline{x}-\Theta\zeta)$  
+>>2. Entonces $\zeta=A^{-1}(v-\Theta\overline{x}-\Theta\zeta)$  (notar que $A\overline{x}=b$  ) 
 >>3. Tomando norma en ambos miembros, se obtiene que
 >>$$\|\zeta\| \leq \|A^{-1}\| (\|\upsilon\| + \|\Theta\| \|\bar{x}\| + \|\Theta\| \|\zeta\|)$$
->>4. Por lo tanto
+>>$$\|\zeta\|-\lVert A^{-1} \rVert\lVert \Theta\lVert \rVert \zeta  \rVert   \leq \|A^{-1}\| (\|\upsilon\| + \|\Theta\| \|\bar{x}\| )$$
+>>1. Por lo tanto
 >>$$(1 - \|A^{-1}\| \|\Theta\|) \|\zeta\| \leq \|A^{-1}\| (\|\upsilon\| + \|\Theta\| \|\bar{x}\|)=\kappa(A)\bigg(\frac{\lVert \Theta \rVert }{\lVert A \rVert }\lVert \overline{x}  \rVert +\frac{\lVert v \rVert }{\lVert A \rVert }\bigg)=\kappa(A)\bigg(\frac{\lVert \Theta \rVert }{\lVert A \rVert }+\frac{\lVert v \rVert }{\lVert A \rVert \lVert \overline{x}  \rVert }\bigg)\lVert \overline{x}  \rVert $$
 >>1. Como $\|b\| = \|A\bar{x}\| \leq \|A\| \|\bar{x}\|$ entonces $\frac{1}{\|A\|\|\bar{x}\|} \leq \frac{1}{\|b\|}$.
 >>2. Obteniendo así que $$\bigg(1-\kappa(A) \frac{\|\Theta\|}{\|A\|}\bigg) \frac{\lVert \zeta \rVert }{\lVert \overline{x}  \rVert } \leq \kappa(A) \left( \frac{\|\Theta\|}{\|A\|} + \frac{\|\upsilon\|}{\|b\|} \right)$$

@@ -3,6 +3,8 @@ dateCreated: 2024-11-17,19:58
 ---
 ## Rotacion Givens
 
+Copiar el proceso givens 2x2
+
 >[!Theorem]
 >Si $A \in \mathbb{R}^{m \times n}$, entonces existe $Q \in \mathbb{R}^{m \times m}$ ortogonal y $R \in \mathbb{R}^{m \times n}$ triangular superior con elementos diagonales no negativos tal que $A = QR$.
 >>[!Proof]-
@@ -13,7 +15,8 @@ dateCreated: 2024-11-17,19:58
 >>\\
 >>Q = G_{21}^T G_{31}^T \dots G_{m1}^T G_{32}^T \dots G_{m+1,m}^T
 >>\end{align}$$
->>3. y si $m > n$
+>>Con $G_{m+1,m}=Id$  o $-1$  dependiendo si $g_{mm}$  positivo o negativo
+>>1. y si $m > n$
 >>$$\begin{align}R = G_{m,n} \dots G_{n+1,n} \dots G_{32} G_{m1} \dots G_{31} G_{21} A  \\
 >>\\
 >>Q = G_{21}^T G_{31}^T \dots G_{m1}^T G_{32}^T \dots G_{n+1,n}^T G_{m,n}
@@ -81,16 +84,17 @@ dateCreated: 2024-11-17,19:58
 >para $k = 1, \dots, n$. 
 >En particular si $Q = [Q_1 Q_2], Q_1 \in \mathbb{R}^{m \times n}$, entonces $\text{Im}(A) = \text{Im}(Q_1)$, $Im(A)^{\perp}=Im(Q_{2})$ y tomando $R = \begin{bmatrix} R_1 \\ 0 \end{bmatrix}, R_1 \in \mathbb{R}^{n \times n}$, se obtiene que $A = Q_1 R_1$
 >>[!Proof]
->>1. Comparando las columnas de $A = QR$ se obtiene que si $1 \leq k \leq n$ entonces ($R$ triangular superior) 
+>>1. Comparando las columnas de $A = QR$ se obtiene que si $1 \leq k \leq n$ entonces 
 >>$$a^k = Q \begin{bmatrix} r_{1k} \\ \vdots \\ r_{kk} \\ 0 \\ \vdots \\ 0 \end{bmatrix}= \sum_{j=1}^k r_{jk} q^j \in \text{span}\{q^1, \dots, q^k\}$$
->>2. Obteniendo que $\text{span}\{a^1, \dots, a^k\} \subset \text{span}\{q^1, \dots, q^k\}$
->>3. Como $A$ tiene rango $n$ (por hipotesis) los vectores $a^1, \dots, a^k$ son linealmente independientes y por lo tanto generan el mismo espacio que $q^1, \dots, q^k$.
->>4. Por otro lado $$A = QR = \begin{bmatrix} Q_1 \ \ Q_2 \end{bmatrix} \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = Q_1 R_1$$
->>5. Entonces $\text{Im}(A) = \text{Im}(Q_1)$ pues $R_1$ es de rango $n$ (osea rango completo)
->>6. Además $A^T Q_2 = R_1^T Q_1 ^{T}Q_2 = 0$ implica que $\text{Im}(Q_2) \subseteq \text{Ker}(A^T)$. 
->>7. La otra inclusion sea $x\in Ker(A^{T})\iff A^{T}x=0\iff R_{1}Q_{1}^{T}x=0\iff Q_{1}^{T}x=0$    (DUDA)
->>8. y siempre vale (anlisis funcional) $Ker(A^{T}) = \text{Im}(A^{*})^\perp=Im(A^{TT})^{\perp}=Im(A)^{\perp}$
->>9. Se dirá que $A = Q_1 R_1$ es la factorización QR reducida de $A$. Bajo ciertas hipótesis esta factorización es única. 
+>>(Aca usamos $R$ triangular superior)
+>>1. Obteniendo que $\text{span}\{a^1, \dots, a^k\} \subset \text{span}\{q^1, \dots, q^k\}$
+>>2. Como $A$ tiene rango $n$ (por hipotesis) los vectores $a^1, \dots, a^k$ son linealmente independientes y por lo tanto, por dimensiones, generan el mismo espacio que $q^1, \dots, q^k$.
+>>3. Por otro lado $$A = QR = \begin{bmatrix} Q_1 \ \ Q_2 \end{bmatrix} \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = Q_1 R_1$$
+>>4. Entonces $\text{Im}(A) = \text{Im}(Q_1)$ pues $R_1$ es de rango $n$ (osea rango completo)
+>>5. Además $A^T Q_2 = R_1^T Q_1 ^{T}Q_2 = 0$ implica que $\text{Im}(Q_2) \subseteq \text{Ker}(A^T)$. 
+>>6. La otra inclusion sea $x\in Ker(A^{T})\iff A^{T}x=0\iff R_{1}Q_{1}^{T}x=0\iff Q_{1}^{T}x=0$    (DUDA)
+>>7. y siempre vale (anlisis funcional) $Ker(A^{T}) = \text{Im}(A^{*})^\perp=Im(A^{TT})^{\perp}=Im(A)^{\perp}$
+>>8. Se dirá que $A = Q_1 R_1$ es la factorización QR reducida de $A$. Bajo ciertas hipótesis esta factorización es única. 
 
 >[!Theorem] DUDA
 >Sea $A \in \mathbb{R}^{m \times n}$ de rango $n$ (DONDE USO rango $n$ en todo esto. en Givens no , en HouseHolder?), entonces la factorización QR reducida $A = Q_1 R_1$ es única si $Q_1 \in \mathbb{R}^{m \times n}$ tiene columnas ortonormales y $R_1$ es triangular superior con elementos diagonales positivos (la parte de ortonormal y triang sup no es por el algoritmos de QR per se DUDA) . Más aún, $R_1$ es el factor de Cholesky de $A^T A$.
@@ -167,3 +171,73 @@ Reducir error en QR entender
 >$$Q^T A P P^T x - Q^T b \|_2^2 = \left\| \begin{bmatrix} R_{11}y^1 + R_{12}y^2 - c \\ -d \end{bmatrix} \right\|_2^2 = \left\| R_{11}y^1 + R_{12}y^2 - c \right\|_2^2 + \left\| d \right\|_2^2$$
 >4. De esta manera, si $y^2 = 0$ y $R_{11}y^1 = c$
 >5. Entonces $\hat{x} = P y^1$ es solución de minimizar $\| Ax - b \|_2$ y el residuo mínimo es $\| Ax - b \|_2 = \| d \|_2$
+
+## Ecuacion Normal
+
+>[!Proposition]
+>Para cualquier $A \in \mathbb{R}^{m \times n}$, $\bar{x}$ es solución de
+>$$\min_{x \in \mathbb{R}^n} \frac{1}{2} \|Ax - b\|^2$$
+>si y solo si
+>$$A^T A \bar{x} = A^T b$$
+>>[!Proof]-
+>>1. Se sabe que si $\bar{x}$ es un minimizador de $f$ entonces $0 = \nabla f(\bar{x})$
+>>2. Como $\nabla f(x) = A^T(Ax - b)$ entonces el minimizador $\bar{x}$ tiene que ser solución del sistema lineal
+>>$$A^T A \bar{x} = A^T b$$
+>>1. (Vuelta) Suponga ahora que $A^T A \bar{x} = A^T b$ y tome $x \in \mathbb{R}^n$ arbitrario. 
+>>2. Entonces 
+>>$$\begin{align}\|Ax - b\|^2_{2} & = \|A(x - \bar{x}) + A\bar{x} - b\|^2_{2} \\ & = \|A(x - \bar{x})\|^2_{2} + 2(x - \bar{x})^T A^T (A\overline{x}  - b) +\lVert A\overline{x} -b \rVert _{2}^{2} \\& \geq \|A\overline{x}  - b\|^2_{2}\end{align}$$
+>>donde se usó que $\|A(x - \bar{x})\|^2 \geq 0$ y $A^T (A\overline{x} - b) = A^T A \bar{x} - A^T b = 0$. 
+>>4. Por lo tanto, $\bar{x}$ es solución del problema de minimización.
+
+>[!Remark]-
+>Si $A \in \mathbb{R}^{m \times n}$, entonces $A^T A$ es una matriz simétrica y semidefinida positiva, por lo tanto se puede hallar $\bar{x}$ resolviendo la ecuación normal mediante una descomposición de Cholesky si $A$ tiene rango completo o una versión con permutaciones en caso que $A$ tenga rango deficiente, tal variante puede verse en \cite{2}, Subsección 4.2.9. Lamentablemente el número de condición de $A^T A$ puede ser muy grande comparado con el $A$, mientras que el número de condición de $R_1$ (donde $A = Q_1 R_1$) es igual al de $A$. Por lo tanto, la ecuación normal es importante desde el punto de vista analítico del problema de cuadrados mínimos, pero no se recomienda utilizarlo como herramienta numérica para resolver el problema.
+
+## Minimizacion Lineal
+
+>[!Theorem]
+>Si $A \in \mathbb{R}^{m \times n}$ y $b \in \mathbb{R}^m$, entonces $\bar{x} \in \mathbb{R}^n$ es solución de
+>$$\min_{x \in \mathbb{R}^n} \|Ax - b\|_{1}, \tag{4.1}$$
+>si y solo si $(\bar{x}, \bar{y}) \in \mathbb{R}^n \times \mathbb{R}^m$ es solución de
+>$$\begin{align}&\min_{(x, t)} \quad \quad\quad e^{T} y \\& \text{sujeto a}\quad \begin{bmatrix}A & -I \\-A & -I\end{bmatrix}\begin{bmatrix}x \\y\end{bmatrix}\leq\begin{bmatrix}b \\-b\end{bmatrix}\end{align}\tag{4.2}$$
+>donde $e = (1, \dots, 1)^T \in \mathbb{R}^m$.
+>>[!Proof]-
+>>$(\Rightarrow)$
+>>1. Considere la partición por columnas $A^T = [a^1 \cdots a^m]$. 
+>>1. Note que $(x, y)$ es factible para (4.2) si y solo si $-y \leq Ax - b \leq y$ (resolviendo el sistema de sujeto a)  
+>>2. Esto es equivalente a $| (a^i)^T x - b_i | \leq y_i$ para $i = 1, \dots, m$. 
+>>3. Si $\bar{x}$ solución de (4.1), definiendo $\overline{y}_i = |(a^i)^T \bar{x} - b_i|$ se obtiene que $(\bar{x}, \bar{y})$ es factible para (4.2). 
+>>4. Además, para cualquier $(x, y)$ factible para el problema (4.2) sucede 
+>>$$\begin{align} e^T \overline{y}  &= \sum_{i=1}^m \overline{y}_{i}  = \sum_{i=1}^m |(a^i)^T \bar{x} - b_i|  \\ &= \| A \bar{x} - b \|_1  \\ (\text{por ser }\overline{x} \text{ minimizador})&\leq \lVert Ax-b \rVert_{1} = \sum_{i=1}^m |(a^i)^T x - b_i| \leq \sum_{i=1}^m y_i  \\ &= e^T y\end{align}$$
+>>5. Obteniendo que $(\bar{x}, \bar{y})$ es solución de (4.2).
+>>
+>>$(\Leftarrow)$  
+>>1. Consideremos ahora que $(\bar{x}, \bar{y})$ es solución de (4.2) entonces es factible por lo tanto $\rvert(a_{i})^{T}\overline{x}-b_{i}\rvert\leq \overline{y}_{i}$
+>>2. Sea $x \in \mathbb{R}^n$ arbitrario. Definiendo $y_i = |(a^i)^T x - b_i|$ entonces $(x, y)$ es factible para el problema (4.2) ademas
+>>$$\|A \overline{x}  - b\|_1 \leq \sum^{n}_{n=1} \overline{y} _{i}= e^T \overline{y}  \leq e^T y = \|A x - b\|_1$$
+>>(La primera desigualdad vale por 1. y la segunda vale por ser $\overline{y}$ minimizador) 
+>>7. Concluyendo que $\bar{x}$ es solución de (4.1)
+
+>[!Theorem]
+>Si $A \in \mathbb{R}^{m \times n}$ y $b \in \mathbb{R}^m$, entonces $\bar{x} \in \mathbb{R}^n$ es solución de
+>$$\min_{x \in \mathbb{R}^n} \| A x - b \|_\infty, \tag{4.3}$$
+>si y solo si $(\bar{x}, t) \in \mathbb{R}^n \times \mathbb{R}$ es solución de
+>$$\begin{align}&\min_{(x,t)} \quad \quad \quad t \\ &\text{sujeto a} \quad\left[ \begin{array}{cc}A & -e \\-A & -e\end{array} \right]\left[ \begin{array}{c}x \\t\end{array} \right]\leq\left[ \begin{array}{c}b \\-b\end{array}\right]\end{align} \tag{4.4}$$
+>donde $e = (1, \dots, 1)^T \in \mathbb{R}^m$.
+>>[!Proof]-
+>>$(\Rightarrow)$  
+>>1. Considere $A^T = [a^1 \cdots a^m]$. 
+>>2. $(x,t)$ es factible para el problema (4.4) si y solo si $-t e \leq A x - b \leq t e$ si y solo si $|(a^i)^T x - b_i| \leq t\quad\forall i=1,\ldots,n$ equivalentemente $\| A x - b \|_\infty \leq t$.
+>>3. Si $\bar{x}$ solución de (4.3) definimos $\overline{t} = \| A \bar{x} - b \|_\infty$
+>>4. Entonces $(\bar{x}, \overline{t})$ es factible para (4.4). 
+>>5. Ademas si $(x,t)$ arbitrario es factible para (4.4) se tiene que
+>>$$\overline{t}  = \|A \bar{x} - b \|_\infty \leq \| A x - b \|_\infty \leq t$$
+>>3. Mostrando que $(\bar{x}, \overline{t})$ es solución de (4.4)
+>>
+>>$(\Leftarrow)$
+>>1. Sea $(\bar{x}, \overline{t})$ es solución de (4.4), 
+>>2. Para $x \in \mathbb{R}^n$ arbitrario defina $t = \| A x - b \|_\infty$ entonces $(x,t)$ es factible para (4.4) 
+>>3. Luego
+>>$$\| A \bar{x} - b \|_\infty \leq \overline{t} \leq t \leq \| A x - b \|_\infty = t$$
+>>(Devuelta la primera desigualdad por ser factible $(\overline{x},\overline{t})$ la segunda por ser $\overline{x}$ minimizador) 
+>>1. Concluyendo que $\bar{x}$ es solución de (4.3)
+

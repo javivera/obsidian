@@ -243,4 +243,22 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >Obteniendo $y = b^{n-1}$ y $U = A_{n-1}$. Por construcción, este método está bien definido para cualquier matriz $A$.
 >4. Terminamos resolviendo $Ux=y$ que es equivalente a $Ax=b$
 
-## Metodo LU con permutacion filas
+## Descomposicion LU con permutacion filas
+
+>[!Theorem] DUDA
+>Sea $A \in \mathbb{R}^{n \times n}$ y $U = M_{n-1} E_{n-1} \cdots M_2 E_1 M_1 E_1 A$ con $M_k$ y $E_k$ generadas por el método de eliminación Gaussiana con pivoteo. Entonces
+>$$PA = LU$$
+>donde
+>$$P = E_{n-1} \cdots E_1, \quad L = I + \sum_{k=1}^{n-1} g^k (e^k)^T$$
+>con $g^k = E_{n-1} \cdots E_{k+1} v^k$.
+>>[!Proof]-
+>>1. Usando que $E_k^2 = I$ note que
+>>$$M_2 E_2 M_1 E_1 A = M_2 E_3 E_3 E_2 M_1 E_2 E_2 M_1 E_1 A = M_2 E_3 \cdots E_{n-1} E_{n-1}\ldots E_2 M_1 E_2 \cdots E_{n-1}E_{n-1} \ldots E_1 A$$
+>>2. Definimos $P = E_{n-1} \cdots E_1, \quad \tilde{M}_k = E_{n-1} \cdots E_{k+1}M_{k}E_{k+1} \cdots E_{n-1}$ para $k=1,\ldots,n-2$ y $\tilde{M}_{n-1} = M_{n-1}$
+>>4. Entonces $$\tilde{M}_{n-1} \cdots \tilde{M}_1 PA = U$$
+>>5. Como $E_i$ permuta la fila $i$ con la fila $l$ con $l \geq i$, entonces
+>>$$E_i = \begin{bmatrix} I & 0 \\ 0 & P \end{bmatrix}, \quad I \in \mathbb{R}^{(i-1)\times(i-1)}$$
+>>6. Por lo tanto $(e^k)^T E_i = (e^k)^T$ si $k \leq i-1$, o equivalemente $k+1 \leq i$
+>>7. Luego $$\tilde{M}_k = E_{n-1} \cdots E_{k+1} \left( I - \nu^k (e^k)^T \right) E_{k+1} \cdots E_{n-1} = I - g^k (e^k)^T$$ (notar que $E_{i}^{2}=I$) 
+>>8. donde $g^k = E_{n-1} \cdots E_{k+1} v^k$. 
+>>9. Entonces $$L = \tilde{M}_1^{-1} \cdots \tilde{M}_{n-1}^{-1} = I + \sum_{k=1}^{n-1} g^k (e^k)^T$$
