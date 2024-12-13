@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Numerico II/Capitulo 2 (Metodos Directos).md",
+                "file": "Numerico II/Capitulo 4 (Residuos Minimos).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Capitulo 2 (Metodos Directos)"
+              "title": "Capitulo 4 (Residuos Minimos)"
             }
           }
         ]
@@ -48,7 +48,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "Mink",
+            "query": "frobenius",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -128,7 +128,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Numerico II/Capitulo 2 (Metodos Directos).md"
+            "file": "Numerico II/Capitulo 5 (SVD).md"
           },
           "icon": "lucide-list",
           "title": "Outline"
@@ -150,9 +150,10 @@
   },
   "active": "175117e02f8dfca7",
   "lastOpenFiles": [
-    "Numerico II/Capitulo 3 (Sensibilidad).md",
+    "Numerico II/Capitulo 5 (SVD).md",
     "Numerico II/Capitulo 4 (Residuos Minimos).md",
     "Numerico II/Capitulo 2 (Metodos Directos).md",
+    "Numerico II/Capitulo 3 (Sensibilidad).md",
     "Numerico II/Capitulo 2 Practico (PARTE 1).md",
     "Numerico II/Capitulo 2 Practico (PARTE 2).md",
     "Analisis Funcional/Theory/Teórico 15.md",
@@ -178,7 +179,6 @@
     "Analisis Funcional/Theory/Teórico 4.md",
     "Analisis Funcional/Theory/Teórico 3.md",
     "Analisis Funcional/Theory/Teórico 2.md",
-    "Analisis Funcional/Theory/Teórico 1.md",
     "Estructuras Algebraicas/Theory",
     "Estructuras Algebraicas",
     "Analisis Funcional/Theory",

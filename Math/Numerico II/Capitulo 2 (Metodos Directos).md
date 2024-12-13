@@ -92,11 +92,11 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >>Claramente, la matriz $$X = \begin{bmatrix} g_{11} & s^T \\0 & I\end{bmatrix}^{-1}$$
 >> existe. 
 >>5. Como $X$ es no singular, usando (2.1), se obtiene que
->> $$X^T A X = \begin{bmatrix}1 & 0 \\0 & \hat{A}\end{bmatrix}$$
+>> $$X^T A X = \begin{bmatrix}1 & 0 \\0 & \tilde{A}\end{bmatrix}$$
 >>que es definida positiva por [[#^9e9e9c]] (c) por que $X$ es inversible y por lo tanto sus columnas son linealmente independientes 
->>6. Además $\hat{A}$  es simétrica por construcción entonces $X^{T}AX$ también es simétrica (y ya teníamos que era def positiva) luego por ej5 pr1 toda submatriz es def pos
->>7. Por lo tanto, $\hat{A}$ es definida positiva.
->>8. Finalmente usando hipótesis inductiva en $\hat{A}$  se obtiene la existencia de $\hat{G} \in \mathbb{R}^{(n-1) \times (n-1)}$ tal que $\hat{A} = \hat{G}^T \hat{G}$.
+>>6. Además $\tilde{A}$  es simétrica por construcción entonces $X^{T}AX$ también es simétrica (y ya teníamos que era def positiva) luego por ej5 pr1 toda submatriz es def pos
+>>7. Por lo tanto, $\tilde{A}$ es definida positiva.
+>>8. Finalmente usando hipótesis inductiva en $\tilde{A}$  se obtiene la existencia de $\hat{G} \in \mathbb{R}^{(n-1) \times (n-1)}$ tal que $\tilde{A} = \hat{G}^T \hat{G}$.
 >>Reemplazando en (2.1), se tiene que
 >>$$  \begin{align}A &= \begin{bmatrix} g_{11} & 0 \\s & I\end{bmatrix} 
 >>\begin{bmatrix}1 & 0 \\0 & \tilde{G}^T\end{bmatrix}

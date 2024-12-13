@@ -3,6 +3,8 @@ dateCreated: 2024-11-16,17:28
 ---
 ## Normas
 
+^0b56bf
+
 >[!Theorem]
 >Si $1 \leq p \leq \infty$ entonces $\| \cdot \|_p$ es una norma.
 
@@ -21,7 +23,7 @@ dateCreated: 2024-11-16,17:28
 >$$\alpha \|x\|_2 \leq \|x\| \leq \beta \|x\|_2, \quad \text{para todo} \quad x \in \mathbb{R}^n$$
 >>[!Proof]-
 >>1. Por un lado, note que dado $x \in \mathbb{R}^n$, si definimos $y \in \mathbb{R}^n$ tal que $y_i = 1$ si $x_i \geq 0$, $y_i = -1$ si $x_i < 0$, entonces
->>$$\sum_{i=1}^n |x_i| = \sum_{i=1}^n x_i y_i = x^T y \leq |x|_2 |y|_2 = \sqrt{n} \|x\|_2$$
+>>$$\sum_{i=1}^n |x_i| = \sum_{i=1}^n x_i y_i = x^T y \leq \lvert x^{T} y \rvert \leq ||x||_2 ||y||_2 = \sqrt{n} \|x\|_2$$
 >>2. Con esto, tomando $\mu = \max_{1 \leq i \leq n} \|e_i\|$ y $\beta = \sqrt{n} \mu$, se tiene que para cualquier $x \in \mathbb{R}^n$
 >>$$\|x\| = \left\| \sum_{i=1}^n x_i e_i \right\| \leq \sum_{i=1}^n |x_i| \|e_i\| \leq \mu \sum_{i=1}^n |x_i| \leq \beta \|x\|_2$$
 >>3. Por otro lado, $\| \cdot \|$ es una función continua. Como $S = \{x \in \mathbb{R}^n \mid \|x\|_2 = 1\}$ es cerrado y acotado (compacto), entonces existe $x_0 \in S$ tal que $\|x\| = \|x_0\|$ para todo $x \in S$. Tomando $\alpha = \|x_0\|$, si $x \neq 0$ entonces
@@ -125,6 +127,8 @@ dateCreated: 2024-11-16,17:28
 >>3. Entonces $\|y\| \leq \|A^{-1}\| \|\Theta\| \|y\|$ ósea $1\leq \lVert A^{-1} \rVert\lVert \Theta\rVert$ (las normas matriciales inducidas son submultiplicativas) 
 >>4. por lo tanto $$\frac{1}{\kappa(A)} \leq \frac{\|A^{-1}\| \|\Theta\|}{\kappa(A)} = \frac{\|A^{-1}\| \|\Theta\|}{\|A\| \|A^{-1}\|} = \frac{\|\Theta\|}{\|A\|}$$
 >>5. Que es absurdo. Entonces $A+\Theta$ es no singular
+
+^b63799
 
 >[!Theorem]
 >Sea $A \in \mathbb{R}^{n \times n}$ no singular, $\frac{\|\Theta\|}{\|A\|} < \frac{1}{\kappa(A)}$ y $b \in \mathbb{R}^n$ no nulo. Si $A\overline{x}= b$ y $(A + \Theta) \hat{x} = b + \upsilon$, entonces

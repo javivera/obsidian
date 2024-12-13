@@ -44,10 +44,9 @@ Copiar el proceso givens 2x2
 
 >[!Remark] Anular columna con Householder
 >1. Queremos hallar $Q$ tal que $Qx = \alpha e_1$. Como queremos que los elementos diagonales de la matriz triangular superior sean no negativos, tomaremos $\alpha \geq 0$. 
->2. Como $Q$ preserva la norma 2, obtenemos que $\|x\|_2 = \|Qx\|_2 = \alpha$. (es isometria preseva todas las norma DUDA)
+>2. Como $Q$ preserva la norma 2, obtenemos que $\|x\|_2 = \|Qx\|_2 = \alpha$
 >3. Entonces problema se reduce a hallar $Q$ tal que $Qx = \|x\|_2 e_1$. 
 >4. Para llevar el vector $x$ al vector $\|x\|_2 e_1$, la reflexión deberá ser en la dirección $u = x - \|x\|_2 e_1$ por que
->
 >$$u^T x = u^T \left( \frac{x - \|x\|_2 e_1}{2} + \frac{x + \|x\|_2 e_1}{2} \right)$$
 >entonces se obtiene $$Qx = \left( I - \frac{2}{\|u\|_2^2} uu^T \right) x = x - \frac{2}{\|u\|_2^2} (u^T x) u=x-u=\lVert x \rVert_{2}e^{1} $$
 >5. Como $u$ difiere de $x$ en su primera componente que es $u_1 = x_1 - \|x\|_2$. Si $x_1 > 0$ se puede evitar el error numérico escribiendo 
@@ -71,33 +70,42 @@ Copiar el proceso givens 2x2
 >2. Dado $I = \{j, \dots, m\}$ para el vector $$x = A_{Ij}^{(j)}  = \begin{bmatrix} a_{jj}^{(j)}  \\ \vdots \\ a_{mj}^{(j)}  \end{bmatrix}$$
 >se construye $Q_j \in \mathbb{R}^{(m-j+1) \times (m-j+1)}$ tal que $Q_j = I - \rho uu^T$ con $u$ y $\rho$ dados por el [[#^e0aac1]]. Donde $A^{(j)}=\tilde{Q}_{j-1}\ldots \tilde{Q}_{1}A$  
 >1. Definiendo $\tilde{Q}_j \in \mathbb{R}^{m \times m}$ tal que $$\tilde{Q}_j = I - \rho \tilde{u} \tilde{u}^T \quad \text{con} \quad \tilde{u} = \begin{bmatrix} 0  \\ u \end{bmatrix} \in \mathbb{R}^{m} \quad0\in \mathbb{R}^{j-1} $$
->(DUDA No podemos usar $$\tilde{Q}_{j}= \begin{bmatrix} I & 0 \\0 & Q_{j} \end{bmatrix}$$  ) 
+>Obs: Si se hacen las cuentas se llega a que $$\tilde{Q}_{j}= \begin{bmatrix} I & 0 \\0 & Q_{j} \end{bmatrix}$$
 >5. Se van obteniendo $\tilde{Q}_j$ ortogonales con la propiedad que $$R = \tilde{Q}_p \dots \tilde{Q}_1 A, \quad p = \min\{m, n\}$$
 >es triangular superior con elementos diagonales no negativos (pueden ser 0) 
 >(Notar que alguans $\tilde{Q}$ podrian ser la identidad por que la matriz podria tener rango chico, menor que $\min\{ m,n \}$)  
 >1. Por lo tanto $$Q  = \tilde{Q}_1 \dots \tilde{Q}_p$$
 >2. Y finalmente $QR=A$ por [[#^34e2e0]] (d) 
 
->[!Theorem] DUDA
+
+>[!Theorem]
 >Si $A = QR$ es una descomposición QR de $A \in \mathbb{R}^{m \times n}$ de rango $n$ (esto implica que $m\geq n$) y $A = [a^1 \dots a^n], \, a^j \in \mathbb{R}^m, Q = [q^1 \dots q^m], q^j \in \mathbb{R}^m$, entonces
 >$$\text{span}\{a^1, \dots, a^k\} = \text{span}\{q^1, \dots, q^k\}$$
 >para $k = 1, \dots, n$. 
->En particular si $Q = [Q_1 Q_2], Q_1 \in \mathbb{R}^{m \times n}$, entonces $\text{Im}(A) = \text{Im}(Q_1)$, $Im(A)^{\perp}=Im(Q_{2})$ y tomando $R = \begin{bmatrix} R_1 \\ 0 \end{bmatrix}, R_1 \in \mathbb{R}^{n \times n}$, se obtiene que $A = Q_1 R_1$
->>[!Proof]
+>En particular si $Q = [Q_1 Q_2], Q_1 \in \mathbb{R}^{m \times n}$, entonces $\text{Im}(A) = \text{Im}(Q_1)$, $Im(A)^{\perp}=Im(Q_{2})$ y tomando $R = \begin{bmatrix} R_1 \\ 0 \end{bmatrix}, R_1 \in \mathbb{R}^{n \times n}$, se obtiene que $A = Q_1R_1$
+>(Recordar $Q\in \mathbb{R}^{m\times m},\ R\in \mathbb{R}^{m\times n}$ asi que el 0 abajo de $R$ tiene tamanio $\mathbb{R}^{m-n\times 1}$ donde $n=rg(A)$ si fuese menor se ajusta todo) 
+>>[!Proof]-
 >>1. Comparando las columnas de $A = QR$ se obtiene que si $1 \leq k \leq n$ entonces 
 >>$$a^k = Q \begin{bmatrix} r_{1k} \\ \vdots \\ r_{kk} \\ 0 \\ \vdots \\ 0 \end{bmatrix}= \sum_{j=1}^k r_{jk} q^j \in \text{span}\{q^1, \dots, q^k\}$$
 >>(Aca usamos $R$ triangular superior)
 >>1. Obteniendo que $\text{span}\{a^1, \dots, a^k\} \subset \text{span}\{q^1, \dots, q^k\}$
 >>2. Como $A$ tiene rango $n$ (por hipotesis) los vectores $a^1, \dots, a^k$ son linealmente independientes y por lo tanto, por dimensiones, generan el mismo espacio que $q^1, \dots, q^k$.
 >>3. Por otro lado $$A = QR = \begin{bmatrix} Q_1 \ \ Q_2 \end{bmatrix} \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = Q_1 R_1$$
->>4. Entonces $\text{Im}(A) = \text{Im}(Q_1)$ pues $R_1$ es de rango $n$ (osea rango completo)
+>>4. Entonces $\text{Im}(A) = \text{Im}(Q_1)$ pues $R_1$ es de rango $n$ por ser triangular sup con elementos diagonales positivos (osea rango completo)
 >>5. Además $A^T Q_2 = R_1^T Q_1 ^{T}Q_2 = 0$ implica que $\text{Im}(Q_2) \subseteq \text{Ker}(A^T)$. 
->>6. La otra inclusion sea $x\in Ker(A^{T})\iff A^{T}x=0\iff R_{1}Q_{1}^{T}x=0\iff Q_{1}^{T}x=0$    (DUDA)
->>7. y siempre vale (anlisis funcional) $Ker(A^{T}) = \text{Im}(A^{*})^\perp=Im(A^{TT})^{\perp}=Im(A)^{\perp}$
->>8. Se dirá que $A = Q_1 R_1$ es la factorización QR reducida de $A$. Bajo ciertas hipótesis esta factorización es única. 
+>>6. La otra inclusion sea 
+>>$$x\in Ker(A^{T})\iff A^{T}x=0\iff R_{1}Q_{1}^{T}x=0\iff Q_{1}^{T}x=0$$  
+>>7. Y como $Q$ es de rango completo $\exists z$ tal que $x=Qz$ entonces $x=Q_{1}z_{1}+Q_{2}z_{2}$
+>>Mostrando que $$\quad 0=Q_{1}^{T} x=Q_{1}^{T} (Q_{1}z_{1}+Q_{2}z_{2})=z_{1}$$
+>>(Donde usamos que $Q_{1}^{T}Q_{1}=Id$ y $Q$ tiene columnas ortogonales)
+>>8. Por lo tanto $x=Q_{2}z_{2}$ osea $x\in Im(Q_{2})$    
+>>1. Por lo tanto $Im(Q_{2})=Ker(A^{T})$  
+>>2. Luego como siempre vale (anlisis funcional) $Ker(A^{T}) = \text{Im}((A^{T})^{*})^\perp=Im(A^{TT})^{\perp}=Im(A)^{\perp}$
+>>3. Entonces $Im(Q_{2})=Im(A)^{\perp}$  
+>>4. Se dirá que $A = Q_1 R_1$ es la *factorización* QR reducida de $A$. Bajo ciertas hipótesis esta factorización es única. 
 
 >[!Theorem] DUDA
->Sea $A \in \mathbb{R}^{m \times n}$ de rango $n$ (DONDE USO rango $n$ en todo esto. en Givens no , en HouseHolder?), entonces la factorización QR reducida $A = Q_1 R_1$ es única si $Q_1 \in \mathbb{R}^{m \times n}$ tiene columnas ortonormales y $R_1$ es triangular superior con elementos diagonales positivos (la parte de ortonormal y triang sup no es por el algoritmos de QR per se DUDA) . Más aún, $R_1$ es el factor de Cholesky de $A^T A$.
+>Sea $A \in \mathbb{R}^{m \times n}$ de rango $n$ (DONDE USO rango $n$ en todo esto. en Givens no , en HouseHolder?), entonces la factorización QR reducida $A = Q_1 R_1$ es única si $Q_1 \in \mathbb{R}^{m \times n}$ tiene columnas ortonormales y $R_1$ es triangular superior con elementos diagonales positivos (siempre QR es triangular superior, no siempre tiene elementos diagonales positivos). Más aún, $R_1$ es el factor de Cholesky de $A^T A$.
 >>[!Proof]-
 >>1. $A^T A = R_1^T Q_1^T Q_1 R_1 = R_1^T R_1$ con $R_1$ triangular superior con elementos diagonales positivos. 
 >>2. Entonces, por la unicidad de la descomposición de Cholesky, se obtiene que $R_1$ es el factor de Cholesky de $A^T A$ y es unico
@@ -168,7 +176,7 @@ Reducir error en QR entender
 >$$P^T x = \begin{bmatrix} y^1 \\ y^2 \end{bmatrix}$$
 >con $y^1 \in \mathbb{R}^p$ y $y^2 \in \mathbb{R}^{n - p}$
 >3.Como $PP^T = I$ se tiene que
->$$Q^T A P P^T x - Q^T b \|_2^2 = \left\| \begin{bmatrix} R_{11}y^1 + R_{12}y^2 - c \\ -d \end{bmatrix} \right\|_2^2 = \left\| R_{11}y^1 + R_{12}y^2 - c \right\|_2^2 + \left\| d \right\|_2^2$$
+>$$\|Q^T A P P^T x - Q^T b \|_2^2 = \left\| \begin{bmatrix} R_{11}y^1 + R_{12}y^2 - c \\ -d \end{bmatrix} \right\|_2^2 = \left\| R_{11}y^1 + R_{12}y^2 - c \right\|_2^2 + \left\| d \right\|_2^2$$
 >4. De esta manera, si $y^2 = 0$ y $R_{11}y^1 = c$
 >5. Entonces $\hat{x} = P y^1$ es solución de minimizar $\| Ax - b \|_2$ y el residuo mínimo es $\| Ax - b \|_2 = \| d \|_2$
 
