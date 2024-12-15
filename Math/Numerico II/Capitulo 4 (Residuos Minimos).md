@@ -215,7 +215,7 @@ Reducir error en QR entender
 >>2. Esto es equivalente a $| (a^i)^T x - b_i | \leq y_i$ para $i = 1, \dots, m$. 
 >>3. Si $\bar{x}$ solución de (4.1), definiendo $\overline{y}_i = |(a^i)^T \bar{x} - b_i|$ se obtiene que $(\bar{x}, \bar{y})$ es factible para (4.2). 
 >>4. Además, para cualquier $(x, y)$ factible para el problema (4.2) sucede 
->>$$\begin{align} e^T \overline{y}  &= \sum_{i=1}^m \overline{y}_{i}  = \sum_{i=1}^m |(a^i)^T \bar{x} - b_i|  \\ &= \| A \bar{x} - b \|_1  \\ (\text{por ser }\overline{x} \text{ minimizador})&\leq \lVert Ax-b \rVert_{1} = \sum_{i=1}^m |(a^i)^T x - b_i| \leq \sum_{i=1}^m y_i  \\ &= e^T y\end{align}$$
+>>$$\begin{align} e^T \overline{y}  &= \sum_{i=1}^m \overline{y}_{i}  = \sum_{i=1}^m |(a^i)^T \bar{x} - b_i|  \\ &= \| A \bar{x} - b \|_1  \\ (\text{por ser }\overline{x} \text{ minimizador})&\leq \lVert Ax-b \rVert_{1}\\\text{(por ser (x,y) factible) } &= \sum_{i=1}^m |(a^i)^T x - b_i| \leq \sum_{i=1}^m y_i  \\ &= e^T y\end{align}$$
 >>5. Obteniendo que $(\bar{x}, \bar{y})$ es solución de (4.2).
 >>
 >>$(\Leftarrow)$  

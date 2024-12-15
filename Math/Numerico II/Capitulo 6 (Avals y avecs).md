@@ -47,7 +47,7 @@ dateCreated: 2024-11-29,19:12
 >>2. Si $\lambda = d_i$ para algún $i$, el resultado es trivial. 
 >>3. Suponga que $\lambda \neq d_i$ para todo $i$. 
 >>4. Como $\lambda$ es también autovalor de $X^{-1}AX$, entonces $D + F - \lambda I$ es singular. (justamente $v$ avec $(D+F)v -\lambda Iv=0$ con $v\neq0$)   
->>5. Luego $I + \Theta$ es singular para $\Theta = (D - \lambda I)^{-1}F$.
+>>5. Luego $I + \Theta$ es singular para $\Theta = (D - \lambda I)^{-1}F$. (DUDA ) 
 >>6. Si $\|\Theta\|_\infty < 1$, entonces
 >>$$\frac{\|\Theta\|_\infty}{\|I\|_\infty} = \|\Theta\|_\infty < 1 = \frac{1}{\kappa_\infty(I)}$$
 >>7. Por [[Capitulo 3 (Sensibilidad)#^b63799]] $I + \Theta$ debe ser no singular. 
@@ -65,16 +65,16 @@ dateCreated: 2024-11-29,19:12
 >Sea $A \in \mathbb{R}^{n \times n}$ diagonalizable con $\lambda_1$ autovalor dominante y $V = [v^1 \ \dots \ v^n] \in \mathbb{R}^{n \times n}$ autovectores. Suponga que las sucesiones $\{q^k\}$ y $\{\rho_k\}$ fueron generadas por
 >$$q^{k+1} = \frac{1}{[Aq^k]_{jk}} Aq^k, \quad \rho_{k+1} = [Aq^{k+1}]_{jk}$$
 >donde $[Aq^k]_{jk} = \| Aq^k \|_\infty$. Si $q^0 \in \mathbb{R}^n$ con $q^0 = \sum_{i=1}^n c_i v^i$ y $c_1 \neq 0$, entonces $\{q^k\}$ converge a $v^1 / \|v^1\|_\infty$ y los puntos límite de $\{\rho_k\}$ son $\pm \lambda_1$.
->>[!Proof]
->>1. Tome $\sigma_k = [Aq^k]_{jk}$, $\eta_0 = 1$ y $\eta_k+1 = \eta_k \frac{\sigma_k}{\lambda_1}$. 
->>2. Por lo tanto $$\eta_k q^k = \eta_{k-1} - \frac{\sigma_k}{\lambda_1} q^{k-1} = \frac{1}{\lambda_1} A q^k = \frac{1}{\lambda_1} (\eta_{k-1} q^{k-1})$$
+>>[!Proof]-
+>>1. Tome $\sigma_k = [Aq^k]_{jk}$, $\eta_0 = 1$ y $\eta_{k+1} = \eta_k \frac{\sigma_k}{\lambda_1}$. 
+>>2. Por lo tanto $$\eta_k q^k = \eta_{k-1} \frac{\sigma_k}{\lambda_1} q^{k-1} = \frac{1}{\lambda_1} A q^k = \frac{1}{\lambda_1} (\eta_{k-1} q^{k-1})$$
 >>$$\eta_k q^k = \frac{1}{\lambda_1^k} A^k q^0 = c_1 v^1 + \sum_{i=2}^n c_i \left( \frac{\lambda_i}{\lambda_1} \right)^k v^i$$
 >>3. Como $\lambda_1$ es dominante, se tiene que $$\lim_{k \to \infty} \eta_k q^k = c_1 v^1$$
 >>4. Como $\|q^k\|_\infty = 1$ y $\eta_k \neq 0$ (pues $c_1 \neq 0$), entonces $\lim_{k \to \infty} |\eta_k| = |c_1| \|v^1\|_\infty$. 
 >>5. O sea, $\{\eta_k\}$ tiene a lo sumo dos puntos límite, $\pm |c_1| \|v^1\|_\infty$. 
 >>6. De esto se deduce que $q^k = \eta_k^{-1} \eta_k q^k$ tiene a lo sumo dos puntos límite, $v^1 / \|v^1\|_\infty$ y $-v^1 / \|v^1\|_\infty$
->>7. Por otro lado, como para todo $k$ vale que $q^k_{jk-1} = 1$, entonces
->>$\rho_k = \left[ A q^k \right]_{j_{k-1}} = \sigma_k q^k_{j_{k-1}} = \lambda_1 \frac{\eta_{k+1}}{\eta_k} q^{k+1}_{j_{k-1}} = \lambda_1 \frac{\left[ \eta_{k+1} q^{k+1} \right]_{j_{k-1}}}{\left[ \eta_k q^k \right]_{j_{k-1}}} = c \lambda_1.$
+>>7. Por otro lado, como para todo $k$ vale que $q^k_{j_{k-1}} = 1$, entonces
+>>$\rho_k = \left[ A q^k \right]_{j_{k-1}} = \sigma_k q^{k+1}_{j_{k-1}} = \lambda_1 \frac{\eta_{k+1}}{\eta_k} q^{k+1}_{j_{k-1}} = \lambda_1 \frac{\left[ \eta_{k+1} q^{k+1} \right]_{j_{k-1}}}{\left[ \eta_k q^k \right]_{j_{k-1}}}$
 >>8. Además, como la sucesión $\{j_{k-1}\}$ es un conjunto infinito contenido en $\{1, \ldots, n\}$, debe existir algún $l \in \{1, \ldots, n\}$ tal que $j_{k-1} = l$ para infinitos $k$. 
 >>9. Defina $\mathcal{K}_l = \{k \mid j_{k-1} = l\}$ y tome $l$ tal que $\mathcal{K}_l$ sea infinito y por 3. se obtiene
 >>$$\lim_{k \to \infty, k \in \mathcal{K}_l} \rho_k = \lim_{k \to \infty, k \in \mathcal{K}_l} \lambda_1 \frac{\left[ \eta_{k+1} q^{k+1} \right]_l}{\left[ \eta_k q^k \right]_l} = \lambda_1 \frac{c_1 v^1_l}{c_1 v^1_l} = \lambda_1.$$
@@ -84,8 +84,8 @@ dateCreated: 2024-11-29,19:12
 >Sea $A \in \mathbb{R}^{n \times n}$ diagonalizable con $\lambda_1$ autovalor dominante y $V = [v^1 \ \cdots \ v^n] \in \mathbb{R}^{n \times n}$ autovectores. Suponga que las sucesiones $\{q^k\}$ y $\{\rho_k\}$ fueron generadas por
 >$$q^{k+1} = \frac{1}{\|Aq^k\|_2} Aq^k \quad\quad\rho_k = (q^k)^\top A q^{k+1}$$
 >Si $q^0 \in \mathbb{R}^n$ con $q^0 = \sum_{i=1}^n c_i v^i$ y $c_1 \neq 0$, entonces $\{\rho_k\}$ converge a $\lambda_1$ y los puntos límite de $\{q^k\}$ son $v^1 / \|v^1\|_2$ y $-v^1 / \|v^1\|_2$.
->>[!Proof]
->>1. Defina $\sigma_k = \|Aq^k\|_2$, $\eta_0 = 1$ y $\eta_{k+1} = \eta_k \sigma_k / \lambda_1$. 
+>>[!Proof]-
+>>1. Defina $\sigma_k = \|Aq^k\|_2$, $\eta_0 = 1$ y $\eta_{k+1} = \eta_k \frac{\sigma_k}{\lambda_1}$. 
 >>2. Por lo tanto $$\begin{align}\eta_k q^k & = \eta_{k-1} \frac{\sigma_{k-1}}{\lambda_{1}} q^{k} = \eta_{k-1}\frac{1}{\lambda_{1}}Aq^{k-1} =\frac{1}{\lambda_{1}}A(\eta_{k-1}q^{k-1} )\\ & = \frac{1}{\lambda_{1 }^{k} }A^{k}q^{0} \\ &  = c_1 v^1 + \sum_{i=2}^n c_i \left( \frac{\lambda_i}{\lambda_1} \right)^k v^i\end{align}$$
 >>3. Como $\lambda_1$ es dominante, se tiene que $\lim_{k \to \infty} \eta_k q^k = c_1 v^1$
 >>4. Por otro lado, como $\|q^k\|_2 = 1$ y $\eta_k \neq 0$ (pues $c_1 \neq 0$), entonces $\lim_{k \to \infty} |\eta_k| = \|c_1 v^1\|_2$. 
@@ -94,22 +94,22 @@ dateCreated: 2024-11-29,19:12
 >>7. Veamos ahora que la sucesión $\{\rho_k\}$ converge a $\lambda_1$. Note
 >>$$\begin{align}\rho_k &= (q^k)^\top A q^k = \sigma_k (q^k)^\top q^{k+1} = \lambda_1 \frac{\eta_{k+1}}{\eta_k} (q^k)^\top q^{k+1} \\ & =\frac{\lambda_1}{\eta_k^2} (\eta_k q^k)^\top (\eta_{k+1} q^{k+1})\end{align}$$
 >>8. Usando los límites anteriores se obtiene que
->>$$\lim_{k \to \infty} \rho_k = \lambda_1\frac{1}{\lVert c_{1}v^{1}\rVert }(c_{1}v^{1} )^{T}(c_{1}v^{1} )=\lambda_{1}$$
+>>$$\lim_{k \to \infty} \rho_k = \lambda_1\frac{1}{\lVert c_{1}v^{1}\rVert_{2}^{2} }(c_{1}v^{1} )^{T}(c_{1}v^{1} )=\lambda_{1}$$
 >>
 
->[!Theorem]
+>[!Theorem]- cercania de aval a $\rho$  
 >Sea $A \in \mathbb{C}^{n \times n}$ tal que $Av = \lambda v$ con $\|v\|_2 = 1$ y sea $\rho = q^* Aq$ con $q^* q = \|q\|_2^2 = 1$. Entonces $$|\lambda - \rho| \leq 2\|v - q\|_2 \|A\|_2.$$
->>[!Proof]
+>>[!Proof]-
 >>1. Como $v^* Av = \lambda \|v\|_2^2 = \lambda$, entonces
 >>$$\lambda - \rho = v^* Av - q^* Aq = v^* A (v - q) + (v - q)^* Aq.$$
 >>2. Por lo tanto
->>$$|\lambda - \rho| \leq |v^* A (v - q)| + |(v - q)^* Aq| \leq \|v - q\|_2 \|A\|_2 \|v\|_2 + \|v - q\|_2 \|A\|_2 \|q\|_2 = 2 \|v - q\|_2 \|A\|_2$$
->>3. Si $A$ tiene autovalores $\lambda_1, \ldots, \lambda_n$ con
->>$$|\lambda_1| > |\lambda_2| > \cdots > |\lambda_n|$$
->>4. Entonces la matriz $A - \rho I$ tiene autovalores $\lambda_1 - \rho, \ldots, \lambda_n - \rho$ con
->>$$|\lambda_{i_1} - \rho| > |\lambda_{i_{2}} - \rho| > \cdots > |\lambda_{i_{n}} - \rho|$$
+>>$$\begin{align}|\lambda - \rho| &\leq |v^* A (v - q)| + |(v - q)^* Aq| \\ &\leq \|v\|_2 \|A\|_2 \|v-q\|_2 + \|v - q\|_2 \|A\|_2 \|q\|_2\\& = 2 \|v - q\|_2 \|A\|_2\end{align}$$
 
 >[!Remark]
+>Si $A$ tiene autovalores $\lambda_1, \ldots, \lambda_n$ con
+>$$|\lambda_1| > |\lambda_2| > \cdots > |\lambda_n|$$
+>Entonces la matriz $A - \rho I$ tiene autovalores $\lambda_1 - \rho, \ldots, \lambda_n - \rho$ con
+>$$|\lambda_{i_1} - \rho| > |\lambda_{i_{2}} - \rho| > \cdots > |\lambda_{i_{n}} - \rho|$$
 >Por lo tanto, si aplicamos el método de las potencias a la matriz $A - \rho I$, se obtendrá como resultado $\tilde{\lambda} = \lambda_{i_{1}} - \rho$
 >Concluyendo que $\lambda_{i_{1}} = \tilde{\lambda} + \rho$.
 >De esta manera, al variar $\rho$ se podrían calcular todos los autovalores de $A$. Esta variante es conocida como método de las potencias con desplazamientos.

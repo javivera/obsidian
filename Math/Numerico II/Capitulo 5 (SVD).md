@@ -88,21 +88,21 @@ dateCreated: 2024-11-29,19:12
 >$$\min{\{ \|B - A\|_2 \ | \ B \in \mathbb{R}^{m \times n} \text{ de rango } \leq k \}} = \|A_k - A\|_2 = \sigma_{k+1}$$
 >>[!Proof]-
 >>1. Como $(v^i)^T v^j = 0$ si $i \neq j$ e igual a 1 si $i = j$, entonces
->>$$U^T A_k V = U^{T}\sum^{k}_{i=1} \left[\sigma_{i}u^{i} (v^{i})^{T}V\right]=  \left[\sigma_{i}u^{i} (e^{i})^{T}  \right]=\begin{pmatrix}(u^1)^T \\\vdots \\(u^m)^T\end{pmatrix}\begin{pmatrix}\sigma_1 u^1 \cdots \sigma_k u^k \ \ 0 \cdots 0\end{pmatrix}= \begin{pmatrix}\Sigma_k & 0 \\0 & 0\end{pmatrix}$$
+>>$$U^T A_k V = U^{T}\sum^{k}_{i=1} \left[\sigma_{i}u^{i} (v^{i})^{T}V\right]= \sum^{k}_{i=1}  \left[\sigma_{i}e^{i} (e^{i})^{T}  \right]= \begin{pmatrix}\Sigma_k & 0 \\0 & 0\end{pmatrix}$$
 >>2. Donde
 >>$$\Sigma_k = \begin{pmatrix}\sigma_1 & & \\\ & \ddots\\&& \sigma_k\end{pmatrix}.$$
->>3. Obteniendo así que $A_k$ tiene rango $k$.
+>>3. Obteniendo así que $A_k$ tiene rango $k$. ($U,V$ son de rg completo, así que no alteran rg de $A$) 
 >>4. Sea $B \in \mathbb{R}^{m \times n}$ arbitraria con rango $\leq k$. Como $n = \text{dim(Im}(B)) + \text{dim(Ker}(B))$, entonces $\text{dim(Ker}(B)) \geq n - k$. Obteniendo que
->>$$\text{dim(Ker}(B)) + \text{dim(span}\{v^1, \ldots, v^k\}) \geq n + 1$$
->>5. Garantizando por lo tanto la existencia de $z \in \text{Ker}(B) \cap \text{span}\{v^1, \ldots, v^k\}$ con $\|z\|_2 = 1$. (Si no estarian en suma directa que es absurdo por que $V\in \mathbb{R}^{n\times n}$ con lo cual $v^{i}\in \mathbb{R}^{n}$ y $ker(B)\in \mathbb{R}^{n}$ con lo cual $n = dim(\mathbb{R}^{n})\geq n+1$) 
+>>$$\text{dim(Ker}(B)) + \text{dim(span}\{v^1, \ldots, v^{k+1}\}) \geq n + 1$$
+>>5. Garantizando por lo tanto la existencia de $z \in \text{Ker}(B) \cap \text{span}\{v^1, \ldots, v^{k+1}\}$ con $\|z\|_2 = 1$. (Si no estarian en suma directa que es absurdo por que $V\in \mathbb{R}^{n\times n}$ con lo cual $v^{i}\in \mathbb{R}^{n}$ y $ker(B)\in \mathbb{R}^{n}$ con lo cual $n = dim(\mathbb{R}^{n})\geq n+1$) 
 >>7. Entonces. $$ 1 = \|z\|_2^2 = \|V^T z\|_2^2 = \sum_{i=1}^{k+1} \left( (v^i)^T z\right)^2$$
 >>9. pues $(v^i)^T z = 0$ si $i > k+1$. 
 >>10. Usando que $Bz = 0$ se obtiene
 >>$$\begin{align}\|B - A\|_2^2 \geq \| (B - A)z \|_2^2  = \|Az \|_2^2 &  = \| U \Sigma V^T z \|_2^2 \\&= \| \Sigma V^T z \|_2^2 \\&= \sum_{i=1}^{k+1} \sigma_i^2 ((v^i)^T z)^2 \\& \geq \sigma_{k+1}^2 \sum_{i=1}^{k+1} \left( (v^i)^T z \right)^2 = \sigma_{k+1}^2\end{align}$$
 >>10. Veamos que la cota inferior se alcanza si $B = A_k$. 
->>11. Como $$U^T (A_k - A)V = U^T A_k V - U^T A V = \begin{bmatrix} 0 & 0 & 0 \\ 0 & -\Sigma_k & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
->>12. con $$\Sigma_k = \begin{bmatrix} \sigma_{k+1} & &\\ &\ddots\\ &&\sigma_r \end{bmatrix}$$
->>13. Finalmente $$\| A_k - A \|_2 = \| U^T (A_k - A) V \|_2 = \sqrt{\rho(\tilde{\Sigma}^T \tilde{\Sigma})}=\sigma_{k+1}$$
+>>11. Como $$U^T (A_k - A)V = U^T A_k V - U^T A V = \begin{bmatrix} 0 & 0 & 0 \\ 0 & -\tilde{\Sigma}_k & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+>>12. con $$\tilde{\Sigma}_{k}= \begin{bmatrix} \sigma_{k+1} & &\\ &\ddots\\ &&\sigma_r \end{bmatrix}$$
+>>13. Finalmente $$\| A_k - A \|_2 = \| U^T (A_k - A) V \|_2 = \sqrt{\rho(\tilde{\Sigma}_{k}^T \tilde{\Sigma}_{k})}=\sigma_{k+1}$$
 
 >[!Remark]
 > Como ya vimos en el Teorema 3.21, cuando se tiene una matriz cuadrada no singular $A$ toda matriz cuadrada $B$ que satisface
@@ -146,7 +146,7 @@ dateCreated: 2024-11-29,19:12
 
 >[!Definition] PseudoInvers
 >Dada $A \in \mathbb{R}^{m \times n}$ de rango $r$ y su descomposición SVD
->$$A = U \begin{bmatrix} \hat{\Sigma} & 0 \\ 0 & 0 \end{bmatrix} V^T, \quad \hat{\Sigma} = \begin{bmatrix} \sigma_1 \\ \vdots \\ \sigma_r \end{bmatrix} \in \mathbb{R}^{r \times r}$$
+>$$A = U \begin{bmatrix} \hat{\Sigma} & 0 \\ 0 & 0 \end{bmatrix} V^T, \quad \hat{\Sigma} = \begin{bmatrix} \sigma_1 & & \\ &\ddots \\&& \sigma_r \end{bmatrix} \in \mathbb{R}^{r \times r}$$
 >se define su pseudoinversa como
 >$$A^{\dagger} = V \begin{bmatrix} \hat{\Sigma}^{-1} & 0 \\ 0 & 0 \end{bmatrix} U^T$$
 
