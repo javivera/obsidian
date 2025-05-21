@@ -20,7 +20,7 @@
   "onlyExportModified": true,
   "deleteOldFiles": true,
   "addThemeToggle": true,
-  "addOutline": false,
+  "addOutline": true,
   "addFileNav": true,
   "addSearchBar": false,
   "addGraphView": false,
@@ -39,12 +39,14 @@
   "graphMinNodeSize": 3,
   "graphMaxNodeSize": 7,
   "showDefaultTreeIcons": false,
-  "emojiStyle": "FluentUI",
+  "emojiStyle": "Native",
   "defaultFileIcon": "lucide//file",
   "defaultFolderIcon": "lucide//folder",
   "defaultMediaIcon": "lucide//file-image",
   "exportPath": "/Users/jvera/Downloads/",
   "filesToExport": [
-    []
+    [
+      "Inferencia Estadistica"
+    ]
   ]
 }

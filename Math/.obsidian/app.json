@@ -2,7 +2,6 @@
   "promptDelete": false,
   "showLineNumber": false,
   "readableLineLength": false,
-  "showRibbon": false,
   "showInlineTitle": true,
   "vimMode": true,
   "spellcheck": false,
@@ -14,6 +13,6 @@
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 70
   }
 }

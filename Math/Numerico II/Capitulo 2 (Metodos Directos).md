@@ -87,7 +87,7 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 >>h & \hat{A}
 >>\end{bmatrix}, \quad a_{11} > 0, \quad h \in \mathbb{R}^{n-1}, \quad \hat{A} \in \mathbb{R}^{(n-1) \times (n-1)}.
 >>$$
->>4. Defina $g_{11} = \sqrt{a_{11}}$, $s= \frac{1}{g_{11}}h$, y $\tilde{A} = \hat{A}^T - ss^T$. Entonces,
+>>4. chl. Defina $g_{11} = \sqrt{a_{11}}$, $s= \frac{1}{g_{11}}h$, y $\tilde{A} = \hat{A}^T - ss^T$. Entonces,
 >>$$\begin{bmatrix} g_{11} & 0 \\ s & I\end{bmatrix}\begin{bmatrix}1 & 0 \\ 0 & \tilde{A}\end{bmatrix} \begin{bmatrix}g_{11} & s^T \\ 0 & I\end{bmatrix} = \begin{bmatrix}g_{11}^2 & g_{11} s^T \\g_{11}s & \tilde{A}+ss^T \end{bmatrix} = A\quad\text{(2.1) }$$
 >>Claramente, la matriz $$X = \begin{bmatrix} g_{11} & s^T \\0 & I\end{bmatrix}^{-1}$$
 >> existe. 
@@ -144,7 +144,7 @@ Por lo tanto, para resolver $A x = b$, resuelvo los sistemas triangulares $G^T y
 > $$\begin{bmatrix}1 & 0 \\-\tau & 1\end{bmatrix}
 > \begin{bmatrix}x_1 \\x_2\end{bmatrix}
 > = \begin{bmatrix}x_1 \\0\end{bmatrix},$$
->donde $\tau = x_2 / x_1$. En general, si deseo transformar $x \in \mathbb{R}^n$, con $x_k \neq 0$, en un vector con $x_i = 0$ para $i = k + 1, \dots, n$ sin alterar $x_i$ para $i = 1, \dots, k$, defino la transformación de Gauss
+>donde $\tau = x_2 / x_1$. En general, si deseo transformar $x \in \mathbb{R}^n$, con $x_k \neq 0$, en un vector con $x_i = 0$ para $i = k + 1, \dots, n$ sin alterar $x_i$ para $i = 1, \dots, k$, defino la transformación de Gauss gss
 >$$M_k = I - v^k (e^k)^T = I - 
 >\begin{bmatrix} 0\\ \vdots \\0 \\\frac{x_{k+1}}{x_k} \\\vdots \\\frac{x_n}{x_k}\end{bmatrix}(e^{k} )^{T} 
 >= \begin{bmatrix} 1 &  & & & &  \\& \ddots \\& & 1  \\ & &-\frac{x_{k+1}}{x_k} &1\\&&\vdots & &\ddots \\&&-\frac{x_n}{x_k}  &&&1 \end{bmatrix}$$

@@ -4,6 +4,8 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "date": "datetime",
-    "datecreated": "datetime"
+    "datecreated": "datetime",
+    "dg-publish": "checkbox",
+    "dg-home": "checkbox"
   }
 }

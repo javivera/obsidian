@@ -15,7 +15,7 @@ dateCreated: 2024-11-29,19:12
 >[!Remark]
 >Matemáticamente, $\text{off}(A)$ es la distancia en norma de Frobenius de $A$ al conjunto de matrices diagonales.
 
->[!Remark]
+>[!Remark]- Si $B=Q^{T}AQ$ entonces $off(B)=?$  
 >Note que si $A$ es simétrica, $Q$ es la matriz de rotación de las coordenadas $ij$ y $B = Q^T A Q$ entonces
 >$$\begin{bmatrix}    b_{ii} & b_{ij} \\    b_{ji} & b_{jj}\end{bmatrix}=\begin{bmatrix}    c & s \\    -s & c\end{bmatrix}\begin{bmatrix}    a_{ii} & a_{ij} \\    a_{ji} & a_{jj}\end{bmatrix}\begin{bmatrix}    c & -s \\    s & c\end{bmatrix},$$
 >Donde $c$ y $s$ fueron escogidos de manera que $b_{ij} = b_{ji} = 0$. Como estas matrices $2 \times 2$ son semejantes, entonces poseen igual norma de Frobenius. 
@@ -25,10 +25,9 @@ dateCreated: 2024-11-29,19:12
 >$$\begin{align}\text{off}(B)^2 &= \| B \|_F^2 - \sum_{l=1}^n b_{ll}^2 \\&= \| A \|_F^2 - \sum_{l \neq i,j\land l=1}^n a_{ll}^2 - (b_{ii}^2 + b_{jj}^2)\\& = \| A \|_F^2 - \sum_{l=1}^n a_{ll}^2 - 2a_{ij}^2 \\& = \text{off}(A)^2- 2a_{ij}^2\end{align}$$
 >Con esto, se puede establecer la convergencia del método de Jacobi.
 
-
->[!Theorem]
+>[!Theorem]- $\lim_{ k \to \infty }off(A_{k})=??$  
 >Sea $A \in \mathbb{R}^{n \times n}$ simétrica y considere $\{A_k\}$ generada por el método de Jacobi. Entonces $$\lim_{k \to \infty} \text{off}(A_k) = 0$$
->>[!Proof]
+>>[!Proof]-
 >>1. Como $\{A_k\}$ es generada por el método de Jacobi, $A_k = Q_k^T A_{k-1} Q_k$
 >>2. Por lo visto anteriormente $\text{off}(A_k)^2 = \text{off}(A_{k-1})^2 - 2 \left(a_{ij}^{(k-1)}\right)^2$. 
 >>3. Por otro lado, como $$\left|a_{ij}^{(k-1)}\right| = \max_{r \neq s} \left|a_{rs}^{(k-1)}\right|$$
@@ -38,11 +37,11 @@ dateCreated: 2024-11-29,19:12
 >>7. Ademas por 2. $$\text{off}(A_k)^2 \leq \left(1 - \frac{1}{N}\right) \text{off}(A_{k-1})^2 \leq \cdots \leq \left(1 - \frac{1}{N}\right)^k \text{off}(A_0)^2$$
 >>8. Concluyendo que $\lim_{ k \to \infty }off(A_{k})^{2}=0$ 
 
->[!Theorem]
+>[!Theorem]- Gershgorin
 >Si $X^{-1}AX = D + F$ con $D$ diagonal y $F$ con ceros en la diagonal, entonces cada autovalor $\lambda$ de $A$ satisface
 >$$\lambda \in \bigcup_{i=1}^n D_i$$
 >donde $D_i = \{ z \in \mathbb{C} \mid |z - d_i| \leq \sum_{j=1}^n |f_{ij}| \}$.
->>[!Proof]
+>>[!Proof]-
 >>1. Sea $\lambda$ un autovalor de $A$. 
 >>2. Si $\lambda = d_i$ para algún $i$, el resultado es trivial. 
 >>3. Suponga que $\lambda \neq d_i$ para todo $i$. 
@@ -54,14 +53,14 @@ dateCreated: 2024-11-29,19:12
 >>8. Por lo tanto $$1 \leq \|\Theta\|_\infty = \|(D - \lambda I)^{-1}F\|_\infty = \sum_{j=1}^n \frac{|f_{ij}|}{|d_i - \lambda|}$$
 >>para algún $i$.
 
->[!Remark]
+>[!Remark]- Gershgorin caso $A=Id$
 >Por lo tanto, como $B = Q^T A Q$ con $\text{off}(B) \leq \epsilon$, el teorema anterior nos garantiza que si $\lambda$ es un autovalor de $A$, entonces $$|\lambda - b_{ii}| \leq \sqrt{n} \epsilon$$
 >para algún índice $i$. 
 >En particular, si $X = I$, los discos de Gershgorin quedan
 >$$D_i = \left\{ z \in \mathbb{C} \ \middle| \ |z - a_{ii}| \leq \sum_{j=1, j \neq i}^n |a_{ij}| \right\}$$
 >O sea, el resultado anterior nos dice que los autovalores van a distar de los elementos diagonales como máximo la suma de los elementos de la fila en valor absoluto y sin la diagonal.
 
->[!Theorem]
+>[!Theorem]- Metodo potencias norma infinito
 >Sea $A \in \mathbb{R}^{n \times n}$ diagonalizable con $\lambda_1$ autovalor dominante y $V = [v^1 \ \dots \ v^n] \in \mathbb{R}^{n \times n}$ autovectores. Suponga que las sucesiones $\{q^k\}$ y $\{\rho_k\}$ fueron generadas por
 >$$q^{k+1} = \frac{1}{[Aq^k]_{jk}} Aq^k, \quad \rho_{k+1} = [Aq^{k+1}]_{jk}$$
 >donde $[Aq^k]_{jk} = \| Aq^k \|_\infty$. Si $q^0 \in \mathbb{R}^n$ con $q^0 = \sum_{i=1}^n c_i v^i$ y $c_1 \neq 0$, entonces $\{q^k\}$ converge a $v^1 / \|v^1\|_\infty$ y los puntos límite de $\{\rho_k\}$ son $\pm \lambda_1$.
@@ -80,7 +79,7 @@ dateCreated: 2024-11-29,19:12
 >>$$\lim_{k \to \infty, k \in \mathcal{K}_l} \rho_k = \lim_{k \to \infty, k \in \mathcal{K}_l} \lambda_1 \frac{\left[ \eta_{k+1} q^{k+1} \right]_l}{\left[ \eta_k q^k \right]_l} = \lambda_1 \frac{c_1 v^1_l}{c_1 v^1_l} = \lambda_1.$$
 >>10. Como el límite es independiente del $l$ escogido, se obtiene que $\lambda_1$ es el límite de $\{\rho_k\}$.
 
->[!Theorem]
+>[!Theorem]- Metodo potencias norma 2
 >Sea $A \in \mathbb{R}^{n \times n}$ diagonalizable con $\lambda_1$ autovalor dominante y $V = [v^1 \ \cdots \ v^n] \in \mathbb{R}^{n \times n}$ autovectores. Suponga que las sucesiones $\{q^k\}$ y $\{\rho_k\}$ fueron generadas por
 >$$q^{k+1} = \frac{1}{\|Aq^k\|_2} Aq^k \quad\quad\rho_k = (q^k)^\top A q^{k+1}$$
 >Si $q^0 \in \mathbb{R}^n$ con $q^0 = \sum_{i=1}^n c_i v^i$ y $c_1 \neq 0$, entonces $\{\rho_k\}$ converge a $\lambda_1$ y los puntos límite de $\{q^k\}$ son $v^1 / \|v^1\|_2$ y $-v^1 / \|v^1\|_2$.
@@ -105,7 +104,7 @@ dateCreated: 2024-11-29,19:12
 >>2. Por lo tanto
 >>$$\begin{align}|\lambda - \rho| &\leq |v^* A (v - q)| + |(v - q)^* Aq| \\ &\leq \|v\|_2 \|A\|_2 \|v-q\|_2 + \|v - q\|_2 \|A\|_2 \|q\|_2\\& = 2 \|v - q\|_2 \|A\|_2\end{align}$$
 
->[!Remark]
+>[!Remark]- Como utilizar $\rho$ para hallar avals de $A$
 >Si $A$ tiene autovalores $\lambda_1, \ldots, \lambda_n$ con
 >$$|\lambda_1| > |\lambda_2| > \cdots > |\lambda_n|$$
 >Entonces la matriz $A - \rho I$ tiene autovalores $\lambda_1 - \rho, \ldots, \lambda_n - \rho$ con
@@ -114,7 +113,7 @@ dateCreated: 2024-11-29,19:12
 >Concluyendo que $\lambda_{i_{1}} = \tilde{\lambda} + \rho$.
 >De esta manera, al variar $\rho$ se podrían calcular todos los autovalores de $A$. Esta variante es conocida como método de las potencias con desplazamientos.
 
->[!Remark]
+>[!Remark]- Metodo potencias caso $A$ simetrica
 >En el caso particular de tener $A$ simétrica, se obtiene que
 >$$A = V \begin{bmatrix}\lambda_1 & & \\& \ddots & \\& & \lambda_n\end{bmatrix}V^T = \sum_{i=1}^n \lambda_i v^i (v^i)^T$$
 >Entonces se pueden calcular los primeros $k$ autovalores de $A$ de la siguiente manera: tome $\tilde{A}_0 = A$ e $i = 1$.
@@ -122,7 +121,7 @@ dateCreated: 2024-11-29,19:12
 >2. Defina $\tilde{A}_i = \tilde{A}_{i-1} - \lambda_i v^i (v^i)^T$.
 >3. Si $i = k$, parar. Si no, hacer $i \gets i + 1$ e ir al paso 1.
 
->[!Remark] Método de las potencias inversas
+>[!Remark]- Método de las potencias inversas
 >Como es sabido, si $\lambda$ es un autovalor de una matriz no singular $A$, entonces $1/\lambda$ es un autovalor de $A^{-1}$. Usando esta propiedad se obtiene que si $\lambda_1, \dots, \lambda_n$ son autovalores de $A$ y $\rho$ es una aproximación de $\lambda_i$ tal que $\lvert \lambda_i - \rho \rvert < \lvert \lambda_j - \rho \rvert$ para todo $j \neq i$, entonces
 >$$\frac{1}{\lvert \lambda_i - \rho \rvert} > \frac{1}{\lvert \lambda_j - \rho \rvert}$$
 >para todo $j \neq i$. O sea, $1 / (\lambda_i - \rho)$ es un autovalor dominante de $(A - \rho I)^{-1}$.
@@ -136,9 +135,9 @@ dateCreated: 2024-11-29,19:12
 >Este procedimiento recibe el nombre de iteración del cociente de Rayleigh. Note que 
 >$$\rho_{k+1} = (q^{k+1})^T A q^{k+1} = (q^{k+1})^T (A - \rho_k I) q^{k+1} + \rho_k$$
 
->[!Theorem] Descomposición de Schur
+>[!Theorem]- Descomposición de Schur
 >Si $A \in \mathbb{C}^{n \times n}$, entonces existe $Q \in \mathbb{C}^{n \times n}$ unitaria tal que $T = Q^* A Q$ es triangular superior.
->>[!Proof]
+>>[!Proof]-
 >>1. Se demostrará realizando inducción en $n$. Si $n = 1$ entonces $A = a \in \mathbb{C}$.
 >>2. Tomando $Q = 1$ se obtiene $Q^* A Q = a = T$.
 >>3. Suponga que el teorema vale para matrices de dimensión $n - 1$. 
@@ -146,9 +145,9 @@ dateCreated: 2024-11-29,19:12
 >>5. Usando Gram-Schmidt genero $U = [v \, V] \in \mathbb{C}^{n \times n}$ unitaria.
 >>6. Como $$U^* A U = \begin{bmatrix}v^* \\V^*\end{bmatrix}[Av \, AV] = \begin{bmatrix}\lambda & w^* \\0 & B\end{bmatrix}$$
 >>con $w^* = v^* AV$ y $B = V^* AV$. 
->>8. Por hipótesis inductiva, existe $\tilde{U} \in \mathbb{C}^{(n-1) \times (n-1)}$ unitaria tal que $\tilde{U}^* B \tilde{U} = \tilde{T}$ es triangular superior. 
+>>8. Por hipótesis inductiva, existe $\tilde{U} \in \mathbb{C}^{(n-1) \times (n-1)}$ unitaria tal que $\tilde{U}^* B \tilde{U} = \tilde{T}$ es triangular superior . 
 >>9. Sea$$Q = U \begin{bmatrix}1 & 0 \\0 & \tilde{U}\end{bmatrix}$$
->>10. Entonces $$Q^* A Q = \begin{bmatrix}1 & 0 \\0 & \tilde{U}^*\end{bmatrix}\begin{bmatrix}\lambda & w^* \\0 & B\end{bmatrix}\begin{bmatrix}1 & 0 \\0 & \tilde{U}\end{bmatrix}=\begin{bmatrix}\lambda & w^* \tilde{U} \\0 & tilde{U}^* B \tilde{U}\end{bmatrix}=\begin{bmatrix}\lambda & w^* tilde{U} \\0 & \tilde{T}\end{bmatrix} = T$$
+>>10. Entonces $$Q^* A Q = \begin{bmatrix}1 & 0 \\0 & \tilde{U}^*\end{bmatrix}\begin{bmatrix}\lambda & w^* \\0 & B\end{bmatrix}\begin{bmatrix}1 & 0 \\0 & \tilde{U}\end{bmatrix}=\begin{bmatrix}\lambda & w^* \tilde{U} \\0 & \tilde{U}^* B \tilde{U}\end{bmatrix}=\begin{bmatrix}\lambda & w^* \tilde{U} \\0 & \tilde{T}\end{bmatrix} = T$$
 >>11. Que es una matriz triangular superior.
 
 ^9da1ad
@@ -168,10 +167,10 @@ dateCreated: 2024-11-29,19:12
 >Como $$T_k = R_k U_k = U_k^* T_{k-1} U_k = \dots = U_k^* \dots U_1^* T_0 U_1 \dots U_k = Q_k^* A Q_k$$
 >donde $Q_k = U_0 U_1 \dots U_k$, entonces, tomando subsecuencias si fuera necesario, $\{T_k\}$ converge a $T$ semejante a $A$. Además, si $|\lambda_1| > \dots > |\lambda_n|$, se puede afirmar que $T$ es triangular superior. La demostración esta en el anexo
 
->[!Theorem] Descomposición de Schur en $\mathbb{R}$
+>[!Theorem]- Descomposición de Schur en $\mathbb{R}$
 > Si $A \in \mathbb{R}^{n \times n}$ entonces existe $Q \in \mathbb{R}^{n \times n}$ ortogonal tal que $$Q^T A Q =\begin{bmatrix} R_{11} & R_{12} & \dots & R_{1s} \\    0 &R_{22} & \dots & R_{2s} \\    \vdots & \vdots & \ddots & \vdots \\    0 & 0 &\dots & R_{ss}\end{bmatrix}$$
 > donde $R_{ll} \in \mathbb{R}^{2 \times 2}$ con autovalores complejos conjugados o $R_{ll} \in \mathbb{R}^{1 \times 1}$.
->>[!Proof]
+>>[!Proof]-
 >>1. Como $p(x) = \det(A - xI)$ tiene coeficientes reales, si $p(\lambda) = 0$ con $\lambda \in \mathbb{C}$, entonces $p(\bar{\lambda}) = 0$. 
 >>2. Sea $k$ el número de pares $(\lambda, \bar{\lambda})$ de autovalores complejos de $A$. 
 >>3. La demostración se realizará mediante inducción en $k$.
@@ -209,23 +208,20 @@ dateCreated: 2024-11-29,19:12
 >El método de iteraciones QR en $\mathbb{R}$ para $A \in \mathbb{R}^{n \times n}$ sería el siguiente:
 >1. Dar $Q_0$ ortogonal, definir $H_0 = Q_0^T A Q_0$ y $k = 1$
 >2. Obtener $Q_k, R_k$ tal que $Q_k R_k = H_{k-1}$ con la descomposición QR de $H_{k-1}$.
->3. Definir $H_k = R_k Q_k
+>3. Definir $H_k = R_k Q_k$
 >4. Hacer $k \leftarrow k+1$ y regresar al paso 1.
 
->[!Remark]
->Veamos que este procedimiento preserva la estructura Hessenberg superior de las matrices.
-
- >[!Theorem]
+ >[!Theorem]- Resultado imporante hessen y $QR$  
  >Si $H \in \mathbb{R}^{n \times n}$ es Hessenberg superior y no singular con $H = QR$ su descomposición QR, entonces $RQ$ es Hessenberg superior.
  >>[!Proof]
  >>1. Como $H$ es no singular, entonces $R$ es triangular superior y no singular, por lo tanto $r_{ii} \neq 0$ para todo $i$. 
  >>2. Veamos primero que $Q$ es Hessenberg superior. Analizando las columnas de $H = QR$, se ve que la $j$-ésima columna e
- >>3. $$\begin{bmatrix}h_{1j} \\\vdots \\h_{j+1,j} \\0 \\\vdots \\0\end{bmatrix}=Q\begin{bmatrix}r_{1j} \\\vdots \\r_{jj} \\0 \\\vdots \\0\end{bmatrix}=\begin{bmatrix}\sum_{l=1}^{j} q_{1l} r_{lj} \\\vdots \\\sum_{l=1}^{j} q_{j+1,l} r_{lj} \\0 \\\vdots \\0\end{bmatrix}$$
+ >>3. $$\begin{bmatrix}h_{1j} \\\vdots \\h_{j+1,j} \\0 \\\vdots \\0\end{bmatrix}=Q\begin{bmatrix}r_{1j} \\\vdots \\r_{jj} \\0 \\\vdots \\0\end{bmatrix}=\sum^{j}_{l=1} \begin{bmatrix}q_{1l} \\\vdots \\ q_{l+1,l} \\q_{l+2,l} \\\vdots \\q_{nl}\end{bmatrix}$$
  >>4. Para $j = 1$ se obtiene que $q_{i1} = 0$ para $i = 3, \ldots, n$. 
  >>5. Usando lo anterior, si $j = 2$ entonces $q_{i2} = 0$ para $i = 4, \ldots, n$.  
  >>6. Siguiendo de esta manera hasta $j = n$ se obtiene que $q_{ij} = 0$ para $i \geq j+2$, concluyendo que $Q$ es Hessenberg superior.
  >>7. Ahora, analizando las columnas de $\tilde{H} = RQ$ se obtiene que la $j$-ésima columna es igual a:
- >>$$\begin{bmatrix}\tilde{h}_{1j} \\\vdots \\\tilde{h}_{j+1,j} \\\tilde{h}_{j+2,j}\\\vdots \\\tilde{h}_{nj}\end{bmatrix}=R\begin{bmatrix}q_{1j} \\\vdots \\q_{j+1,j} \\0\\\vdots \\0\end{bmatrix}=\begin{bmatrix}\sum_{l=1}^{j+1} r_{1l} q_{lj}\\\vdots \\\sum_{l=1}^{j+1} r_{j+1,l} q_{lj} \\0 \\\vdots \\0\end{bmatrix}$$
+ >>$$\begin{bmatrix}\tilde{h}_{1j} \\\vdots \\\tilde{h}_{j+1,j} \\\tilde{h}_{j+2,j}\\\vdots \\\tilde{h}_{nj}\end{bmatrix}=R\begin{bmatrix}q_{1j} \\\vdots \\q_{j+1,j} \\0\\\vdots \\0\end{bmatrix}=\sum_{l=1}^{j+1} q_{lj}\begin{bmatrix}r_{1l}\\\vdots \\ r_{ll} \\0 \\\vdots \\0\end{bmatrix}$$
  >>8. Por lo tanto, $\tilde{h}_{ij} = 0$ para $i \geq j+2$, o sea, $\tilde{H}$ es Hessenberg superior. 
 
 >[!Remark]
