@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "45db786062ea7a48",
+    "id": "ca502f6f171fbc0a",
     "type": "split",
     "children": [
       {
-        "id": "a2a7518b5c2f8779",
+        "id": "7f9834adb5726ac3",
         "type": "tabs",
         "children": [
           {
-            "id": "175117e02f8dfca7",
+            "id": "6606b25ca5cf8883",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Numerico II/Capitulo 6 (Avals y avecs).md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 17.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Capitulo 6 (Avals y avecs)"
+              "title": "IE - Teorico 17"
             }
           }
         ]
@@ -27,28 +27,29 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b893d49dd79e5e5a",
+    "id": "b15687cf638cfe74",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "bea54bdc6f5d1c94",
+        "id": "5a7a84d4fa3d3ad3",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
           "state": {
-            "sortOrder": "alphabetical"
+            "sortOrder": "alphabetical",
+            "autoReveal": false
           },
           "icon": "lucide-folder-closed",
           "title": "Files"
         }
       },
       {
-        "id": "69a266d1745e9403",
+        "id": "7bbe2dac0100874d",
         "type": "leaf",
         "state": {
           "type": "search",
           "state": {
-            "query": "frobenius",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -60,20 +61,22 @@
         }
       },
       {
-        "id": "4253039021f22ce2",
+        "id": "c6363dc38891ce45",
         "type": "leaf",
         "state": {
           "type": "tag",
           "state": {
             "sortOrder": "frequency",
-            "useHierarchy": true
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
           },
           "icon": "lucide-tags",
           "title": "Tags"
         }
       },
       {
-        "id": "f2050a6141b279b7",
+        "id": "c5d0a9a5dd1a355c",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -86,35 +89,35 @@
     "currentTab": 0
   },
   "right": {
-    "id": "afff6d97de55b3fc",
+    "id": "6b3baab9bc45e1c2",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "f91eb5ca0298d278",
+        "id": "c94ffc54d1bacfd2",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Numerico II/Apunte Numerico II.md",
-            "collapseAll": true,
+            "file": "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+            "collapseAll": false,
             "extraContext": false,
-            "sortOrder": "byCreatedTimeReverse",
+            "sortOrder": "alphabetical",
             "showSearch": false,
             "searchQuery": "",
-            "backlinkCollapsed": true,
-            "unlinkedCollapsed": false
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           },
           "icon": "links-coming-in",
           "title": "Backlinks"
         }
       },
       {
-        "id": "58318b1be34c108d",
+        "id": "3aa8cf4def6d3663",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Numerico II/Apunte Numerico II.md",
+            "file": "Inferencia Estadistica/Theory/IE - Teorico 17.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -123,23 +126,25 @@
         }
       },
       {
-        "id": "6b26a989d65c5f42",
+        "id": "da0af544193bd14a",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "Numerico II/Capitulo 6 (Avals y avecs).md"
+            "file": "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
           },
           "icon": "lucide-list",
           "title": "Outline"
         }
       }
     ],
-    "currentTab": 2
+    "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
-      "float-search:Search Obsidian In Modal": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -148,46 +153,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "175117e02f8dfca7",
-  "lastOpenFiles": [
-    "Numerico II/Capitulo 5 (SVD).md",
-    "Numerico II/Capitulo 6 (Avals y avecs).md",
-    "Numerico II/Capitulo 3 (Sensibilidad).md",
-    "Numerico II/Capitulo 4 (Residuos Minimos).md",
-    "Numerico II/Capitulo 2 (Metodos Directos).md",
-    "Numerico II/Capitulo 2 Practico (PARTE 1).md",
-    "Numerico II/Capitulo 2 Practico (PARTE 2).md",
-    "Analisis Funcional/Theory/Teórico 15.md",
-    "Analisis Funcional/Theory/Teórico 14.md",
-    "Analisis Funcional/Theory/Teórico 17.md",
-    "Analisis Funcional/Theory/Teórico 16.md",
-    "Numerico II/Capitulo 4.md",
-    "Numerico II/Apunte Numerico II.md",
-    "Numerico II/Capitulo 3.md",
-    "Numerico II/Capitulo 2.md",
-    "Analisis Funcional/Theory/Teórico 10.md",
-    "Pasted image 20241116200435.png",
-    "Analisis Funcional/Theory/Teórico 11.md",
-    "Analisis Funcional/Theory/Teórico 12.md",
-    "Numerico II",
-    "Pasted image 20241112212417.png",
-    "Analisis Funcional/Theory/Teórico 13.md",
-    "Analisis Funcional/Theory/Teórico 18.md",
-    "Estructuras Algebraicas/Theory/Teorico 15.md",
-    "Analisis Funcional/Theory/Teórico 9.md",
-    "Analisis Funcional/Theory/Teórico 8.md",
-    "Estructuras Algebraicas/Theory/Teorico 16.md",
-    "Analisis Funcional/Theory/Teórico 4.md",
-    "Analisis Funcional/Theory/Teórico 3.md",
-    "Estructuras Algebraicas/Theory",
-    "Estructuras Algebraicas",
-    "Analisis Funcional/Theory",
-    "Analisis Funcional/Practicos",
-    "Analisis Funcional",
-    "Functional Analysis/Theory",
-    "Pasted image 20240919234954.png",
-    "Ink",
-    "Ink/Writing/2024.9.19 - 19.01pm.writing",
-    "Ink/Writing"
-  ]
+  "active": "6606b25ca5cf8883",
+  "lastOpenFiles": []
 }

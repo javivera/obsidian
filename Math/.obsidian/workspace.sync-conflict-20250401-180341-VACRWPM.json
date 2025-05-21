@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "a6e6fcfc588cbf00",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe9ec4c32537aa3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f5424065708623b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 3.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 3"
+            }
+          },
+          {
+            "id": "591c2b5ebc396afa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 2"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bf1a1a8f0d6d3eeb",
+    "type": "split",
+    "children": [
+      {
+        "id": "afadfd6294841719",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aeb83359a0ad264b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eed7399addb9add9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "a69323c5854db82e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "convergencia punto asi",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 233.5
+  },
+  "right": {
+    "id": "ce4bb695f0ccdb6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "221afc12fcce3a67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2a34aa6314cd474",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Estructuras Algebraicas/Theory/Teorico 16.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Teorico 16"
+            }
+          },
+          {
+            "id": "8001b2abf56594b2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "6439d6817c53c292",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Analisis Funcional/Theory/Teórico 14.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Teórico 14"
+            }
+          },
+          {
+            "id": "a96c1721d1bdd36e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Analisis Funcional/Theory/Teórico 14.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Teórico 14"
+            }
+          },
+          {
+            "id": "2e88e2edec6393d9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 233.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "float-search:Search Obsidian In Modal": false
+    }
+  },
+  "active": "aeb83359a0ad264b",
+  "lastOpenFiles": [
+    "Analisis Funcional/Theory/Teórico 18.md.tmp",
+    "Analisis Funcional/Theory/Teórico 12.md.tmp",
+    "Analisis Funcional/Theory/Teórico 16.md",
+    "Analisis Funcional/Theory/Teórico 16.md.tmp",
+    "Analisis Funcional/Theory/Teórico 13.md.tmp",
+    "Analisis Funcional/Theory/Teórico 20.md.tmp",
+    "Analisis Funcional/Theory/Teórico 14.md.tmp",
+    "Analisis Funcional/Theory/Teórico 15.md.tmp",
+    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
+    "Inferencia Estadistica/Practicos",
+    "Inferencia Estadistica/untitled folder",
+    "Estructuras Algebraicas/Theory/Teorico 1.md",
+    "Inferencia Estadistica/Theory",
+    "Inferencia Estadistica",
+    "Teórico 10^{}.md",
+    "Estructuras Algebraicas/Theory/Teorico 3.md",
+    "Pasted image 20241018211456.png",
+    "Estructuras Algebraicas/Theory/Teorico 2.md",
+    "Estructuras Algebraicas/Theory/Teorico 18.md",
+    "Estructuras Algebraicas/Theory/Teorico 13.md",
+    "Estructuras Algebraicas/Theory/Teorico 12.md",
+    "Pasted image 20241112212417.png",
+    "Pasted image 20241018211644.png",
+    "Pasted image 20241018211630.png",
+    "Pasted image 20241018211537.png",
+    "Numerico II/Capitulo 2 (Metodos Directos).md",
+    "Numerico II/Capitulo 5 (SVD).md",
+    "Numerico II/Capitulo 4 (Residuos Minimos).md",
+    "Numerico II/Capitulo 3 (Sensibilidad).md",
+    "Numerico II/Capitulo 7 (Metods Iterativos) 1.md",
+    "Numerico II/Capitulo 7 (Metods Iterativos).md",
+    "Pasted image 20241219005812.png",
+    "Pasted image 20241219005629.png",
+    "Pasted image 20241219005607.png",
+    "Pasted image 20241219005522.png",
+    "Pasted image 20241219005501.png",
+    "Numerico II/Capitulo 6 (Avals y avecs).md",
+    "Numerico II/Capitulo 2 Practico (PARTE 2).md",
+    "Numerico II/Capitulo 2 Practico (PARTE 1).md",
+    "Numerico II/Practicos.md",
+    "Analisis Funcional/Theory/Teórico 17.md",
+    "Analisis Funcional/Theory/Teórico 10.md",
+    "Analisis Funcional/Theory/Teórico 18.md",
+    "Analisis Funcional/Theory/Teórico 14.md",
+    "Analisis Funcional/Theory/Teórico 13.md"
+  ]
+}

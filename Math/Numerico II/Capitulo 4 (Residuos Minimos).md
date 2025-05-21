@@ -105,7 +105,7 @@ Copiar el proceso givens 2x2
 >>4. Se dirá que $A = Q_1 R_1$ es la *factorización* QR reducida de $A$. Bajo ciertas hipótesis esta factorización es única. 
 
 >[!Theorem] DUDA
->Sea $A \in \mathbb{R}^{m \times n}$ de rango $n$ (DONDE USO rango $n$ en todo esto. en Givens no , en HouseHolder?), entonces la factorización QR reducida $A = Q_1 R_1$ es única si $Q_1 \in \mathbb{R}^{m \times n}$ tiene columnas ortonormales y $R_1$ es triangular superior con elementos diagonales positivos (siempre QR es triangular superior, no siempre tiene elementos diagonales positivos). Más aún, $R_1$ es el factor de Cholesky de $A^T A$.
+>Sea $A \in \mathbb{R}^{m \times n}$ de rango $n$ (DONDE USO rango $n$ en todo esto. en Givens no , en HouseHolder?), entonces la factorización QR reducida $A = Q_1 R_1$ es única si $Q_1 \in \mathbb{R}^{m \times n}$ tiene columnas ortonormales y $R_1$ es triangular superior con elementos diagonales positivos (siempre $R$ es triangular superior, no siempre tiene elementos diagonales positivos). Más aún, $R_1$ es el factor de Cholesky de $A^T A$.
 >>[!Proof]-
 >>1. $A^T A = R_1^T Q_1^T Q_1 R_1 = R_1^T R_1$ con $R_1$ triangular superior con elementos diagonales positivos. 
 >>2. Entonces, por la unicidad de la descomposición de Cholesky, se obtiene que $R_1$ es el factor de Cholesky de $A^T A$ y es unico

@@ -55,23 +55,23 @@
 >Entonces $\lVert \cdot \rVert$ es una norma en $B(X,Y)$
 >>[!Proof]-
 >>1. Norma de 0
->>	1. $\lVert T \rVert=0 \iff \lVert Tx \rVert=0 \quad \forall x\in X\iff Tx=0\quad\forall x\in X\iff T \text{ es la transformacion lineal 0}$
->>2. Saca escalar
->>	1. $\lVert \lambda T \rVert=\sup \{ \lVert \lambda Tx \rVert:\lVert x \rVert\leq 1 \}=\lvert \lambda \rvert\sup \{ \lVert Tx \rVert \}=\lvert \lambda \rvert\lVert T \rVert$ 
->>3. Desigualdad Triangular:
->>	1. Notar que $\left\lVert  T\left( \frac{x}{\lVert x \rVert} \right)  \right\rVert\leq\lVert T \rVert$ (Porque $\lVert T \rVert$ es supremo). Luego $\lVert Tx \rVert\leq\lVert T \rVert\lVert x \rVert$
->>	2. $\lVert (S+T)(x) \rVert\leq\lVert Sx \rVert+\lVert Tx \rVert \leq\lVert S \rVert\lVert x \rVert+\lVert T \rVert\lVert x \rVert = (\lVert S+T \rVert)\lVert x \rVert$
->>	3. Usando supremo de ambos lados $\lVert S+T \rVert\leq\lVert S \rVert+\lVert T \rVert$
+>>	2. $\lVert T \rVert=0 \iff \lVert Tx \rVert=0 \quad \forall x\in X\iff Tx=0\quad\forall x\in X\iff T \text{ es la transformacion lineal 0}$
+>>3. Saca escalar
+>>	4. $\lVert \lambda T \rVert=\sup \{ \lVert \lambda Tx \rVert:\lVert x \rVert\leq 1 \}=\lvert \lambda \rvert\sup \{ \lVert Tx \rVert \}=\lvert \lambda \rvert\lVert T \rVert$ 
+>>5. Desigualdad Triangular:
+>>	6. Notar que $\left\lVert  T\left( \frac{x}{\lVert x \rVert} \right)  \right\rVert\leq\lVert T \rVert$ (Porque $\lVert T \rVert$ es supremo). Luego $\lVert Tx \rVert\leq\lVert T \rVert\lVert x \rVert$
+>>	7. $\lVert (S+T)(x) \rVert\leq\lVert Sx \rVert+\lVert Tx \rVert \leq\lVert S \rVert\lVert x \rVert+\lVert T \rVert\lVert x \rVert = (\lVert S+T \rVert)\lVert x \rVert$
+>>	8. Usando supremo de ambos lados $\lVert S+T \rVert\leq\lVert S \rVert+\lVert T \rVert$
 
 >[!Remark]
 >$\lVert T \rVert=\sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}=\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$
 >>[!Proof]-
 >>Sea $\beta= \sup\{ \lVert Tx \rVert:\lVert x \rVert\leq {1} \}$ y $\alpha =\sup\{ \lVert Tx \rVert :\lVert x \rVert=1\}$ 
->>1. $(\beta \geq\alpha )$ Trivial
->>2. $(\leq)$ Supongamos $\alpha < \beta$
->>3. $\exists x_{j}$ con $\lVert x_{j} \rVert\leq 1$ tal que $\lVert Tx_{j} \rVert \rightarrow\beta$ (Por ser supremo)
->>4. Entonces $\exists x_{0}$ con $\lVert x_{0} \rVert\leq 1$ tal que $\lVert Tx_{0} \rVert>\alpha$
->>5. Entonces $\alpha\geq \lVert T(\frac{x_{0}}{\lVert x_{0} \rVert}) \rVert =\frac{\lVert Tx_{0} \rVert}{\lVert x_{0} \rVert}\geq\lVert Tx_{0} \rVert>\alpha$ (Por def de supremo y $\lVert x_{0} \rVert \leq 1$) Absurdo
+>>9. $(\beta \geq\alpha )$ Trivial
+>>10. $(\leq)$ Supongamos $\alpha < \beta$
+>>11. $\exists x_{j}$ con $\lVert x_{j} \rVert\leq 1$ tal que $\lVert Tx_{j} \rVert \rightarrow\beta$ (Por ser supremo)
+>>12. Entonces $\exists x_{0}$ con $\lVert x_{0} \rVert\leq 1$ tal que $\lVert Tx_{0} \rVert>\alpha$
+>>13. Entonces $\alpha\geq \lVert T(\frac{x_{0}}{\lVert x_{0} \rVert}) \rVert =\frac{\lVert Tx_{0} \rVert}{\lVert x_{0} \rVert}\geq\lVert Tx_{0} \rVert>\alpha$ (Por def de supremo y $\lVert x_{0} \rVert \leq 1$) Absurdo
 
 >[!Remark]
 >Notar que del [[Teórico 4#^cae689]] se desprende 
@@ -81,13 +81,13 @@
 >$T : C_{\mathbb{F}}[0,1]\rightarrow \mathbb{F}$ lineal definido como $$T(f)=0$$
 >entonces $\lVert T \rVert=1$
 >>[!Proof]-
->>1. Ya probamos en [[Teórico 4#^9798e1]] que $\lvert T(f) \rvert\leq 1\lVert f \rVert$ 
->>2. $\lVert T \rVert=\inf\{ k:\lVert T(f) \rVert \leq k\lVert f \rVert: \forall f\in C_{\mathbb{F}}[0,1]\}\leq 1$
->>3. Por otro lado sea $g:[0,1]\rightarrow\mathbb{C}$ esta definida como $g(x)=1$ entonces $g\in C_{\mathbb{C}}[0,1]$
->>4. $\lVert g \rVert=\sup\{ \lvert g(x) \rvert:x\in [0,1] \}$
->>5. $\lvert T(g) \rvert=\lvert g(0) \rvert=1$ (Todo por definicion de $T$)
->>6. $1=\lvert T(g) \rvert\leq\lVert T \rVert\lVert g \rVert=\lVert T \rVert$
->>7. Finalmente $\lVert T \rVert=1$
+>>14. Ya probamos en [[Teórico 4#^9798e1]] que $\lvert T(f) \rvert\leq 1\lVert f \rVert$ 
+>>15. $\lVert T \rVert=\inf\{ k:\lVert T(f) \rVert \leq k\lVert f \rVert: \forall f\in C_{\mathbb{F}}[0,1]\}\leq 1$
+>>16. Por otro lado sea $g:[0,1]\rightarrow\mathbb{C}$ esta definida como $g(x)=1$ entonces $g\in C_{\mathbb{C}}[0,1]$
+>>17. $\lVert g \rVert=\sup\{ \lvert g(x) \rvert:x\in [0,1] \}$
+>>18. $\lvert T(g) \rvert=\lvert g(0) \rvert=1$ (Todo por definicion de $T$)
+>>19. $1=\lvert T(g) \rvert\leq\lVert T \rVert\lVert g \rVert=\lVert T \rVert$
+>>20. Finalmente $\lVert T \rVert=1$
 
 >[!Theorem]
 >Sea $X$ un normado y sea $W$ un subespacio denso de $X$. Sea $Y$ un Banach y $S\in B(W,Y)$
@@ -125,14 +125,14 @@
 >Si $X$ normado e $Y$ Banach entonces el espacio normado $B(X,Y)$ es Banach
 >>[!Proof] DUDA
 >> 1. Sea $\{ T_{n} \}$ sucesion de Cauchy en $B(X,Y)$. Entonces vale $\lVert T_{n} \rVert\leq M \quad\forall n\in \mathbb{N}\quad (1)$ Veamoslo
->> 	1. Esta acotada por que $T_{m}\in B(X,Y)$ entonces $\lVert T_{m} \rVert\leq K_{m}$
->> 	2. $\lVert T_{n} \rVert\leq \lVert T_{n}-T_{m} \rVert+\lVert T_{m} \rVert\leq \epsilon+K_{m}\quad\forall n\geq n_{0}$
->> 2. $\lVert T_{n}(x)-T_{m}(x) \rVert=\lVert (T_{n}-T_{m})(x)\rVert\leq \lVert T_{n}-T_{m} \rVert\lVert x \rVert$. 
->> 3. Entonces como $\{ T_{n} \}$ es Cauchy $\{ T_{n}(x) \}$ es Cauchy en $Y$
->> 4. Como $Y$ Banach entonces converge entonces definimos $$T(x)=\lim_{ n \to \infty } T_{n}(x)$$
->> 5. Veamos que es lineal $$T(x+y)=\lim_{ n \to \infty } T_{n}(x+y)=\lim_{ n \to \infty } T_{n}x+T_{n}y=\lim_{ n \to \infty } T_{n}x+\lim_{ n \to \infty } T_{n}y=Tx+Ty$$
+>> 	2. Esta acotada por que $T_{m}\in B(X,Y)$ entonces $\lVert T_{m} \rVert\leq K_{m}$
+>> 	3. $\lVert T_{n} \rVert\leq \lVert T_{n}-T_{m} \rVert+\lVert T_{m} \rVert\leq \epsilon+K_{m}\quad\forall n\geq n_{0}$
+>> 4. $\lVert T_{n}(x)-T_{m}(x) \rVert=\lVert (T_{n}-T_{m})(x)\rVert\leq \lVert T_{n}-T_{m} \rVert\lVert x \rVert$. 
+>> 5. Entonces como $\{ T_{n} \}$ es Cauchy $\{ T_{n}(x) \}$ es Cauchy en $Y$
+>> 6. Como $Y$ Banach entonces converge entonces definimos $$T(x)=\lim_{ n \to \infty } T_{n}(x)$$
+>> 7. Veamos que es lineal $$T(x+y)=\lim_{ n \to \infty } T_{n}(x+y)=\lim_{ n \to \infty } T_{n}x+T_{n}y=\lim_{ n \to \infty } T_{n}x+\lim_{ n \to \infty } T_{n}y=Tx+Ty$$
 >> Analogo para escalar
->> 6. Veamos que es acotada. $\lVert Tx \rVert=\lim_{ n \to \infty }\lVert T_{n}x \rVert$. Entonces 
+>> 8. Veamos que es acotada. $\lVert Tx \rVert=\lim_{ n \to \infty }\lVert T_{n}x \rVert$. Entonces 
 >> $$\lVert Tx \rVert \leq \sup \{ \lVert T_{n}x \rVert :n\in \mathbb{N}  \}\leq \sup \{ \lVert T_{n} \rVert \lVert x \rVert :n\in \mathbb{N}  \}\leq M\lVert x \rVert $$ Usando $(1)$.
 >> Y ahora viene parte que esta rara (Preguntar)
 

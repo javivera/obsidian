@@ -27,7 +27,7 @@
       "eqRefSuffix": "",
       "labelPrefix": "",
       "lineByLine": true,
-      "theoremCalloutStyle": "Custom",
+      "theoremCalloutStyle": "Vivid",
       "theoremCalloutFontInherit": false,
       "beginProof": "\\begin{proof}",
       "endProof": "\\end{proof}",
@@ -36,7 +36,7 @@
   },
   "extraSettings": {
     "foldDefault": "",
-    "noteTitleInTheoremLink": true,
+    "noteTitleInTheoremLink": false,
     "noteTitleInEquationLink": true,
     "profiles": {
       "English": {
@@ -151,5 +151,12 @@
     "searchModalRange": "recent",
     "searchModalDvQuery": ""
   },
-  "excludedFiles": []
+  "excludedFiles": [
+    "Inferencia Estadistica/Theory/Teorico 2.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+    "Inferencia Estadistica/Theory/HomePage.md"
+  ]
 }
