@@ -18,14 +18,13 @@ dateCreated: 2025-05-11,20:37
 >$$P(Y\leq m)\leq 0.5$$
 >Si ahora tomamos $\hat{F}_{n}$ se puede observar que $1-\hat{F}_{n}(\hat{m}_{n})=P(Y\geq m_{n})$
 >
-
 ## Estadisticos Suficientes
 
 >[!Definition] Estadistico suficiente
 >Sea $T : \mathbb{R}^{n}\rightarrow \mathbb{R}^{m}$ estadistico, $X$ vector aleatorio en $\mathbb{R}^{n}$. Sea $\mathcal{P}=\{ P_{\theta} \}_{\theta\in \Theta}$ flia de distribuciones. Decimos que $T$ es suficiente $\mathcal{P}$ (o para $\Theta$) si la funcion distribucion condicional $$F(B,t)=P_{\theta}(X\in B\ | \ T=t)$$
 >no depende de $\theta$ 
->Si $P_{\theta}(X\in B,T\in G)=P_{\theta}(B\cap T^{-1}(G))$ con $B\in \mathcal{B}(\mathbb{R}^{n}),G\in \mathcal{B}(\mathbb{R}^{m})$
->Osea $$P_{\theta}(X\cap T^{-1}(G))=\int_{T^{-1}(G)}F(B,t)P_{\theta}(dt)$$ para cualquier $P_{\theta}\in \mathcal{P}$ que elijamos
+>Si $P(X\in B,T\in G)=P_{\theta}(B\cap T^{-1}(G))$ con $B\in \mathcal{B}(\mathbb{R}^{n}),G\in \mathcal{B}(\mathbb{R}^{m})$
+>Osea $$P(X\in B,T\in G)=P_{\theta}\big(B\cap T^{-1}(G)\big)=\int_{T^{-1}(G)}F(B,t)P_{\theta}(dt)$$para cualquier $P_{\theta}\in \mathcal{P}$ que elijamos
 >Osea si $T$ es suficiente la funcion $F(B,t)$ no depende de $\theta$ (sirve la misma funcion para todas las distribuciones $P_{\theta}$)
 
 >[!Example]- 
@@ -67,3 +66,4 @@ dateCreated: 2025-05-11,20:37
 >$$Y_{t}\sim F(\cdot,t)\quad X|_{T=t}\sim F(\cdot,t)$$
 >Entonces $P(Y_{t}\in B)=F(B,t)=P(Y_{t}\in B)$ y $P(X|_{T=t}\in B)=F(B,t)=P()$ 
 > **DUDA**
+

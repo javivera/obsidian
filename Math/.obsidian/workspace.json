@@ -8,7 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1ca6bfa3266e5f4d",
+            "id": "6afda50f20c8fe7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 15.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 15"
+            }
+          },
+          {
+            "id": "11a7f9f1f96885db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ecuaciones Diferenciales I/Teorema de Picard.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Teorema de Picard"
+            }
+          },
+          {
+            "id": "2b1488380cb7aa0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 25.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 25"
+            }
+          },
+          {
+            "id": "631754fb573c4482",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 18.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 18"
+            }
+          },
+          {
+            "id": "bd9d74996250e975",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +77,8 @@
               "title": "IE - Teorico 19"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,37 +98,20 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "eed7399addb9add9",
+            "id": "fe5ba39997121ee0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
-            }
-          },
-          {
-            "id": "a69323c5854db82e",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
             }
           }
         ]
@@ -119,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Analisis Funcional/Theory/Teórico 14.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +169,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Teórico 14"
+              "title": "Backlinks for IE - Teorico 15"
             }
           },
           {
@@ -170,13 +210,30 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "a69323c5854db82e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
           }
         ],
         "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 488.5
+    "width": 321.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,28 +243,44 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
-      "float-search:Search Obsidian In Modal": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "copilot:Open Copilot Chat": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1ca6bfa3266e5f4d",
+  "active": "ca9665dbcd16fcfe",
   "lastOpenFiles": [
-    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
     "Inferencia Estadistica/Theory/IE - Teorico 15.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
+    "Ecuaciones Diferenciales I/Teorema de Picard.md",
+    "Ecuaciones Diferenciales I",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250526192210.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250526170113.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250525125822.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524162320.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524162220.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524140621.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250518093944.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250517134031.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250506100617.png",
+    "Inferencia Estadistica/Theory/IE - Teorico 25.md",
     "Inferencia Estadistica/Theory/HomePage.md",
-    "Pasted image 20250518093944.png",
-    "Pasted image 20250517134031.png",
+    "Inferencia Estadistica/Theory/IE - Teorico 22.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
+    "Templates/math.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
+    "Numerico II/Capitulo 4 (Residuos Minimos).md",
+    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+    "Inferencia Estadistica/Theory/Notas.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 13.md",
+    "Inferencia Estadistica/Imagenes",
+    "Untitled 1.md",
+    "Estructuras Algebraicas/Hungerford.md",
     "Inferencia Estadistica/Theory/IE - Teorico 6.md",
+    "Analisis Funcional/Theory/Teórico 13.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
     "Inferencia Estadistica/Theory/IE - Teorico 5.md",
     "Inferencia Estadistica/Theory/IE - Teorico 3.md",
     "Inferencia Estadistica/Theory/IE - Teorico 2.md",
-    "Pasted image 20250506100617.png",
     "Analisis Funcional/Theory/Teórico 18.md.tmp",
     "Analisis Funcional/Theory/Teórico 12.md.tmp",
     "Analisis Funcional/Theory/Teórico 16.md",
@@ -217,28 +290,9 @@
     "Analisis Funcional/Theory/Teórico 14.md.tmp",
     "Analisis Funcional/Theory/Teórico 15.md.tmp",
     "Inferencia Estadistica/Practicos",
-    "Inferencia Estadistica/untitled folder",
     "Estructuras Algebraicas/Theory/Teorico 1.md",
-    "Inferencia Estadistica/Theory",
     "Teórico 10^{}.md",
     "Estructuras Algebraicas/Theory/Teorico 3.md",
-    "Pasted image 20241018211456.png",
-    "Estructuras Algebraicas/Theory/Teorico 2.md",
-    "Estructuras Algebraicas/Theory/Teorico 18.md",
-    "Estructuras Algebraicas/Theory/Teorico 13.md",
-    "Estructuras Algebraicas/Theory/Teorico 12.md",
-    "Pasted image 20241112212417.png",
-    "Pasted image 20241018211644.png",
-    "Pasted image 20241018211630.png",
-    "Pasted image 20241018211537.png",
-    "Numerico II/Capitulo 2 (Metodos Directos).md",
-    "Numerico II/Capitulo 5 (SVD).md",
-    "Numerico II/Capitulo 4 (Residuos Minimos).md",
-    "Numerico II/Capitulo 3 (Sensibilidad).md",
-    "Numerico II/Capitulo 7 (Metods Iterativos) 1.md",
-    "Numerico II/Capitulo 7 (Metods Iterativos).md",
-    "Pasted image 20241219005812.png",
-    "Pasted image 20241219005629.png",
-    "Numerico II/Capitulo 6 (Avals y avecs).md"
+    "Pasted image 20241018211456.png"
   ]
 }

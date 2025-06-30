@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Inferencia Estadistica/Theory/IE - Teorico 17.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -49,7 +49,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "Parametr",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -154,5 +154,26 @@
     }
   },
   "active": "6606b25ca5cf8883",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+    "Inferencia Estadistica/Theory/Untitled.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 13.md",
+    "Inferencia Estadistica/Theory/Notas.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
+    "Untitled",
+    "Pasted image 20250526192210.png",
+    "Pasted image 20250526170113.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250525125822.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250506100617.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250517134031.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524162320.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250518093944.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524140621.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524162220.png",
+    "Inferencia Estadistica/Imagenes"
+  ]
 }
