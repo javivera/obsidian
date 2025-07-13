@@ -13,18 +13,18 @@ tags:
 >- (i) $T$ es suficiente para $\mathcal{P}$
 >- (ii) Si $\mathcal{S}$ es otro estadistico suficiente para $\mathcal{P}$ entonces $S$ refina a $T$
 
+
 >[!Lemma] DUDA EN IDA
->Si $T : \Omega_{X}\rightarrow \mathbb{R}^{k}$ y $S : \Omega_{X}\rightarrow \mathbb{R}^{k'}$ estadisticos suficientes. Entonces $T$ es suficiente minimal si y solo si $\exists r: \mathbb{R}^{k}\rightarrow \mathbb{R}^{k'}$ medible tal que $T=r\circ S$ 
->**ACA NO DEBERIA SER T FIJO Y S UN ESTADISTICO CUALQUIERA**
+>Sea $T : \Omega_{X}\rightarrow \mathbb{R}^{k}$ estadistico suficientes. Entonces $T$ es suficiente minimal si y solo si para todo $S : \Omega_{X}\rightarrow \mathbb{R}^{k'}$ estadistico suficiente $\exists r: \mathbb{R}^{k}\rightarrow \mathbb{R}^{k'}$ medible tal que $T=r\circ S$ 
 >![[Pasted image 20250517134031.png|600]]
 >>[!Proof]-
 >>- Ida
 >>	1. $T$ suficiente minimal entonces $\sigma(T)\subseteq \sigma(S)$
 >>	2. Entonces $T$ es $\sigma(S)$-medible. 
->>	3. Por lema visto en esperanza condicional (ver bien cual) para cada componente tenemos $T_{i}=\Pi_{i}\circ T$ con ($\Pi_{i}$ proyeccion de componenete $i$) tenemos $T_{i}$ es $\sigma(S)$-medible porque $T_{i}^{-1}=T^{-1}\circ\Pi_{i}^{-1}\in \sigma(T)\subseteq \sigma(S)$ (en la preimagen de proyectar no hay cosas cerradas tambien? 
->>	([0,1],(0,1)) esta en la preimagen de (0,1) pero no es abierto boreliano
->>	4. Luego $\exists r_{i} : \mathbb{R}^{k'}\rightarrow \mathbb{R}$ medible tal que $T_{i}=r_{i}\circ S$
->>	5. Finalmente $T=r\circ S$ con $r=(r_{1},\ldots,r_{k})$
+>>	3. Luego definimos $T_{i}=\Pi_{i}\circ T$ (Con $\Pi_{i}:(\mathbb{R}^{k},\mathcal{B}(\mathbb{R}^{k}))\rightarrow(\mathbb{R},\mathcal{B}(\mathbb{R}))$ proyeccion de componenete $i$ y trivialmente medible) 
+>>	4. Por lo tanto $T_{i}$ es $\sigma(S)$-medible porque $T_{i}^{-1}=T^{-1}\circ\Pi_{i}^{-1}\in \sigma(T)\subseteq \sigma(S)$
+>>	5. Luego $\exists r_{i} : \mathbb{R}^{k'}\rightarrow \mathbb{R}$ medible tal que $T_{i}=r_{i}\circ S$ (No es trivial, lo demostramos en algun lado?? DUDA) 
+>>	6. Finalmente $T=r\circ S$ con $r=(r_{1},\ldots,r_{k})$
 >>- Vuelta
 >>	1. $T=r\circ S$. Sea $B\in \mathcal{B}(\mathbb{R}^{k})$ luego $T^{-1}(B)=(r\circ S)^{-1}(B)=S^{-1}(r^{-1}(B))$
 >>	2. Pero $r$ es medible asi que $r^{-1}(B)\in \mathcal{B}(\mathbb{R}^{k'})$

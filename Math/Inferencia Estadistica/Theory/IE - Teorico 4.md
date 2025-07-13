@@ -4,29 +4,36 @@ dateCreated: 2025-04-02,17:25
 
 >[!Proposition] Funciones continuas preservan convergencias
 >Si $\{X_{n}\}$ sucesion de v.a en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico entonces si $g:\mathbb{R}\rightarrow\mathbb{R}$ es continua se cumple
->(1) Si $X_{n}\rightarrow^{pp} X_{0}$ entonces $g(X_{n})\rightarrow^{pp} g(X_{0})$
->(2) Si $X_{n}\rightarrow^{\mathcal{P}}X_{0}$ entonces $g(X_{n})\rightarrow^{\mathcal{P}}g(X_{0})$           
->(3) Si $X_{n}\rightarrow^{\mathcal{D}}X_{0}$ entonces $g(X_{n})\rightarrow^{\mathcal{D}}g(X_{0})$
->>[!Proof]
+>(a) Si $X_{n}\rightarrow^{pp} X_{0}$ entonces $g(X_{n})\rightarrow^{pp} g(X_{0})$
+>(b) Si $X_{n}\rightarrow^{\mathcal{P}}X_{0}$ entonces $g(X_{n})\rightarrow^{\mathcal{P}}g(X_{0})$           
+>(c) Si $X_{n}\rightarrow^{\mathcal{D}}X_{0}$ entonces $g(X_{n})\rightarrow^{\mathcal{D}}g(X_{0})$
+>>[!Proof]-
 >>(a)
 >>1.  Tenemos que $P(\{ w\in \Omega:\lim_{ n \to \infty } X_{n}(w)=X_{0}(w) \})=1$ entonces $P(\{ w\in \Omega:\lim_{ n \to \infty } g(X_{n}(w))=g(X(w)) \})=1$ por continuidad de $g$  
 >>
 >>(b)
 >>
->>2. asd
->>3. 
+>>1. Usaremos el siguiente resultado. $X_{n}\rightarrow^{\mathcal{P}} X$ si y solo si dado $X_{n_{j}}$ sub de $X_{n}$ existe $X_{n_{j_{k}}}$ sub de $X_{n_{j}}$ tal que $X_{n_{j_{k}}}\rightarrow^{pp} X$     
+>>2. Tomemos $g(X_{n_{j}})$ una sub cualquiera de $g(X_{n})$
+>>3. Ahora como $X_{n}\rightarrow^{\mathcal{P}}X$ y $X_{n_{j}}$ es sub de $X_{n}$ por el resultado tenemos $X_{n_{j_{k}}}\rightarrow^{pp}X$
+>>4. Como $g$ es continua, por (a) $g(X_{n_{j_{k}}})\rightarrow^{pp}g(X)$   
+>>5. Entonces dada cualquier sub de $g(X_{n})$ encontramos una sub sub que converge a $g(X)$ por lo tanto $g(X_{n})\rightarrow^{\mathcal{P}}g(X)$ usando el resultado nuevamente  
 >>
 >>(c)
 >>
->>4. Tenemos que $X_{n}\rightarrow^{\mathcal{D}}X_{0}$ entonces por teorema [[#^82f172]] $\exists \{ X_{n}^{*} \}$ suc de v.a tal que $X_{n}^{*}\rightarrow^{pp} X_{0}^{*}$ y $X_{n}\sim X_{n}^{*}\quad\forall n\in \mathbb{N}_{0}$      
->>5. Usando (1) $g(X_{n}^{*})\rightarrow^{pp} g(X_{0}^{*})$ 
->>6. Por lo tanto $g(X_{n}^{*})\rightarrow^{\mathcal{D}}g(X_{0}^{*})$
->>7. Entonces $g(X_{n})\rightarrow^{\mathcal{D}} g(X)$  (Por que $X_{n}\sim X_{n}^{*}$ entonces $g(X_{n})\sim g(X_{n}^{*})$ )
+>>1. Tenemos que $X_{n}\rightarrow^{\mathcal{D}}X_{0}$ entonces por teorema [[IE - Teorico 3#^82f172]] $\exists \{ X_{n}^{*} \}$ suc de v.a tal que $X_{n}^{*}\rightarrow^{pp} X_{0}^{*}$ y $X_{n}\sim X_{n}^{*}\quad\forall n\in \mathbb{N}_{0}$
+>>2. Usando (1) $g(X_{n}^{*})\rightarrow^{pp} g(X_{0}^{*})$ 
+>>3. Por lo tanto $g(X_{n}^{*})\rightarrow^{\mathcal{D}}g(X_{0}^{*})$
+>>4. Entonces $g(X_{n})\rightarrow^{\mathcal{D}} g(X)$  (Por que $X_{n}\sim X_{n}^{*}$ entonces $g(X_{n})\sim g(X_{n}^{*})$)
+
+^b72136
 
 >[!Theorem] Ley Fuerte de los grandes numeros
 Sea $\{ X_{n} \}$ suc de v.a iid en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico. Si $E|X_{1}|<\infty$ entonces $$\frac{1}{n}\sum^{n}_{i=1}X_{1}\longrightarrow^{pp} E(X_{1})$$
 ($X_{1}\sim X_{i}$)
 (Version debil $\frac{1}{n}\sum^{n}_{i=1} X_{1}\longrightarrow^{\mathcal{P}}E(X_{1})$)
+
+^d948e2
 
 >[!Remark]-
 >Si tenemos $X_{1},\ldots,X_{n}$ v.a.i.i.d tal que $X_{1}\sim N(\mu,\sigma^{2})$ sucede $$\sum^{n}_{i=1} X_{i}\sim N(\mu,\sigma^{2})$$
@@ -35,8 +42,11 @@ Sea $\{ X_{n} \}$ suc de v.a iid en $(\Omega,\mathcal{A},\mathcal{P})$ espacio p
 >Con lo cual $$\sqrt{ n }.\frac{(\frac{1}{n}\sum^{n}_{i=1} X_{i})-\mu }{\sigma}\sim N(0,1)$$
 
 >[!Theorem] Teorema central del limite
->$\{X_{n}\}_{n\in\mathbb{N}}$ sucesion de variables aleatorias i.i.d en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico tal que $0<E(X_{1}^{2})<\infty$ entonces $$\lim_{ n \to \infty } P\left( \sqrt{ n }\frac{\frac{1}{n}\sum^{n}_{i=1} X_{i}-\mu }{\sigma}\leq t \right)=\Phi(t)$$
->Analogamente $$\sqrt{ n }.\left( \frac{\overline{X}_{n} -\mu}{\sigma}  \right)\rightarrow^{\mathcal{D}}\mathcal{N}(0,1)$$     
+>$\{X_{n}\}_{n\in\mathbb{N}}$ sucesion de variables aleatorias i.i.d en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico tal que $0<E(X_{1}^{2})<\infty$ y $E(X_{i})=\mu$ $V(X_{i})=\sigma^{2}$  entonces $$\lim_{ n \to \infty } P\left( \sqrt{ n }\frac{\frac{1}{n}\sum^{n}_{i=1} X_{i}-\mu }{\sigma}\leq t \right)=\Phi(t)$$
+>Analogamente $$\sqrt{ n }.\left( \frac{\overline{X}_{n} -\mu}{\sigma}  \right)\rightarrow^{\mathcal{D}}\mathcal{N}(0,1)$$
+>O si no $$\sqrt{ n }(\overline{X_{n}} -\mu )\xrightarrow{\mathcal{D}}N(0,\sigma^{2})$$  
+
+^25a7ae
 
 >[!Remark]- Velocidad o Tasa de convergenicia
 >El valor de $\sqrt{ n }$ se nombra tasa o velocidad de convergencia
@@ -62,8 +72,6 @@ Sea $\{ X_{n} \}$ suc de v.a iid en $(\Omega,\mathcal{A},\mathcal{P})$ espacio p
 >[!Example]
 >$X_{1},\ldots,X_{n}$ con $X_{i}\sim \mathcal{U}(0,\theta)$ entonces $X_{(n)}\rightarrow^{\mathcal{P}}\theta$ 
 >>[!Proof]- 
->>12. Veamos primero que converge en distribucion a $\theta$   y como es constante estariamos
->>13. $$F_{X_{(n)}}(x)=P(X_{(n)}\leq x)=\bigg[P(X_{1}\leq x)\bigg]^{n}=\begin{cases} 0 & \text{if } x < 0\\ (\frac{x}{\theta})^{n}   & \text{if } 0 \leq x\leq \theta \\ 1 & \text{if }\theta< x\end{cases}\longrightarrow^{n\rightarrow \infty} \begin{cases} 0 & \text{if } x \leq \theta \\ 1& \text{if } x> \theta \end{cases}=P(\theta\leq x)=F_{\theta}(x)$$
->>14. Mostrando convergencia en distribucion. Osea $X_{(n)}\rightarrow^{\mathcal{D}}\theta$ por lo tanto $X_{(n)}\rightarrow^{\mathcal{P}}\theta$  
-
-\ref
+>>1. Veamos primero que converge en distribucion a $\theta$   y como es constante estariamos
+>>2. $$F_{X_{(n)}}(x)=P(X_{(n)}\leq x)=\bigg[P(X_{1}\leq x)\bigg]^{n}=\begin{cases} 0 & \text{if } x < 0\\ (\frac{x}{\theta})^{n}   & \text{if } 0 \leq x\leq \theta \\ 1 & \text{if }\theta< x\end{cases}\longrightarrow^{n\rightarrow \infty} \begin{cases} 0 & \text{if } x \leq \theta \\ 1& \text{if } x> \theta \end{cases}=P(\theta\leq x)=F_{\theta}(x)$$
+>>3. Mostrando convergencia en distribucion. Osea $X_{(n)}\rightarrow^{\mathcal{D}}\theta$ por lo tanto $X_{(n)}\rightarrow^{\mathcal{P}}\theta$  
