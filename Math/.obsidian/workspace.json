@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6afda50f20c8fe7e",
+            "id": "6249f5e6682d6b1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 15.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IE - Teorico 15"
-            }
-          },
-          {
-            "id": "11a7f9f1f96885db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ecuaciones Diferenciales I/Teorema de Picard.md",
+                "file": "Inferencia Estadistica/Glosario.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teorema de Picard"
+              "title": "Glosario"
+            }
+          },
+          {
+            "id": "36cd87161baf2d05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 7"
             }
           },
           {
@@ -41,26 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 25.md",
-                "mode": "source",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 5.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 25"
-            }
-          },
-          {
-            "id": "631754fb573c4482",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 18.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IE - Teorico 18"
+              "title": "IE - Teorico 5"
             }
           },
           {
@@ -69,16 +55,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 19"
+              "title": "IE - Teorico 6"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 233.5,
+    "collapsed": true
   },
   "right": {
     "id": "ce4bb695f0ccdb6c",
@@ -233,7 +219,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 321.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,41 +233,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ca9665dbcd16fcfe",
+  "active": "6249f5e6682d6b1a",
   "lastOpenFiles": [
-    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
-    "Ecuaciones Diferenciales I/Teorema de Picard.md",
-    "Ecuaciones Diferenciales I",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250526192210.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250526170113.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250525125822.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250524162320.png",
+    "Inferencia Estadistica/Theory/IE - Teorico 7.md",
+    "Inferencia Estadistica/Glosario.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 5.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+    "Inferencia Estadistica/prueba.pdf",
+    "Inferencia Estadistica/prueba.typst",
+    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
+    "Inferencia Estadistica/Theory/Notas.md",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250506100617.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250517134031.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250518093944.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250524162220.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250524140621.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250518093944.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250517134031.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250506100617.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250524162320.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250525125822.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250526170113.png",
+    "Inferencia Estadistica/Imagenes/Pasted image 20250526192210.png",
+    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
     "Inferencia Estadistica/Theory/IE - Teorico 25.md",
+    "Pasted image 20250709184958.png",
+    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 13.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
+    "Ecuaciones Diferenciales I/Teorema de Picard.md",
+    "Ecuaciones Diferenciales I",
     "Inferencia Estadistica/Theory/HomePage.md",
     "Inferencia Estadistica/Theory/IE - Teorico 22.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
     "Templates/math.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
     "Numerico II/Capitulo 4 (Residuos Minimos).md",
-    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
-    "Inferencia Estadistica/Theory/Notas.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 13.md",
     "Inferencia Estadistica/Imagenes",
     "Untitled 1.md",
     "Estructuras Algebraicas/Hungerford.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
     "Analisis Funcional/Theory/Teórico 13.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 5.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
     "Analisis Funcional/Theory/Teórico 18.md.tmp",
     "Analisis Funcional/Theory/Teórico 12.md.tmp",
     "Analisis Funcional/Theory/Teórico 16.md",
@@ -288,11 +280,6 @@
     "Analisis Funcional/Theory/Teórico 13.md.tmp",
     "Analisis Funcional/Theory/Teórico 20.md.tmp",
     "Analisis Funcional/Theory/Teórico 14.md.tmp",
-    "Analisis Funcional/Theory/Teórico 15.md.tmp",
-    "Inferencia Estadistica/Practicos",
-    "Estructuras Algebraicas/Theory/Teorico 1.md",
-    "Teórico 10^{}.md",
-    "Estructuras Algebraicas/Theory/Teorico 3.md",
-    "Pasted image 20241018211456.png"
+    "Estructuras Algebraicas/Theory/Teorico 1.md"
   ]
 }
