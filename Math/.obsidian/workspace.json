@@ -63,7 +63,8 @@
               "title": "IE - Teorico 8"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -213,14 +214,23 @@
               "icon": "lucide-search",
               "title": "Search"
             }
+          },
+          {
+            "id": "e0bac9dfcf442e30",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 686.5,
-    "collapsed": true
+    "width": 554.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,16 +240,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "6249f5e6682d6b1a",
+  "active": "e0bac9dfcf442e30",
   "lastOpenFiles": [
-    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
     "Inferencia Estadistica/Glosario.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
     "Inferencia Estadistica/Theory/IE - Teorico 2.md",
     "Inferencia Estadistica/Theory/IE - Teorico 7.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
     "Inferencia Estadistica/Theory/IE - Teorico 5.md",
     "Inferencia Estadistica/Theory/IE - Teorico 4.md",
     "copilot-custom-prompts/Rewrite as press release.md",

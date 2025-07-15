@@ -11,7 +11,12 @@
 10. [[IE - Teorico 6#^2efc95]]
 11. [[IE - Teorico 7#^46c80c]]
 12. [[IE - Teorico 7#^8893d0]]
-13. 
+13. [[IE - Teorico 7#^06187a]]
+14. [[IE - Teorico 8#^46bbf4]]
+15. [[IE - Teorico 8#^749b5c]]
+16. [[IE - Teorico 8#^216ef4]]
+17. [[IE - Teorico 8#^b44b7d]]
+18. [[IE - Teorico 8^]]
 ## Contraejemplos
 1. [[IE - Teorico 5#^2febbc]]
 2. [[IE - Teorico 7#^84ddac]]
@@ -37,7 +42,11 @@
 14. [[IE - Teorico 7#^a62509]]
 15. [[IE - Teorico 7#^ab40f7]]
 16. [[IE - Teorico 7#^1cdda2]]
-17. [[IE - Teorico 7#^06187a]]
+
+## Teorico 8
+1. 
+
+
 
 
 
