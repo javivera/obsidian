@@ -47,6 +47,7 @@
 
 ^7ca736
 
+asdasdds
 >[!Corollary]
 >{$Z_n$}$_{n \in \mathbb{N}_0} \subset \mathbb{R}^d$ suc. de vect. aleat. en $(\Omega, \mathcal{A}, P)$ e.p. Si $Z_n \xrightarrow[n \to \infty]{\mathcal{D}} Z_0$ y $g: \mathbb{R}^d \to \mathbb{R}^m$ continua. Entonces $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0)$.
 >Recordemos que, en general, ser continua implica que la preim. de ab. es ab.
