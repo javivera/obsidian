@@ -1,0 +1,35 @@
+\documentclass{article}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% THEOREM ENVIRONMENTS
+\newtheorem{theorem}{Teorema}
+\newtheorem{corollary}{Corolario}
+
+\begin{document}
+
+\begin{theorem}
+Sea $(\Omega, \mathcal{A}, P)$ un espacio de probabilidad y $\{Z_n\}_{n \in \mathbb{N}_0} \subset \mathbb{R}^d$ una sucesión de vectores aleatorios. Las siguientes afirmaciones son equivalentes:
+\begin{enumerate}[a)]
+    \item $Z_n \xrightarrow{\mathcal{D}}_{n \to \infty} Z_0$
+    
+    \item $\lim_{n \to \infty} E(h(Z_n)) = E(h(Z_0))$ para toda función $h: \mathbb{R}^d \to \mathbb{R}$ acotada y uniformemente continua.
+    
+    \item $\lim_{n \to \infty} E(h(Z_n)) = E(h(Z_0))$ para toda función $h: \mathbb{R}^d \to \mathbb{R}$ acotada y continua.
+    
+    \item Para todo conjunto cerrado $F \subset \mathbb{R}^d$ se cumple que $\limsup_{n \to \infty} P(Z_n \in F) \le P(Z_0 \in F)$.
+    
+    \item Para todo conjunto abierto $G \subset \mathbb{R}^d$ se cumple que $\liminf_{n \to \infty} P(Z_n \in G) \ge P(Z_0 \in G)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{corollary}
+Sea $\{Z_n\}_{n \in \mathbb{N}_0}$ una sucesión de vectores aleatorios en $\mathbb{R}^d$ definidos en un espacio de probabilidad $(\Omega, \mathcal{A}, P)$. Si $Z_n \xrightarrow{\mathcal{D}}_{n \to \infty} Z_0$ y $g: \mathbb{R}^d \to \mathbb{R}^m$ es una función continua, entonces $g(Z_n) \xrightarrow{\mathcal{D}}_{n \to \infty} g(Z_0)$.
+\end{corollary}
+
+\end{document}

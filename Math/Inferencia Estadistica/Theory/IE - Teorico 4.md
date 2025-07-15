@@ -29,9 +29,8 @@ dateCreated: 2025-04-02,17:25
 ^b72136
 
 >[!Theorem] Ley Fuerte de los grandes numeros
-Sea $\{ X_{n} \}$ suc de v.a iid en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico. Si $E|X_{1}|<\infty$ entonces $$\frac{1}{n}\sum^{n}_{i=1}X_{1}\longrightarrow^{pp} E(X_{1})$$
-($X_{1}\sim X_{i}$)
-(Version debil $\frac{1}{n}\sum^{n}_{i=1} X_{1}\longrightarrow^{\mathcal{P}}E(X_{1})$)
+Sea $\{ X_{n} \}$ suc de v.a iid en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico. Si $E|X_{1}|<\infty$ entonces $$\frac{1}{n}\sum^{n}_{i=1}X_{i}\longrightarrow^{pp} E(X_{1})$$
+Version debil $$\frac{1}{n}\sum^{n}_{i=1} X_{i}\longrightarrow^{\mathcal{P}}E(X_{1})$$
 
 ^d948e2
 
@@ -42,7 +41,7 @@ Sea $\{ X_{n} \}$ suc de v.a iid en $(\Omega,\mathcal{A},\mathcal{P})$ espacio p
 >Con lo cual $$\sqrt{ n }.\frac{(\frac{1}{n}\sum^{n}_{i=1} X_{i})-\mu }{\sigma}\sim N(0,1)$$
 
 >[!Theorem] Teorema central del limite
->$\{X_{n}\}_{n\in\mathbb{N}}$ sucesion de variables aleatorias i.i.d en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico tal que $0<E(X_{1}^{2})<\infty$ y $E(X_{i})=\mu$ $V(X_{i})=\sigma^{2}$  entonces $$\lim_{ n \to \infty } P\left( \sqrt{ n }\frac{\frac{1}{n}\sum^{n}_{i=1} X_{i}-\mu }{\sigma}\leq t \right)=\Phi(t)$$
+>$\{X_{n}\}_{n\in\mathbb{N}}$ sucesion de variables aleatorias i.i.d en $(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico tal que $0<E(X_{1}^{2})<\infty$ y $E(X_{i})=\mu$ $V(X_{i})=\sigma^{2}$  entonces $$\lim_{ n \to \infty } P\left( \sqrt{ n }\frac{\overline{X_{n}} -\mu }{\sigma}\leq t \right)=\Phi(t)$$
 >Analogamente $$\sqrt{ n }.\left( \frac{\overline{X}_{n} -\mu}{\sigma}  \right)\rightarrow^{\mathcal{D}}\mathcal{N}(0,1)$$
 >O si no $$\sqrt{ n }(\overline{X_{n}} -\mu )\xrightarrow{\mathcal{D}}N(0,\sigma^{2})$$  
 
