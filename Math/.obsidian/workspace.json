@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 7.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 7"
+              "title": "IE - Teorico 2"
             }
           },
           {
@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 6.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 6"
+              "title": "IE - Teorico 8"
             }
           }
         ]
@@ -120,13 +120,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IE - Teorico 19"
+              "title": "Outline of IE - Teorico 8"
             }
           },
           {
@@ -215,11 +215,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 321.5,
+    "width": 686.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -235,16 +235,36 @@
   },
   "active": "6249f5e6682d6b1a",
   "lastOpenFiles": [
-    "Inferencia Estadistica/Theory/IE - Teorico 7.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
     "Inferencia Estadistica/Glosario.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 7.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
     "Inferencia Estadistica/Theory/IE - Teorico 5.md",
     "Inferencia Estadistica/Theory/IE - Teorico 4.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
+    "copilot-custom-prompts/Rewrite as press release.md",
+    "copilot-custom-prompts/Explain like I am 5.md",
+    "copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot-custom-prompts/Remove URLs.md",
+    "copilot-custom-prompts/Generate glossary.md",
+    "copilot-custom-prompts/Generate table of contents.md",
+    "copilot-custom-prompts/Make longer.md",
+    "copilot-custom-prompts/Make shorter.md",
+    "copilot-custom-prompts/Emojify.md",
+    "copilot-custom-prompts/Simplify.md",
+    "copilot-custom-prompts/Summarize.md",
+    "copilot-custom-prompts/Translate to Chinese.md",
+    "copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot-custom-prompts",
+    "Inferencia Estadistica/probando.tex",
+    "Inferencia Estadistica/probando.typ",
+    "Inferencia Estadistica/probando.typst",
+    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
     "Inferencia Estadistica/Theory/IE - Teorico 19.md",
     "Inferencia Estadistica/prueba.pdf",
     "Inferencia Estadistica/prueba.typst",
-    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
     "Inferencia Estadistica/Theory/Notas.md",
     "Inferencia Estadistica/Imagenes/Pasted image 20250506100617.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250517134031.png",
@@ -255,31 +275,11 @@
     "Inferencia Estadistica/Imagenes/Pasted image 20250525125822.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250526170113.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250526192210.png",
-    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
     "Inferencia Estadistica/Theory/IE - Teorico 25.md",
     "Pasted image 20250709184958.png",
-    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 13.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
-    "Ecuaciones Diferenciales I/Teorema de Picard.md",
     "Ecuaciones Diferenciales I",
-    "Inferencia Estadistica/Theory/HomePage.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 22.md",
-    "Templates/math.md",
-    "Numerico II/Capitulo 4 (Residuos Minimos).md",
     "Inferencia Estadistica/Imagenes",
-    "Untitled 1.md",
-    "Estructuras Algebraicas/Hungerford.md",
-    "Analisis Funcional/Theory/Teórico 13.md",
     "Analisis Funcional/Theory/Teórico 18.md.tmp",
-    "Analisis Funcional/Theory/Teórico 12.md.tmp",
-    "Analisis Funcional/Theory/Teórico 16.md",
-    "Analisis Funcional/Theory/Teórico 16.md.tmp",
-    "Analisis Funcional/Theory/Teórico 13.md.tmp",
-    "Analisis Funcional/Theory/Teórico 20.md.tmp",
-    "Analisis Funcional/Theory/Teórico 14.md.tmp",
-    "Estructuras Algebraicas/Theory/Teorico 1.md"
+    "Analisis Funcional/Theory/Teórico 12.md.tmp"
   ]
 }

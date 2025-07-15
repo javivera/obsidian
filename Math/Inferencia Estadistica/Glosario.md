@@ -15,15 +15,15 @@
 ## Contraejemplos
 1. [[IE - Teorico 5#^2febbc]]
 2. [[IE - Teorico 7#^84ddac]]
+3. [[IE - Teorico 2#^10399c]]
+4. [[IE - Teorico 3#^5c5281]]
 ## Teorico 2
 1. [[IE - Teorico 2#^9d7c4a]]
-2. [[IE - Teorico 2#^10399c]]
-3. [[IE - Teorico 2#^d2a6c6]]
+2. [[IE - Teorico 2#^d2a6c6]]
 ## Teorico 3
 4. [[IE - Teorico 3#^86a4c5]]
 5. [[IE - Teorico 3#^e9be82]]
-6. [[IE - Teorico 3#^5c5281]]
-7. [[IE - Teorico 3#^82f172]]
+6. [[IE - Teorico 3#^82f172]]
 ## Teorico 4
 8. [[IE - Teorico 4#^b72136]]
 ## Teorico 5

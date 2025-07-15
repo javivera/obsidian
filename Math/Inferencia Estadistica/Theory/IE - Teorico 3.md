@@ -38,12 +38,12 @@ dg-publish: true
 >>[!Proof]-
 >>1. Notar que como $P(X=c)=1$ entonces $$F_{X}(x)=P(X\leq x) = \begin{cases} 0 & \text{if } x < c\\ 1  & \text{if } x\geq c\end{cases}$$
 >>2. Como $X_{n}\rightarrow^{\mathcal{D}}X$ entonces $$F_{X_{n}}(x)=P(X_{n}\leq x)\longrightarrow \begin{cases} 0 & \text{if } x < c\\ 1  & \text{if } x \geq c \end{cases}$$
->>3. $$\begin{align}P(|X_{n}-X|>\epsilon)&=P(|X_{n}-c|>\epsilon) \\ &= P(X_{n}-c>\epsilon)+P(X_{n}-c<-\epsilon)\\&=1-P(X_{n}\leq c+\epsilon)+P(X_{n}<c-\epsilon)\longrightarrow 1- 1=0\end{align}$$
+>>3. $$\begin{align}P(|X_{n}-X|>\epsilon)&=P(|X_{n}-c|>\epsilon) \\ &= P(X_{n}-c>\epsilon)+P(X_{n}-c<-\epsilon)\\&=1-P(X_{n}\leq c+\epsilon)+P(X_{n}<c-\epsilon)\xrightarrow{n\rightarrow \infty}1- 1=0\end{align}$$
 >>4. Por lo tanto $X_{n}\rightarrow^{\mathcal{P}}X$ 
 
 ^e9be82
 
->[!Remark] No vale sin constante
+>[!Remark] Covergencia en distr implica en proba no vale sin constante
 >En general no vale que $X_{n}\rightarrow^{\mathcal{D}}X$ implica $X_{n}\rightarrow^{\mathcal{P}}X$   (digamos si le sacas que $X$ sea cte )
 >>[!Proof]-
 >>1. Sea $(\{ 0,1 \},\mathcal{A},\mathcal{P})$ espacio probabilistico. 
@@ -77,7 +77,7 @@ dg-publish: true
 ^15dce0
 
 >[!Theorem] Teorema de representacion de Skorokhod
->$(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico $\{X_{n}\}$ sucesion de v.a def en $\Omega$ talque $X_{n}\rightarrow^{\mathcal{D}}X_{0}$ entonces $\exists \{ X_{n}^{*} \}$ v.a definidas en $([0,1],\mathcal{B},\lambda_{lebesgue})$ con $\mathcal{B}$ borelianos del $[0,1]$ tal que $X_{n}^{*}\longrightarrow X_{0}^{*}$ (puntualmente osea salvo medida 0) y $X_{n}^{*}\sim X_{n}\quad\forall n\in \mathbb{N}_{0}$
+>$(\Omega,\mathcal{A},\mathcal{P})$ espacio probabilistico $\{X_{n}\}$ sucesion de v.a def en $\Omega$ talque $X_{n}\rightarrow^{\mathcal{D}}X_{0}$ entonces $\exists \{ X_{n}^{*} \}$ v.a definidas en $([0,1],\mathcal{B},\lambda_{lebesgue})$ con $\mathcal{B}$ borelianos del $[0,1]$ tal que ${} X_{n}^{*}\xrightarrow{pp} X^{*} {}$ (puntualmente osea salvo medida 0) y $X_{n}^{*}\sim X_{n}\quad\forall n\in \mathbb{N}_{0}$
 >>[!Proof]-
 >>1. $X_{n}\sim F_{n}$ entonces por [[#^15dce0]] parte (g) definimos $X_{n}^{*}=F_{n}^{-1}(U)$ con $U\sim \mathcal{U}(0,1)$ 
 >>2. Por lo tanto $X_{n}^{*}\sim X_{n}\quad\forall n\in \mathbb{N}_{0}$  

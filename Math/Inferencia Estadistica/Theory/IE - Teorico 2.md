@@ -25,19 +25,19 @@ dg-publish: true
 >Entonces $$X_{n}\rightarrow^{\mathcal{P}}X$$ 
 >>[!Proof]-
 >>1. Sea $A = \{\omega \in \Omega : X_n(\omega) \rightarrow X(\omega)\}$
->>2. Notemos que $\forall \epsilon>0 \quad\exists N\in \mathbb{N}  \ / \ \forall n\geq N\quad |X_N(\omega) - X(\omega)|\leq \epsilon$
->>3. Analogo $\forall r>0 \quad\exists N\in \mathbb{N}  \ / \ \forall n\geq N\quad |X_N(\omega) - X(\omega)|\leq \frac{1}{r}$
+>>2. Notemos que decir $X_{n}(\omega)\rightarrow X(\omega)$ es análogo a decir  $$\forall \epsilon>0 \quad\exists N\in \mathbb{N}  \ / \ \forall n\geq N\quad |X_N(\omega) - X(\omega)|\leq \epsilon$$
+>>Que es lo mismo que $\forall r>0 \quad\exists N\in \mathbb{N}  \ / \ \forall n\geq N\quad |X_N(\omega) - X(\omega)|\leq \frac{1}{r}$
 >>4. Entonces $$A = \bigcap_{r=1}^\infty \bigcup_{N=1}^\infty \bigcap_{n=N}^\infty \left\{w \in \Omega : |X_n(\omega) - X(\omega)| < \frac{1}{r}\right\}=\bigcap_{r=1}^\infty \bigcup_{n=1}^\infty B_{N,r}$$
 >>5. Y notar $\{B_{N,r}\}_{r\in \mathbb{N}}$ es decreciente (por que achico la cota) entonces $\{ \bigcup_{n=N}^{\infty}B_{N,r} \}_{r\in \mathbb{N}}$ es decreciente
 >>6. Entonces $$P(A) = P\left(\bigcap_{r=1}^{\infty} \left\{ \bigcup_{N=1}^\infty B_{N,r} \right\}_{r\in I}\right)=\lim_{ r \to \infty }P\left( \bigcup_{N=1}^{\infty}B_{N,r} \right)$$
 >>7. Y de forma analoga (considerando $\{ \bigcup_{N=1}^{\infty}B_{N,r} \}_{N\in \mathbb{N}}$ es creciente) $$P\left(\bigcup_{N=1}B_{N,r}\right)=\lim_{ N \to \infty } P(B_{n,r})$$ 
 >>8. Por lo tanto (usando hipotesis)  $$1=P(\{\omega \in \Omega : X_n(\omega) \rightarrow X(\omega)\})=P(A)  = \lim_{r\to \infty} P\left( \bigcup_{N=1}^\infty B_{N,r} \right)=\lim_{ r \to \infty } \lim_{ N \to \infty } P(B_{N,r})$$
->>9. Por lo tanto $$\lim_{ N \to \infty } P(B_{N,r_{0}})\geq \epsilon+1$$ (vale $\forall r\geq r_{0}$ en particular para $r_{0}$) 
->>10. Luego $$P\left( |X_{N}-X|\leq \frac{1}{r_{0}} \right)\geq P\left( \bigcap_{j=N}^{\infty}\left\{  w\in \Omega:|X_{j}(w)-X(w)| \leq \frac{1}{r_{0}} \right\}  \right)=P(B_{N,r_{0}})\geq\epsilon+1\quad\forall N\geq N_{0}$$
+>>9. Por lo tanto $$\lim_{ N \to \infty } P(B_{N,r_{0}})\geq 1-\epsilon$$ (vale $\forall r\geq r_{0}$ en particular para $r_{0}$) 
+>>10. Luego $$P\left( |X_{N}-X|\leq \frac{1}{r_{0}} \right)\geq P\left( \bigcap_{j=N}^{\infty}\left\{  w\in \Omega:|X_{j}(w)-X(w)| \leq \frac{1}{r_{0}} \right\}  \right)=P(B_{N,r_{0}})\geq 1-\epsilon\quad\forall N\geq N_{0}$$
 >>11. $$P\left( |X_{N}-X|\geq \frac{1}{r_{0}} \right)\leq\epsilon\quad\forall N\geq N_{0}\in \mathbb{N}$$
 >>12. $$\lim_{ N \to \infty } P\left( |X_{N}-X|\geq \frac{1}{r_{0}} \right)=0$$ y esto valia $\forall r\geq r_{0}$ 
 >>13. Ahora notar que dado $\delta$ existe $r\geq r_{0}$ tal que ${} \delta \geq \frac{1}{r} {}$ y ademas $$P(|X_{N}-X|\geq \delta )\leq P\left( |X_{N}-X|\geq \frac{1}{r} \right)$$
->>14. Considerando que el limite valia $r\geq r_{0}$  mostramos finalmente que dado $\delta >0$ tenemos $$\lim_{ N \to \infty } P(|X_{N}-X|\geq \delta )=0$$   
+>>14. Considerando que el limite valia ${} \forall r\geq r_{0} {}$  mostramos finalmente que dado $\delta >0$ tenemos $$\lim_{ N \to \infty } P(|X_{N}-X|\geq \delta )=0$$   
 
 ^9d7c4a
 
