@@ -112,7 +112,6 @@
 >>3. Pero $P(z_{0}\in F)=P(\{ w\in \Omega:z_{0}(w)\in F \})=0$ por que $z_{0}(w)=z_{0}\not\in F$  
 >>4. Entonces el limite superior es menor o igual que 0 por lo tanto es igual a 0 por lo tanto $$0=\lim\limits_{ n \to \infty } P(Z_{n}\in F)=\lim\limits_{ n \to \infty } P(||Z_{n}-z_{0}||\geq\epsilon)$$  
 
-
 >[!Remark]
 >Otro resultado que provee equivalencia con la conv. en distrib:
 
@@ -126,16 +125,6 @@
 >Esto induce la generalización de la distribución normal para el caso de vect.
 
 > Otros resultados que siguen valiendo para convergencia en distrib. de suc. de vectores aleatorios:
-
->[!Theorem]
-> $(\Omega, \mathcal{A}, P)$ e.p. y {$Z_n$}$_{n \in \mathbb{N}_0} \subset \mathbb{R}^d$ suc. de vect. aleat. Se cumple:
-> - a) Si $g: \mathbb{R}^d \to \mathbb{R}^m$ continua y $Z_n \xrightarrow[n \to \infty]{P} Z_0 \Rightarrow g(Z_n) \xrightarrow[n \to \infty]{P} g(Z_0)$
-> - b) Si $Z_n \xrightarrow[n \to \infty]{P} Z_0 \Rightarrow g(Z_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0)$
-> - c) Si $Z_n \xrightarrow[n \to \infty]{\mathcal{D}} Z_0$, $z_0 \in \mathbb{R}^d \Rightarrow Z_n \xrightarrow[n \to \infty]{P} Z_0$
-> - d) Si $Z_n \xrightarrow[n \to \infty]{\mathcal{D}} Z_0$ y {$U_n$}$_{n \in \mathbb{N}} \subset \mathbb{R}^b$ otra suc. de vect. aleat. tq $U_n \xrightarrow[n \to \infty]{\mathcal{D}} u_0$ con $u_0 \in \mathbb{R}^b$. Sea $g: \mathbb{R}^{d+b} \to \mathbb{R}$ continua, entonces se cumple:
-> $g(Z_n, U_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0, u_0)$
->>[!Proof]
->> a - c) ejercicio
 
 >[!Remark]
 >Otro resultado que provee equivalencia con la conv. en distrib:
