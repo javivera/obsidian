@@ -94,22 +94,24 @@
 > - d) Si $Z_n \xrightarrow[n \to \infty]{\mathcal{D}} Z_0$ y {$U_n$}$_{n \in \mathbb{N}} \subset \mathbb{R}^b$ otra suc. de vect. aleat. tq $U_n \xrightarrow[n \to \infty]{\mathcal{D}} u_0$ con $u_0 \in \mathbb{R}^b$. Sea $g: \mathbb{R}^{d+b} \to \mathbb{R}$ continua, entonces se cumple:
 > $$g(Z_n, U_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0, u_0)$$
 >>[!Proof]-
->>a) (Es facil generalizar el teorema para vectores) 
+>>a) 
+>>(Es facil generalizar el teorema para vectores) 
 >>1. Sea $g(Z_{n_{j}})$ sub. Entonces ${} Z_{n_{j}}$ es sub tambien.
 >>2. Como $Z_{n}\xrightarrow{\mathcal{P}}Z_{0}$ entonces existe $Z_{n_{j_{k}}}\xrightarrow{pp} Z_{0}$ por lo tanto $g(Z_{n_{j_{k}}})\xrightarrow{pp} g(Z_{0})$
 >>3. Entonces dada una sub $g(Z_{n_{j}})$ puedo encontrar una sub sub $g(X_{n_{j_{k}}})$ que converge puntual a $g(Z_{0})$ 
 >>4. Por lo tanto $g(Z_{n})\xrightarrow{\mathcal{P}}g(Z_{0})$
 >>
->>b) Queremos probar que si $Z_n \xrightarrow[n \to \infty]{P} Z_0$, entonces $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0)$.
+>>b) 
+>>Queremos probar que si $Z_n \xrightarrow[n \to \infty]{P} Z_0$, entonces $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0)$.
+>>1. Por la parte a) de este mismo teorema, como $Z_n \xrightarrow[n \to \infty]{P} Z_0$ y $g$ es una función continua, tenemos que $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{P}} g(Z_0)$.
+>>2. Aplicando [[IE - Teorico 8#^f6ccb4]] $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0)$
 >>
->>5. Por la parte a) de este mismo teorema, como $Z_n \xrightarrow[n \to \infty]{P} Z_0$ y $g$ es una función continua, tenemos que $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{P}} g(Z_0)$.
->>
->>6. Aplicando [[IE - Teorico 8#^f6ccb4]] $g(Z_n) \xrightarrow[n \to \infty]{\mathcal{D}} g(Z_0)$
 >>c)
 >>1. Sea $F=\{ x\in \mathbb{R}^{d}:||x-z_{0}||\geq \epsilon \}$ es cerrado por ser complemento de un abierto
 >>2. Por [[IE - Teorico 8#^7ca736]] d) $$\overline{\lim\limits_{ n \to \infty } } P(Z_{n}\in F)\leq P(z_{0}\in F)$$
 >>3. Pero $P(z_{0}\in F)=P(\{ w\in \Omega:z_{0}(w)\in F \})=0$ por que $z_{0}(w)=z_{0}\not\in F$  
 >>4. Entonces el limite superior es menor o igual que 0 por lo tanto es igual a 0 por lo tanto $$0=\lim\limits_{ n \to \infty } P(Z_{n}\in F)=\lim\limits_{ n \to \infty } P(||Z_{n}-z_{0}||\geq\epsilon)$$  
+
 
 >[!Remark]
 >Otro resultado que provee equivalencia con la conv. en distrib:
