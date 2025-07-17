@@ -12,11 +12,18 @@
 11. [[IE - Teorico 7#^46c80c]]
 12. [[IE - Teorico 7#^8893d0]]
 13. [[IE - Teorico 7#^06187a]]
-14. [[IE - Teorico 8#^46bbf4]]
-15. [[IE - Teorico 8#^749b5c]]
-16. [[IE - Teorico 8#^216ef4]]
-17. [[IE - Teorico 8#^b44b7d]]
-18. [[IE - Teorico 8^]]
+14. [[IE - Teorico 8#^24b114]]
+15. [[IE - Teorico 8#^5d7837]]
+16. [[IE - Teorico 8#^91b91f]]
+17. [[IE - Teorico 8#^70761d]]
+18. [[IE - Teorico 8#^7ca736]]
+18. [[IE - Teorico 8#^91f8c5]]
+19. [[IE - Teorico 8#^1e552f]]
+20. [[IE - Teorico 8#^2d6441]]
+21. [[IE - Teorico 8#^91f8c5]]
+22. [[IE - Teorico 8#^a501de]]
+23. [[IE - Teorico 8#^679448]]
+
 ## Contraejemplos
 1. [[IE - Teorico 5#^2febbc]]
 2. [[IE - Teorico 7#^84ddac]]
@@ -44,7 +51,18 @@
 16. [[IE - Teorico 7#^1cdda2]]
 
 ## Teorico 8
-1. 
+17. [[IE - Teorico 8#^6d9bbd]]
+18. [[IE - Teorico 8#^2c7cb9]]
+19. [[IE - Teorico 8#^4de3c2]]
+19. [[IE - Teorico 8#^f6ccb4]]
+21. [[IE - Teorico 8#^b3262f]]
+20. [[IE - Teorico 8#^ab0382]]
+21. [[IE - Teorico 8#^2d6441]]
+
+## Teorico 9
+
+
+
 
 
 
