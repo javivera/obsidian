@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 3.md",
-                "mode": "preview",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 3"
+              "title": "IE - Teorico 8"
             }
           },
           {
@@ -28,15 +28,14 @@
               "type": "markdown",
               "state": {
                 "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "IE - Teorico 8"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+            "file": "Inferencia Estadistica/Theory/IE - Teorico 2.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -160,6 +159,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -168,15 +168,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1eb9039580028c4",
+  "active": "6606b25ca5cf8883",
   "lastOpenFiles": [
     "Inferencia Estadistica/Theory/IE - Teorico 3.md",
     "Inferencia Estadistica/Glosario.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
     "Inferencia Estadistica/Theory/IE - Teorico 2.md",
     "Inferencia Estadistica/Theory/IE - Teorico 8.md",
     "Inferencia Estadistica/Theory/IE - Teorico 7.md",
     "Inferencia Estadistica/Theory/IE - Teorico 6.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
     "Inferencia Estadistica/Theory/IE - Teorico 15.md",
     "Inferencia Estadistica/Theory/IE - Teorico 17.md",
     "Pasted image 20250709184958.png",
