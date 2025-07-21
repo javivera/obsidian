@@ -150,26 +150,26 @@ dateCreated: 2025-05-25,10:55
 > [!Definition] ECMP
 >Sean v.a. $X, Z_1, \dots, Z_m$ tal que $Y \in L^2$ y $g : \mathbb{R}^m \to \mathbb{R}$ medible Borel y $g(Z_1, \dots, Z_m) \in L^2$
 >Llamamos **error cuadrático medio de predicción** por usar $g(Z_1, \dots, Z_m)$
->$$ECMP(g(\vec{Z}))=E\bigg[\big(Y-g(Z_{1},\ldots,Z_{m})\big)^{2}\bigg]$$
+>$$ECMP(Y,g(\vec{Z}))=E\bigg[\big(Y-g(Z_{1},\ldots,Z_{m})\big)^{2}\bigg]$$
 >Osea estamos estimando $Y$ con $g(Z_{1},\ldots,Z_{m})$  
 
->[!Remark] DUDA 
+>[!Remark]
 >Sabemos que:
 >$$\mathbb{E} \left( Y - \mathbb{E}(Y \mid Z_1, \dots, Z_m) \right)^2 \leq \mathbb{E} \left( Y - g(Z_1, \dots, Z_m) \right)^2\quad\forall g(\vec{Z})$$
 >Osea la esperanza condicional minimiza el *error cuadratico medio de prediccion*
 
 >[!Remark]
->Sea $Y$ v.a., $\mathbb{E}(Y^2) < \infty$. El $c\in \mathbb{R}$ que resuelve ${} \min_{c\in \mathbb{R}} \mathbb{E}(Y - c)^2$ es ${} c= E(Y) {}$ 
+>Sea $Y$ v.a., $\mathbb{E}(Y^2) < \infty$. El $c\in \mathbb{R}$ que resuelve ${} \min_{c\in \mathbb{R}} \mathbb{E}(Y - c)^2$ es $c= E(Y)$ 
 
 > [!Lemma]
-> Sea $Y \in L^2(\mathbb{P}, \mathcal{F})$ y $\mathcal{G}$ la menor σ-álgebra que vuelve medible a las constantes. Entonces $\mathcal{G} = \{\varnothing, \Omega\}$ y $\mathbb{E}(Y \mid \mathcal{G}) = \mathbb{E}(Y)$ y ademas
+> Sea $Y \in L^2(\mathbb{P}, \mathcal{F})$ y $\sigma(c)$ la menor σ-álgebra que vuelve medible a ${} c$ v.a constante. Entonces ${} \sigma(c) = \{\varnothing, \Omega\} {}$ y $\mathbb{E}(Y \mid \sigma(c)) = \mathbb{E}(Y)$ y ademas
 >$$\mathbb{E} \left[ Y - \mathbb{E}(Y) \right]^2 \leq \mathbb{E}(Y - c)^2, \quad \forall c \in \mathbb{R}$$
->> [!Proof]
->>7. Si $g(\omega) = c \quad \forall \omega \in \Omega \Rightarrow g^{-1}(A) =\begin{cases} \varnothing & \text{si } c \notin A \\ \Omega & \text{si } c \in A\end{cases}$ Entonces $\mathcal{G} = \{\varnothing, \Omega\}$
->>8. $$\int_G Y \, d\mathbb{P} = \int_G \mathbb{E}(Y \mid \mathcal{G}) \, d\mathbb{P} \quad \forall G \in \mathcal{G}$$
->>9. Si $G = \varnothing$, vale trivialmente
->>10. Si $G = \Omega$ entonces $\mathbb{E}(Y) = \int_\Omega Y \, d\mathbb{P} = c \int_\Omega d\mathbb{P} = c$ entonces $\mathbb{E}(Y \mid \mathcal{G}) = \mathbb{E}(Y)$
->> La desigualdad sale por ser $\mathbb{E}(Y \mid \mathcal{G})$ el mejor aproximante en $L^2(\mathbb{P}, \mathcal{G}) = \{ \text{constantes} \}$ 
+>> [!Proof]-
+>>1. Si $g(\omega) = c \quad \forall \omega \in \Omega \Rightarrow g^{-1}(A) =\begin{cases} \varnothing & \text{si } c \notin A \\ \Omega & \text{si } c \in A\end{cases}$ Entonces $\mathcal{G} = \{\varnothing, \Omega\}$
+>>2. Por definicion tiene que valer $$\int_G Y \, d\mathbb{P} = \int_G \mathbb{E}(Y \mid \sigma(c)) \, d\mathbb{P} \quad \forall G \in \sigma(c)$$
+>>3. Si $G = \varnothing$, vale trivialmente
+>>4. Si $G = \Omega$ entonces $\mathbb{E}(Y) = \int_\Omega Y \, d\mathbb{P} = c \int_\Omega d\mathbb{P} = c$ entonces ${} \mathbb{E}(Y \mid \sigma(c)) = \mathbb{E}(Y) {}$
+>> La desigualdad sale por ser $\mathbb{E}(Y \mid \sigma(c))$ el mejor aproximante en $L^2(\mathbb{P}, \mathcal{G}) = \{ \text{constantes} \}$ 
 
 > [!Example]
 >Si ${} S= (X_1, X_2)^t \sim \mathcal{N}_2(\mu, \Sigma_X)$, $\mu \in \mathbb{R}^2$, $\Sigma_X \in \mathbb{R}^{2 \times 2}$  
@@ -180,3 +180,4 @@ dateCreated: 2025-05-25,10:55
 >$$ \mathbb{E}(X_1 \mid X_2 = x_2) = \mu_1 +  \frac{\sqrt{\mathbb{V}(X_1)} \cdot \text{Corr}(X_1, X_2)}{\sqrt{\mathbb{V}(X_2)}\sqrt{ V(X_{1}) }\sqrt{ V(X_{2}) }} (x_2 - \mu_2) =: \mu_{1\cdot} $$
 >$$ \mathbb{V}(X_1 \mid X_2) = \sigma_{X_1}^2 - \frac{\text{Cor}^{2}(X_1, X_2)}{\sigma^{2}_{X_{2}}}=\sigma_{X_{1}}^{2}-\sigma^{2}_{X_{1}}\frac{\text{Cor}^{2}(X_{1},X_{2})}{\sigma^{2}_{X_{1}}\sigma^{2}_{X_{2}}}=\sigma^{2}_{X_{1}}(1-p^{2})$$
 
+ 
