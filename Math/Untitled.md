@@ -1,6 +1,3 @@
----
-dateCreated: 2025-05-25,10:55
----
 >[!Remark]
 > Se puede demostrar que como $P(X^{-1}(\cdot) \mid \mathcal{G})(w)=P_{X}(\ \cdot\ | \ \mathcal{G})$ es medida de probabilidad sobre $\mathcal{B}(\mathbb{R})$ entonces
 >$$\int_{\mathbb{R}} x\, \mathbb{P}_{X}(dx \mid \mathcal{G})(w)= \mathbb{E}(X \mid \mathcal{G})(w)$$
@@ -179,4 +176,7 @@ dateCreated: 2025-05-25,10:55
 >Luego:
 >$$ \mathbb{E}(X_1 \mid X_2 = x_2) = \mu_1 +  \frac{\sqrt{\mathbb{V}(X_1)} \cdot \text{Corr}(X_1, X_2)}{\sqrt{\mathbb{V}(X_2)}\sqrt{ V(X_{1}) }\sqrt{ V(X_{2}) }} (x_2 - \mu_2) =: \mu_{1\cdot} $$
 >$$ \mathbb{V}(X_1 \mid X_2) = \sigma_{X_1}^2 - \frac{\text{Cor}^{2}(X_1, X_2)}{\sigma^{2}_{X_{2}}}=\sigma_{X_{1}}^{2}-\sigma^{2}_{X_{1}}\frac{\text{Cor}^{2}(X_{1},X_{2})}{\sigma^{2}_{X_{1}}\sigma^{2}_{X_{2}}}=\sigma^{2}_{X_{1}}(1-p^{2})$$
+
+
+
 

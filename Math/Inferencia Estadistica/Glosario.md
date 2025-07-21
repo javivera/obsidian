@@ -17,12 +17,15 @@
 16. [[IE - Teorico 8#^91b91f]]
 17. [[IE - Teorico 8#^70761d]]
 18. [[IE - Teorico 8#^7ca736]]
-18. [[IE - Teorico 8#^91f8c5]]
-19. [[IE - Teorico 8#^1e552f]]
-20. [[IE - Teorico 8#^2d6441]]
-21. [[IE - Teorico 8#^91f8c5]]
-22. [[IE - Teorico 8#^a501de]]
-23. [[IE - Teorico 8#^679448]]
+19. [[IE - Teorico 8#^91f8c5]]
+20. [[IE - Teorico 8#^1e552f]]
+21. [[IE - Teorico 8#^2d6441]]
+22. [[IE - Teorico 8#^91f8c5]]
+23. [[IE - Teorico 8#^a501de]]
+24. [[IE - Teorico 8#^679448]]
+25. [[IE - Teorico 9#^f80efc]]
+26. [[IE - Teorico 10#^154fa9]]
+27. [[IE - Teorico 10#^43917d]]
 
 ## Contraejemplos
 1. [[IE - Teorico 5#^2febbc]]
@@ -33,33 +36,47 @@
 1. [[IE - Teorico 2#^9d7c4a]]
 2. [[IE - Teorico 2#^d2a6c6]]
 ## Teorico 3
-4. [[IE - Teorico 3#^86a4c5]]
-5. [[IE - Teorico 3#^e9be82]]
-6. [[IE - Teorico 3#^82f172]]
+3. [[IE - Teorico 3#^86a4c5]]
+4. [[IE - Teorico 3#^e9be82]]
+5. [[IE - Teorico 3#^82f172]]
 ## Teorico 4
-8. [[IE - Teorico 4#^b72136]]
+6. [[IE - Teorico 4#^b72136]]
 ## Teorico 5
-9. [[IE - Teorico 5#^f9e71a]]
-10. [[IE - Teorico 5#^a03e90]]
+7. [[IE - Teorico 5#^f9e71a]]
+8. [[IE - Teorico 5#^a03e90]]
 ## Teorico 6
-11. [[IE - Teorico 6#^5e0f31]]
-12. [[IE - Teorico 6#^e30273]]
+9. [[IE - Teorico 6#^5e0f31]]
+10. [[IE - Teorico 6#^e30273]]
 ## Teorico 7
-13. [[IE - Teorico 7#^99e20e]]
-14. [[IE - Teorico 7#^a62509]]
-15. [[IE - Teorico 7#^ab40f7]]
-16. [[IE - Teorico 7#^1cdda2]]
+11. [[IE - Teorico 7#^99e20e]]
+12. [[IE - Teorico 7#^a62509]]
+13. [[IE - Teorico 7#^ab40f7]]
+14. [[IE - Teorico 7#^1cdda2]]
 
 ## Teorico 8
-17. [[IE - Teorico 8#^6d9bbd]]
-18. [[IE - Teorico 8#^2c7cb9]]
-19. [[IE - Teorico 8#^4de3c2]]
-19. [[IE - Teorico 8#^f6ccb4]]
-21. [[IE - Teorico 8#^b3262f]]
+15. [[IE - Teorico 8#^6d9bbd]]
+16. [[IE - Teorico 8#^2c7cb9]]
+17. [[IE - Teorico 8#^4de3c2]]
+18. [[IE - Teorico 8#^f6ccb4]]
+19. [[IE - Teorico 8#^b3262f]]
 20. [[IE - Teorico 8#^ab0382]]
 21. [[IE - Teorico 8#^2d6441]]
 
 ## Teorico 9
+
+22. [[IE - Teorico 9#^437107]]
+23. [[IE - Teorico 9#^2fefa2]]
+24. [[IE - Teorico 9#^dd9d29]]
+## Teorico 10
+25. [[IE - Teorico 10#^d96534]]
+26. [[IE - Teorico 10#^342930]]
+27. [[IE - Teorico 10#^3714ff]]
+28. [[IE - Teorico 10#^d397b0]]
+29. [[IE - Teorico 10#^775e65]]
+30. [[IE - Teorico 10#^3150fc]]
+
+## Teorico 11
+
 
 
 

@@ -1,4 +1,4 @@
->[!Lemma]
+>[!Lemma] Resultados sobre covarianza multivariable
 >Sean $Z: \Omega \to \mathbb{R}^d$ y $W: \Omega \to \mathbb{R}^m$ vectores aleatorios tales que $E(\|Z\|^2) < \infty$, $E(\|W\|^2) < \infty$ y $E(|Z_i W_j|) < \infty$ para todo $i \in \{1, \dots, d\}, j \in \{1, \dots, m\}$.
 >Entonces se cumple:
 > - a) Si $Z, W$ son independientes $\implies Cov(Z, W) = O_{d \times m}$.
@@ -6,9 +6,11 @@
 > - c) $Cov(Z,Z) = V(Z)$ y $Cov(Z,W) = (Cov(W,Z))^T$.
 > - d) Si $d=m$, $Var(Z+W) = V(Z) + V(W) + 2 Cov(Z,W)$.
 >>[!Proof]
->>ejercicio
+>>c) $$\begin{align}V(X)& = \Sigma_X \\ &= E[(X-EX)(X-EX)^t]\\&= E[(AZ+\mu-\mu)(AZ+\mu-\mu)^t]\\& = E[(AZ)(AZ)^t]\\&= E[AZZ^tA^t] \\&= A E[ZZ^t] A^t\\&(*)=AA^{T}\end{align}$$
 
->[!Lemma]
+^437107
+
+>[!Lemma] Esperanza saca matrices
 >Sea $Z: \Omega \to \mathbb{R}^d$ un vector aleatorio, $B \in \mathbb{R}^{\tilde{d} \times d}$, $b \in \mathbb{R}^{\tilde{d}}$ y sea $Y = BZ+b$.
 >Entonces:
 > - a) Si $E(\|Z\|^2) < \infty$ entonces $$\Sigma_Z = V(Z) = Cov(Z,Z) = E[(Z-EZ)(Z-EZ)^t]$$ es una matriz simétrica y semidefinida positiva.
@@ -26,18 +28,19 @@
 >>Mostrano que la matriz es semidefinida positiva, y por lo tanto su determinante es no negativo.
 >>
 >>b)
->>1. Tenemos que $Y = BZ+b \quad EY = \begin{pmatrix} EY_1 \\ \vdots \\ EY_{\tilde{d}} \end{pmatrix}$
->>2. Luego $Y_j = \sum_{i=1}^d B_{ji} Z_i + b_j$ entonces $EY_j = \sum_{i=1}^d B_{ji} (EZ_i) + b_j$
->>3. Por lo tanto concluimos $EY = BEZ+b$
+>>4. Tenemos que $Y = BZ+b \quad EY = \begin{pmatrix} EY_1 \\ \vdots \\ EY_{\tilde{d}} \end{pmatrix}$
+>>5. Luego $Y_j = \sum_{i=1}^d B_{ji} Z_i + b_j$ entonces $EY_j = \sum_{i=1}^d B_{ji} (EZ_i) + b_j$
+>>6. Por lo tanto concluimos $EY = BEZ+b$
 >>c)
->>4. $X \sim AZ+\mu$ por lo tanto $EX = E[AZ+\mu] = AEZ+\mu$
->>5. Como $Z_i \sim N(0,1)$, $EZ=0$, entonces $EX = A \cdot 0 + \mu = \mu$.
->>6. $$\begin{align}V(X)& = \Sigma_X \\ &= E[(X-EX)(X-EX)^t]\\&= E[(AZ+\mu-\mu)(AZ+\mu-\mu)^t]\\& = E[(AZ)(AZ)^t]\\&= E[AZZ^tA^t] \\&= A E[ZZ^t] A^t\\&(*)=AA^{T}\end{align}$$
->>$(*)$ Como los $Z_i$ son iid $N(0,1)$, $E[Z]=0$ y $Id=V_{z}=Cov(Z,Z) = E[(Z-EZ)(Z-EZ)^t] = E[ZZ^t]$. 
->>Notar que en la matriz covarianza las cosas que estan fuera de la diagonal son 0 por que $Z_{i}$ son independientes 
+>>7. $X \sim AZ+\mu$ por lo tanto $EX = E[AZ+\mu] = AEZ+\mu$
+>>8. Como $Z_i \sim N(0,1)$, $EZ=0$, entonces $EX = A \cdot 0 + \mu = \mu$.
+>>9. $$V(X)= Cov(AZ+\mu ,AZ+\mu )= ACov(Z,Z)A^{T} =AA^{T} $$
+>>Como los $Z_i$ son iid $N(0,1)$ la matriz covarianza es la identidad. Ósea varianza en diagonal y 0 extra diagonal por independencia
+
+^2fefa2
 
 >[!Remark] Notacion
->Si $X$ es un vector normal multivariado (o sea $X \sim AZ+\mu$), con $Z \in \mathbb{R}^m$, $Z=(Z_1, \dots, Z_m)$ iid $Z_i \sim N(0,1)$ $\mu \in \mathbb{R}^d$ y $A \in \mathbb{R}^{d \times m}$. Se denota $$X \sim N_d(\mu, \Sigma_X )\quad\text{ con } \mu=E(X)\quad\Sigma_{X}=V(X) $$
+>Si $X$ es un vector normal multivariado. O sea $X \sim AZ+\mu$, con $Z \in \mathbb{R}^m$, $Z=(Z_1, \dots, Z_m)$ iid $Z_i \sim N(0,1)$ $\mu \in \mathbb{R}^d$ y $A \in \mathbb{R}^{d \times m}$.Entonces se denota $$X \sim N_d(\mu, \Sigma_X )\quad\text{ con } \mu=E(X)\quad\Sigma_{X}=V(X) $$
 
 >[!Remark]
 >Si $\Sigma$ es una matriz simétrica, por el Teorema Espectral se puede descomponer como $$\Sigma = P \Delta P^T$$
@@ -68,16 +71,18 @@
 >La equivalencia surge usando Slutzky y considerando
 >$$V(N_{d}(0,\Sigma_{X_{1}})\Sigma^{-1/2} )=\Sigma^{-1/2} V(N_{d}(0,\Sigma_{X_{1}}))(\Sigma^{-1/2})^{T}  =\Sigma^{-1/2}\Sigma(\Sigma^{1/2})^{T} =Id_{d\times d}  $$   
 
+^f80efc
+
 >[!Remark]
 >Recordemos que en Proba y Estadistica se vió que si $Z$ es una variable aleatoria con $V(Z)<\infty$ entonces sucedia 
 >$$\ V(Z) > 0 \iff P(Z=c) < 1 \quad \forall c \in \mathbb{R}$$
 >$$V(Z) = 0 \iff P(Z=c) = 1 \quad \text{ para algun } c\in \mathbb{R}$$
 >El resultado análogo para vectores aleatorios es el siguiente:
 
->[!Lemma]
+>[!Lemma] Resultado analogo a estadistica
 >Sea $Z$ un vector aleatorio en $\mathbb{R}^d$ tal que $E(\|Z\|^2) < \infty$ entonces:
 >$\Sigma_Z = V(Z)$ es definida positiva $\iff$ ${} \forall a \in \mathbb{R}^d \setminus \{0\}$ y $b \in \mathbb{R}$ se cumple que $P(a^t Z = b) < 1$
->>[!Proof]
+>>[!Proof]-
 >>1. $\Sigma_Z = V(Z)$ es definida positiva $\iff a^t \Sigma_Z a > 0 \quad \forall a \in \mathbb{R}^d \setminus \{0\}$.
 >>2. $$\begin{align}0<a^t \Sigma_Z a & = a^t E[(Z-EZ)(Z-EZ)^t] a\\&= E[a^t(Z-EZ)(Z-EZ)^t a]\\&(*)= E[(a^t(Z-EZ))^2]\\&(**)= V(a^t(Z-EZ))\end{align}$$
 >>$(*)$ que $(Z-EZ)^ta\in \mathbb{R}$ por eso es igual a su traspuesta) 
@@ -85,3 +90,7 @@
 >>3. Por lo tanto $a^t \Sigma_Z a > 0 \iff V(a^t(Z-EZ)) > 0$.
 >>4. Usando el resultado de proba y estadistica esto vale sii $$\begin{align}V(a^t(Z-EZ)) > 0&\iff V(a^{t}(Z-EZ+\tilde{c}) )>0 \\&\iff  P(a^{T} (Z-EZ)+\tilde{c}=c)<1\\&\iff P(a^{T} Z-a^{T} EZ+\tilde{c}-c=0)<1\\&\iff P(a^{T} Z-b)<1\quad\forall c\in \mathbb{R}\end{align}$$
 >>Recordar que sumar constantes no cambia varianza. Y aca sumamos un $\tilde{c}$ estrategico en base al $c,b$ y $a^{T}EZ$ que son datos que tenemos   
+
+^dd9d29
+
+

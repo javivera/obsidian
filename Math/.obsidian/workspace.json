@@ -4,30 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "3cc093dc12bc1514",
-        "type": "tabs",
-        "dimension": 27.754108338405352,
-        "children": [
-          {
-            "id": "6249f5e6682d6b1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inferencia Estadistica/Glosario.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Glosario"
-            }
-          }
-        ]
-      },
-      {
         "id": "977200cbd925e14e",
         "type": "tabs",
-        "dimension": 72.24589166159464,
         "children": [
           {
             "id": "0ca5e15fe1f67f29",
@@ -35,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 9.md",
-                "mode": "source",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 11.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 9"
+              "title": "IE - Teorico 11"
             }
           },
           {
@@ -49,15 +27,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 12.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 8"
+              "title": "IE - Teorico 12"
+            }
+          },
+          {
+            "id": "402625c4a3fb08ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 13.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IE - Teorico 13"
+            }
+          },
+          {
+            "id": "bc8ffab035e58e6c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +91,21 @@
             }
           },
           {
-            "id": "fe5ba39997121ee0",
+            "id": "6249f5e6682d6b1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inferencia Estadistica/Glosario.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Glosario"
+            }
+          },
+          {
+            "id": "651f445b4f2272e3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -97,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5,
+    "width": 322.5,
     "collapsed": true
   },
   "right": {
@@ -114,13 +135,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 13.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IE - Teorico 8"
+              "title": "Outline of IE - Teorico 13"
             }
           },
           {
@@ -209,7 +230,7 @@
             }
           },
           {
-            "id": "e4fe376cbf056e7d",
+            "id": "17732e8682d1e60f",
             "type": "leaf",
             "state": {
               "type": "copilot-chat-view",
@@ -223,8 +244,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 554.5,
-    "collapsed": true
+    "width": 530.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,40 +258,43 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0ca5e15fe1f67f29",
+  "active": "402625c4a3fb08ab",
   "lastOpenFiles": [
-    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 9.md",
+    "Untitled.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 13.md",
+    "13 bis.md",
+    "Untitled 2.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 12.md",
+    "copilot-conversations/[!Remark]_Vamos_a_dar_el_siguiente_sentido_a_notaciones_ya@20250720_204009.md",
+    "copilot-conversations/su_suppose_i_have_a_random_variable_which_represents_the@20250720_202850.md",
+    "copilot-conversations/how_do_we_evaluate_E(Xmathcal{G})@20250720_192132.md",
     "Inferencia Estadistica/Glosario.md",
+    "copilot-conversations/[!Remark]_Si_$X$_e_$Y$_v.a._discretas_osea_$exists_{x_i}_{i@20250720_131854.md",
+    "copilot-conversations/how_did_you_call_this_propery_[!Remark]_Como_$mathcal{G}$_es@20250720_130727.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 11.md",
+    "copilot-conversations/help_me_understand_this_example_[!Proposition]_-_Sea_$(Omega_1,_mathcal{F}_1,@20250720_114041.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 25.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 22.md",
+    "copilot-conversations/[!Corollary]_Sea_$(Omega,_mathcal{F},_mathbb{P})$_e.p.,_${}_mathcal{G}_subseteq_mathcal{F}@20250719_220939.md",
+    "copilot-conversations/[[IE_-_Teorico_13]]_in_this_context_can_we@20250719_194321.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 9.md",
+    "copilot-conversations/Salvo_en_un_conjunto_$E_subseteq_Omega$_de_probabilidad_cero,@20250719_160714.md",
+    "copilot-conversations/[!Remark]_-_(a)_Sean_$X_sim_N_d(mu,_Sigma_X)$,_$B@20250717_195341.md",
+    "copilot-conversations",
+    "Inferencia Estadistica/Theory/IE - Teorico 10.md",
+    "Pasted image 20250718225618.png",
+    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+    "Pasted image 20250717161600.png",
     "Inferencia Estadistica/Theory/IE - Teorico 4.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 5.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 7.md",
-    "copilot-custom-prompts/Rewrite as press release.md",
-    "copilot-custom-prompts/Explain like I am 5.md",
-    "copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot-custom-prompts/Remove URLs.md",
-    "copilot-custom-prompts/Generate glossary.md",
-    "copilot-custom-prompts/Generate table of contents.md",
-    "copilot-custom-prompts/Make longer.md",
-    "copilot-custom-prompts/Make shorter.md",
-    "copilot-custom-prompts/Emojify.md",
-    "copilot-custom-prompts/Simplify.md",
-    "copilot-custom-prompts/Summarize.md",
-    "copilot-custom-prompts/Translate to Chinese.md",
-    "copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot-custom-prompts",
     "Inferencia Estadistica/probando.tex",
     "Inferencia Estadistica/probando.typ",
     "Inferencia Estadistica/probando.typst",
-    "Inferencia Estadistica/Theory/IE - Teorico 18.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 19.md",
     "Inferencia Estadistica/prueba.pdf",
     "Inferencia Estadistica/prueba.typst",
-    "Inferencia Estadistica/Theory/Notas.md",
     "Inferencia Estadistica/Imagenes/Pasted image 20250506100617.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250517134031.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250518093944.png",
@@ -280,11 +303,8 @@
     "Inferencia Estadistica/Imagenes/Pasted image 20250524162320.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250525125822.png",
     "Inferencia Estadistica/Imagenes/Pasted image 20250526170113.png",
-    "Inferencia Estadistica/Imagenes/Pasted image 20250526192210.png",
-    "Pasted image 20250709184958.png",
     "Ecuaciones Diferenciales I",
     "Inferencia Estadistica/Imagenes",
-    "Analisis Funcional/Theory/Teórico 18.md.tmp",
-    "Analisis Funcional/Theory/Teórico 12.md.tmp"
+    "Analisis Funcional/Theory/Teórico 18.md.tmp"
   ]
 }

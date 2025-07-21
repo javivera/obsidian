@@ -118,18 +118,18 @@ dateCreated: 2025-05-25,10:55
 > $\sigma(T)$ denota la menor σ-álgebra que vuelve medible a $T$. 
 > Entonces:$$T : (\Omega_1, \sigma(T)) \to (\Omega_2, \mathcal{F}_2) \text{ es } \sigma(T)/\mathcal{F}_2 \text{-medible}$$
 > Como $T^{-1}(\mathcal{F}_2)$ es σ-álgebra (chequear) entonces $\sigma(T) = T^{-1}(\mathcal{F}_2)$
-> - Sea $Y : \Omega_1 \to \mathbb{R}$ v.a. tal que $\mathbb{E}(|Y|) < \infty$, podemos considerar $\mathbb{E}(Y \mid \sigma(T))$ es $\sigma(T)$-medible (mismo rol de $\mathcal{G}$)
+> - Sea $Y : \Omega_1 \to \mathbb{R}$ v.a. tal que $\mathbb{E}(|X|) < \infty$, podemos considerar ${} \mathbb{E}(Y \mid \sigma(T)) {}$ es $\sigma(T)$-medible (mismo rol de $\mathcal{G}$)
 > ![[Pasted image 20250525125822.png]]
 > ¿Existe $g$ que cierre el diagrama? La respuesta está en el siguiente teorema
 
 >[!Theorem]
 >Sea $Y : \Omega_1 \to \mathbb{R}$ es $\sigma(T)$-medible $\Longleftrightarrow$ $\exists g : \Omega_2 \to \mathbb{R}$, $\mathcal{F}_2$-medible tal que $Y = g \circ T$
->En especial, si $\vec{Z} = (Z_1, \dots, Z_m)^t$ vect. aleat. (acá $\vec{Z} : \Omega_1 \to \mathbb{R}^m$)
->$$\mathbb{E}(Y\mid \sigma(\vec{Z})) = g(\vec{Z}), \quad g \text{ medible Borel}$$
+>En especial, si $\vec{Z} = (Z_1, \dots, Z_m)^t$ vect. aleat. (acá ${} \vec{Z} : \Omega_1 \to \mathbb{R}^m {}$)
+>$$\mathbb{E}(X \mid \sigma(\vec{Z})) = g(\vec{Z}), \quad g \text{ medible Borel}$$
 
 >[!Remark]
 >Vamos a dar el siguiente sentido a notaciones ya usadas con la nueva notación:
->$$\mathbb{E}(X \mid \vec{Z}) := \mathbb{E}(X \mid \sigma(\vec{Z}))$$
+>$$\mathbb{E}(X \mid \vec{Z}) = \mathbb{E}(X \mid \sigma(\vec{Z}))$$
 >$$\mathbb{E}(X \mid Z = z) = \mathbb{E}(X \mid Z)(\omega) \quad \text{donde } \omega \in \Omega_1 \text{ t.q. } Z(\omega) = z$$
 
 >[!Remark]
@@ -138,28 +138,29 @@ dateCreated: 2025-05-25,10:55
 >Por definicion $\mathbb{E}(X \mid Y) = \mathbb{E}(X \mid \sigma(Y))$. La esperanza condicional $\mathbb{E}(X \mid \sigma(Y))$ resuelve:
 >$$\int_G X \, d\mathbb{P} = \int_G \mathbb{E}\big(X \mid \sigma(Y)\big) \, d\mathbb{P} \quad \forall G \in \sigma(Y)$$
 >Puede comprobarse que: $$\sigma(Y)=Y^{-1}(\mathcal{B}(\mathbb{R}))= \left\{ \bigcup_{j \in J_0} \{Y = y_j\} \mid \forall J_0 \subseteq J \right\} $$
->Basta primero estudiar $G = \{Y = y_j\}$. 
->Nuerstra antigua definicion nos decia $\tilde{Y}(w)=E(X|Y=Y(w))$ entonces:
+>Basta primero estudiar $G = \{Y = y_j\}$. Chequeamos entonces que si tomamos:
 >$$\tilde{Y} = \sum_{y \in \text{Im}(Y)} \mathbb{E}(X \mid Y = y) \cdot \mathbb{I}_{\{Y = y\}}$$
 >con:
 >$$\mathbb{E}(X \mid Y = y) = \sum_{x \in \text{Im}(X)} x \cdot \mathbb{P}(X = x \mid Y = y) = \sum_{x \in \text{Im}(X)} x \cdot \frac{\mathbb{P}(X = x \cap Y = y)}{\mathbb{P}(Y = y)}$$
 >se cumple (1), o sea:
 >$$\int_{\{Y = y_{j_{0}}\}} X \, d\mathbb{P} = \int_{\{Y = y_{j_{0}}\}} \tilde{Y} \, d\mathbb{P}$$
->Mostrando que la antigua definicion cumple la nueva definicion mas general
 
 > [!Definition] ECMP
->Sean v.a. $X, Z_1, \dots, Z_m$ tal que $Y \in L^2$ y $g : \mathbb{R}^m \to \mathbb{R}$ medible Borel y $g(Z_1, \dots, Z_m) \in L^2$
+>Sean v.a. $Y, Z_1, \dots, Z_m$ tal que $Y \in L^2$ y $g : \mathbb{R}^m \to \mathbb{R}$ medible Borel y $g(Z_1, \dots, Z_m) \in L^2$
 >Llamamos **error cuadrático medio de predicción** por usar $g(Z_1, \dots, Z_m)$
->$$ECMP(g(\vec{Z}))=E\bigg[\big(Y-g(Z_{1},\ldots,Z_{m})\big)^{2}\bigg]$$
->Osea estamos estimando $Y$ con $g(Z_{1},\ldots,Z_{m})$  
+>$$ECMP(g)=E\bigg[\big(Y-g(Z_{1},\ldots,Z_{m})\big)^{2}\bigg]$$
+
+>[!Remark]
+>Si $g(Z_1, \dots, Z_m)$ es esperanza condicional, notación:
+>$$\text{ECMP}(Y, Z) = \mathbb{E} \big[\left( Y - g(Z) \right)^2\big], \quad Z = (Z_1, \dots, Z_m)$$
 
 >[!Remark] DUDA 
 >Sabemos que:
->$$\mathbb{E} \left( Y - \mathbb{E}(Y \mid Z_1, \dots, Z_m) \right)^2 \leq \mathbb{E} \left( Y - g(Z_1, \dots, Z_m) \right)^2\quad\forall g(\vec{Z})$$
+>$$\mathbb{E} \left( Y - \mathbb{E}(Y \mid Z_1, \dots, Z_m) \right)^2 \leq \mathbb{E} \left( Y - g(Z_1, \dots, Z_m) \right)^2$$
 >Osea la esperanza condicional minimiza el *error cuadratico medio de prediccion*
 
 >[!Remark]
->Sea $Y$ v.a., $\mathbb{E}(Y^2) < \infty$. El $c\in \mathbb{R}$ que resuelve ${} \min_{c\in \mathbb{R}} \mathbb{E}(Y - c)^2$ es ${} c= E(Y) {}$ 
+>$Y$ v.a., $\mathbb{E}(Y^2) < \infty$. El $c\in \mathbb{R}$ que resuelve ${} \min_{c\in \mathbb{R}} \mathbb{E}(Y - c)^2 {}$ es ${} c= E(Y) {}$ 
 
 > [!Lemma]
 > Sea $Y \in L^2(\mathbb{P}, \mathcal{F})$ y $\mathcal{G}$ la menor σ-álgebra que vuelve medible a las constantes. Entonces $\mathcal{G} = \{\varnothing, \Omega\}$ y $\mathbb{E}(Y \mid \mathcal{G}) = \mathbb{E}(Y)$ y ademas
@@ -179,4 +180,7 @@ dateCreated: 2025-05-25,10:55
 >Luego:
 >$$ \mathbb{E}(X_1 \mid X_2 = x_2) = \mu_1 +  \frac{\sqrt{\mathbb{V}(X_1)} \cdot \text{Corr}(X_1, X_2)}{\sqrt{\mathbb{V}(X_2)}\sqrt{ V(X_{1}) }\sqrt{ V(X_{2}) }} (x_2 - \mu_2) =: \mu_{1\cdot} $$
 >$$ \mathbb{V}(X_1 \mid X_2) = \sigma_{X_1}^2 - \frac{\text{Cor}^{2}(X_1, X_2)}{\sigma^{2}_{X_{2}}}=\sigma_{X_{1}}^{2}-\sigma^{2}_{X_{1}}\frac{\text{Cor}^{2}(X_{1},X_{2})}{\sigma^{2}_{X_{1}}\sigma^{2}_{X_{2}}}=\sigma^{2}_{X_{1}}(1-p^{2})$$
+
+
+
 
