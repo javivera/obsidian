@@ -1,0 +1,106 @@
+.theorem-callout {
+        --callout-color: 0, 168, 107;
+        border-top: none;
+        border-bottom: none;
+        border-left: var(--size-2-2) solid rgb(var(--callout-color));
+        border-right: none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px;
+        font-family: CMU Serif 
+    }
+
+    .theorem-callout .callout-title {
+        padding: var(--size-2-3);
+        padding-left: var(--size-4-3);
+    }
+
+    .theorem-callout .callout-icon {
+        display: none;
+    }
+
+    .theorem-callout .callout-title-inner {
+        font-family: Inter;
+        font-weight: normal;
+        color: rgb(var(--callout-color));
+    }
+
+    .theorem-callout-subtitle {
+        font-weight: lighter;
+    }
+
+      .theorem-callout .callout-content p{
+        background-color: var(--background-primary);
+        padding: 10px 20px 10
+	x 20px;
+	margin: 0px;
+    }.theorem-callout .callout-content {
+        background-color: var(--background-primary);
+        padding: 7px 20px 5px 20px;
+	margin: 0px;
+    }
+
+    .theorem-callout .callout-content .callout.is-collapsible{
+        background-color: var(--background-primary);
+        padding: 1px 15px 1px 15px;
+	margin: 5px;
+    }
+   .theorem-callout .callout-content .callout.is-collapsible.is-collapsed{
+        background-color: var(--background-primary);
+        padding: 1px 15px 1px 15px;
+	margin: 5px;
+    }
+    .theorem-callout .callout-content .has-list-bullet{
+        background-color: var(--background-primary);
+        padding: 10px 20px 10px 20px;
+	margin: 0px;
+    }
+    
+.callout[data-callout='proof'] {
+        --callout-color: 0, 108, 107;
+        border-top: none;
+        border-bottom: none;
+        border-left: var(--size-2-2) solid rgb(var(--callout-color));
+        border-right: none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 5px;
+        font-family: CMU Serif, Times, Noto Serif JP;
+    }
+.callout[data-callout='example'] {
+        --callout-color: 0, 108, 107;
+        border-top: none;
+        border-bottom: none;
+        border-left: var(--size-2-2) solid rgb(var(--callout-color));
+        border-right: none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px;
+        font-family: CMU Serif, Times, Noto Serif JP;
+    }
+.callout[data-callout='definition'] {
+        --callout-color: 0, 108, 107;
+        border-top: none;
+        border-bottom: none;
+        border-left: var(--size-2-2) solid rgb(var(--callout-color));
+        border-right: none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px;
+        font-family: CMU Serif, Times, Noto Serif JP;
+    }
+
+.callout[data-callout='remark'] {
+        --callout-color: 0, 108, 107;
+        border-top: none;
+        border-bottom: none;
+        border-left: var(--size-2-2) solid rgb(var(--callout-color));
+        border-right: none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px;
+        font-family: CMU Serif, Times, Noto Serif JP;
+    }
+
+.popover.hover-popover{
+}

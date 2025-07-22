@@ -1,0 +1,19 @@
+{
+  "promptDelete": false,
+  "showLineNumber": false,
+  "readableLineLength": false,
+  "showInlineTitle": true,
+  "vimMode": true,
+  "spellcheck": false,
+  "strictLineBreaks": false,
+  "useMarkdownLinks": false,
+  "defaultViewMode": "preview",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 70
+  },
+  "smartIndentList": true
+}

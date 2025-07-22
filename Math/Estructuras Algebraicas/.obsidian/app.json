@@ -1,0 +1,12 @@
+{
+  "promptDelete": false,
+  "showLineNumber": true,
+  "readableLineLength": false,
+  "showRibbon": false,
+  "showInlineTitle": true,
+  "vimMode": true,
+  "spellcheck": false,
+  "strictLineBreaks": false,
+  "useMarkdownLinks": false,
+  "defaultViewMode": "preview"
+}

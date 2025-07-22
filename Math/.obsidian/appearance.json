@@ -1,0 +1,13 @@
+{
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "style"
+  ],
+  "textFontFamily": "Fira Code",
+  "interfaceFontFamily": "CMU Sans Serif",
+  "monospaceFontFamily": "CMU Sans Serif",
+  "baseFontSize": 20,
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "showRibbon": false
+}
