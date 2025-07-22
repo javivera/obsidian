@@ -1,22 +1,11 @@
 /* Minimalist Theorem Callout Styling */
 .theorem-callout,
-.callout[data-callout="theorem"],
-.callout[data-callout="proposition"],
-.callout[data-callout="lemma"] {
-    --callout-color: 135, 206, 235; /* Soft sky blue */
-    border: none;
-    border-left: 4px solid rgb(var(--callout-color));
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    margin: 0.5em 0;
-    font-family: "Neo Euler", serif;
-    background-color: transparent;
-}
-
+.callout[data-callout="proof"],
 .callout[data-callout="example"],
-.callout[data-callout="remark"] {
-    --callout-color: 173, 216, 230; /* Light periwinkle, close to sky blue */
+.callout[data-callout="definition"],
+.callout[data-callout="remark"],
+.callout[data-callout="proposition"] {
+    --callout-color: 160, 216, 239; /* Light blue for border */
     border: none;
     border-left: 4px solid rgb(var(--callout-color));
     border-radius: 0;
@@ -28,15 +17,11 @@
 }
 
 .theorem-callout .callout-title,
-.callout[data-callout="theorem"] .callout-title,
-.callout[data-callout="proposition"] .callout-title,
-.callout[data-callout="lemma"] .callout-title,
-.callout[data-callout="example"] .callout-title,
-.callout[data-callout="remark"] .callout-title {
-    padding: 0.25em 1em;
+.callout[data-callout] .callout-title {
+    padding: 0.25em 1em; /* Reduced vertical padding to minimize space */
     font-family: "Neo Euler", serif;
     font-weight: normal;
-    color: rgb(var(--callout-color)); /* Color matches the border */
+    color: #a0d8ef; /* Light blue for callout titles */
 }
 
 .theorem-callout .callout-icon,
@@ -45,25 +30,20 @@
 }
 
 .theorem-callout .callout-title-inner,
-.callout[data-callout="theorem"] .callout-title-inner,
-.callout[data-callout="proposition"] .callout-title-inner,
-.callout[data-callout="lemma"] .callout-title-inner,
-.callout[data-callout="example"] .callout-title-inner,
-.callout[data-callout="remark"] .callout-title-inner {
+.callout[data-callout] .callout-title-inner {
     font-weight: normal;
-    color: rgb(var(--callout-color)); /* Color matches the border */
+    color: #a0d8ef; /* Light blue for title inner text */
 }
 
-.theorem-callout-subtitle,
-.callout[data-callout] .callout-subtitle {
+.theorem-callout-subtitle {
     font-weight: lighter;
-    color: rgb(var(--callout-color)); /* Color matches the border */
+    color: #a0d8ef; /* Light blue for subtitle text */
 }
 
 .theorem-callout .callout-content,
 .callout[data-callout] .callout-content {
     background-color: var(--background-primary);
-    padding: 0.25em 1em;
+    padding: 0.25em 1em; /* Reduced padding to minimize space */
     margin: 0;
     color: #ffffff; /* White for content text */
 }
@@ -71,7 +51,7 @@
 .theorem-callout .callout-content p,
 .callout[data-callout] .callout-content p {
     margin: 0;
-    padding: 0.25em 0;
+    padding: 0.25em 0; /* Reduced padding to minimize space */
     color: #ffffff; /* White for paragraph text */
 }
 
@@ -87,7 +67,7 @@
 
 .theorem-callout .callout-content .has-list-bullet,
 .callout[data-callout] .callout-content .has-list-bullet {
-    padding: 0.25em 0;
+    padding: 0.25em 0; /* Reduced padding to minimize space */
     margin: 0;
     color: #ffffff; /* White for list items */
 }

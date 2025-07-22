@@ -21,7 +21,7 @@ dateCreated: 2025-05-11,20:37
 >$$P(X_{1}\leq t_{1}\cap\ldots\cap X_{n}\leq t_{n})=\prod^{n} P(X_{i}\leq t_{i})=\prod^{n} G(t_{i}-\mu )=\prod^{n} \phi\left( \frac{t_{i}-\mu }{\sigma} \right)$$
 >Por lo tanto $$\mathcal{P}=\bigg\{ X=\begin{pmatrix}X_{1}\\ \vdots\\X_{n}\end{pmatrix}\sim N_{n}\bigg(\tilde{\mu} \mathbb{1},\sigma^{2} Id_{n}\bigg) : \tilde{\mu}\in \mathbb{R},\sigma^{2}>0\bigg\}\quad\mathbb{1}=\begin{pmatrix}1\\ \vdots \\ 1\end{pmatrix}$$
 
->[!Definition] Modelo y parametrizacion
+>[!Definition]
 >Se llamara *parametrizacion* a una funcion $\eta : \theta\rightarrow \mathcal{P}$ con $\mathcal{P}$ conjunto de funciones de distribucion que sea suryectiva. 
 >*Modelo* se le dice a la parametrizacion con el conjunto $\mathcal{P}$. 
 >$\Theta$ se denominara espacio de parametros.
