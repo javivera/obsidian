@@ -8,13 +8,17 @@ tags:
 >Sean $S : \Omega_{X}\rightarrow \mathcal{S}$ y $T:\Omega_{X}\rightarrow \mathcal{T}$ estadisticos y sean $\sigma(S),\sigma(T)$ las menores $\sigma$-algebras que vuelven medibles a $S$ y $T$ respectivamente ($\sigma(S)=S^{-1}(\mathcal{F}_{\mathcal{S}}),\sigma(T)=T^{-1}(\mathcal{F}_{\mathcal{T}})$). 
 >Si $\sigma(T)\subseteq \sigma(S)$ entonces decimos $S$ refina a $T$
 
->[!Definition]
->Sea ${} T : (\Omega_{X},\mathcal{F}_{X})\rightarrow (\mathcal{T},\mathcal{F}_{\mathcal{T}}) {}$ estadistico y sea $\mathcal{P}$ familia de funciones de distribucion sobre $\mathcal{F}_{X}$. $T$ se dice estadistico suficiente minimal para $\mathcal{P}$ sii
+^7c1e8d
+
+>[!Definition] Estadistico suficiente minimal
+>Sea $T : (\Omega_{X},\mathcal{F}_{X})\rightarrow (\mathcal{T},\mathcal{F}_{\mathcal{T}})$ estadistico y sea $\mathcal{P}$ familia de funciones de distribucion sobre $\mathcal{F}_{X}$. $T$ se dice estadistico suficiente minimal para $\mathcal{P}$ sii
 >- (i) $T$ es suficiente para $\mathcal{P}$
 >- (ii) Si $\mathcal{S}$ es otro estadistico suficiente para $\mathcal{P}$ entonces $S$ refina a $T$
 
+^edeb62
 
->[!Lemma] DUDA EN IDA
+
+>[!Lemma] Caracterizacion estadistio suf minimal DUDA EN IDA
 >Sea $T : \Omega_{X}\rightarrow \mathbb{R}^{k}$ estadistico suficientes. Entonces $T$ es suficiente minimal si y solo si para todo $S : \Omega_{X}\rightarrow \mathbb{R}^{k'}$ estadistico suficiente $\exists r: \mathbb{R}^{k}\rightarrow \mathbb{R}^{k'}$ medible tal que $T=r\circ S$ 
 >![[Pasted image 20250517134031.png|600]]
 >>[!Proof]-
@@ -32,7 +36,7 @@ tags:
 
 ^3cd0e6
 
->[!Lemma]
+>[!Lemma] Condiciones para suficiencia
 >Sea $\mathcal{P}=\{ P_{\theta}: \theta\in \Theta\}$ flia de funciones de distribucion sobre $\mathcal{F}_{X}$ $\sigma$-algebra de $\Omega_{X}$. Supongamos existe medida $\sigma$-finita $\lambda$ sobre $\mathcal{F}_{X}$ tal que $P_{\theta}<<\lambda$ (Randon-Nikodin nos dice $P_{\theta}(B)=\int_{B}p_{\theta}d\lambda$ con $p_{\theta}\geq 0$).
 >Sea $U:\Omega_{X}\rightarrow\mathcal{T}$ estadistico. Entonces una condicion necesaria y suficiente para que $U$ sea suficiente para $\mathcal{P}$ es que si $x\in \Omega_{X}$ entonces $\frac{p_{\theta}(x)}{p_{\theta_{0}}(x)}=g_{\theta,\theta_{0}}(U(x))$ son funciones de $U(x)$ para cada $\theta,\theta_{0}$ fijos
 >>[!Proof]- Ejercicio
@@ -40,7 +44,7 @@ tags:
 
 ^04386c
 
->[!Lemma]
+>[!Lemma] Estadistico minimal en base a familia de distr
 >Sea $\mathcal{P}=\{ P_{0},\ldots,P_{k} \}$ y $\Theta=\{ 0,1,\ldots,k \}$ flia de funciones de distribucion con densidad (o derivada R-N) $p_{0},\ldots p_{k}$ respecto de una medida $\sigma$-finita $\lambda$ (osea $P_{\theta}(B)=\int_{B}p_{\theta}(x)\lambda(dx)\quad B\in \mathcal{F}_{X}$ $\sigma$-algebra de $\Omega_{X}$). 
 >El *estadistico* definido como $T : \Omega_{X}\rightarrow \mathbb{R}^{k}$ $$T(x)=\left( \frac{p_{1}(x)}{p_{0}(x)},\ldots,\frac{p_{k}(x)}{p_{0}(x)} \right)$$ (podemos elegir cualquier $p_{j}$ para dividir) Es suficiente y minimal para $\mathcal{P}$
 >>[!Proof]-
@@ -56,7 +60,7 @@ tags:
 
 ^724d5e
 
->[!Lemma] DUDA
+>[!Lemma] Suficiente en el grande y minimal en el chico DUDA 
 >Sea $\mathcal{P}$ familia de funciones distribucion y $\mathcal{P}_{0}\subseteq \mathcal{P}$  tal que $T:\Omega_{X}\rightarrow\mathbb{R}^{k}$ es un estadistico suficiente minimal para $\mathcal{P}_{0}$. Luego si $T$ es suficiente para $\mathcal{P}$ entonces es suficiente minimal para $\mathcal{P}$
 >>[!Proof]
 >>1. Si $U:\Omega_{X}\rightarrow\mathbb{R}^{k}$ es suficiente para $\mathcal{P}$ entonces $U$ es suficiente para $\mathcal{P}_{0}$ 
@@ -68,7 +72,7 @@ tags:
 
 ^78ab84
 
->[!Example] DUDA
+>[!Example] Aplicacion del lema DUDA
 >$X_{1},\ldots,X_{n}$ vaiid tal que $X_{1}\sim \mathcal{N}(\mu,\sigma^{2})$ con $(\mu,\sigma^{2})\in \mathbb{R}\times(0,\infty)=\Theta$ y $$\mathcal{P}=\{ (X_{1},\ldots,X_{n})\sim\mathcal{N}_{n}(\mu\mathbb{1},\sigma^{2} I_{n\times n}) \ |\ (\mu,\sigma^{2})\in \Theta)\}$$
 >Notar que dados parametros ${} (\mu,\sigma^{2}) {}$ $$f(x_{1},\ldots,x_{n})=\frac{1}{(\sqrt{ 2\pi\sigma^{2} })^{n} }exp\left( -\frac{1}{2}\left[ \frac{\sum x_{i}^{2}}{\sigma^{2}}-\frac{2\mu\sum x_{i}}{\sigma^{2}} +\frac{n\mu^{2}}{\sigma^{2}}  \right] \right)*1$$
 >Y de ahi es facil ver que $$T(X_{1},\ldots,X_{n})=\left( \sum_{i=1}^{n}  X_{i},\sum_{i=1}^{n}  X_{i}^{2}   \right)$$es suficiente, usando teorema de factorizacion (ej 11 pr 4)
@@ -87,3 +91,6 @@ tags:
 >5. Por definicion de $S$ sucede $T$ y $S$ son equivalentes (Mas aun $\exists f$ biyectiva tal que $T=f(S)$. 
 >6. Entonces $T$ es suficiente y minimal para $\mathcal{P}_{0}$ 
 >7. Como $T$ es suficiente para $\mathcal{P}$ entonces por [[IE - Teorico 17#^78ab84]] es suficiente minimal para $\mathcal{P}$
+
+^1d1193
+

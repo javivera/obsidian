@@ -20,7 +20,7 @@
 >[!Remark]
 >La esperanza condicional $E(Y|Z)$ es el mejor predictor de $Y$ entre todas las funciones de $Z$.
 
->[!Remark]
+>[!Remark] Corr entre Y e E(Y|Z)
 >¿Cuán asociados están $Y$ y su predictor $E(Y|Z)$?
 >Si $E(Y|Z)$ no es constante, calculemos la correlación entre ellos:
 >$$ Corr(Y, E(Y|Z)) = \frac{Cov(Y, E(Y|Z))}{\sqrt{Var(Y)} \sqrt{Var(E(Y|X))}} $$
@@ -29,6 +29,8 @@
 >Sustituyendo la covarianza en la fórmula de la correlación:
 >$$ Corr(Y, E(Y|Z)) = \frac{Var(E(Y|Z))}{\sqrt{Var(Y)} \sqrt{Var(E(Y|Z))}} = \frac{\sqrt{Var(E(Y|Z))}}{\sqrt{Var(Y)}} \ge 0 $$
 >La cantidad $Corr(Y, E(Y|Z))$ se denota $\rho_{YZ}$ y se denomina **coeficiente de determinación** o de **correlación múltiple**.
+
+^1c307a
 
 >[!Example] Ejemplo con distribucion normal
 >Si el vector $(Y, Z^t)^t$ sigue una distribución normal multivariada:
@@ -47,7 +49,7 @@
 
 ^e8cecc
 
->[!Remark]
+>[!Definition] Mejor predictor lineal
 >Supongamos que queremos buscar el mejor aproximante **lineal** de la v.a. $Y$ basado en $Z$. O sea, si $\mu_L(Z) = a+b^t Z$, con $a \in \mathbb{R}, b \in \mathbb{R}^d$, queremos encontrar $a$ y $b$ tal que:
 >$$ \min_{a \in \mathbb{R}, b \in \mathbb{R}^d} E\big(Y - (a+b^t Z)\big)^2$$
 >Equivalentemente, podemos reparametrizar el problema. Sea $\alpha = a + b^t E(Z)$. Entonces $a = \alpha - b^t E(Z)$, y el predictor se escribe como:
@@ -55,7 +57,9 @@
 >$$ \min_{\alpha \in \mathbb{R}, b \in \mathbb{R}^d} E[(Y - \alpha - b^t(Z-E(Z)))^2] $$
 >Luego, una vez encontrados los valores óptimos de $\alpha$ y $b$, se puede recuperar $a$ como $a = \alpha - b^t E(Z)$.
 
->[!Lemma]
+^56bde8
+
+>[!Lemma] Mejor predictor lineal en general
 >Sea $X=(Y, Z^t)^t$ un vector aleatorio con $0 < \sigma_Y^2 < \infty$ y $\Sigma_{ZZ} \in \mathbb{R}^{d \times d}$ inversible, $\Sigma_{ZY}^t = \Sigma_{YZ} \in \mathbb{R}^{1 \times d}$. Entonces el **mejor predictor lineal** de $Y$ basado en $Z$ es:
 >$$\mu_L(Z) = E(Y) + \Sigma_{YZ} \Sigma_{ZZ}^{-1} (Z-E(Z))$$
 >>[!Proof]-
@@ -75,24 +79,35 @@
 >>Y ahora minimizando por separado para $b$ y por separado para $\alpha$ con las derivadas parciales llegamos a que el minimo es con $$\alpha =E(Y)\quad b=\Sigma^{-1}_{Z Z } \Sigma_{ZY}$$
 >>Sustituyendo en la expresion $\alpha +b^{t}(Z-E(Z))$ llegamos al resultado.  
 
+^755ace
+
 >[!Remark]
 >Entonces, de la función de distribución de $X=(Y, Z^T)^T$ sólo necesitamos conocer las covarianzas de $Y$ con $Z$ y las varianzas-covarianzas de $Z$.
 >Así, todas las distribuciones que tengan el mismo $\Sigma_{YZ}$ y $\Sigma_{ZZ}$ van a tener el mismo aproximante lineal.
 
->[!Example]
+^06fcf8
+
+>[!Example] Mejor predictor lineal para normal multivariada
 >En especial, podríamos tomar la distribución normal multivariada $G=N_{d+1}(\mu, \Sigma)$ con:
 >$$ \mu = \begin{pmatrix} E(Y) \\ E(Z) \end{pmatrix} \quad \text{y} \quad \Sigma_{XX} = \begin{pmatrix} \sigma_Y^2 & \Sigma_{YZ} \\ \Sigma_{ZY} & \Sigma_{ZZ} \end{pmatrix} $$
 >En este caso, sabemos que $E(Y|Z) = \mu_Y + \Sigma_{YZ}\Sigma_{ZZ}^{-1}(Z-E(Z))$ por [[IE - Teorico 14#^e8cecc]] y este es el mejor aproximante (ya que es la esperanza condicional)
 >Justo en este caso coincide con el mejor predictor lineal con lo cual resulta los coeficientes del mejor predictor lineal son:
 >$$ b = \Sigma_{ZZ}^{-1}\Sigma_{ZY} \quad \text{y} \quad a = \mu_Y $$
 
->[!Example]
+^17177c
+
+>[!Example] Mejor aprox lineal para 2 dimension
 >Si $X = \begin{pmatrix} Y \\ Z \end{pmatrix} \in \mathbb{R}^2$ tenemos que el mejor aproximante lineal seria $$\mu_{L}(Z)=E(Y)+ \frac{Cov(Y,Z)}{Var(Z)}(Z-E(Z))$$
 >
 
->[!Proposition]
+^de9ddb
+
+>[!Proposition] Mejor aproximante lineal con origen 0
 >Si en vez de ajustar $\mu_L(Z) = a+bZ$ estuviéramos circunscriptos a rectas que pasan por el origen ($a=0$) el mejor aproximante lineal pasando sobre el origen seria $$\mu _{L}(Z)=\frac{E(YZ)}{E(Z^{2})}Z$$
 >>[!Proof]-
 >> 1. Solucionemos esto $\min_b E[(Y-bZ)^2]$
 >> 2. Para eso tenemos que minimizar $E(Y^{2})-2bE(YZ)+b^{2}E(Z^{2})$
 >> 3. Derivando una vez llegamos facil al resultado y derivando una segunda vez confirmamos que es minimo
+
+^3a0b8c
+

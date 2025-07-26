@@ -1,9 +1,11 @@
 ---
 dateCreated: 2025-05-25,10:55
 ---
->[!Remark]
+>[!Remark] Esperanza como medida de probabilidad
 > Se puede demostrar que como $P(X^{-1}(\cdot) \mid \mathcal{G})(w)=P_{X}(\ \cdot\ | \ \mathcal{G})$ es medida de probabilidad sobre $\mathcal{B}(\mathbb{R})$ entonces
 >$$\int_{\mathbb{R}} x\, \mathbb{P}_{X}(dx \mid \mathcal{G})(w)= \mathbb{E}(X \mid \mathcal{G})(w)$$
+
+^849496
 
 >[!Remark]
 >Una forma alternativa de presentar la *esperanza condicional* está dada por el siguiente
@@ -20,11 +22,13 @@ dateCreated: 2025-05-25,10:55
 > $$L^2(\mathbb{P}, \mathscr{G}) \subseteq L^2(\mathbb{P}, \mathcal{F}) \quad (\text{pues } \mathscr{G} \subseteq \mathcal{F})$$
 > - $L^2(\mathbb{P}, \mathscr{G})$ es un espacio vectorial cerrado.  
 
->[!Corollary]
+>[!Corollary] Esperanza condicional como proyeccion.
 > Sea $(\Omega, \mathcal{F}, \mathbb{P})$ e.p. y ${} \mathcal{G} \subseteq \mathcal{F} {}$ sub-$\sigma$-álgebra, $X \in L^2(\mathbb{P})$. Entonces $\exists Y : \Omega \to \mathbb{R}$, ${} \mathcal{G} {}$-medible tal que $\forall Z \in L^2(\mathbb{P},\mathcal{G})$ se cumple:
 > $$\mathbb{E}[(X - Y)Z] = 0 \quad \Longleftrightarrow \quad Y = \mathbb{E}(X \mid \mathcal{G})$$
 >>[!Proof]-
 >>1. Usando desigualdad de Hölder se sigue del Teorema previo $$\mathbb{E}(|X Z|) \leq \mathbb{E}(X^2)^{1/2} \cdot \mathbb{E}(Z^2)^{1/2} < \infty$$
+
+^40f1bd
 
 >[!Remark] Esperanza condicional como proyeccion ortogonal
 >$L^2(\mathbb{P}, \mathcal{F})$ es un e.v. con producto interno:
@@ -35,7 +39,7 @@ dateCreated: 2025-05-25,10:55
 
 ^3a9cf9
 
->[!Corollary]
+>[!Corollary] Esperanza condicional minimiza L2
 >Sea $(\Omega, \mathcal{F}, \mathbb{P})$ e.p., ${} \mathcal{G} \subseteq \mathcal{F} {}$ sub-$\sigma$-álgebra, $X \in L^2(\mathbb{P}, \mathcal{F})$, entonces para todo $Y \in L^2(\mathbb{P}, \mathcal{G})$:
 > 
 >**a)** $$\mathbb{E}[(X - Y)^2] = \mathbb{E}\left[ \left( X - \mathbb{E}(X \mid \mathcal{G}) \right)^2 \right] +\mathbb{E} \left[\left( Y-\mathbb{E}(X \mid \mathcal{G} ) \right)^{2}\right]$$
@@ -106,6 +110,8 @@ dateCreated: 2025-05-25,10:55
 >>6. Entonces
 >> $$\mathbb{V}(X) \ge \mathbb{V}(\mathbb{E}(X \mid \mathcal{G}))$$
 
+^168226
+
 > [!Remark]
 > El punto **a)** del corolario permite hablar de la esperanza como el **mejor aproximante de $X$ en media cuadrática en $L^2(\mathbb{P}, \mathcal{G})$**. 
 > Necesitamos “pegar” la noción de esperanza condicional dado sub-álgebra y la esperanza condicional que conocemos condicionando a v.a. o vectores aleatorios.
@@ -122,15 +128,19 @@ dateCreated: 2025-05-25,10:55
 > ![[Pasted image 20250525125822.png]]
 > ¿Existe $g$ que cierre el diagrama? La respuesta está en el siguiente teorema
 
->[!Theorem]
+>[!Theorem] Esperanza condicional es una funcion de una v.a
 >Sea $Y : \Omega_1 \to \mathbb{R}$ es $\sigma(T)$-medible $\Longleftrightarrow$ $\exists g : \Omega_2 \to \mathbb{R}$, $\mathcal{F}_2$-medible tal que $Y = g \circ T$
 >En especial, si $\vec{Z} = (Z_1, \dots, Z_m)^t$ vect. aleat. (acá $\vec{Z} : \Omega_1 \to \mathbb{R}^m$)
 >$$\mathbb{E}(Y\mid \sigma(\vec{Z})) = g(\vec{Z}), \quad g \text{ medible Borel}$$
 
->[!Remark]
+^9a7929
+
+>[!Remark] Notacion esperanza condicional
 >Vamos a dar el siguiente sentido a notaciones ya usadas con la nueva notación:
 >$$\mathbb{E}(X \mid \vec{Z}) := \mathbb{E}(X \mid \sigma(\vec{Z}))$$
 >$$\mathbb{E}(X \mid Z = z) = \mathbb{E}(X \mid Z)(\omega) \quad \text{donde } \omega \in \Omega_1 \text{ t.q. } Z(\omega) = z$$
+
+^518b46
 
 >[!Remark]
 >Si $X$ e $Y$ v.a. discretas osea $\exists \{x_i\}_{i \in I}$, $\{y_j\}_{j \in J}$ con $I, J \subseteq \mathbb{N}$ t.q.
@@ -153,6 +163,8 @@ dateCreated: 2025-05-25,10:55
 >$$ECMP(Y,g(\vec{Z}))=E\bigg[\big(Y-g(Z_{1},\ldots,Z_{m})\big)^{2}\bigg]$$
 >Osea estamos estimando $Y$ con $g(Z_{1},\ldots,Z_{m})$  
 
+^0a1f7f
+
 >[!Remark]
 >Sabemos que:
 >$$\mathbb{E} \left( Y - \mathbb{E}(Y \mid Z_1, \dots, Z_m) \right)^2 \leq \mathbb{E} \left( Y - g(Z_1, \dots, Z_m) \right)^2\quad\forall g(\vec{Z})$$
@@ -161,7 +173,7 @@ dateCreated: 2025-05-25,10:55
 >[!Remark]
 >Sea $Y$ v.a., $\mathbb{E}(Y^2) < \infty$. El $c\in \mathbb{R}$ que resuelve ${} \min_{c\in \mathbb{R}} \mathbb{E}(Y - c)^2$ es $c= E(Y)$ 
 
-> [!Lemma]
+> [!Lemma] Minimizador constante
 > Sea $Y \in L^2(\mathbb{P}, \mathcal{F})$ y $\sigma(c)$ la menor σ-álgebra que vuelve medible a ${} c$ v.a constante. Entonces ${} \sigma(c) = \{\varnothing, \Omega\} {}$ y $\mathbb{E}(Y \mid \sigma(c)) = \mathbb{E}(Y)$ y ademas
 >$$\mathbb{E} \left[ Y - \mathbb{E}(Y) \right]^2 \leq \mathbb{E}(Y - c)^2, \quad \forall c \in \mathbb{R}$$
 >> [!Proof]-
@@ -171,13 +183,14 @@ dateCreated: 2025-05-25,10:55
 >>4. Si $G = \Omega$ entonces $\mathbb{E}(Y) = \int_\Omega Y \, d\mathbb{P} = c \int_\Omega d\mathbb{P} = c$ entonces ${} \mathbb{E}(Y \mid \sigma(c)) = \mathbb{E}(Y) {}$
 >> La desigualdad sale por ser $\mathbb{E}(Y \mid \sigma(c))$ el mejor aproximante en $L^2(\mathbb{P}, \mathcal{G}) = \{ \text{constantes} \}$ 
 
+^999dbd
+
 > [!Example]
 >Si ${} S= (X_1, X_2)^t \sim \mathcal{N}_2(\mu, \Sigma_X)$, $\mu \in \mathbb{R}^2$, $\Sigma_X \in \mathbb{R}^{2 \times 2}$  
 >$$\mu = \begin{pmatrix} \mu_1 \\ \mu_2 \end{pmatrix}, \quad \Sigma_X = \begin{pmatrix} \Sigma_{11} & \Sigma_{12} \\ \Sigma_{21} & \Sigma_{22} \end{pmatrix}$$
 >Vimos que la distribución condicional de $X_1$ dado $X_2 = x_2$ es:
 >$$ X_1 \mid X_2 = x_2 \sim \mathcal{N} \left( \mu_1 + \Sigma_{12} \Sigma_{22}^{-1}(x_2 - \mu_2), \; \Sigma_{11} - \Sigma_{12} \Sigma_{22}^{-1} \Sigma_{21} \right) \quad\text{con}\quad\Sigma_{X}=\begin{pmatrix}\Sigma_{11} & \Sigma_{12}\\ \Sigma_{21}& \Sigma_{22}\end{pmatrix}$$
 >Luego:
->$$ \mathbb{E}(X_1 \mid X_2 = x_2) = \mu_1 +  \frac{\sqrt{\mathbb{V}(X_1)} \cdot \text{Corr}(X_1, X_2)}{\sqrt{\mathbb{V}(X_2)}\sqrt{ V(X_{1}) }\sqrt{ V(X_{2}) }} (x_2 - \mu_2) =: \mu_{1\cdot} $$
->$$ \mathbb{V}(X_1 \mid X_2) = \sigma_{X_1}^2 - \frac{\text{Cor}^{2}(X_1, X_2)}{\sigma^{2}_{X_{2}}}=\sigma_{X_{1}}^{2}-\sigma^{2}_{X_{1}}\frac{\text{Cor}^{2}(X_{1},X_{2})}{\sigma^{2}_{X_{1}}\sigma^{2}_{X_{2}}}=\sigma^{2}_{X_{1}}(1-p^{2})$$
+>$$\begin{align}\mathbb{E}(X_1 \mid X_2 = x_2) &= \mu _{1}+\frac{Cov(X_{1},X_{2})}{V(X_{2})}(x_{2}-\mu _{2})\\& =\mu_1 +  \frac{\sqrt{\mathbb{V}(X_1)}\sqrt{ V(X_{2}) } \cdot \text{Corr}(X_1, X_2)}{V(X_{2}) } (x_2 - \mu_2) \\&=\mu _{1}+\frac{\sqrt{ V(X_{1}) }}{\sqrt{ V(X_{2}) }}\rho(x_{2}-\mu _{2})\end{align}$$
+>$$ \mathbb{V}(X_1 \mid X_2) = \sigma_{X_1}^2 - \frac{\text{Cov}^{2}(X_1, X_2)}{\sigma^{2}_{X_{2}}}=\sigma_{X_{1}}^{2}-\sigma^{2}_{X_{1}}\frac{\text{Cor}^{2}(X_{1},X_{2})}{\sigma^{2}_{X_{1}}\sigma^{2}_{X_{2}}}=\sigma^{2}_{X_{1}}(1-p^{2})$$
 
- 

@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IE - Teorico 8"
-            }
-          },
-          {
-            "id": "a1eb9039580028c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+                "file": "Inferencia Estadistica/Theory/IE - Teorico 22.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IE - Teorico 8"
+              "title": "IE - Teorico 22"
             }
           }
         ]
@@ -112,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Inferencia Estadistica/Theory/IE - Teorico 2.md",
+            "file": "Inferencia Estadistica/Theory/IE - Teorico 22.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -159,7 +145,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -170,24 +156,33 @@
   },
   "active": "6606b25ca5cf8883",
   "lastOpenFiles": [
-    "Inferencia Estadistica/Theory/IE - Teorico 3.md",
-    "Inferencia Estadistica/Glosario.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 2.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 7.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 6.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 4.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
-    "Pasted image 20250709184958.png",
-    "Inferencia Estadistica/Repaso.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
     "Inferencia Estadistica/Theory/IE - Teorico 19.md",
     "Inferencia Estadistica/Theory/IE - Teorico 18.md",
-    "Inferencia Estadistica/Theory/Untitled.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 25.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 17.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 16.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 15.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 14.md",
+    "copilot-conversations/2._Para_ello,_la_expandimos_sumando_y_restando_$E(Y)$_$begin{align}@20250721_165046.md",
+    "copilot-conversations/[!Example]_En_especial,_podríamos_tomar_la_distribución_normal_multivariada_$G=N_{d+1}(mu,@20250721_194709.md",
+    "copilot-conversations/3._Para_el_término_cruzado,_como_$E(YZ)-E(Y)$_es_$sigma(Z)$-medible,_y@20250721_125632.md",
+    "copilot-conversations/do_you_think_this_is_a_correct_proof_[!Proposition]_Si@20250721_220306.md",
+    "copilot-conversations/Entonces,_de_la_función_de_distribución_de_$X=(Y,_Z^T)^T$@20250721_193419.md",
+    "copilot-conversations/[!Remark]_Sea_$Y$_v.a.,_$mathbb{E}(Y^2)_infty$._El_$cin_mathbb{R}$@20250721_100326.md",
     "Inferencia Estadistica/Theory/IE - Teorico 13.md",
-    "Inferencia Estadistica/Theory/Notas.md",
-    "Inferencia Estadistica/Theory/IE - Teorico 20.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 12.md",
+    "Untitled.md",
+    "13 bis.md",
+    "IE - Teorico 13.md",
+    "Untitled 2.md",
+    "copilot-conversations/[!Remark]_Vamos_a_dar_el_siguiente_sentido_a_notaciones_ya@20250720_204009.md",
+    "copilot-conversations/su_suppose_i_have_a_random_variable_which_represents_the@20250720_202850.md",
+    "copilot-conversations/how_do_we_evaluate_E(Xmathcal{G})@20250720_192132.md",
+    "Inferencia Estadistica/Glosario.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 9.md",
+    "Inferencia Estadistica/Theory/IE - Teorico 8.md",
+    "Pasted image 20250709184958.png",
     "Untitled",
     "Pasted image 20250526192210.png",
     "Pasted image 20250526170113.png",

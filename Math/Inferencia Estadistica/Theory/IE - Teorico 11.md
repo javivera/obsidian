@@ -1,6 +1,5 @@
->[!Theorem]
->Sea $X \sim N_d(\mu, \Sigma_X)$, con $\Sigma_X$ simétrica y definida positiva.
->Sea $X = \begin{pmatrix} X_1 \\ X_2 \end{pmatrix}$, con $X_1 \in \mathbb{R}^{d_1}$, $X_2 \in \mathbb{R}^{d_2}$ y $d_1+d_2=d$.
+>[!Theorem] Resultados sobre normal multivariada
+>Sea $X \sim N_d(\mu, \Sigma_X)$, con $\Sigma_X$ simétrica y definida positiva. Sea $X = \begin{pmatrix} X_1 \\ X_2 \end{pmatrix}$, con $X_1 \in \mathbb{R}^{d_1}$, $X_2 \in \mathbb{R}^{d_2}$ y $d_1+d_2=d$.
 >Entonces se cumple:
 >- a) $X_1 \sim N_{d_1}(\mu_1, V(X_1)) = N_{d_1}(\mu_1, \Sigma_{11})$ y $X_2 \sim N_{d_2}(\mu_2, \Sigma_{22})$ con $\Sigma_{11}, \Sigma_{22}$ definidas positivas.
 >- b) Sea el vector $$\omega = \begin{pmatrix} \omega_1 \\ \omega_2 \end{pmatrix} = \begin{pmatrix} I_{d_1} & -\Sigma_{12} \Sigma_{22}^{-1} \\ 0_{d_2 \times d_1} & I_{d_2} \end{pmatrix} \begin{pmatrix} X_1 - \mu_1 \\ X_2 - \mu_2 \end{pmatrix}$$ entonces $\omega \sim N_d \left( 0_{d \times 1}, \begin{pmatrix} \Sigma_{11} - \Sigma_{12} \Sigma_{22}^{-1} \Sigma_{21} & O_{d_1 \times d_2} \\ O_{d_2 \times d_1} & \Sigma_{22} \end{pmatrix} \right)$.
@@ -15,14 +14,15 @@
 >>[!Proof]
 >>hacerlo
 
+^0492f4
+
 
 
 >[!Theorem] Método Delta Multivariado
 >Sea $\{X_n\}_{n \in \mathbb{N}_0}$ una sucesión de vectores aleatorios en $\mathbb{R}^d$. Sea $\{a_n\} \subseteq \mathbb{R}$ una sucesión tal que $\lim_{n \to \infty} a_n = \infty$ y supongamos que: $$a_n(X_n - \mu) \xrightarrow{\mathcal{D}} X_0$$
 >donde $\mu \in \mathbb{R}^d$ es la esperanza.
 >Sea $g: \mathbb{R}^d \to \mathbb{R}^k$ una función diferenciable y sea $D$ la matriz jacobiana de $g$: $$D = \left( \frac{\partial g_i(x)}{\partial x_j} \right)_{1 \le i \le k, 1 \le j \le d} \in \mathbb{R}^{k \times d}, \quad \text{para } x \in \mathbb{R}^d$$
->>Si las derivadas parciales $\frac{\partial g_i(x)}{\partial x_j}$ son funciones continuas, entonces se cumple:
->$$a_n(g(X_n) - g(\mu)) \xrightarrow{\mathcal{D}}_{n \to \infty} D(\mu) X_0$$
+>Si las derivadas parciales $\frac{\partial g_i(x)}{\partial x_j}$ son funciones continuas, entonces se cumple:$$a_n(g(X_n) - g(\mu)) \xrightarrow{\mathcal{D}}_{n \to \infty} D(\mu) X_0$$
 
 ^50208f
 
@@ -31,6 +31,8 @@
 >$$\sqrt{n}(X_n - \mu) \xrightarrow{\mathcal{D}} N_d(0_{d \times 1}, \Sigma)$$
 >en este caso $\mu=E[X_n]$. Por [[IE - Teorico 11#^50208f]] tenemos
 >$$ \sqrt{n}(g(X_n) - g(\mu)) \xrightarrow{\mathcal{D}} N_k(0_{k \times 1}, D \Sigma D^T)$$
+
+^dd12f7
 
 >[!Definition] Integral general
 >Si tenemos $(\Omega, \mathcal{F}, \mu)$ un espacio de medida ($\mu$ no necesariamente es una medida de probabilidad).
@@ -77,6 +79,8 @@
 >Y esto nos da un espacio de probabilidad $(\mathbb{R},\mathcal{B}(\mathbb{R}),P_{X})$ 
 >(chequear que $P_X$ es una medida de probabilidad en $\mathbb{R}$).
 
+^c214ed
+
 >[!Lemma] Esperanza en medida pushforward
 >Dado $(\Omega, \mathcal{A}, P)$ un espacio de probabilidad y $X: \Omega \to \mathbb{R}$ una v.a. $P_X(\cdot)$ es la medida inducida por $X$ en $\mathbb{R}$. Ahora, si $E(X)$ existe entonces
 >$$EX = \int_{\Omega} X dP = \int_{\mathbb{R}} x P_X(dx)$$
@@ -87,9 +91,13 @@
 >Si $\mu, \nu: \mathcal{F} \to [0, \infty]$ son medidas. Decimos que $\nu$ es **absolutamente continua** respecto a $\mu$ si para todo $A \in \mathcal{F}$ tal que $\mu(A)=0$, entonces $\nu(A)=0$. (notación: $\nu \ll \mu$)
 >Un resultado que caracteriza la continuidad absoluta es el siguiente:
 
+^c61246
+
 >[!Theorem]
 >Sea $\Omega'$ un conjunto y $\mathcal{F}$ una $\sigma$-álgebra en $\Omega'$. Sean $\mu, D: \mathcal{F} \to [0, \infty]$ medidas $\sigma$-finitas tal que $D \ll \mu$ (absolutamente continuas).
 >Sea $g: \Omega' \to [0, \infty)$ la densidad de $D$ respecto de $\mu$. Entonces se cumple que
 > - a) $f$ es integrable respecto a $D$ sii $f \cdot g$ es integrable respecto a $\mu$.
 > - b) $\int_{\Omega'} f dD = \int_{\Omega} f \cdot g d\mu$
+
+^01c6e4
 
